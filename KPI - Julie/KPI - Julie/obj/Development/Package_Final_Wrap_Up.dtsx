@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/13/2017 3:00:58 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DEAN-L-JULIEZIE"
+  DTS:CreatorName="UMROOT\juliezie"
+  DTS:DTSID="{01AEC98A-B1E9-410C-8CC2-D4D29B1B7423}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package_Final_Wrap_Up"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{99D22484-2D5D-4925-9282-3DEC8C7CBF57}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[m-mssqlprd012,14330.lsa_AdminData]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E82B0049-88BB-4DD5-B816-8A9DB13DEF7B}"
+      DTS:ObjectName="m-mssqlprd012,14330.lsa_AdminData">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=m-mssqlprd012,14330;Initial Catalog=lsa_AdminData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A3B46019-5CF0-41F9-8E66-686F223872F0}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="_sAcadYear">
+      <DTS:VariableValue
+        DTS:DataType="8">2016</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Decimal Rounding"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{D3C72026-A815-43D5-91C2-1DC19ED00FEE}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Decimal Rounding">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Decimal Rounding\0 Decimals"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{4CEF5652-EBDA-451E-982A-51A3831CF947}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="0 Decimals"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{E82B0049-88BB-4DD5-B816-8A9DB13DEF7B}"
+              SQLTask:SqlStatementSource="UPDATE KPIData&#xA;SET          KPIValue = ROUND(KPIValue, 0)&#xA;WHERE  (KPICode IN ('AFExp', 'SRExp', 'GFRev', 'HTran', 'FTran', 'AFExp1E', '9UD', '9UI', '9LD', '9LI', '7G', '7S', '7D', '7Other', '7B', '8EU', '8EC', '8S', '9KP', '2L', '2U', '2G', '2T', '2SUM', '3LLTT', &#xA;                  '3ULTT', '3TT', '3LEC', '3GSI', '3Other')) AND (AcadYear = '&quot; + @_sAcadYear + &quot;')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Decimal Rounding\1 Decimal"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{5CF70C8E-0AF0-42AB-9C26-C21879DFD50B}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="1 Decimal"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{E82B0049-88BB-4DD5-B816-8A9DB13DEF7B}"
+              SQLTask:SqlStatementSource="update KPIData&#xA;set KPIValue=round(KPIValue,1) &#xA;where KPICode in ('8D', '6B') and AcadYear='&quot; + @_sAcadYear + &quot;'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Decimal Rounding\2 Decimals"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{8CADFBBE-6568-4A18-9831-32EBB5DD4F68}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="2 Decimals"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{E82B0049-88BB-4DD5-B816-8A9DB13DEF7B}"
+              SQLTask:SqlStatementSource="UPDATE KPIData&#xA;SET          KPIValue = ROUND(KPIValue, 2)&#xA;WHERE  (KPICode IN ('9ER', '9LR', 'GFRev', 'DCH', 'CPhDCommittee')) &#xA;AND (AcadYear = ' [ + @_sAcadYear + ] ')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Decimal Rounding.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{FEE81D68-9A48-466B-91C6-7F2AF4E0B610}"
+          DTS:From="Package\Decimal Rounding\0 Decimals"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Decimal Rounding\1 Decimal" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Decimal Rounding.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{D5AAD576-56EB-4399-9CEC-8AB899E3A9D9}"
+          DTS:From="Package\Decimal Rounding\1 Decimal"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Decimal Rounding\2 Decimals" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="131.2,41.6"
+          Id="Package\Decimal Rounding\0 Decimals"
+          TopLeft="33.25714454067,11.5764724672047" />
+        <NodeLayout
+          Size="126.4,41.6"
+          Id="Package\Decimal Rounding\1 Decimal"
+          TopLeft="33.3714298073127,83.5764726130608" />
+        <NodeLayout
+          Size="131.2,41.6"
+          Id="Package\Decimal Rounding\2 Decimals"
+          TopLeft="32.2285726449928,163.105885493137" />
+        <EdgeLayout
+          Id="Package\Decimal Rounding.PrecedenceConstraints[Constraint]"
+          TopLeft="97.7142871739913,53.1764724672047">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30.4000001458561"
+              Start="0,0"
+              End="0,22.9000001458561">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.9000001458561" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Decimal Rounding.PrecedenceConstraints[Constraint 1]"
+          TopLeft="97.2000012261527,125.176472613061">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.9294128800758"
+              Start="0,0"
+              End="0,30.4294128800758">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.4294128800758" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="214.4,265.6"
+          Size="214.4,308.8"
+          Id="Package\Decimal Rounding"
+          TopLeft="39.428572100036,17.7411767194015" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

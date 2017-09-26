@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectInfo>
+    <Name>KPI - Julie</Name>
+    <LastWriteTime>2017-08-10T18:34:15.58104Z</LastWriteTime>
+    <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+  </ProjectInfo>
+  <LastBuildInfos>
+    <ProjectBuildItemInfo>
+      <Name>Verification_Script.dtsx</Name>
+      <LastWriteTime>2017-08-11T13:15:37.4309178Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>1 - Profile.dtsx</Name>
+      <LastWriteTime>2017-09-13T13:55:18.9451276Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>2 - Profile_2_CAC.dtsx</Name>
+      <LastWriteTime>2017-08-15T13:25:26.733777Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>3 - Profile_7_VOR_UROP.dtsx</Name>
+      <LastWriteTime>2017-08-08T16:45:48.4591852Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>4 - Profile_8_and_9.dtsx</Name>
+      <LastWriteTime>2017-08-08T17:08:18.5334034Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>5 - Demographics_and_DivRollups.dtsx</Name>
+      <LastWriteTime>2017-08-10T18:09:08.5287553Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>6 - Ratios_DCH.dtsx</Name>
+      <LastWriteTime>2017-08-10T13:45:51.1779363Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>7 - Ratios.dtsx</Name>
+      <LastWriteTime>2017-08-16T14:21:20.4796843Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>8 - Final_Wrap_Up.dtsx</Name>
+      <LastWriteTime>2017-08-10T20:25:04.2575467Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+  </LastBuildInfos>
+</BuildLog>

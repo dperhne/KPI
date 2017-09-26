@@ -1,0 +1,1044 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/26/2017 9:01:08 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DEAN-L-JULIEZIE"
+  DTS:CreatorName="UMROOT\juliezie"
+  DTS:DTSID="{2072C76D-6A67-468D-8B50-1115863327E5}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package_Verif_Script"
+  DTS:PackageType="5"
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{D2FF7675-1D09-40DD-BFF3-A7690F17C8B6}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{EFE88780-11F1-4ABB-9E9C-756F52A11A22}"
+      DTS:ObjectName="m-mssqlprd017,14330.lsa_AdminData">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5F95FF20-8F8D-479A-AC0D-1EB84ED76F4D}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;SELECT A.KPICode, A.DeptID, ABS(A.KPIValue-B.KPIValue)/B.KPIValue AS Percent_Diff&#xA;  FROM [lsa_AdminData].[dbo].[KPIData_Stage] A, [lsa_AdminData].[dbo].[KPIData] B&#xA;  WHERE A.DeptID = B.DeptID&#xA;  and A.KPICode = B.KPICode&#xA;  and A.AcadYear = '&quot; + @_sAcadYear + &quot;'&#xA;  and B.AcadYear = (A.AcadYear-1) &#xA;  and B.KPIValue &gt; 0&#xA;&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="vKPI_Verification">
+      <DTS:VariableValue
+        DTS:DataType="8">SELECT A.KPICode, A.DeptID, ABS(A.KPIValue-B.KPIValue)/B.KPIValue AS Percent_Diff
+  FROM [lsa_AdminData].[dbo].[KPIData_Stage] A, [lsa_AdminData].[dbo].[KPIData] B
+  WHERE A.DeptID = B.DeptID
+  and A.KPICode = B.KPICode
+  and A.AcadYear = '2016'
+  and B.AcadYear = (A.AcadYear-1) 
+  and B.KPIValue &gt; 0
+</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{BC106312-E1F3-4BB9-8CA9-B2706FDE220B}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;SELECT A.KPICode, ABS(SUM(A.KPIValue)-SUM(B.KPIValue))/SUM(B.KPIValue) AS Percent_Diff&#xA;  FROM [lsa_AdminData].[dbo].[KPIData_Stage] A, [lsa_AdminData].[dbo].[KPIData] B&#xA;  WHERE A.KPICode = B.KPICode&#xA;  and A.AcadYear = '&quot; + @_sAcadYear + &quot;'&#xA;  and B.AcadYear = (A.AcadYear-1) &#xA;  GROUP BY A.KPICode&#xA;&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="vKPI_Verification_Overall">
+      <DTS:VariableValue
+        DTS:DataType="8">SELECT A.KPICode, ABS(SUM(A.KPIValue)-SUM(B.KPIValue))/SUM(B.KPIValue) AS Percent_Diff
+  FROM [lsa_AdminData].[dbo].[KPIData_Stage] A, [lsa_AdminData].[dbo].[KPIData] B
+  WHERE A.KPICode = B.KPICode
+  and A.AcadYear = '2016'
+  and B.AcadYear = (A.AcadYear-1) 
+  GROUP BY A.KPICode
+</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CA4494C9-31A8-4723-BB37-74DD84FB85A5}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="_sAcadYear">
+      <DTS:VariableValue
+        DTS:DataType="8">2016</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Erase (CAREFUL!) KPIData_Verification on 017"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:Disabled="True"
+      DTS:DTSID="{5e443d69-4305-4f6d-a6c0-a282759fdadb}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Erase (CAREFUL!) KPIData_Verification on 017">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Erase (CAREFUL!) KPIData_Verification on 017\Delete"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{80410b0e-14f5-4519-a700-aaf427d123a0}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="2">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{EFE88780-11F1-4ABB-9E9C-756F52A11A22}"
+              SQLTask:SqlStatementSource="delete from dbo.KPIData_Verification" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\KPI Check by DeptID"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:Disabled="True"
+      DTS:DTSID="{BB93C41C-E0D3-4BE2-9DCF-B87416359672}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="KPI Check by DeptID">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\KPI Check by DeptID\Calculate % Difference"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{8174C3DB-1504-400D-B834-326423C1D8F5}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Calculate % Difference"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[KPIData_Verification]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[KPICode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="15"
+                          cachedName="KPICode"
+                          externalMetadataColumnId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KPICode]"
+                          lineageId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[KPICode]" />
+                        <inputColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DeptID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="6"
+                          cachedName="DeptID"
+                          externalMetadataColumnId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DeptID]"
+                          lineageId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[DeptID]" />
+                        <inputColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Percent_Diff]"
+                          cachedDataType="r8"
+                          cachedName="Percent_Diff"
+                          externalMetadataColumnId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Percent_Diff]"
+                          lineageId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[Percent_Diff]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KPICode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="15"
+                          name="KPICode" />
+                        <externalMetadataColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DeptID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DeptID" />
+                        <externalMetadataColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Percent_Diff]"
+                          dataType="numeric"
+                          name="Percent_Diff"
+                          precision="18" />
+                        <externalMetadataColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Above_Threshold]"
+                          codePage="1252"
+                          dataType="str"
+                          length="3"
+                          name="Above_Threshold" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable">User::vKPI_Verification</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[KPICode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KPICode]"
+                          length="15"
+                          lineageId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[KPICode]"
+                          name="KPICode"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[DeptID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DeptID]"
+                          length="6"
+                          lineageId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[DeptID]"
+                          name="DeptID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[Percent_Diff]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Percent_Diff]"
+                          lineageId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[Percent_Diff]"
+                          name="Percent_Diff"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KPICode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="15"
+                          name="KPICode" />
+                        <externalMetadataColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DeptID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DeptID" />
+                        <externalMetadataColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Percent_Diff]"
+                          dataType="r8"
+                          name="Percent_Diff" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KPICode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="15"
+                          lineageId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KPICode]"
+                          name="KPICode" />
+                        <outputColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DeptID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          lineageId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DeptID]"
+                          name="DeptID" />
+                        <outputColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Percent_Diff]"
+                          dataType="r8"
+                          lineageId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Percent_Diff]"
+                          name="Percent_Diff" />
+                        <outputColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\KPI Check by DeptID\Calculate % Difference.Paths[OLE DB Source Output]"
+                  endId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\KPI Check by DeptID\Calculate Above 20% Threshold"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{5280125A-6EE8-4C18-96C3-7683C0ECFAF0}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Calculate Above 20% Threshold"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{EFE88780-11F1-4ABB-9E9C-756F52A11A22}"
+              SQLTask:SqlStatementSource="UPDATE [lsa_AdminData].[dbo].[KPIData_Verification]&#xA;SET Above_Threshold = 'Yes'&#xA;WHERE Percent_Diff &gt; 0.020" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\KPI Check by DeptID.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{60A496A3-95FC-4495-ADAD-760FB06186F1}"
+          DTS:From="Package\KPI Check by DeptID\Calculate % Difference"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\KPI Check by DeptID\Calculate Above 20% Threshold" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\KPI Check Overall"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:Disabled="True"
+      DTS:DTSID="{f0add770-5074-45dc-87cb-363ffeb1ccd0}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="KPI Check Overall">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\KPI Check Overall\Calculate % Difference"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{ce9705b4-7f55-477e-8fea-76fdeedf9d32}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Calculate % Difference"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[KPIData_Verification]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[KPICode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="15"
+                          cachedName="KPICode"
+                          externalMetadataColumnId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KPICode]"
+                          lineageId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[KPICode]" />
+                        <inputColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Percent_Diff]"
+                          cachedDataType="r8"
+                          cachedName="Percent_Diff"
+                          externalMetadataColumnId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Percent_Diff]"
+                          lineageId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[Percent_Diff]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KPICode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="15"
+                          name="KPICode" />
+                        <externalMetadataColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DeptID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DeptID" />
+                        <externalMetadataColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Percent_Diff]"
+                          dataType="numeric"
+                          name="Percent_Diff"
+                          precision="18"
+                          scale="6" />
+                        <externalMetadataColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Above_Threshold]"
+                          codePage="1252"
+                          dataType="str"
+                          length="3"
+                          name="Above_Threshold" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable">User::vKPI_Verification_Overall</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[KPICode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KPICode]"
+                          length="15"
+                          lineageId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[KPICode]"
+                          name="KPICode"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[Percent_Diff]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Percent_Diff]"
+                          lineageId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].Columns[Percent_Diff]"
+                          name="Percent_Diff"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KPICode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="15"
+                          name="KPICode" />
+                        <externalMetadataColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Percent_Diff]"
+                          dataType="r8"
+                          name="Percent_Diff" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KPICode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="15"
+                          lineageId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KPICode]"
+                          name="KPICode" />
+                        <outputColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Percent_Diff]"
+                          dataType="r8"
+                          lineageId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Percent_Diff]"
+                          name="Percent_Diff" />
+                        <outputColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\KPI Check Overall\Calculate % Difference.Paths[OLE DB Source Output]"
+                  endId="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\KPI Check Overall\Calculate % Difference\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\KPI Check Overall\Calculate Above 20% Threshold"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{c37042fb-50f5-4f62-a9d5-911e0a54f6ac}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Calculate Above 20% Threshold"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{EFE88780-11F1-4ABB-9E9C-756F52A11A22}"
+              SQLTask:SqlStatementSource="UPDATE [lsa_AdminData].[dbo].[KPIData_Verification]&#xA;SET Above_Threshold = 'Yes'&#xA;WHERE Percent_Diff &gt; 0.020" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\KPI Check Overall.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{1eb84d04-e3ad-4587-a01a-4fe5cb251b9a}"
+          DTS:From="Package\KPI Check Overall\Calculate % Difference"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\KPI Check Overall\Calculate Above 20% Threshold" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph">
+        <AnnotationLayout
+          Text="This is comparing data in KPIData_Stage (newest year) to data in KPIData (already published)"
+          ParentId="Package\KPI Check by DeptID"
+          FontInfo="{assembly:Null}"
+          Size="173.6,89.6"
+          Id="e26eee48-e9b3-445e-9555-03028d5478fd"
+          TopLeft="14.628572100036,1.55294216314402" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\KPI Check by DeptID\Calculate % Difference"
+          TopLeft="25.8285723043949,94.6352964770836" />
+        <NodeLayout
+          Size="165.6,41.6"
+          Id="Package\KPI Check by DeptID\Calculate Above 20% Threshold"
+          TopLeft="28.9142914655259,175.482356210069" />
+        <EdgeLayout
+          Id="Package\KPI Check by DeptID.PrecedenceConstraints[Constraint]"
+          TopLeft="111.77143188496,136.235296477084">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.247059732985"
+              Start="0,0"
+              End="0,31.747059732985">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.747059732985" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="228,295.2"
+          Size="228,338.4"
+          Id="Package\KPI Check by DeptID"
+          TopLeft="295.314292282961,34.0705874116362" />
+        <NodeLayout
+          Size="110.4,41.6"
+          Id="Package\Erase (CAREFUL!) KPIData_Verification on 017\Delete"
+          TopLeft="58.0714294667147,16.5117648603181" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="249.6,121.6"
+          Size="249.6,164.8"
+          Id="Package\Erase (CAREFUL!) KPIData_Verification on 017"
+          TopLeft="17.1428574347983,29.2235297206366" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\KPI Check Overall\Calculate % Difference"
+          TopLeft="25.8285723043949,94.6352964770836" />
+        <NodeLayout
+          Size="165.6,41.6"
+          Id="Package\KPI Check Overall\Calculate Above 20% Threshold"
+          TopLeft="28.9142914655259,175.482356210069" />
+        <EdgeLayout
+          Id="Package\KPI Check Overall.PrecedenceConstraints[Constraint]"
+          TopLeft="111.77143188496,136.235296477084">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.247059732985"
+              Start="0,0"
+              End="0,31.747059732985">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.747059732985" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="This is comparing data in KPIData_Stage (newest year) to data in KPIData (already published)"
+          ParentId="Package\KPI Check Overall"
+          FontInfo="{assembly:Null}"
+          Size="173.6,89.6"
+          Id="391ef6dc-aa12-4e24-9869-651a39c82eea"
+          TopLeft="14.628572100036,1.55294216314402" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="228,295.2"
+          Size="228,338.4"
+          Id="Package\KPI Check Overall"
+          TopLeft="550.857152238184,39.1529417255758" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\KPI Check by DeptID\Calculate % Difference">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source"
+          TopLeft="36.5714291942363,22.0235297206364" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination"
+          TopLeft="31.4285719637968,128.470590037046" />
+        <EdgeLayout
+          Id="Package\KPI Check by DeptID\Calculate % Difference.Paths[OLE DB Source Output]"
+          TopLeft="114.800000579017,63.6235297206364">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64.8470603164092"
+              Start="0,0"
+              End="0,57.3470603164092">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.3470603164092" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\KPI Check by DeptID\Calculate % Difference\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\KPI Check Overall\Calculate % Difference">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\KPI Check Overall\Calculate % Difference\OLE DB Source"
+          TopLeft="36.5714291942363,22.0235297206364" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination"
+          TopLeft="31.4285719637968,128.470590037046" />
+        <EdgeLayout
+          Id="Package\KPI Check Overall\Calculate % Difference.Paths[OLE DB Source Output]"
+          TopLeft="114.800000579017,63.6235297206364">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64.8470603164092"
+              Start="0,0"
+              End="0,57.3470603164092">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.3470603164092" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\KPI Check Overall\Calculate % Difference\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\KPI Check Overall\Calculate % Difference\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
