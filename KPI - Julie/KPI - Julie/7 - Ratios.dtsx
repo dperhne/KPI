@@ -7,12 +7,12 @@
   DTS:CreatorName="UMROOT\juliezie"
   DTS:DTSID="{B664C8D0-483D-48DA-A110-2965EF9051AD}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LastModifiedProductVersion="14.0.3002.92"
   DTS:LocaleID="1033"
   DTS:ObjectName="7 - Ratios"
   DTS:PackageType="5"
-  DTS:VersionBuild="171"
-  DTS:VersionGUID="{BA341706-4D18-4726-8405-B737AAE7B92B}">
+  DTS:VersionBuild="172"
+  DTS:VersionGUID="{A2AF5B1D-760D-4672-BBE0-17ADC3F60035}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,11 +23,11 @@
       DTS:ObjectName="dwprod.world.juliezie">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=juliezie;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
+          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABTkjAQn5ZoyMXp9bzfRu81AAAAAASAAACgAAAAEAAAAOnaqEE4o9gpKDGxtgJZ724QAAAAveLLodqzs5OEDP3z+2N+nBQAAABFT2PCVDvlO+UyXF5V0gT/Plyhlg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADlT7vaq7DPcELCEcwKmFPnAAAAAASAAACgAAAAEAAAADPdyv6kW9hRJWSyhOWopwQQAAAAyPljo5nk+62Ny+glVWgkVxQAAAAJ9G7PjZwcnHR5P14uggyNHQgCEQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC99jxbE8bxGEvTtOpFIcIMAAAAAASAAACgAAAAEAAAAB01twmhjkdkGEOR9ZxpPy0QAAAAw/HUiLDdWlJK8xQ3EbTgSxQAAADrN4ugirkHSbpTkF4ch9DPygtv2w</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADOCsaZAEtB90yTB/cxTB59AAAAAASAAACgAAAAEAAAABw+heDO87VadFYCtBSUFzwQAAAABcyhM1qAJqKMvKUZRLpudBQAAACmlN/XgssRabGOCkGlcuR+Od/6ww</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -57,7 +57,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD4SRk5SRm5ZUe9xKMvquYKAAAAAASAAACgAAAAEAAAAGMwgqw5i8PKR7KiPRaayuoQAAAA/tnL5m5M7sVYKaJG5NRNRBQAAAAbZqf22NV/58iAEVqhDLcWHioG1g</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAAGScFNW0A7edkjsc6noKrAAAAAASAAACgAAAAEAAAAE38fN7WsIIVpRqabXIP568QAAAAWdmm99Wefr2PgXI0/Mk5JxQAAADv5tjn8Cz3/F+Xh2PP6qPEZKDeXA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -123,7 +123,7 @@ dbo.KPIData KPIData_1 ON dbo.KPIData.DeptID = KPIData_1.DeptID
 AND dbo.KPIData.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '6P') 
 AND (dbo.KPIData.KPICode = '1A' and KPIData.KPIValue&gt;0) 
-AND KPIData.AcadYear = '2017' ) DERIVEDTBL
+AND KPIData.AcadYear = '2018' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -146,7 +146,7 @@ WHERE
 	d.Dept_Grp = 'COLLEGE_OF_LSA'
 	and e.DeptEmploymentStatus = 'Active'
 	and a.JOBCODE in ('201000', '201500', '202000', '202500')
-	and a.FY = '2017'
+	and a.FY = '2018'
 GROUP BY
 	d.DeptID, a.FY, e.Emplid</DTS:VariableValue>
     </DTS:Variable>
@@ -168,7 +168,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '9UD') 
 AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0) 
-AND KPIData_Stage.AcadYear = '2017' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -189,7 +189,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '3GSI') 
 AND (dbo.KPIData_Stage.KPICode = '2T') 
-AND KPIData_Stage.AcadYear = '2017') DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -210,7 +210,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '3LEC') 
 AND (dbo.KPIData_Stage.KPICode = '2T') 
-AND KPIData_Stage.AcadYear = '2017' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -231,7 +231,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '3Other') 
 AND (dbo.KPIData_Stage.KPICode = '2T') 
-AND KPIData_Stage.AcadYear = '2017' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -252,7 +252,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '3TT') 
 AND (dbo.KPIData_Stage.KPICode = '2T') 
-AND KPIData_Stage.AcadYear = '2017') DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID
 ORDER BY AcadYear</DTS:VariableValue>
     </DTS:Variable>
@@ -274,7 +274,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '5AD') 
 AND (dbo.KPIData_Stage.KPICode = '5AP') 
-AND KPIData_Stage.AcadYear ='2017') DERIVEDTBL
+AND KPIData_Stage.AcadYear ='2018') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -295,7 +295,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '5AC') 
 AND (dbo.KPIData_Stage.KPICode = '5AD') 
-AND KPIData_Stage.AcadYear = '2017' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -316,7 +316,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '6B') 
 AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0 )  
-AND KPIData_Stage.AcadYear = '2017' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -336,7 +336,7 @@ AND AL1.COMMITTEE_MEMBER_ID &lt;&gt; ' '
 AND AL1.COMMITTEE_ROLE IN ('CHAI','COCH') 
 AND AL1.COMMITTEE_MEMBER_END_DT&gt;='01-JUL-16'
 AND AL3.COMPLETION_TERM&gt;='1900' AND AL3.DEGREE='PHD'
-and AL4.ACAD_YEAR = '2017'
+and AL4.ACAD_YEAR = '2018'
 order by AL1.COMMITTEE_MEMBER_ID
 </DTS:VariableValue>
     </DTS:Variable>
@@ -356,7 +356,7 @@ ON A.DeptID = B.DeptID
 AND A.AcadYear = B.AcadYear
 WHERE (B.KPICode = '1A' and B.KPIValue&gt;0)
 AND A.KPICode = 'CPhDComm_SumByD'
-AND A.AcadYear = '2017' 
+AND A.AcadYear = '2018' 
 </DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -374,7 +374,7 @@ SUM(A.Committee_Total) as KPIValue
    FROM dbo.KPIData_Stage2_CPhDCommittee A
 WHERE A.KPICode = '1A_by_Emplid'  
 AND A.Committee_Total&gt;0 
-AND A.AcadYear = '2017' 
+AND A.AcadYear = '2018' 
 GROUP BY A.KPICode, A.DeptID, A.AcadYear</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -395,7 +395,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '3TT') 
 AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0) 
-AND KPIData_Stage.AcadYear = '2017' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -416,7 +416,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '7G') 
 AND (dbo.KPIData_Stage.KPICode = '2T' and KPIData_Stage.KPIValue&gt;0 ) 
-AND KPIData_Stage.AcadYear = '2017' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -437,7 +437,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '5HC') 
 AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0 ) 
-AND KPIData_Stage.AcadYear = '2017' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -458,7 +458,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '2SCS') 
 AND (dbo.KPIData_Stage.KPICode = '2SCT'  and KPIData_Stage.KPIValue&gt;0 ) 
-AND KPIData_Stage.AcadYear = '2017' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -487,7 +487,7 @@ FROM
   AND (dbo.KPIData_Stage.KPICode IN ('1A', '1D', '1G')
   --AND KPIData_Stage.KPIValue      &gt;0 
   )
-  AND KPIData_Stage.AcadYear  = '2017'
+  AND KPIData_Stage.AcadYear  = '2018'
   GROUP BY KPIData_1.KPIValue, dbo.KPIData_Stage.AcadYear, KPIData_Stage.DeptID
   HAVING SUM(dbo.KPIData_Stage.KPIValue) &gt; 0
   ) DERIVEDTBL
@@ -513,7 +513,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '1F') 
 AND (dbo.KPIData_Stage.KPICode = '1A'  and KPIData_Stage.KPIValue&gt;0 ) 
-AND KPIData_Stage.AcadYear = '2017' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -531,7 +531,7 @@ FROM         (SELECT     'ECF' AS EXPR1, dbo.KPIData_Stage.AcadYear, KPIData_Sta
                                      dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID 
 									 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
                        WHERE      (KPIData_1.KPICode = '8EC') AND (dbo.KPIData_Stage.KPICode = '8S'   
-					   and KPIData_Stage.KPIValue&gt;0) AND KPIData_Stage.AcadYear = '2017') DERIVEDTBL
+					   and KPIData_Stage.KPIValue&gt;0) AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -548,7 +548,7 @@ FROM         (SELECT     'EUF' AS EXPR1, dbo.KPIData_Stage.AcadYear, KPIData_Sta
               FROM          dbo.KPIData_Stage INNER JOIN
  dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
   WHERE      (KPIData_1.KPICode = '8EU') AND (dbo.KPIData_Stage.KPICode = '8S'  and KPIData_Stage.KPIValue&gt;0) AND 
-  KPIData_Stage.AcadYear ='2017') DERIVEDTBL
+  KPIData_Stage.AcadYear ='2018') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -569,7 +569,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = 'UROP') 
 AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0 )  
-AND KPIData_Stage.AcadYear = '2017') DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -579,7 +579,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
       DTS:Namespace="User"
       DTS:ObjectName="_sAcadYear">
       <DTS:VariableValue
-        DTS:DataType="8">2017</DTS:VariableValue>
+        DTS:DataType="8">2018</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -588,7 +588,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
       DTS:Namespace="User"
       DTS:ObjectName="_sCommitteeMemberEndDate">
       <DTS:VariableValue
-        DTS:DataType="7">7/1/2017</DTS:VariableValue>
+        DTS:DataType="7">7/1/2018</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -641,7 +641,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -796,7 +796,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -999,7 +999,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1154,7 +1154,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1357,7 +1357,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1512,7 +1512,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1715,7 +1715,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1870,7 +1870,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2111,7 +2111,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2298,7 +2298,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2531,7 +2531,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2662,7 +2662,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2857,7 +2857,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3014,7 +3014,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3223,7 +3223,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3378,7 +3378,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3685,7 +3685,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3840,7 +3840,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -4043,7 +4043,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4198,7 +4198,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -4401,7 +4401,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4556,7 +4556,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -4759,7 +4759,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4914,7 +4914,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -5155,7 +5155,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5310,7 +5310,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -5513,7 +5513,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5668,7 +5668,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -5893,7 +5893,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -6048,7 +6048,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -6251,7 +6251,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -6406,7 +6406,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -6609,7 +6609,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -6764,7 +6764,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -6967,7 +6967,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -7122,7 +7122,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -7325,7 +7325,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -7480,7 +7480,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -7683,7 +7683,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -7838,7 +7838,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -8041,7 +8041,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -8196,7 +8196,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -8442,21 +8442,21 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="131.2,41.6"
+          Size="131.183246073299,41.717277486911"
           Id="Package\A - % Credit Hours by Instructor Group\AGSI - GSI"
           TopLeft="67.3142872421109,157.223532491902" />
         <NodeLayout
-          Size="153.6,41.6"
+          Size="153.801047120419,41.717277486911"
           Id="Package\A - % Credit Hours by Instructor Group\ALEC - Lecturer"
           TopLeft="59.3142871058717,83.200002041985" />
         <NodeLayout
-          Size="149.6,41.6"
+          Size="149.780104712042,41.717277486911"
           Id="Package\A - % Credit Hours by Instructor Group\AOther - Other"
           TopLeft="56.4571442000721,238.305886368273" />
         <NodeLayout
-          Size="208.8,41.6"
+          Size="208.586387434555,41.717277486911"
           Id="Package\A - % Credit Hours by Instructor Group\ATT - Tenure Track Faculty"
           TopLeft="26.1714293985951,11.0117657354546" />
         <EdgeLayout
@@ -8464,7 +8464,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="133.342858252233,52.6117657354546">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,30.5882363065304"
               Start="0,0"
               End="0,23.0882363065304">
@@ -8486,7 +8486,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="134.514287173991,124.800002041985">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,32.4235304499167"
               Start="0,0"
               End="0,24.9235304499167">
@@ -8508,7 +8508,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="132.085715721092,198.823532491902">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,39.4823538763713"
               Start="0,0"
               End="0,31.9823538763713">
@@ -8528,40 +8528,40 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="278.4,333.6"
-          Size="278.4,376.8"
+          PanelSize="278.450261780105,333.738219895288"
+          Size="278.450261780105,376.963350785341"
           Id="Package\A - % Credit Hours by Instructor Group"
           TopLeft="12.7619049792387,166.048180494531" />
         <NodeLayout
-          Size="146.4,41.6"
+          Size="146.261780104713,41.717277486911"
           Id="Package\B - CPhDCommittee\1A_by_Emplid"
           TopLeft="49.314298243426,168.070595360793" />
         <NodeLayout
-          Size="144.8,41.6"
+          Size="144.753926701571,41.717277486911"
           Id="Package\B - CPhDCommittee\Chair_Cochair"
           TopLeft="49.257154826729,239.482361315031" />
         <NodeLayout
-          Size="188,41.6"
+          Size="187.979057591624,41.717277486911"
           Id="Package\B - CPhDCommittee\Committee_Calculation"
           TopLeft="36.0000117165703,393.176476697031" />
         <NodeLayout
-          Size="174.4,41.6"
+          Size="174.408376963351,41.717277486911"
           Id="Package\B - CPhDCommittee\Committee_Count"
           TopLeft="38.2857260412106,314.494122091378" />
         <NodeLayout
-          Size="202.4,41.6"
+          Size="202.55497382199,41.717277486911"
           Id="Package\B - CPhDCommittee\Committee_Sum_by_Dept"
           TopLeft="31.8857263136884,459.341182407788" />
         <NodeLayout
-          Size="204.8,41.6"
+          Size="204.565445026179,41.717277486911"
           Id="Package\B - CPhDCommittee\CPhDCommitte Calculation"
           TopLeft="33.7142973919306,541.505891035667" />
         <NodeLayout
-          Size="189.6,41.6"
+          Size="189.486910994765,41.717277486911"
           Id="Package\B - CPhDCommittee\Delete KPIData_Stage2"
           TopLeft="30.2857259049708,19.0588248850153" />
         <NodeLayout
-          Size="189.6,41.6"
+          Size="189.486910994765,41.717277486911"
           Id="Package\B - CPhDCommittee\Delete KPIData_Stage3"
           TopLeft="28.000011580331,93.6941200493942" />
         <EdgeLayout
@@ -8569,7 +8569,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="122.085726535078,209.670595360793">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,29.8117659542386"
               Start="0,0"
               End="0,22.3117659542386">
@@ -8591,7 +8591,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="123.57144043397,281.082361315031">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,33.4117607763475"
               Start="0,0"
               End="0,25.9117607763475">
@@ -8613,7 +8613,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="127.74286887889,356.094122091378">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,37.0823546056524"
               Start="0,0"
               End="0,29.5823546056524">
@@ -8635,7 +8635,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="123.942868742651,60.6588248850153">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,33.0352951643789"
               Start="0,0"
               End="0,25.5352951643789">
@@ -8657,7 +8657,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="122.657154911879,135.294120049394">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,32.7764753113983"
               Start="0,0"
               End="0,25.2764753113983">
@@ -8679,7 +8679,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="131.542869015129,434.776476697031">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,24.564705710757"
               Start="0,0"
               End="0,17.064705710757">
@@ -8701,7 +8701,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="134.60001185281,500.941182407788">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,40.564708627879"
               Start="0,0"
               End="0,33.064708627879">
@@ -8721,24 +8721,24 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="288,638.4"
-          Size="288,681.6"
+          PanelSize="288,638.82722513089"
+          Size="288,681.549738219896"
           Id="Package\B - CPhDCommittee"
           TopLeft="674.285725768732,135.247060024698" />
         <NodeLayout
-          Size="223.2,41.6"
+          Size="223.162303664922,41.717277486911"
           Id="Package\B - Productivity\9KP - Adjusted UM Direct VOR"
           TopLeft="40.4489857983662,186.112048098055" />
         <NodeLayout
-          Size="223.2,41.6"
+          Size="223.162303664922,41.717277486911"
           Id="Package\B - Productivity\CBachProd - Bachelor Degrees"
           TopLeft="37.3605503716207,16.0941185908334" />
         <NodeLayout
-          Size="235.2,41.6"
+          Size="235.225130890053,41.717277486911"
           Id="Package\B - Productivity\CSCHProd - SCH Taught by TT Faculty"
           TopLeft="32.1224550443209,95.8756326513716" />
         <NodeLayout
-          Size="210.4,41.6"
+          Size="210.596858638744,41.717277486911"
           Id="Package\B - Productivity\UROPProd - UROP Students"
           TopLeft="41.3877613245573,264.211769225582" />
         <EdgeLayout
@@ -8746,7 +8746,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="149.318373561462,227.712048098055">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,36.4997211275272"
               Start="0,0"
               End="0,28.9997211275272">
@@ -8768,7 +8768,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="149.341502707971,57.6941185908334">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,38.1815140605382"
               Start="0,0"
               End="0,30.6815140605382">
@@ -8790,7 +8790,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="150.885720421344,137.475632651372">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,48.636415446683"
               Start="0,0"
               End="0,41.136415446683">
@@ -8810,16 +8810,16 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="290.4,356"
-          Size="290.4,399.2"
+          PanelSize="290.513089005236,356.356020942409"
+          Size="290.513089005236,399.078534031414"
           Id="Package\B - Productivity"
           TopLeft="334.095243784846,147.598880634506" />
         <NodeLayout
-          Size="232,49.6"
+          Size="232.20942408377,49.759162303665"
           Id="Package\C - Graduate Program (PhD)\BAdmitRate - Graduate Admits as % of Applications (Selectivity)"
           TopLeft="25.6979701662206,15.2605055376733" />
         <NodeLayout
-          Size="238.4,41.6"
+          Size="238.240837696336,41.717277486911"
           Id="Package\C - Graduate Program (PhD)\BYield - Graudate Enrolls as % of Admits (Yield)"
           TopLeft="17.5347047210786,103.529414338637" />
         <EdgeLayout
@@ -8827,7 +8827,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="139.21633744365,64.8605055376733">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,38.6689088009633"
               Start="0,0"
               End="0,31.1689088009633">
@@ -8847,36 +8847,36 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="280,207.2"
-          Size="280,250.4"
+          PanelSize="279.958115183247,207.581151832461"
+          Size="279.958115183247,250.303664921466"
           Id="Package\C - Graduate Program (PhD)"
           TopLeft="1004.50341846714,145.630253133477" />
         <NodeLayout
-          Size="186.4,41.6"
+          Size="186.471204188482,41.717277486911"
           Id="Package\D - Operations\DGenProd - General Fund Appropriation $"
           TopLeft="44.6231405030187,18.9871163576119" />
         <NodeLayout
-          Size="229.6,41.6"
+          Size="229.696335078535,41.717277486911"
           Id="Package\D - Operations\DGradProd - Graduate Students"
           TopLeft="27.6571584597739,97.270590766326" />
         <NodeLayout
-          Size="200,41.6"
+          Size="200.041884816754,41.717277486911"
           Id="Package\D - Operations\DSmall - Small Section %"
           TopLeft="39.4666814259124,370.211769381857" />
         <NodeLayout
-          Size="175.2,41.6"
+          Size="175.413612565446,41.717277486911"
           Id="Package\D - Operations\DStaffAcad - Staff FTE over Acad FTE"
           TopLeft="55.0285952947586,270.635300123485" />
         <NodeLayout
-          Size="215.2,41.6"
+          Size="215.120418848168,41.717277486911"
           Id="Package\D - Operations\DStaffTT - Staff FTE over TT"
           TopLeft="31.7523964658085,177.819611503839" />
         <NodeLayout
-          Size="150.4,41.6"
+          Size="150.282722513089,41.717277486911"
           Id="Package\D - Operations\ECF - Energy $"
           TopLeft="61.7523969767048,524.988242140774" />
         <NodeLayout
-          Size="204,41.6"
+          Size="204.062827225131,41.717277486911"
           Id="Package\D - Operations\EUF - Energy (1000 BTUs)"
           TopLeft="32.0381101433113,454.839221549117" />
         <EdgeLayout
@@ -8884,7 +8884,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="140.140149481396,60.5871163576119">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,36.6834744087141"
               Start="0,0"
               End="0,29.1834744087141">
@@ -8906,7 +8906,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="140.904777462791,138.870590766326">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,38.9490207375127"
               Start="0,0"
               End="0,31.4490207375127">
@@ -8928,7 +8928,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="136.752395784612,411.811769381857">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,43.0274521672601"
               Start="0,0"
               End="0,35.5274521672601">
@@ -8950,7 +8950,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="135.495253560008,496.439221549117">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,28.5490205916568"
               Start="0,0"
               End="0,21.0490205916568">
@@ -8970,8 +8970,8 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="320,628.8"
-          Size="320,672"
+          PanelSize="320.167539267016,628.774869109948"
+          Size="320.167539267016,672"
           Id="Package\D - Operations"
           TopLeft="1323.73606435819,153.029693013162" />
         <EdgeLayout
@@ -8979,7 +8979,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="291.161904979239,350.823530564518">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="42.9333388056073,0"
               Start="0,0"
               End="35.4333388056073,0">
@@ -9001,7 +9001,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="624.495243784846,347.198880634506">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="49.7904819838861,128.848179390191"
               Start="0,0"
               End="42.2904819838861,128.848179390191">
@@ -9035,7 +9035,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="1284.50341846714,270.830253133477">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="39.2326458910502,218.199439879685"
               Start="0,0"
               End="31.7326458910502,218.199439879685">
@@ -9069,7 +9069,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           TopLeft="962.285725768732,476.047060024698">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="42.2176926984038,-205.21680689122"
               Start="0,0"
               End="34.7176926984038,-205.21680689122">

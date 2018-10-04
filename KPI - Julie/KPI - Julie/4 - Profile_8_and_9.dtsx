@@ -7,12 +7,12 @@
   DTS:CreatorName="UMROOT\juliezie"
   DTS:DTSID="{220377F3-F005-4F7F-9700-ACE42BE59EB9}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LastModifiedProductVersion="14.0.3002.92"
   DTS:LocaleID="1033"
   DTS:ObjectName="4 - Profile_8_and_9"
   DTS:PackageType="5"
-  DTS:VersionBuild="31"
-  DTS:VersionGUID="{CF39A9FB-497A-4DCC-82B3-B1348A982FCC}">
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{5A7E7DA7-4D17-4718-8A42-89FC559FE5D5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADhH4QuNlje54DnKGigWvWbAAAAAASAAACgAAAAEAAAAGgWPiFOIS333OkHUdGe8X0QAAAAKAtPyy0Xwe8vklqT+um/9RQAAADX9X7Ny3UGV7VRiPt1soRMQAJeiQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABptxgXKYZx61msEjf63CGlAAAAAASAAACgAAAAEAAAACGaNcy/bVpLXhgc2XDPx1kQAAAAn/joVjMPhuzydRsNfhFuJhQAAAC9sYw9+FbGGAcFaK9Z6LdxaoJ7mg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABAziOVr1qNq24Wp9Kq/aNeAAAAAASAAACgAAAAEAAAAK1WDfABOFwOo4aeZx/pyhMQAAAAjhjTpVkBnpQunw3A7ftg6BQAAAAUWH6STUDpfDfS9EXZcEp0yKSGMg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADGemcBnSYeYUas9j4/O/2pAAAAAASAAACgAAAAEAAAAOVpNpEYP6L9cwDLmNzeDrMQAAAAfl8fC6shlMfzqiy/+kJBuhQAAADzCaUPcu50pcveTx6CI7ZV+nGrTg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -57,7 +57,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADtBdkDZTcq7xjtbL/CnOiiAAAAAASAAACgAAAAEAAAAMe/zfQOplSbabFSR0rp5XEQAAAAepTChh6WXoHKwRfkoImr/RQAAAB97+QC/sEceTwX/eKXtsgPsEY/BA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAhHtgpGJlWhfjujlEU2Bx8AAAAAASAAACgAAAAEAAAAEq6pjlu5Mo5lZExlbqmdeAQAAAAEq3w9eA0WpxUiNi3qgor8RQAAADUNEgSTIAQXKRN5nPVbgo3U0YUzQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -72,7 +72,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB4m29Mrm8RWwwof7Y5IUxMAAAAAASAAACgAAAAEAAAABuCLgrzsXiDsNVRF2MyM5kQAAAAr1xVg+2SHm7lyAIutq8FKhQAAAAu6Lv6mCVqoEkYsmvnPy9YwpUazQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD6kqnQIV99AiFUrosYs8h3AAAAAASAAACgAAAAEAAAAKnz9U4Q6ZGhqqgMKezfL4YQAAAArcw9IDCp+qxk4xuzcqhrJhQAAACUg67mjlSh0xlYKFzWfXiGKPtmWQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -87,7 +87,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABY/bncrMRrGs3cM3pLW9QcAAAAAASAAACgAAAAEAAAABkH0aYE8hNwzBpyL9pDCMkQAAAA7x2Gj5ptjEj9e6S/Vx30XBQAAAD60hQg0tIulB57kv8TcP6FXpIwCA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABjq9e+0BSEOE0nt+lNDmkqAAAAAASAAACgAAAAEAAAAINai3vXHckADFOryTeZrxYQAAAA1rL1VOUBUfLXFRTFFhermBQAAAAMOdLOaFDofF+hFQ+9CESRPcGSVw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -102,7 +102,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABZ2fH6NA8Vvaduplmrc2CHAAAAAASAAACgAAAAEAAAAGwx7zHnrZvzvEHPrMrCyScQAAAAzT1yzqDeCej7MPRGru3f8RQAAAAdeIi2+029tEBCiGjJ8mjJXGACjw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAd/kt2xbnMktmKkvH++24GAAAAAASAAACgAAAAEAAAAC/FpVYvbRLrZBpTNUmGMDoQAAAAOq48erYsp9TagstxIjrxbRQAAAC0GT1tBj/0SnUBq7wCwc/UssEFfg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -117,7 +117,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADo7Vu1j2/KgkscGch5/W7rAAAAAASAAACgAAAAEAAAALXkIDX9kr7fTFanwbsErZ0QAAAAWdD1ZDEQPuenEy1yMOn74BQAAABUt3ri6unxKpGfKVImOd7dAKBMHg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACwxcVUOgCqzMEqkKUV5mWpAAAAAASAAACgAAAAEAAAADEyTYnbL/HbOBS6GuKU3qkQAAAAoB1I3K/oj/zk9FT4cjdFkxQAAADS/KojySwM2iC4/VdLEVJ63L2gqg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -132,7 +132,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACaTbKHP4r2fuivsYeQqqJVAAAAAASAAACgAAAAEAAAAKZfHYGrvitrgD7BDPEAN2AQAAAAvnLR5vPRqEdkANqKAd02vRQAAAC/2fELFLTWbhCTf9zhEOonXnYB1Q</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACP1Xn23iAwyfbrXICSZQiLAAAAAASAAACgAAAAEAAAAN0FHVqm2VSssj6nwGpkd8gQAAAAdpzt57Yw/7T8U4/89CEfAxQAAABLH/Gx9ZMl/QaQH/dyxlDiq01NdQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -147,7 +147,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD6Rn7a/eGVhOitAg/NkwnRAAAAAASAAACgAAAAEAAAAPNb6zW6EhPl71kIGYPT0PAQAAAA0OE1CI25cjUF8cOpBtUquxQAAAB36SUZ3HruqcE9RPKu5ZGBtc0lGA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADZkaZCHU4+f1D+GOEC7dZAAAAAAASAAACgAAAAEAAAAJ5IStwRLxA5bPsQbyE3lO4QAAAAkAGy6+UKCh0Z5QFs9Fq3CxQAAADjjFeD6fFAgSkaxf//Zr79phl3ow</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -168,7 +168,7 @@
       DTS:ObjectName="m-mssqlprd017,14330.lsa_AdminData">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package_7Funding_Levels-{22723347-4E6F-4514-9CC0-3AC92F414E61}m-mssqlprd017,14330.lsa_AdminData;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package_7Funding_Levels-{22723347-4E6F-4514-9CC0-3AC92F414E61}m-mssqlprd017,14330.lsa_AdminData;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -200,7 +200,7 @@ WHERE
 			)
   AND l.ACCOUNTING_PERIOD &lt;= 12
   AND l.DEPTID NOT IN ('172200','172400','173000')
-  AND l.fiscal_year = '2017'
+  AND l.fiscal_year = '2018'
 GROUP BY
   l.DEPTID, l.FISCAL_YEAR</DTS:VariableValue>
     </DTS:Variable>
@@ -227,7 +227,7 @@ WHERE
   and  a.account_type  =  'R'
   and  d.dept_grp  =  'COLLEGE_OF_LSA'
   and  l.fund_code = '30000'
-  and l.fiscal_year = '2017'
+  and l.fiscal_year = '2018'
 GROUP BY
   l.deptid, l.fiscal_year</DTS:VariableValue>
     </DTS:Variable>
@@ -254,7 +254,7 @@ WHERE
   and  a.account_type  =  'R'
   and  d.dept_grp  =  'COLLEGE_OF_LSA'
   and  l.fund_code  =  '10000'
-  and l.fiscal_year = '2017'
+  and l.fiscal_year = '2018'
 GROUP BY
   l.deptid, l.fiscal_year
 </DTS:VariableValue>
@@ -285,7 +285,7 @@ WHERE
   and  d.dept_grp  =  'COLLEGE_OF_LSA'
   and  f.fund_grp  in  ('AGENCY', 'AUXILIARY', 'DESIGNATED', 'PLANT')
   and  l.fund_code  !=  '86000'
-  and l.fiscal_year = '2017'
+  and l.fiscal_year = '2018'
 GROUP BY
   l.deptid, l.fiscal_year</DTS:VariableValue>
     </DTS:Variable>
@@ -312,7 +312,7 @@ WHERE
   and  a.account_type  =  'R'
   and  d.dept_grp  =  'COLLEGE_OF_LSA'
   and  l.fund_code in ('20000', '25000')
-  and l.fiscal_year = '2017'
+  and l.fiscal_year = '2018'
 GROUP BY
   l.deptid, l.fiscal_year</DTS:VariableValue>
     </DTS:Variable>
@@ -350,7 +350,7 @@ from
 			M_SMDW2.DepartmentPercent p
 		where
 			p.rmFnc not in ('0050', '0060', '0070')
-			and p.fiscal_year = '2017'
+			and p.fiscal_year = '2018'
 		group by
 			p.fiscal_year, p.bldrecnbr, p.deptid
 	) dp,
@@ -363,7 +363,7 @@ where
 	and c.fiscal_year = dp.fiscal_year
 	and dp.deptid = d.deptid
 	and d.dept_grp = 'COLLEGE_OF_LSA'
-	and c.fiscal_year = '2017'
+	and c.fiscal_year = '2018'
 	and v.address_seq_num =
 		(
 		 select max(address_seq_num)
@@ -419,7 +419,7 @@ from
 			M_SMDW2.DepartmentPercent p
 		where
 			p.rmFnc not in ('0050', '0060', '0070')
-			and p.fiscal_year = '2017'
+			and p.fiscal_year = '2018'
 		group by
 			p.fiscal_year, p.bldrecnbr, p.deptid
 	) dp,
@@ -432,7 +432,7 @@ where
 	and c.fiscal_year = dp.fiscal_year
 	and dp.deptid = d.deptid
 	and d.dept_grp = 'COLLEGE_OF_LSA'
-	and c.fiscal_year = '2017'
+	and c.fiscal_year = '2018'
 	and v.address_seq_num =
 		(
 		 select max(address_seq_num)
@@ -470,7 +470,7 @@ where
 	p.deptid = d.deptid
    and p.rmFnc not in ('0050', '0060', '0070')
 	and d.dept_grp = 'COLLEGE_OF_LSA'
-   and p.fiscal_year  = '2017'
+   and p.fiscal_year  = '2018'
 group by
 	p.fiscal_year, d.deptid, d.dept_descr
 order by
@@ -621,7 +621,7 @@ FROM
 				 	 	AND mp.SESSION_CODE=ci.SESSION_CODE(+) AND mp.CLASS_SECTION=ci.CLASS_SECTION(+) AND mp.CLASS_MTG_NBR=ci.CLASS_MTG_NBR(+) AND cm.MEETING_DT=CLASS_MTG_CAL.CAL_DATE 
 				 	 	AND mp.CRSE_ID=cm.CRSE_ID(+) AND mp.CRSE_OFFER_NBR=cm.CRSE_OFFER_NBR(+) AND mp.TERM=cm.TERM(+) AND mp.SESSION_CODE=cm.SESSION_CODE(+) 
 						AND mp.CLASS_SECTION=cm.CLASS_SECTION(+) AND mp.CLASS_MTG_NBR=cm.CLASS_MTG_NBR(+) AND c.CRSE_COMPONENT IN ('LEC', 'DIS', 'REC', 'SEM') 
-						AND c.TERM in ('2110', '2120') 
+						AND c.TERM in ('2160', '2170') 
 						AND c.DEPT_GRP = 'COLLEGE_OF_LSA' 
 						AND (ci.CLASS_INSTR_ROLE = 'PI' OR ci.CLASS_INSTR_ROLE Is Null) 
 				 	 	AND c.CAMPUS_LOCATION = 'AA CAMPUS' 
@@ -685,7 +685,7 @@ FROM
 		 AND f.RMTYP = '110' 
 		AND cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' 
 		AND cm.MTG_HST_DEPT_GRP = 'COLLEGE_OF_LSA' 
-		AND cm.RPTING_TERM in  ('2110', '2120')  
+		AND cm.RPTING_TERM in  ('2160', '2170')  
 		 ) 
 				 group by CAMPUS_MTG_HOST_DEPTID, DAY_OF_WEEK, RPTING_TERM_DESCRSHORT, RPTING_TERM ) u,
 				 m_gldw1.curr_fn_dept_vw d,
@@ -704,7 +704,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
       DTS:Namespace="User"
       DTS:ObjectName="_sFallTerm">
       <DTS:VariableValue
-        DTS:DataType="8">2110</DTS:VariableValue>
+        DTS:DataType="8">2160</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -713,7 +713,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
       DTS:Namespace="User"
       DTS:ObjectName="_sFY">
       <DTS:VariableValue
-        DTS:DataType="8">2017</DTS:VariableValue>
+        DTS:DataType="8">2018</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -722,7 +722,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
       DTS:Namespace="User"
       DTS:ObjectName="_sWinterTerm">
       <DTS:VariableValue
-        DTS:DataType="8">2120</DTS:VariableValue>
+        DTS:DataType="8">2170</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -730,7 +730,6 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
       DTS:refId="Package\8 - Funding Levels"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:Disabled="True"
       DTS:DTSID="{94EFCD69-AABC-4F05-A5F0-0393ACE8BDDE}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -776,7 +775,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -932,7 +931,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1159,7 +1158,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1315,7 +1314,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1542,7 +1541,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1698,7 +1697,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1925,7 +1924,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2081,7 +2080,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2308,7 +2307,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2464,7 +2463,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2692,7 +2691,6 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
       DTS:refId="Package\9 - Operations"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:Disabled="True"
       DTS:DTSID="{FC156ABC-F66C-401A-A55E-BA1383849957}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -2738,7 +2736,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2894,7 +2892,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3100,7 +3098,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3256,7 +3254,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3462,7 +3460,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3618,7 +3616,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3824,7 +3822,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3980,7 +3978,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -4197,25 +4195,25 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="176,41.6"
+          Size="175.916230366493,41.717277486911"
           Id="Package\8 - Funding Levels\7B - Year End Balance - All Funds"
           TopLeft="24.0857152953439,295.76471081572" />
         <NodeLayout
-          Size="124.8,41.6"
+          Size="124.649214659686,41.717277486911"
           Id="Package\8 - Funding Levels\7D - Gifts"
           TopLeft="56.8000015667508,147.717649915887" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171.392670157069,41.717277486911"
           Id="Package\8 - Funding Levels\7G - General Funds"
           TopLeft="28.2285731899495,12.1882365982425" />
         <NodeLayout
-          Size="149.6,41.6"
+          Size="149.780104712042,41.717277486911"
           Id="Package\8 - Funding Levels\7Other - Other"
           TopLeft="42.6571441830421,214.705886149489" />
         <NodeLayout
-          Size="198.4,41.6"
+          Size="198.534031413613,41.717277486911"
           Id="Package\8 - Funding Levels\7S - Sponsored Research"
           TopLeft="21.3714295348343,79.811766610591" />
         <EdgeLayout
@@ -4223,7 +4221,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="117.200001362392,53.7882365982425">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,26.0235300123485"
               Start="0,0"
               End="0,18.5235300123485">
@@ -4245,7 +4243,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="119.885715550793,121.411766610591">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,26.3058833052955"
               Start="0,0"
               End="0,18.8058833052955">
@@ -4267,7 +4265,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="118.328572874896,189.317649915887">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,25.3882362336025"
               Start="0,0"
               End="0,17.8882362336025">
@@ -4289,7 +4287,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="114.771429739193,256.305886149489">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,39.4588246662311"
               Start="0,0"
               End="0,31.9588246662311">
@@ -4309,24 +4307,24 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="256.8,401.6"
-          Size="256.8,444.8"
+          PanelSize="256.837696335079,401.59162303665"
+          Size="256.837696335079,444.816753926702"
           Id="Package\8 - Funding Levels"
           TopLeft="26.6938780056145,75.5697488147441" />
         <NodeLayout
-          Size="165.6,41.6"
+          Size="165.361256544503,41.717277486911"
           Id="Package\9 - Operations\8EC - Energy Cost"
           TopLeft="26.3836802674453,180.188238640228" />
         <NodeLayout
-          Size="174.4,41.6"
+          Size="174.408376963351,41.717277486911"
           Id="Package\9 - Operations\8EU - Energy Usage"
           TopLeft="29.6489864455022,94.5411786155302" />
         <NodeLayout
-          Size="130.4,41.6"
+          Size="130.178010471205,41.717277486911"
           Id="Package\9 - Operations\8S - Space"
           TopLeft="48.424496969329,252.726054783593" />
         <NodeLayout
-          Size="200.8,41.6"
+          Size="201.047120418849,41.717277486911"
           Id="Package\9 - Operations\8SD - Class Schedule Dist"
           TopLeft="15.7714351887608,21.1294128800759" />
         <EdgeLayout
@@ -4334,7 +4332,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="111.404088618387,221.788238640228">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,30.9378161433655"
               Start="0,0"
               End="0,23.4378161433655">
@@ -4356,7 +4354,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="113.016333356474,136.14117861553">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,44.0470600246976"
               Start="0,0"
               End="0,36.5470600246976">
@@ -4378,7 +4376,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="116.510210817132,62.7294128800759">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,31.8117657354543"
               Start="0,0"
               End="0,24.3117657354543">
@@ -4398,8 +4396,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="232.8,421.6"
-          Size="232.8,464.8"
+          PanelSize="232.712041884817,421.696335078535"
+          Size="232.712041884817,464.921465968587"
           Id="Package\9 - Operations"
           TopLeft="342.040822151451,69.0420177750111" />
         <EdgeLayout
@@ -4407,7 +4405,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="283.493878005615,299.705883294878">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="58.5469441458365,0"
               Start="0,0"
               End="51.0469441458365,0">
@@ -4431,13 +4429,13 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package\8 - Funding Levels\7B - Year End Balance - All Funds">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\8 - Funding Levels\7B - Year End Balance - All Funds\OLE DB Source"
           TopLeft="73.6,68.8" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\8 - Funding Levels\7B - Year End Balance - All Funds\OLE DB Destination"
           TopLeft="57.6,188" />
         <EdgeLayout
@@ -4445,7 +4443,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="146.4,110.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,77.6"
               Start="0,0"
               End="0,70.1">
@@ -4490,13 +4488,13 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package\8 - Funding Levels\7D - Gifts">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\8 - Funding Levels\7D - Gifts\OLE DB Source"
           TopLeft="62.4,44" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\8 - Funding Levels\7D - Gifts\OLE DB Destination"
           TopLeft="57.6,161.6" />
         <EdgeLayout
@@ -4504,7 +4502,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="140.8,85.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,76"
               Start="0,0"
               End="0,68.5">
@@ -4518,9 +4516,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4551,13 +4547,13 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package\8 - Funding Levels\7G - General Funds">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\8 - Funding Levels\7G - General Funds\OLE DB Source"
           TopLeft="28.0000004768372,16.5176472904773" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\8 - Funding Levels\7G - General Funds\OLE DB Destination"
           TopLeft="35.4285720319164,105.835295601947" />
         <EdgeLayout
@@ -4565,7 +4561,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="103.600000476837,58.1176472904773">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="17.8285715550792,47.7176483114698"
               Start="0,0"
               End="17.8285715550792,40.2176483114698">
@@ -4591,9 +4587,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4624,13 +4618,13 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package\8 - Funding Levels\7Other - Other">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\8 - Funding Levels\7Other - Other\OLE DB Source"
           TopLeft="107.2,57.6" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\8 - Funding Levels\7Other - Other\OLE DB Destination"
           TopLeft="100.8,146.4" />
         <EdgeLayout
@@ -4638,7 +4632,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="184.8,99.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,47.2"
               Start="0,0"
               End="0,39.7">
@@ -4652,9 +4646,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4685,13 +4677,13 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package\8 - Funding Levels\7S - Sponsored Research">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\8 - Funding Levels\7S - Sponsored Research\OLE DB Source"
           TopLeft="76,47.2" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\8 - Funding Levels\7S - Sponsored Research\OLE DB Destination"
           TopLeft="68,148.8" />
         <EdgeLayout
@@ -4699,7 +4691,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="152.8,88.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -4713,9 +4705,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4746,7 +4736,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package\9 - Operations\8EC - Energy Cost">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\9 - Operations\8EC - Energy Cost\OLE DB Source"
@@ -4760,7 +4750,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="179.6,121.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="21.6,59.2"
               Start="0,0"
               End="21.6,51.7">
@@ -4819,7 +4809,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package\9 - Operations\8EU - Energy Usage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\9 - Operations\8EU - Energy Usage\OLE DB Source"
@@ -4833,7 +4823,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="166.8,108.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="9.59999999999999,74.4"
               Start="0,0"
               End="9.59999999999999,66.9">
@@ -4892,7 +4882,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package\9 - Operations\8S - Space">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\9 - Operations\8S - Space\OLE DB Source"
@@ -4906,7 +4896,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="166.8,92">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="16.8,70.4"
               Start="0,0"
               End="16.8,62.9">
@@ -4965,13 +4955,13 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package\9 - Operations\8SD - Class Schedule Dist">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\9 - Operations\8SD - Class Schedule Dist\OLE DB Source"
           TopLeft="82.8571442681916,42.8235300123485" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\9 - Operations\8SD - Class Schedule Dist\OLE DB Destination"
           TopLeft="80.0000013623919,133.364707752743" />
         <EdgeLayout
@@ -4979,7 +4969,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
           TopLeft="162.228572815292,84.4235300123486">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,48.941177740394"
               Start="0,0"
               End="0,41.441177740394">
@@ -4993,9 +4983,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

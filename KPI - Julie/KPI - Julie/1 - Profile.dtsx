@@ -7,12 +7,12 @@
   DTS:CreatorName="UMROOT\juliezie"
   DTS:DTSID="{6F3521EF-C816-4302-A34B-407D78C3B18C}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LastModifiedProductVersion="14.0.3002.92"
   DTS:LocaleID="1033"
   DTS:ObjectName="1 - Profile"
   DTS:PackageType="5"
-  DTS:VersionBuild="568"
-  DTS:VersionGUID="{A174CA51-9D2A-40E9-BBE1-F4276857D2AC}">
+  DTS:VersionBuild="597"
+  DTS:VersionGUID="{53C29D5A-5C6C-4AE7-A69B-DC1779EA2770}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,11 +23,11 @@
       DTS:ObjectName="dwprod.world.juliezie">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=juliezie;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
+          DTS:ConnectionString="Data Source=dwprod.world;User ID=dcp;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAszW5a0e6OxFXggh1GgxbcAAAAAASAAACgAAAAEAAAAFLR9pLHJZ6n367dql7/21gQAAAAbmzG5UNrYaP5AoP2Er/46xQAAAA9THcIvgr/hfGckPL7mFdyxgzGSw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADYsHt5k4LoHp5Cg4h/uMzGAAAAAASAAACgAAAAEAAAAC3bgUArAwRBS0lEm18OyX4QAAAADDNurpvcWjYXR49QvZnhchQAAAAg2GymdKeAU2s7k02pIwr7c2PObg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -38,11 +38,11 @@
       DTS:ObjectName="dwprod.world.juliezie 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=juliezie;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
+          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABofFg9dspNdn+Nm45gPzQYAAAAAASAAACgAAAAEAAAAEYNBlgHUEvV2y9Th9YFHSIQAAAAEscJW+9p+MRMjTwgbO7idhQAAACXhbiVQu9FKSnsMjygXyZzym8Kug</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA0vk1uPHApnqKGxbwt41loAAAAAASAAACgAAAAEAAAAD7RUJGU2+o+p5ozgZ8CndgQAAAAFdF/YO3WChQmmel6+n692hQAAABCHUfnGHbPPBlGmPzO3gKhqM+xKQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -57,7 +57,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD6GN6u1xibcPdtY852kJy5AAAAAASAAACgAAAAEAAAAMVGKQHrkQrD5GtH7Z/G7wkQAAAAQSmidXk6sgdtJa7nlIah1hQAAAC8I/wlKdYjU0kfOtCRpvFNyfePWw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABrOV/eqto6qPQyTXux3gHPAAAAAASAAACgAAAAEAAAAO91s5elv1tP9GtWzCjItwAQAAAAiOemVHsubu7lwdjIbM2OHRQAAABy/BSbKbOQfqtOe/FvqbXI2Rg8gw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -72,7 +72,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABEnc66r91CGZEaLCD2FSu+AAAAAASAAACgAAAAEAAAAFbAKbxTREcTN2Fu8jooD64QAAAAq4blU4AW4MWKMV6k2rp3rBQAAAAUI/DM/beYrijX3wjiTFRM/4/2ag</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACnSvcwTx6DaGSmN8MxMlWhAAAAAASAAACgAAAAEAAAAM9UeCxrWkKQGVv6KMW2W+YQAAAAohMxh0G/AUc+aaEySk6VChQAAADZLYRjoyj1hj2p9s01zqkG+/9/bg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -87,7 +87,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABcOjedKnrWq24agryD5i15AAAAAASAAACgAAAAEAAAAJ1IX1yw5zGNMLWz6nPDswgQAAAAh4Ir0t2GMOQfvL/pvTsFgxQAAABLlDXGx5kUvgzkG7IG3Pw4qdh5Yw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAyanH1PtqZNDZTnHX478aPAAAAAASAAACgAAAAEAAAAAZewty1Bj1em57TYEeh7zsQAAAAiYN0zpn2KG+SvFMPmrzntBQAAAD5VGwaFx8oBY+bYEUK6Mk4WS8l6g</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -102,7 +102,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADS1jJmokB2isbqLJ2GM+YQAAAAAASAAACgAAAAEAAAAAPYEfVg5Y6GFVKvxyQdLu4QAAAAK1Zq9yiASjI7+j6/5/FuPxQAAAD/ZHXDCMQ5RNxqdSq3gbObB6O09A</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADMeOwOSAHsHCYYdtalN2fZAAAAAASAAACgAAAAEAAAAOkpIzVqhGnfEGfM0ZtRQv0QAAAAWUcmiJEg6e231ww0PJcxABQAAAAbX+mKZ1JwYzaG/inzENd3egjA/g</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -117,7 +117,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAPBsfj1VXtK3UVUeRqLyYSAAAAAASAAACgAAAAEAAAAOMiAyqONSDkximqNWGeJisQAAAAOXPTv9OnuM6BgGWuLV9BjRQAAAC3fy4683UyenDr0ttAWHFXEUpbdg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADtiuvIJ7b5G6gmx1rpXwWbAAAAAASAAACgAAAAEAAAADQNDpBg2bvpod9cRP0TUvQQAAAAZ3HDeAzBVDsWFFuJSWJnLRQAAACJZ2rMsq1GdGAqbgEAOED8FS5bFw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -132,7 +132,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADdZyfWzIJ9ING+iNNeHqn1AAAAAASAAACgAAAAEAAAALyVLveZS/aKiRqM72mqmpQQAAAAn5ko5jrFD7Ns7YNVlqzSFBQAAACPPdjfHSlceZGogV3ZwJmHHwaTaQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADKRNZ4QgVEVhrn4oSydVtMAAAAAASAAACgAAAAEAAAAHXReUJKQRGf4VOpdMGHwwcQAAAAaKbn5ZaIkCj1GFFYWk2V7hQAAABTd6E9bMCuGyiONPTGPDarCzrbiQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -147,7 +147,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADDqMUnjX6TmPpBmzCuuD0YAAAAAASAAACgAAAAEAAAAGSpFZuosxqRCOjgEZpwXhMQAAAAYVzvqUukQZExNtOs9HDH7RQAAADsqj/FfhlObTZX+tWvSrbk64bIHg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACXv5W45hnWGqNd7LBZbUiAAAAAAASAAACgAAAAEAAAADnPJ/fLHAPlGS33ZfujefYQAAAAvPMeafuVn3tWYB+GXkf6sBQAAAADgE0nuQ0snWjNo8zU4C5TNg7WxQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -162,7 +162,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACZSwQ2rXd8NKioKXnMeYAnAAAAAASAAACgAAAAEAAAAIXcu4SoAnQoYFuW4JoVFtoQAAAAtz2l7J7vaKVV3DoI2oRnDRQAAADuJ4S9fV4GBdMTOVv/N52JutwjqA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACYLQLiUM3HC793EJoxp0iBAAAAAASAAACgAAAAEAAAACt+zrlT9ResO94uKdYYOVEQAAAAAWDQzfGEgKWyrVVphpOcvRQAAADu0WOsmOOdUBGT6pnTwOpYp7uP2w</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -177,7 +177,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADiH875sawZ1VNGWuFX8RaGAAAAAASAAACgAAAAEAAAAKLKLjGwAMZhxHiXRY9RQcwQAAAAO030VLfbDptyuBM7+h09gBQAAAC7FpA9tV0pgQjmTAaxOiuTwppBLQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADZ9n32wBb+g2cCzr8x4OBDAAAAAASAAACgAAAAEAAAACe3HrUvBtd/3W3R+lOIVpAQAAAAlEpKMeo0ob3iIE9mw6/0pxQAAAD661ZGDn5ZwJhr70uDY9JsiCPpnA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -192,7 +192,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACu2Vzab8vhDtP0X3GqlyBaAAAAAASAAACgAAAAEAAAAFH7LiEvYY/qlWJdqrQu9PMQAAAAnfJHcY6j2hsYxRtMDM8oJhQAAACFrBNesJURLcADUTf3j4NIjQhfvw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAK8kVkRGbUtTlG2/EE7gR5AAAAAASAAACgAAAAEAAAAPx7bqMPpCzECGCSvwFFBfAQAAAA0Yh+tUJaXLIPLCnLZYUTrhQAAAANIVji4skuMBy2lLTLI3ZF/BJgfw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -207,7 +207,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABOSsXPXXKtx+EDcTLdTaD1AAAAAASAAACgAAAAEAAAAE5m1Ei1exOUGVYftyTED9QQAAAAAe6PN7XFW3kph4FzMLsGhhQAAADwpVDS7sZuNTxZ7aRReQKM60gPmQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACv+TRZlVNhLjQppLg1uWRdAAAAAASAAACgAAAAEAAAAEEa3tu3AX4dbG0bF8bKY30QAAAAVOKvTPa5nkRsirVji+6DVxQAAABjqZaMDtTZgtVraSgEp4bzjU2WXQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -222,7 +222,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADBhMOxzg5zR0xa60AIvn4FAAAAAASAAACgAAAAEAAAABkMYdQgQWhrzUyoe/d9KewQAAAAnixOWMhVJlwyAeLBsm/yuxQAAADIlcKXMS+/CBj0AX84bvklI3MMIQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABU3gcQLCk/nKzh8R8ajaw4AAAAAASAAACgAAAAEAAAAI+xXA8OyU4y6Me7bw39ZPYQAAAAj8ESr7SgY1bUSetFpDJUZRQAAABqi0NkY9Z/VDRYIFC5KM50k7oXXg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -237,7 +237,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAATHo4PBqV6Kp6yhCYOarf/AAAAAASAAACgAAAAEAAAAGftede/Ncu1bjWHUQzeCRkQAAAAuQZjmqOJJ+EY1NwsmQTaCxQAAACmsT0mGIqp8WcSWnIqDocA0lONQw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAXrpeTugYFoKuNimCt49rLAAAAAASAAACgAAAAEAAAAIUbGN3HywJ9naFNrA112qcQAAAAjTGEHtEoqt1cyedEVOfDuhQAAACURjOFiwneRqQSwQcDaHSHqaJNRQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -252,7 +252,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABeB4csF8SfbHeZflhk1o8xAAAAAASAAACgAAAAEAAAAGIoOJW0HCi89+Qz4YLmb6IQAAAAQepLW8luyUDY2dBD3LbHGBQAAAA51te/pBUicSvFH3vwmEw6RVfg0w</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC9MdEyUzTKXwPlqlU+1Q7XAAAAAASAAACgAAAAEAAAAPj+cUGof4OeMq0rwEt5fxoQAAAA7OMAgzBxvGWRrB/joKP1SRQAAAAsRQNHXgbwKmamaiDSl53u1pHcGA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -323,7 +323,7 @@
       DTS:ObjectName="m-mssqlprd017,14330.lsa_AdminData">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-1 - Profile-{6DF87F07-BD2B-49EA-969F-891524B75E26}m-mssqlprd017,14330.lsa_AdminData;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -333,7 +333,7 @@
       DTS:ObjectName="m-mssqlprd017,14330.lsa_AdminData 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-1 - Profile-{2D43227D-4A1B-4BFF-84BD-3AB296557D23}m-mssqlprd017,14330.lsa_AdminData 1;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -383,12 +383,7 @@
       DTS:ObjectName="m-mssqlprd017,14330.umroot\juliezie1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;User ID=umroot\juliezie1;Provider=MSDAORA.1;integrated security=SSPI;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADvePDC+c9y+Prt7wC25r5aAAAAAASAAACgAAAAEAAAAMbeZNH9/Q0poVK7ipfP6aQYAAAAJy+xtOzzSKxd/Y7bpQSaUzS0W9S8b9XTFAAAADt288v/NkhHuEPjRdrTN7irvoZ8</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;User ID=umroot\juliezie1;Provider=MSDAORA.1;integrated security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -397,38 +392,30 @@
       DTS:CreationName=""
       DTS:DTSID="{BA18E35F-4D8F-44E5-B00D-37C51F4E374C}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT &#xA;&#x9;'1A' as KPICode, d.DeptID, a.FY as AcadYear, sum(a.APPTAUTHPCT) as KPIValue&#xA;FROM [lsa_AIS].[dbo].[tbl_Person] e&#xA;&#x9;INNER JOIN [lsa_AIS].[dbo].[tbl_ACBUDAPPT] a&#xA;&#x9;&#x9;ON e.Emplid = a.EMPLID&#xA;&#x9;INNER JOIN [lsa_AIS].[dbo].[tbl_Dept] d&#xA;&#x9;&#x9;ON a.APPTDEPTID = d.DeptID&#xA;WHERE &#xA;&#x9;d.Dept_Grp = 'COLLEGE_OF_LSA'&#xA;&#x9;and e.DeptEmploymentStatus = 'Active'&#xA;&#x9;and a.JOBCODE in ('201000', '201500', '202000', '202500')&#xA;&#x9;and a.FY = '&quot; + @_sAcadYear + &quot;'&#xA;GROUP BY&#xA;&#x9;d.DeptID, a.FY&quot;"
+      DTS:Expression="&quot;SELECT '1A' as KPICode, FY, DeptID, SUM(Auth_Pct) as KPIValue&#xA;  FROM [lsa_AIS].[dbo].[tbl_Dept_Positions_CFFTE] a&#xA;  where a.FY = '&quot; + @_sAcadYear + &quot;'&#xA;    and a.JOBCODE in ('201000', '201500', '202000', '202500')&#xA; Group by FY, DeptID&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPI1A">
       <DTS:VariableValue
-        DTS:DataType="8">SELECT 
-	'1A' as KPICode, d.DeptID, a.FY as AcadYear, sum(a.APPTAUTHPCT) as KPIValue
-FROM [lsa_AIS].[dbo].[tbl_Person] e
-	INNER JOIN [lsa_AIS].[dbo].[tbl_ACBUDAPPT] a
-		ON e.Emplid = a.EMPLID
-	INNER JOIN [lsa_AIS].[dbo].[tbl_Dept] d
-		ON a.APPTDEPTID = d.DeptID
-WHERE 
-	d.Dept_Grp = 'COLLEGE_OF_LSA'
-	and e.DeptEmploymentStatus = 'Active'
-	and a.JOBCODE in ('201000', '201500', '202000', '202500')
-	and a.FY = '2017'
-GROUP BY
-	d.DeptID, a.FY</DTS:VariableValue>
+        DTS:DataType="8">SELECT '1A' as KPICode, FY, DeptID, SUM(Auth_Pct) as KPIValue
+  FROM [lsa_AIS].[dbo].[tbl_Dept_Positions_CFFTE] a
+  where a.FY = '2018'
+    and a.JOBCODE in ('201000', '201500', '202000', '202500')
+ Group by FY, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{1BAC9BF3-81CF-42A5-AFE6-2C83D78C896F}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT '1B' as KPICode, FY, DeptID, Current_CFFTE as KPIValue&#xA;  FROM [lsa_AIS].[dbo].[tbl_Dept_CFFTE_Target]&#xA;  where FY = '&quot; + @_sAcadYear + &quot;'&#xA;&quot;"
+      DTS:Expression="&quot;SELECT '1B' as KPICode, FY, DeptID, SUM(CFFTE_Pct) as KPIValue&#xA;  FROM [lsa_AIS].[dbo].[tbl_Dept_Positions_CFFTE]&#xA;  where FY = '&quot; + @_sAcadYear + &quot;'&#xA; Group by FY, DeptID&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPI1B">
       <DTS:VariableValue
-        DTS:DataType="8">SELECT '1B' as KPICode, FY, DeptID, Current_CFFTE as KPIValue
-  FROM [lsa_AIS].[dbo].[tbl_Dept_CFFTE_Target]
-  where FY = '2017'
+        DTS:DataType="8">SELECT '1B' as KPICode, FY, DeptID, SUM(CFFTE_Pct) as KPIValue
+  FROM [lsa_AIS].[dbo].[tbl_Dept_Positions_CFFTE]
+  where FY = '2018'
+ Group by FY, DeptID
 </DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -442,7 +429,7 @@ GROUP BY
       <DTS:VariableValue
         DTS:DataType="8">SELECT '1C' as KPICode, FY, DeptID, Current_Target as KPIValue
   FROM [lsa_AIS].[dbo].[tbl_Dept_CFFTE_Target]
-  where FY = '2017'
+  where FY = '2018'
 </DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -468,7 +455,7 @@ FROM
     acad_career = 'ULSA'
     and term_code in ('FA','WN')) t
 WHERE
-  t.acad_year =  '2017' 
+  t.acad_year =  '2018' 
   and t.term_mid between j.job_effdt and j.job_end_dt
 	and j.appt_dept_grp like 'COLLEGE_OF_LS%'
 	and j.empl_status = 'A'
@@ -504,7 +491,7 @@ WHERE
   AND j.APPT_DEPTID = e.APPT_DEPTID(+)
   and j.appt_deptid = d.deptid
   AND e.FUND_CODE = '10000'
-  and j.HRSNAP_RPTING_CD = 'NOV2016'
+  and j.HRSNAP_RPTING_CD = 'NOV2017'
   AND d.DEPT_GRP = 'COLLEGE_OF_LSA'
   AND j.JOB_FAMILY IN ('30', '40', '50', '62',
 							  '100','110','120','130','140','150','160','170','180','190',
@@ -535,7 +522,7 @@ WHERE
   AND j.EMPL_RCD = e.EMPL_RCD(+)
   AND j.APPT_DEPTID = e.APPT_DEPTID(+)
   and j.appt_deptid = d.deptid
-  AND j.HRSNAP_RPTING_CD = 'NOV2016'
+  AND j.HRSNAP_RPTING_CD = 'NOV2017'
   AND d.DEPT_GRP = 'COLLEGE_OF_LSA'
   AND j.JOB_FAMILY IN ('30', '40', '50', '62',
 							  '100','110','120','130','140','150','160','170','180','190',
@@ -566,7 +553,7 @@ AND j.EMPLID = e.EMPLID(+)
 AND j.EMPL_RCD = e.EMPL_RCD(+)
 AND j.APPT_DEPTID = e.APPT_DEPTID(+)
 and j.appt_deptid = d.deptid
-AND j.HRSNAP_RPTING_CD = 'NOV2016'
+AND j.HRSNAP_RPTING_CD = 'NOV2017'
 AND d.DEPT_GRP = 'COLLEGE_OF_LSA'
 AND j.JOB_FAMILY IN ('20')
 GROUP BY
@@ -596,7 +583,7 @@ from dbo.Class_Table a
                    c.Attr_Name = 'First_Year_Sem'             
 WHERE ((not b.content_id is null) OR 
       (not c.content_id is null)) AND 
-      a.Strm  in ('2110', '2120' )
+      a.Strm  in ('2160', '2170' )
 </DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -621,7 +608,7 @@ from dbo.Class_Table a
            a.Crse_ID = c.Crse_ID 
        WHERE ((not b.content_id is null) OR 
       (not c.content_id is null)) AND 
-      a.Strm  in ('2110'  ,'2120' ) and
+      a.Strm  in ('2160'  ,'2170' ) and
 	  a.Subject = 'RCCORE' and a.Catalog_Nbr = '100' ;
 </DTS:VariableValue>
     </DTS:Variable>
@@ -637,7 +624,7 @@ from dbo.Class_Table a
         DTS:DataType="8">SELECT AL1.TERM, AL1.ACAD_YEAR, AL1.SUBJECT, AL1.CATALOG_NBR, 
 AL1.CLASS_SECTION, AL1.CRAS_CRSE_COMPONENT, AL1.SECTION_ENRL_CNT, Substr(AL1.DEPTID ,1,6)
 FROM M_CRDW1.CRAS_CLASS_TBL AL1 
-WHERE AL1.DEPTID BETWEEN '170000' AND '554000' AND AL1.TERM&gt;='2100' and al1.term &lt;='2140'
+WHERE AL1.DEPTID BETWEEN '170000' AND '554000' AND AL1.TERM&gt;='2150' and al1.term &lt;='2190'
 and AL1.CRAS_CRSE_COMPONENT&lt;&gt;'IND'
 </DTS:VariableValue>
     </DTS:Variable>
@@ -683,7 +670,7 @@ FROM
   AND (AL2.DEPTID BETWEEN '170000' AND '201000'
   OR AL2.DEPTID     IN ('550500','550300','550400','554000'))
   AND AL1.PROG_STATUS='AC'
-  AND AL3.TERM      IN ('2110'  ,'2120')
+  AND AL3.TERM      IN ('2160'  ,'2170')
   AND AL1.ACAD_PROG_DESCR LIKE '%Doc'
   AND AL4.REG_STATUS='RGSD'
   )
@@ -709,7 +696,7 @@ AND AL1.Stdnt_Car_Nbr=AD.Stdnt_Car_Nbr and AL1.Adm_Appl_Nbr=AD.Adm_Appl_Nbr
 and ad.Admit_Type='4' 
 and AL1.ACAD_PLAN=AL2.ACAD_PLAN AND AL1.ADMIT_TERM=AL3.TERM AND AL3.ACAD_CAREER=AL1.ACAD_CAREER  
 AND AL3.ACAD_CAREER='GRAC' AND AL1.ACAD_PROG_DESCR LIKE '%Doc' 
-AND AL3.TERM IN ('2110'  ,'2120' ) 
+AND AL3.TERM IN ('2160'  ,'2170' ) 
 AND (AL2.DEPTID BETWEEN '170000' AND '200000' or al2.deptid in ('201000','550400','554000')) AND 
 ((AL1.PROG_ACTION='WAPP' AND AL1.PROG_STATUS='CN' AND AL1.PROG_REASON IN 
 (' ', 'AWRD', 'COST', 'DATA', 'DEFR', 'EACA', 'EFIN', 'ENVI', 'ERSN', 'ETYP', 'FINA', 'LATE','NRSN', 
@@ -763,7 +750,7 @@ FROM
   AND (AL2.DEPTID BETWEEN '170000' AND '201000'
   OR AL2.DEPTID     IN ('554000','550500','550400','550300') )
   AND AL1.PROG_STATUS='AP'
-  AND AL3.TERM      IN ('2110', '2120')
+  AND AL3.TERM      IN ('2160', '2170')
   AND AL1.ACAD_PROG_DESCR LIKE '%Doc')
   )
 GROUP BY DeptID, ACAD_YEAR
@@ -799,7 +786,7 @@ AND (AL3.STDNT_CAR_NBR=AL1.STDNT_CAR_NBR)
 AND (AL3.ACAD_YEAR=AL1.ACAD_YEAR) 
 AND (AL4.ACAD_PLAN=AL3.ACAD_PLAN) 
 AND (AL1.ACAD_GROUP_AREA In ('LSA','RAC')) 
-AND (AL2.TERM In ('2110'  ,'2120' )) 
+AND (AL2.TERM In ('2160'  ,'2170' )) 
 AND (AL1.ACAD_PROG_DESCR Like '%Doc') 
 AND (AL4.DEPTID BETWEEN '170000' AND '200000' or al4.deptid in ('201000','550400','554000'))  
 GROUP BY al5.acad_year, AL4.DEPTID
@@ -816,7 +803,7 @@ ORDER BY AL5.ACAD_YEAR, AL4.DEPTID</DTS:VariableValue>
       <DTS:VariableValue
         DTS:DataType="8">SELECT '6B', substr(AL4.DEPTID,1,6),  AL3.ACAD_YEAR,  SUM(AL4.ACAD_PLAN_PERCENT_OWNED)/100 
 FROM M_SRDW1.ACAD_DEGR AL1, M_SRDW1.ACAD_DEGR_PLAN AL2, M_SRDW1.TERM_TBL AL3, M_SRDW1.ACAD_PLAN_OWNER_CURR_VW AL4
-WHERE (AL1.EMPLID=AL2.EMPLID) AND (AL2.STDNT_DEGR=AL1.STDNT_DEGR) AND (AL1.ACAD_CAREER=AL2.ACAD_CAREER And AL1.ACAD_CAREER In ('ULSA','URC')) AND (AL2.ACAD_CAREER=AL3.ACAD_CAREER) AND (AL1.COMPLETION_TERM=AL3.TERM) AND (AL4.ACAD_PLAN=AL2.ACAD_PLAN) AND (AL3.ACAD_YEAR='2017') AND (AL2.ACAD_PLAN&lt;'A')
+WHERE (AL1.EMPLID=AL2.EMPLID) AND (AL2.STDNT_DEGR=AL1.STDNT_DEGR) AND (AL1.ACAD_CAREER=AL2.ACAD_CAREER And AL1.ACAD_CAREER In ('ULSA','URC')) AND (AL2.ACAD_CAREER=AL3.ACAD_CAREER) AND (AL1.COMPLETION_TERM=AL3.TERM) AND (AL4.ACAD_PLAN=AL2.ACAD_PLAN) AND (AL3.ACAD_YEAR='2018') AND (AL2.ACAD_PLAN&lt;'A')
 and AL4.DEPTID &lt;&gt; '186000'
 GROUP BY AL3.ACAD_YEAR, substr(AL4.DEPTID,1,6)</DTS:VariableValue>
     </DTS:Variable>
@@ -863,8 +850,8 @@ FROM
   AND AL6.ACAD_CAREER       =AL1.ACAD_CAREER
   AND AL6.TERM              =AL1.COMPLETION_TERM)
   AND (AL2.DEGR_CHKOUT_STAT ='AW'
-  AND AL1.COMPLETION_TERM  &gt;='2100'
-  AND AL1.COMPLETION_TERM  &lt;='2140'
+  AND AL1.COMPLETION_TERM  &gt;='2150'
+  AND AL1.COMPLETION_TERM  &lt;='2190'
   AND AL2.ACAD_CAREER      IN ('ULSA', 'URC'))
   AND al5.acad_plan_type   IN ('MAJ','SP')
   UNION
@@ -897,8 +884,8 @@ FROM
   AND AL6.ACAD_CAREER       =AL1.ACAD_CAREER
   AND AL6.TERM              =AL1.COMPLETION_TERM)
   AND (AL2.DEGR_CHKOUT_STAT ='AW'
-  AND AL1.COMPLETION_TERM  &gt;='2100'
-  AND AL1.COMPLETION_TERM  &lt;='2140'
+  AND AL1.COMPLETION_TERM  &gt;='2150'
+  AND AL1.COMPLETION_TERM  &lt;='2190'
   AND AL2.ACAD_CAREER      IN ('ULSA', 'URC'))
   AND al5.acad_plan_type   IN ('MAJ','SP')
   )
@@ -919,7 +906,7 @@ FROM
  WHERE (AL1.EMPLID=AL2.EMPLID) AND (AL2.STDNT_DEGR=AL1.STDNT_DEGR) 
  AND (AL1.ACAD_CAREER=AL2.ACAD_CAREER) And (AL2.ACAD_CAREER=AL3.ACAD_CAREER) 
  AND (AL1.COMPLETION_TERM=AL3.TERM) AND (AL4.ACAD_PLAN=AL2.ACAD_PLAN) 
- AND (AL3.ACAD_YEAR in ('2017')) AND (AL2.ACAD_PLAN&gt;'A') 
+ AND (AL3.ACAD_YEAR in ('2018')) AND (AL2.ACAD_PLAN&gt;'A') 
  And (al4.deptid between '170000' and '200000' or deptid in ('550400','554000') )
  GROUP BY AL3.ACAD_YEAR, substr(AL4.DEPTID,1,6) 
  order by acad_year</DTS:VariableValue>
@@ -937,7 +924,7 @@ FROM
  FROM M_SRDW1.ACAD_DEGR AL1, M_SRDW1.ACAD_DEGR_PLAN AL2, M_SRDW1.TERM_TBL AL3, M_SRDW1.ACAD_PLAN_OWNER_CURR_VW AL4 
  WHERE (AL1.EMPLID=AL2.EMPLID AND AL2.STDNT_DEGR=AL1.STDNT_DEGR AND AL1.ACAD_CAREER=AL2.ACAD_CAREER 
  AND AL2.ACAD_CAREER=AL3.ACAD_CAREER AND AL1.COMPLETION_TERM=AL3.TERM AND AL4.ACAD_PLAN=AL2.ACAD_PLAN) 
- AND (AL1.ACAD_CAREER='GRAC' AND AL1.DEGREE='PHD' AND AL3.ACAD_YEAR in ('2017')) AND (AL4.DEPTID BETWEEN '170000' AND '210000' or al4.deptid IN ('550400','554000'))
+ AND (AL1.ACAD_CAREER='GRAC' AND AL1.DEGREE='PHD' AND AL3.ACAD_YEAR in ('2018')) AND (AL4.DEPTID BETWEEN '170000' AND '210000' or al4.deptid IN ('550400','554000'))
  GROUP BY AL3.ACAD_YEAR, substr(AL4.DEPTID,1,6) 
  order by substr(al4.deptid,1,6)</DTS:VariableValue>
     </DTS:Variable>
@@ -976,7 +963,7 @@ LEFT JOIN  M_CRDW1.CRAS_JOB AL3
 ON  AL2.CLASS_INSTR_ID = AL3.EMPLID
 AND AL2.CLASS_INSTR_APPT_ASSIGNED_TERM = AL3.TERM
 AND AL2.CLASS_INSTR_APPT_DEPTID = AL3.APPT_DEPTID
-WHERE AL1.ACAD_YEAR = '2017'
+WHERE AL1.ACAD_YEAR = '2018'
 AND AL1.CRAS_CRSE_COMPONENT &lt;&gt;'IND' AND (al1.deptid BETWEEN '170000' AND '200000' OR AL1.DEPTID IN ('550400', '554000'))</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -1021,7 +1008,7 @@ FROM
   AND (AL2.DEPTID BETWEEN '170000' AND '201000'
   OR AL2.DEPTID     IN ('550500','550300','550400','554000'))
   AND AL1.PROG_STATUS='AC'
-  AND AL3.TERM IN ('2110'  ,'2120' )
+  AND AL3.TERM IN ('2160'  ,'2170' )
   AND AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', 
                         '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764')
   AND AL4.REG_STATUS='RGSD'
@@ -1068,7 +1055,7 @@ FROM
     AND AL3.ACAD_CAREER  ='GRAC'
     AND AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', 
                        '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764')
-    AND AL3.TERM IN ('2110'  ,'2120' )
+    AND AL3.TERM IN ('2160'  ,'2170' )
     AND (AL2.DEPTID BETWEEN '170000' AND '200000'
     OR al2.deptid       IN ('201000','550400','554000'))
     AND ((AL1.PROG_ACTION='WAPP'
@@ -1126,7 +1113,7 @@ FROM
   AND (AL2.DEPTID BETWEEN '170000' AND '201000'
   OR AL2.DEPTID     IN ('554000','550500','550400','550300') )
   AND AL1.PROG_STATUS='AP'
-  AND AL3.TERM IN ('2110', '2120' )
+  AND AL3.TERM IN ('2160', '2170' )
   AND AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', 
                        '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764'))
 )
@@ -1164,7 +1151,7 @@ AND (AL3.STDNT_CAR_NBR=AL1.STDNT_CAR_NBR)
 AND (AL3.ACAD_YEAR=AL1.ACAD_YEAR) 
 AND (AL4.ACAD_PLAN=AL3.ACAD_PLAN) 
 AND (AL1.ACAD_GROUP_AREA In ('LSA','RAC')) 
-AND (AL2.TERM In ('2110'  ,'2120' )) 
+AND (AL2.TERM In ('2160'  ,'2170' )) 
 AND (AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', 
                        '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764')) 
 AND (AL4.DEPTID BETWEEN '170000' AND '200000' or al4.deptid in ('201000','550400','554000'))  
@@ -1202,7 +1189,7 @@ AND (AL3.STDNT_CAR_NBR=AL1.STDNT_CAR_NBR)
 AND (AL3.ACAD_YEAR=AL1.ACAD_YEAR) 
 AND (AL4.ACAD_PLAN=AL3.ACAD_PLAN) 
 AND (AL1.ACAD_GROUP_AREA In ('LSA','RAC')) 
-AND (AL2.TERM In ('2110', '2120')) 
+AND (AL2.TERM In ('2160', '2170')) 
 AND (AL1.ACAD_PROG_DESCR Like '%Doc') 
 AND (AL4.DEPTID BETWEEN '170000' AND '200000' or al4.deptid in ('201000','550400','554000'))  
 GROUP BY al5.acad_year, AL4.DEPTID, al5.UNDREP_MNRTY_IND 
@@ -1234,7 +1221,7 @@ WHERE
 	and dp.ACAD_PLAN = ap.acad_plan (+)   
 	and dp.acad_prog in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', 
                        '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764')
-	AND t.ACAD_YEAR = '2017'      
+	AND t.ACAD_YEAR = '2018'      
 GROUP BY 
 	ap.deptid, t.ACAD_YEAR</DTS:VariableValue>
     </DTS:Variable>
@@ -1252,7 +1239,7 @@ FROM dbo.Project INNER JOIN
 dbo.ProjectTerm ON dbo.Project.ProjID = dbo.ProjectTerm.ProjID INNER JOIN
 dbo.StudentTerm ON dbo.Project.ProjID = dbo.StudentTerm.ProjID AND dbo.ProjectTerm.Term = dbo.StudentTerm.Term 
 INNER JOIN  dbo.Faculty ON dbo.Project.SponsorID = dbo.Faculty.Emplid
-WHERE    dbo.StudentTerm.Term IN ('2110', '2120')
+WHERE    dbo.StudentTerm.Term IN ('2160', '2170')
 group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
 </DTS:VariableValue>
     </DTS:Variable>
@@ -1263,7 +1250,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
       DTS:Namespace="User"
       DTS:ObjectName="_sAcadYear">
       <DTS:VariableValue
-        DTS:DataType="8">2017</DTS:VariableValue>
+        DTS:DataType="8">2018</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1272,7 +1259,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
       DTS:Namespace="User"
       DTS:ObjectName="_sAdmitTermFall">
       <DTS:VariableValue
-        DTS:DataType="8">2110</DTS:VariableValue>
+        DTS:DataType="8">2160</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1281,7 +1268,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
       DTS:Namespace="User"
       DTS:ObjectName="_sAdmitTermWinter">
       <DTS:VariableValue
-        DTS:DataType="8">2120</DTS:VariableValue>
+        DTS:DataType="8">2170</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1290,7 +1277,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
       DTS:Namespace="User"
       DTS:ObjectName="_sBeginTerm">
       <DTS:VariableValue
-        DTS:DataType="8">2100</DTS:VariableValue>
+        DTS:DataType="8">2150</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1299,7 +1286,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
       DTS:Namespace="User"
       DTS:ObjectName="_sEndTerm">
       <DTS:VariableValue
-        DTS:DataType="8">2140</DTS:VariableValue>
+        DTS:DataType="8">2190</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1308,7 +1295,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
       DTS:Namespace="User"
       DTS:ObjectName="_sSnapshot">
       <DTS:VariableValue
-        DTS:DataType="8">NOV2016</DTS:VariableValue>
+        DTS:DataType="8">NOV2017</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -1362,7 +1349,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1426,13 +1413,13 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                           externalMetadataColumnId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DeptID]"
                           lineageId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Output].Columns[DeptID]" />
                         <inputColumn
-                          refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AcadYear]"
+                          refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FY]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="4"
-                          cachedName="AcadYear"
+                          cachedName="FY"
                           externalMetadataColumnId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AcadYear]"
-                          lineageId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Output].Columns[AcadYear]" />
+                          lineageId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Output].Columns[FY]" />
                         <inputColumn
                           refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[KPIValue]"
                           cachedDataType="numeric"
@@ -1519,7 +1506,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1578,17 +1565,6 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                           name="DeptID"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Output].Columns[AcadYear]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AcadYear]"
-                          length="4"
-                          lineageId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Output].Columns[AcadYear]"
-                          name="AcadYear"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
                           refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Output].Columns[KPIValue]"
                           dataType="numeric"
                           errorOrTruncationOperation="Conversion"
@@ -1598,6 +1574,17 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                           name="KPIValue"
                           precision="38"
                           scale="3"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Output].Columns[FY]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FY]"
+                          length="4"
+                          lineageId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Output].Columns[FY]"
+                          name="FY"
                           truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
@@ -1615,17 +1602,17 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                           length="6"
                           name="DeptID" />
                         <externalMetadataColumn
-                          refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AcadYear]"
-                          codePage="1252"
-                          dataType="str"
-                          length="4"
-                          name="AcadYear" />
-                        <externalMetadataColumn
                           refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KPIValue]"
                           dataType="numeric"
                           name="KPIValue"
                           precision="38"
-                          scale="3" />
+                          scale="4" />
+                        <externalMetadataColumn
+                          refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="4"
+                          name="FY" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -1641,6 +1628,13 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                           lineageId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KPICode]"
                           name="KPICode" />
                         <outputColumn
+                          refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="4"
+                          lineageId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FY]"
+                          name="FY" />
+                        <outputColumn
                           refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DeptID]"
                           codePage="1252"
                           dataType="str"
@@ -1648,19 +1642,12 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                           lineageId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DeptID]"
                           name="DeptID" />
                         <outputColumn
-                          refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AcadYear]"
-                          codePage="1252"
-                          dataType="str"
-                          length="4"
-                          lineageId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AcadYear]"
-                          name="AcadYear" />
-                        <outputColumn
                           refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KPIValue]"
                           dataType="numeric"
                           lineageId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KPIValue]"
                           name="KPIValue"
                           precision="38"
-                          scale="3" />
+                          scale="4" />
                         <outputColumn
                           refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -1728,7 +1715,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1885,7 +1872,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2094,7 +2081,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2251,7 +2238,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2539,7 +2526,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2695,7 +2682,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2906,7 +2893,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3062,7 +3049,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3316,7 +3303,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3472,7 +3459,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3726,7 +3713,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3882,7 +3869,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -4124,6 +4111,14 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:ObjectName="Constraint 2"
           DTS:To="Package\1 - Faculty Staff\1D - Lecturer FTE" />
         <DTS:PrecedenceConstraint
+          DTS:refId="Package\1 - Faculty Staff.PrecedenceConstraints[Constraint 3]"
+          DTS:CreationName=""
+          DTS:DTSID="{6BF63CCB-C7FC-4AF2-898E-B8D6967E49D5}"
+          DTS:From="Package\1 - Faculty Staff\1D - Lecturer FTE"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 3"
+          DTS:To="Package\1 - Faculty Staff\1G - Primary Research Track Faculty" />
+        <DTS:PrecedenceConstraint
           DTS:refId="Package\1 - Faculty Staff.PrecedenceConstraints[Constraint 4]"
           DTS:CreationName=""
           DTS:DTSID="{9B5EC602-BCF9-4589-B81A-C93E240A7B95}"
@@ -4131,6 +4126,14 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 4"
           DTS:To="Package\1 - Faculty Staff\1F - Regular Staff FTE" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\1 - Faculty Staff.PrecedenceConstraints[Constraint 5]"
+          DTS:CreationName=""
+          DTS:DTSID="{DCA09B04-C151-44E7-9B15-2516BDA17486}"
+          DTS:From="Package\1 - Faculty Staff\1G - Primary Research Track Faculty"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 5"
+          DTS:To="Package\1 - Faculty Staff\1E - General Fund Reg Staff FTE" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
     <DTS:Executable
@@ -4262,7 +4265,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4477,7 +4480,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -4866,7 +4869,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5081,7 +5084,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -5700,7 +5703,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5907,7 +5910,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -6702,7 +6705,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -6860,7 +6863,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"Update KPIMaster_2_3 
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"Update KPIMaster_2_3 
 set Assigned_Dept = APPT_DEPTID
 WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</property>
                     <property
@@ -7768,7 +7771,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -7925,7 +7928,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"Update KPIMaster_2_3 
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">"Update KPIMaster_2_3 
 set Assigned_Dept = APPT_DEPTID
 WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</property>
                     <property
@@ -8466,6 +8469,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
           DTS:refId="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Master Query"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
+          DTS:Disabled="True"
           DTS:DTSID="{F60E352D-6E41-4698-B490-1AF45DAE8BD6}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
@@ -8853,7 +8857,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -9220,7 +9224,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -9765,6 +9769,24 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
+          DTS:refId="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Update 171500"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:Disabled="True"
+          DTS:DTSID="{9aa5062c-5b92-4dd6-abee-4ea3664c929e}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Update 171500"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{6DF87F07-BD2B-49EA-969F-891524B75E26}"
+              SQLTask:SqlStatementSource="Update KPIMaster_2_3&#xA;set APPT_DEPTID = '171500',&#xA;    APPT_DEPT_DESCR = 'LSA UG: CGIS',&#xA;    Instr_Type = '3Other'&#xA;  Where DEPTID = '171500';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
           DTS:refId="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Update 189000 MCDB"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
@@ -9916,7 +9938,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -10072,7 +10094,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -10278,7 +10300,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -10434,7 +10456,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -10640,7 +10662,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -10796,7 +10818,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -11002,7 +11024,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -11158,7 +11180,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -11364,7 +11386,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -11520,7 +11542,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -11713,6 +11735,14 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 2"
           DTS:To="Package\4 - Degrees\6M - Minor" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\4 - Degrees.PrecedenceConstraints[Constraint 3]"
+          DTS:CreationName=""
+          DTS:DTSID="{10780BB5-3C8E-4EA6-AA5E-993B05C75C65}"
+          DTS:From="Package\4 - Degrees\6P - PhD"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 3"
+          DTS:To="Package\4 - Degrees\TermMas - Masters" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
     <DTS:Executable
@@ -11769,7 +11799,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -11925,7 +11955,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -12131,7 +12161,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -12287,7 +12317,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -12493,7 +12523,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -12649,7 +12679,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select '5AP', DeptID, '2017',   sum(N) data from 
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select '5AP', DeptID, '2017',   sum(N) data from 
  (SELECT DISTINCT   AL3.TERM, AL1.EMPLID, AL1.PROG_STATUS, AL2.DEPTID, 
 AL2.ACAD_PLAN_PERCENT_OWNED/100 N, AL3.ACAD_YEAR, AL1.ACAD_PROG_DESCR 
 FROM M_RADW1.ADM_APPL_PROG AL1, M_SRDW1.ACAD_PLAN_OWNER_CURR_VW AL2, 
@@ -12869,7 +12899,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -13025,7 +13055,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -13270,7 +13300,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -13426,7 +13456,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -13452,8 +13482,8 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                   <connections>
                     <connection
                       refId="Package\6 - Terminal Masters\MS_AC - Enrolls\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 12]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 12]"
+                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -13632,7 +13662,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -13788,7 +13818,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -13994,7 +14024,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -14150,7 +14180,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -14356,7 +14386,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -14512,7 +14542,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -14727,7 +14757,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -14757,7 +14787,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -14787,7 +14817,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -14817,7 +14847,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -14889,35 +14919,35 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
         <NodeLayout
-          Size="172.8,41.6"
+          Size="172.90052356021,41.717277486911"
           Id="Package\1 - Faculty Staff\1A - TT Faculty FTE"
           TopLeft="18.2857405847437,23.3803943304042" />
         <NodeLayout
-          Size="196,41.6"
+          Size="196.020942408377,41.717277486911"
           Id="Package\1 - Faculty Staff\1B - College Funded FTE"
           TopLeft="13.0476362883642,102.078434833056" />
         <NodeLayout
-          Size="154.4,41.6"
+          Size="154.303664921466,41.717277486911"
           Id="Package\1 - Faculty Staff\1C - Target FTE"
           TopLeft="34.2857416065383,169.811770840417" />
         <NodeLayout
-          Size="163.2,41.6"
+          Size="163.350785340315,41.717277486911"
           Id="Package\1 - Faculty Staff\1D - Lecturer FTE"
           TopLeft="27.7143122079426,246.282360512823" />
         <NodeLayout
-          Size="232.8,41.6"
+          Size="232.712041884817,41.717277486911"
           Id="Package\1 - Faculty Staff\1E - General Fund Reg Staff FTE"
           TopLeft="9.42859822390085,417.176477499239" />
         <NodeLayout
-          Size="184,41.6"
+          Size="183.958115183247,41.717277486911"
           Id="Package\1 - Faculty Staff\1F - Regular Staff FTE"
           TopLeft="30.000026464463,500.141184376846" />
         <NodeLayout
-          Size="251.2,41.6"
+          Size="252.816753926702,42.2198952879582"
           Id="Package\1 - Faculty Staff\1G - Primary Research Track Faculty"
-          TopLeft="7.31429112492788,328.75294639297" />
+          TopLeft="7.31429112492789,328.75294639297" />
         <EdgeLayout
           Id="Package\1 - Faculty Staff.PrecedenceConstraints[Constraint]"
           TopLeft="107.866688436554,64.9803943304042">
@@ -14985,6 +15015,40 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\1 - Faculty Staff.PrecedenceConstraints[Constraint 3]"
+          TopLeft="109.3897048781,287.999637999734">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="24.332963210179,40.753308393236"
+              Start="0,0"
+              End="24.332963210179,33.253308393236">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.376654196618" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.376654196618"
+                    Point2="0,20.376654196618"
+                    Point3="4,20.376654196618" />
+                  <mssgle:LineSegment
+                    End="20.332963210179,20.376654196618" />
+                  <mssgle:CubicBezierSegment
+                    Point1="20.332963210179,20.376654196618"
+                    Point2="24.332963210179,20.376654196618"
+                    Point3="24.332963210179,24.376654196618" />
+                  <mssgle:LineSegment
+                    End="24.332963210179,33.253308393236" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\1 - Faculty Staff.PrecedenceConstraints[Constraint 4]"
           TopLeft="123.914312344182,458.776477499239">
           <EdgeLayout.Curve>
@@ -15006,27 +15070,49 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\1 - Faculty Staff.PrecedenceConstraints[Constraint 5]"
+          TopLeft="129.753643627294,370.972841680928">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.2036358183109"
+              Start="0,0"
+              End="0,38.7036358183109">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.7036358183109" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="272.8,599.2"
-          Size="272.8,642.4"
+          PanelSize="272.921465968587,599.623036649215"
+          Size="272.921465968587,642.848167539267"
           Id="Package\1 - Faculty Staff"
           TopLeft="1122.24285511873,46.0176442274989" />
         <NodeLayout
-          Size="220,41.6"
+          Size="220.146596858639,41.717277486911"
           Id="Package\2 - FY and FT\2FY - First Year Seminar and 2FT First Year Taught by TT"
           TopLeft="9.77143978683341,15.9686285949496" />
         <NodeLayout
-          Size="168.8,41.6"
+          Size="168.879581151833,41.717277486911"
           Id="Package\2 - FY and FT\2FY - RCCORE 100"
           TopLeft="42.6285832035301,93.458825760152" />
         <NodeLayout
-          Size="149.6,41.6"
+          Size="149.780104712042,41.717277486911"
           Id="Package\2 - FY and FT\Aggregate 2FT"
           TopLeft="47.8285830332309,244.917651884944" />
         <NodeLayout
-          Size="148.8,41.6"
+          Size="148.774869109948,41.717277486911"
           Id="Package\2 - FY and FT\Aggregate 2FY"
           TopLeft="50.0000124318265,166.329415432558" />
         <EdgeLayout
@@ -15098,40 +15184,40 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="284.8,321.6"
-          Size="284.8,364.8"
+          PanelSize="284.984293193718,321.675392670158"
+          Size="284.984293193718,364.90052356021"
           Id="Package\2 - FY and FT"
           TopLeft="1824.26668636459,38.5019589625425" />
         <NodeLayout
-          Size="180.8,41.6"
+          Size="180.942408376964,41.717277486911"
           Id="Package\2 - SCT, SCS, DSmall\2SCS - 189000 MCDB"
           TopLeft="22.8571606168946,350.164712274281" />
         <NodeLayout
-          Size="208.8,41.6"
+          Size="208.586387434555,41.717277486911"
           Id="Package\2 - SCT, SCS, DSmall\2SCS - Small Section Count"
           TopLeft="15.7143033523955,197.22353365875" />
         <NodeLayout
-          Size="164,41.6"
+          Size="163.853403141362,41.717277486911"
           Id="Package\2 - SCT, SCS, DSmall\2SCS 189100 EEB"
           TopLeft="30.5714464284938,502.635302311326" />
         <NodeLayout
-          Size="181.6,41.6"
+          Size="181.445026178011,41.717277486911"
           Id="Package\2 - SCT, SCS, DSmall\2SCT - 189000 MCDB"
           TopLeft="22.6857313885985,278.870593683448" />
         <NodeLayout
-          Size="180,41.6"
+          Size="179.93717277487,41.717277486911"
           Id="Package\2 - SCT, SCS, DSmall\2SCT - Section Count"
           TopLeft="28.1714465987927,116.164708992519" />
         <NodeLayout
-          Size="164,41.6"
+          Size="163.853403141362,41.717277486911"
           Id="Package\2 - SCT, SCS, DSmall\2SCT 189100 EEB"
           TopLeft="26.9714457472978,417.694124789717" />
         <NodeLayout
-          Size="152,41.6"
+          Size="151.790575916231,41.717277486911"
           Id="Package\2 - SCT, SCS, DSmall\Data Flow Task"
           TopLeft="35.5428744646975,27.4588253955115" />
         <NodeLayout
-          Size="185.6,41.6"
+          Size="185.465968586388,41.717277486911"
           Id="Package\2 - SCT, SCS, DSmall\Delete 188900 Biology"
           TopLeft="26.1714460878959,583.482360731607" />
         <EdgeLayout
@@ -15291,48 +15377,52 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="276,662.4"
-          Size="276,705.6"
+          PanelSize="275.93717277487,662.450261780105"
+          Size="275.93717277487,705.675392670158"
           Id="Package\2 - SCT, SCS, DSmall"
           TopLeft="2151.4095459111,40.7058892853933" />
         <NodeLayout
-          Size="212.8,41.6"
+          Size="212.607329842932,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\2SUM - Spring Summer SCH"
           TopLeft="15.0095296645652,745.176479103657" />
         <NodeLayout
-          Size="148.8,41.6"
+          Size="148.774869109948,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\2T - Total SCH"
           TopLeft="48.3428635655619,674.196085502532" />
         <NodeLayout
-          Size="241.6,41.6"
+          Size="241.759162303665,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\3LLTT - Lower Level Tenure Track"
           TopLeft="5.56190927077296,840.054911627324" />
         <NodeLayout
-          Size="242.4,41.6"
+          Size="242.261780104713,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\3ULTT - Upper Level Tenure Track"
-          TopLeft="8.41905217657266,925.03530364834" />
+          TopLeft="8.41905217657265,925.03530364834" />
         <NodeLayout
-          Size="194.4,41.6"
+          Size="194.513089005236,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Course_Level"
           TopLeft="28.8381019689598,506.352946174186" />
         <NodeLayout
-          Size="182.4,41.6"
+          Size="182.450261780105,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Instr_Type"
           TopLeft="29.3714334857707,586.564711545001" />
         <NodeLayout
-          Size="170.4,41.6"
+          Size="170.387434554974,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Create 189100 EEB"
           TopLeft="37.8666729109632,419.686278292053" />
         <NodeLayout
-          Size="143.2,41.6"
+          Size="143.24607329843,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Master Query"
           TopLeft="47.8857199785662,17.0980407457451" />
         <NodeLayout
-          Size="183.2,41.6"
+          Size="159.329842931938,41.717277486911"
+          Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Update 171500"
+          TopLeft="231.958115183246,211.225130890052" />
+        <NodeLayout
+          Size="182.952879581152,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Update 189000 MCDB"
           TopLeft="33.1047680679637,338.117649697103" />
         <NodeLayout
-          Size="159.2,41.6"
+          Size="159.329842931938,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Update INTLSTD"
           TopLeft="45.371453353986,247.152945809546" />
         <EdgeLayout
@@ -15514,35 +15604,45 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <AnnotationLayout
           Text="If Master fails, it may be because there are issues with DEPTID = 171500.  APPT_DEPTID and APPT_DEPT_DESCR will need to be marked as NULLS allowed.  Then run this update script:    UPDATE KPIMaster_2_3&#xA;  SET APPT_DEPTID = '171500',&#xA;  APPT_DEPT_DESCR = 'LSA UG: CGIS',&#xA;  Instr_Type = '3Other'&#xA;  WHERE DEPTID = '171500'"
           ParentId="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group"
-          FontInfo="{assembly:Null}"
-          Size="355.2,153.6"
+          Size="358.869109947644,131.685863874346"
           Id="296bac6a-a59f-4155-8532-a3d227e7ec35"
-          TopLeft="5.5,82.9176486031819" />
+          TopLeft="5.5,82.9176486031819">
+          <AnnotationLayout.FontInfo>
+            <mssge:FontInfo
+              Family="Tahoma"
+              Size="10.931937217712402"
+              Color="#FF000000">
+              <mssge:FontInfo.TextDecorations>
+                <av:TextDecorationCollection />
+              </mssge:FontInfo.TextDecorations>
+            </mssge:FontInfo>
+          </AnnotationLayout.FontInfo>
+        </AnnotationLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="376,1021.6"
-          Size="376,1064.8"
+          PanelSize="396.565445026178,1021.8219895288"
+          Size="396.565445026178,1065.04712041885"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group"
           TopLeft="1415.21906229233,40.2039240024226" />
         <NodeLayout
-          Size="143.2,41.6"
+          Size="143.24607329843,41.717277486911"
           Id="Package\4 - Degrees\6B - Bachelor"
           TopLeft="28.7238243317121,15.2941207786745" />
         <NodeLayout
-          Size="197.6,41.6"
+          Size="197.528795811519,41.717277486911"
           Id="Package\4 - Degrees\6B - Bachelor RC 186000"
           TopLeft="2.09524283117196,97.8980414750255" />
         <NodeLayout
-          Size="131.2,41.6"
+          Size="131.183246073299,41.717277486911"
           Id="Package\4 - Degrees\6M - Minor"
           TopLeft="32.5333482061117,194.745103687564" />
         <NodeLayout
-          Size="121.6,41.6"
+          Size="121.633507853404,41.717277486911"
           Id="Package\4 - Degrees\6P - PhD"
           TopLeft="32.5333482061114,261.01961442096" />
         <NodeLayout
-          Size="170.4,41.6"
+          Size="170.387434554974,41.717277486911"
           Id="Package\4 - Degrees\TermMas - Masters"
           TopLeft="27.8857304008643,466.564713295273" />
         <EdgeLayout
@@ -15611,34 +15711,68 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\4 - Degrees.PrecedenceConstraints[Constraint 3]"
+          TopLeft="93.350102132813,302.736891907871">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="19.7293455455383,163.827821387402"
+              Start="0,0"
+              End="19.7293455455383,156.327821387402">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.913910693701" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,77.913910693701"
+                    Point2="0,81.913910693701"
+                    Point3="4,81.913910693701" />
+                  <mssgle:LineSegment
+                    End="15.7293455455383,81.913910693701" />
+                  <mssgle:CubicBezierSegment
+                    Point1="15.7293455455383,81.913910693701"
+                    Point2="19.7293455455383,81.913910693701"
+                    Point3="19.7293455455383,85.913910693701" />
+                  <mssgle:LineSegment
+                    End="19.7293455455383,156.327821387402" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <AnnotationLayout
           Text="Must check with Paula Hathaway each year for an updated list of Terminal Masters program codes"
           ParentId="Package\4 - Degrees"
           FontInfo="{assembly:Null}"
-          Size="201.6,89.6"
+          Size="201.549738219896,89.9685863874346"
           Id="5c140af5-3b9f-410d-b246-d5e0278c296b"
           TopLeft="22.514307269272,343.082359418902" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="229.6,568.8"
-          Size="229.6,612"
+          PanelSize="229.696335078535,568.963350785341"
+          Size="229.696335078535,612.188481675393"
           Id="Package\4 - Degrees"
           TopLeft="2473.6952656853,44.5176540484737" />
         <NodeLayout
-          Size="140,41.6"
+          Size="140.230366492147,41.717277486911"
           Id="Package\5 - Graduate Program (PhD)\5AC - Enrolls"
           TopLeft="15.9,208.7" />
         <NodeLayout
-          Size="142.4,41.6"
+          Size="142.240837696336,41.717277486911"
           Id="Package\5 - Graduate Program (PhD)\5AD - Admits"
           TopLeft="14.7,107.1" />
         <NodeLayout
-          Size="156.8,41.6"
+          Size="156.816753926702,41.717277486911"
           Id="Package\5 - Graduate Program (PhD)\5AP - Applicants"
           TopLeft="7.5,5.49999999999995" />
         <NodeLayout
-          Size="160.8,41.6"
+          Size="161.842931937173,42.2198952879582"
           Id="Package\5 - Graduate Program (PhD)\5HC - Headcount"
           TopLeft="5.50000000000003,310.3" />
         <EdgeLayout
@@ -15687,18 +15821,18 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\5 - Graduate Program (PhD).PrecedenceConstraints[Constraint 2]"
-          TopLeft="85.9,250.3">
+          TopLeft="86.2183246073299,250.417277486911">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,59.882722513089"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,52.382722513089">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
+                    End="0,52.382722513089" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15710,24 +15844,24 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="213.6,407.2"
-          Size="213.6,450.4"
+          PanelSize="213.612565445027,407.623036649215"
+          Size="213.612565445027,450.848167539267"
           Id="Package\5 - Graduate Program (PhD)"
           TopLeft="2749.92655609454,43.5260564123194" />
         <NodeLayout
-          Size="154.4,41.6"
+          Size="154.303664921466,41.717277486911"
           Id="Package\6 - Terminal Masters\MS_AC - Enrolls"
           TopLeft="42.0000269072402,263.976474363334" />
         <NodeLayout
-          Size="156,41.6"
+          Size="155.811518324608,41.717277486911"
           Id="Package\6 - Terminal Masters\MS_AD - Admits"
           TopLeft="40.2857400738467,170.917649697102" />
         <NodeLayout
-          Size="170.4,41.6"
+          Size="170.387434554974,41.717277486911"
           Id="Package\6 - Terminal Masters\MS_AP - Applicants"
           TopLeft="35.7143118673448,91.1529425277842" />
         <NodeLayout
-          Size="174.4,41.6"
+          Size="174.408376963351,41.717277486911"
           Id="Package\6 - Terminal Masters\MS_HC - Headcount"
           TopLeft="34.5714551137426,367.976475821894" />
         <EdgeLayout
@@ -15800,86 +15934,86 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           Text="ONLY RUN FOR 2017 and later."
           ParentId="Package\6 - Terminal Masters"
           FontInfo="{assembly:Null}"
-          Size="195.2,41.6"
+          Size="195.015706806283,58.303664921466"
           Id="3372d837-a6f8-4c6c-b7ff-af4656fcc2bd"
           TopLeft="27.7143111861487,14.4470603893372" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="273.6,462.4"
-          Size="273.6,505.6"
+          PanelSize="273.424083769634,462.408376963351"
+          Size="273.424083769634,505.633507853404"
           Id="Package\6 - Terminal Masters"
           TopLeft="3010.45717294654,52.0000007292801" />
         <NodeLayout
-          Size="110.4,41.6"
+          Size="110.575916230367,41.717277486911"
           Id="Package\Erase (CAREFUL!) KPI2FY_2FT on 017\Delete"
           TopLeft="5.50000000000001,5.49999999999995" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="236,102.4"
-          Size="236,145.6"
+          PanelSize="236.230366492147,102.534031413613"
+          Size="236.230366492147,145.759162303665"
           Id="Package\Erase (CAREFUL!) KPI2FY_2FT on 017"
           TopLeft="842.457147197334,387.811765006173" />
         <NodeLayout
-          Size="110.4,41.6"
+          Size="110.575916230367,41.717277486911"
           Id="Package\Erase (CAREFUL!) KPI2SCT_2SCS_DSmall on 017\Delete"
           TopLeft="5.50000000000001,5.5" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="236.8,102.4"
-          Size="236.8,145.6"
+          PanelSize="236.732984293194,102.534031413613"
+          Size="236.732984293194,145.759162303665"
           Id="Package\Erase (CAREFUL!) KPI2SCT_2SCS_DSmall on 017"
           TopLeft="839.885718582115,555.694120049393" />
         <NodeLayout
-          Size="110.4,41.6"
+          Size="110.575916230367,41.717277486911"
           Id="Package\Erase (CAREFUL!) KPIData_Stage on 017\Delete"
           TopLeft="5.50000000000001,5.49999999999995" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="231.2,102.4"
-          Size="231.2,145.6"
+          PanelSize="231.204188481676,102.534031413613"
+          Size="231.204188481676,145.759162303665"
           Id="Package\Erase (CAREFUL!) KPIData_Stage on 017"
           TopLeft="838.095242388394,45.9159627483246" />
         <NodeLayout
-          Size="110.4,41.6"
+          Size="110.575916230367,41.717277486911"
           Id="Package\Erase (CAREFUL!) KPIMaster_2_3 on 017\Delete"
           TopLeft="5.50000000000001,5.49999999999995" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="227.2,102.4"
-          Size="227.2,145.6"
+          PanelSize="227.183246073299,102.534031413613"
+          Size="227.183246073299,145.759162303665"
           Id="Package\Erase (CAREFUL!) KPIMaster_2_3 on 017"
           TopLeft="843.314290069074,213.968625313193" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="2703.2952656853,350.517654048474">
+          TopLeft="2703.39160076383,350.61189488617">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="46.6312904092413,-96.1915976361543"
+              EndConnector="46.534955330706,-81.9130636047407"
               Start="0,0"
-              End="39.1312904092413,-96.1915976361543">
+              End="39.034955330706,-81.9130636047407">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="19.3156452046206,0" />
+                    End="19.267477665353,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="19.3156452046206,0"
-                    Point2="23.3156452046206,0"
-                    Point3="23.3156452046206,-4" />
+                    Point1="19.267477665353,0"
+                    Point2="23.267477665353,0"
+                    Point3="23.267477665353,-4" />
                   <mssgle:LineSegment
-                    End="23.3156452046206,-92.1915976361543" />
+                    End="23.267477665353,-77.9130636047407" />
                   <mssgle:CubicBezierSegment
-                    Point1="23.3156452046206,-92.1915976361543"
-                    Point2="23.3156452046206,-96.1915976361543"
-                    Point3="27.3156452046206,-96.1915976361543" />
+                    Point1="23.267477665353,-77.9130636047407"
+                    Point2="23.267477665353,-81.9130636047407"
+                    Point3="27.267477665353,-81.9130636047407" />
                   <mssgle:LineSegment
-                    End="39.1312904092413,-96.1915976361543" />
+                    End="39.034955330706,-81.9130636047407" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15890,30 +16024,24 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="1791.21906229233,572.603924002423">
+          TopLeft="1811.78450731851,572.727484211847">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="33.0476240722601,-351.70196503988"
+              EndConnector="154.974325642941,-169.325001689095"
               Start="0,0"
-              End="25.5476240722601,-351.70196503988">
+              End="154.974325642941,-161.825001689095">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="12.52381203613,0" />
+                    End="150.974325642941,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="12.52381203613,0"
-                    Point2="16.52381203613,0"
-                    Point3="16.52381203613,-4" />
+                    Point1="150.974325642941,0"
+                    Point2="154.974325642941,0"
+                    Point3="154.974325642941,-4" />
                   <mssgle:LineSegment
-                    End="16.52381203613,-347.70196503988" />
-                  <mssgle:CubicBezierSegment
-                    Point1="16.52381203613,-347.70196503988"
-                    Point2="16.52381203613,-351.70196503988"
-                    Point3="20.52381203613,-351.70196503988" />
-                  <mssgle:LineSegment
-                    End="25.5476240722601,-351.70196503988" />
+                    End="154.974325642941,-161.825001689095" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15958,30 +16086,30 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="2427.4095459111,393.505889285393">
+          TopLeft="2427.34671868597,393.543585620472">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="46.2857197741989,-42.9882352369196"
+              EndConnector="46.3485469993311,-42.9316907343018"
               Start="0,0"
-              End="38.7857197741989,-42.9882352369196">
+              End="38.8485469993311,-42.9316907343018">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="19.1428598870995,0" />
+                    End="19.1742734996656,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="19.1428598870995,0"
-                    Point2="23.1428598870995,0"
-                    Point3="23.1428598870995,-4" />
+                    Point1="19.1742734996656,0"
+                    Point2="23.1742734996656,0"
+                    Point3="23.1742734996656,-4" />
                   <mssgle:LineSegment
-                    End="23.1428598870995,-38.9882352369196" />
+                    End="23.1742734996656,-38.9316907343018" />
                   <mssgle:CubicBezierSegment
-                    Point1="23.1428598870995,-38.9882352369196"
-                    Point2="23.1428598870995,-42.9882352369196"
-                    Point3="27.1428598870995,-42.9882352369196" />
+                    Point1="23.1742734996656,-38.9316907343018"
+                    Point2="23.1742734996656,-42.9316907343018"
+                    Point3="27.1742734996656,-42.9316907343018" />
                   <mssgle:LineSegment
-                    End="38.7857197741989,-42.9882352369196" />
+                    End="38.8485469993311,-42.9316907343018" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15992,13 +16120,13 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="1258.64285511873,46.0176442274989">
+          TopLeft="1258.70358810302,46.0176442274989">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="344.5762071736,-5.81372022507634"
+              EndConnector="354.798196702396,-5.81372022507634"
               Start="0,0"
-              End="344.5762071736,-13.3137202250763">
+              End="354.798196702396,-13.3137202250763">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -16009,13 +16137,13 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                     Point2="0,-28.3137202250763"
                     Point3="4,-28.3137202250763" />
                   <mssgle:LineSegment
-                    End="340.5762071736,-28.3137202250763" />
+                    End="350.798196702396,-28.3137202250763" />
                   <mssgle:CubicBezierSegment
-                    Point1="340.5762071736,-28.3137202250763"
-                    Point2="344.5762071736,-28.3137202250763"
-                    Point3="344.5762071736,-24.3137202250763" />
+                    Point1="350.798196702396,-28.3137202250763"
+                    Point2="354.798196702396,-28.3137202250763"
+                    Point3="354.798196702396,-24.3137202250763" />
                   <mssgle:LineSegment
-                    End="344.5762071736,-13.3137202250763" />
+                    End="354.798196702396,-13.3137202250763" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16026,30 +16154,30 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="2963.52655609454,254.326056412319">
+          TopLeft="2963.53912153957,268.950140181953">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="46.9306168519997,50.4739443169607"
+              EndConnector="46.918051406974,35.8666144740288"
               Start="0,0"
-              End="39.4306168519997,50.4739443169607">
+              End="39.418051406974,35.8666144740288">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="19.4653084259999,0" />
+                    End="19.459025703487,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="19.4653084259999,0"
-                    Point2="23.4653084259999,0"
-                    Point3="23.4653084259999,4" />
+                    Point1="19.459025703487,0"
+                    Point2="23.459025703487,0"
+                    Point3="23.459025703487,4" />
                   <mssgle:LineSegment
-                    End="23.4653084259999,46.4739443169607" />
+                    End="23.459025703487,31.8666144740288" />
                   <mssgle:CubicBezierSegment
-                    Point1="23.4653084259999,46.4739443169607"
-                    Point2="23.4653084259999,50.4739443169607"
-                    Point3="27.4653084259999,50.4739443169607" />
+                    Point1="23.459025703487,31.8666144740288"
+                    Point2="23.459025703487,35.8666144740288"
+                    Point3="27.459025703487,35.8666144740288" />
                   <mssgle:LineSegment
-                    End="39.4306168519997,50.4739443169607" />
+                    End="39.418051406974,35.8666144740288" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16065,13 +16193,13 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\1 - Faculty Staff\1A - TT Faculty FTE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source"
           TopLeft="24.5714289898775,21.4117650061743" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Destination"
           TopLeft="14.2857145289986,115.623531033341" />
         <EdgeLayout
@@ -16079,7 +16207,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="100.228571759438,63.0117650061743">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,52.6117660271668"
               Start="0,0"
               End="0,45.1117660271668">
@@ -16093,9 +16221,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -16126,7 +16252,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\1 - Faculty Staff\1B - College Funded FTE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\1 - Faculty Staff\1B - College Funded FTE\OLE DB Source"
@@ -16140,7 +16266,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="131.6,72">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,48.0000000000001"
               Start="0,0"
               End="0,40.5000000000001">
@@ -16187,7 +16313,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\1 - Faculty Staff\1C - Target FTE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\1 - Faculty Staff\1C - Target FTE\OLE DB Source"
@@ -16201,7 +16327,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="194.4,82.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,56"
               Start="0,0"
               End="0,48.5">
@@ -16248,17 +16374,17 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\1 - Faculty Staff\1D - Lecturer FTE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\1 - Faculty Staff\1D - Lecturer FTE\OLE DB Destination"
           TopLeft="120,240" />
         <NodeLayout
-          Size="156.8,41.6"
+          Size="156.816753926702,41.717277486911"
           Id="Package\1 - Faculty Staff\1D - Lecturer FTE\Data Conversion"
           TopLeft="127.2,140.8" />
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\1 - Faculty Staff\1D - Lecturer FTE\OLE DB Source"
           TopLeft="122.4,52" />
         <EdgeLayout
@@ -16266,7 +16392,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="201.8,93.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,47.2"
               Start="0,0"
               End="0,39.7">
@@ -16280,9 +16406,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16290,7 +16414,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="205.8,182.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,57.5999999999999"
               Start="0,0"
               End="0,50.0999999999999">
@@ -16304,9 +16428,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -16337,13 +16459,13 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\1 - Faculty Staff\1E - General Fund Reg Staff FTE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\1 - Faculty Staff\1E - General Fund Reg Staff FTE\OLE DB Source"
           TopLeft="107.2,29.6" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\1 - Faculty Staff\1E - General Fund Reg Staff FTE\OLE DB Destination"
           TopLeft="102.4,135.2" />
         <EdgeLayout
@@ -16351,7 +16473,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="185.6,71.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,64"
               Start="0,0"
               End="0,56.5">
@@ -16398,13 +16520,13 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\1 - Faculty Staff\1F - Regular Staff FTE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\1 - Faculty Staff\1F - Regular Staff FTE\OLE DB Source"
           TopLeft="96.8,48" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\1 - Faculty Staff\1F - Regular Staff FTE\OLE DB Destination"
           TopLeft="89.6,148" />
         <EdgeLayout
@@ -16412,7 +16534,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="174,89.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,58.4"
               Start="0,0"
               End="0,50.9">
@@ -16459,13 +16581,13 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\1 - Faculty Staff\1G - Primary Research Track Faculty">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\1 - Faculty Staff\1G - Primary Research Track Faculty\OLE DB Source"
           TopLeft="70.2857154826729,19.5764708627879" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\1 - Faculty Staff\1G - Primary Research Track Faculty\OLE DB Destination"
           TopLeft="56.5714295348343,113.176472175493" />
         <EdgeLayout
@@ -16473,7 +16595,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="144.228572508754,61.1764708627879">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,52.0000013127047"
               Start="0,0"
               End="0,44.5000013127047">
@@ -16520,7 +16642,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\2 - FY and FT\2FY - First Year Seminar and 2FT First Year Taught by TT">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="172,41.6"
           Id="Package\2 - FY and FT\2FY - First Year Seminar and 2FT First Year Taught by TT\OLE DB Destination"
@@ -16538,7 +16660,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="117.2,60">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="9.7714293985951,42.1647073151744"
               Start="0,0"
               End="9.7714293985951,34.6647073151744">
@@ -16574,7 +16696,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="124.771429296416,143.764707315174">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,52.6117660271668"
               Start="0,0"
               End="0,45.1117660271668">
@@ -16621,7 +16743,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\2 - FY and FT\2FY - RCCORE 100">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="172,41.6"
           Id="Package\2 - FY and FT\2FY - RCCORE 100\OLE DB Destination"
@@ -16639,7 +16761,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="145.2,75.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="13.2,53.6"
               Start="0,0"
               End="13.2,46.1">
@@ -16675,7 +16797,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="158.4,170.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="-11.6000000000001,82.4"
               Start="0,0"
               End="-11.6000000000001,74.9">
@@ -16734,17 +16856,17 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\2 - SCT, SCS, DSmall\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\2 - SCT, SCS, DSmall\Data Flow Task\OLE DB Destination"
           TopLeft="56,220.8" />
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\2 - SCT, SCS, DSmall\Data Flow Task\OLE DB Source"
           TopLeft="65.6,20.8" />
         <NodeLayout
-          Size="156.8,41.6"
+          Size="156.816753926702,41.717277486911"
           Id="Package\2 - SCT, SCS, DSmall\Data Flow Task\Data Conversion"
           TopLeft="59.2,112.8" />
         <EdgeLayout
@@ -16752,7 +16874,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="139.4,62.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,50.4"
               Start="0,0"
               End="0,42.9">
@@ -16766,9 +16888,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16776,7 +16896,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="139.8,154.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,66.4"
               Start="0,0"
               End="0,58.9">
@@ -16790,9 +16910,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -16823,21 +16941,21 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Course_Level">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="273.6,41.6"
+          Size="273.424083769634,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Course_Level\OLE DB Destination - 017 KPIData_Stage"
           TopLeft="5.98095236473344,321.406538221351" />
         <NodeLayout
-          Size="128,41.6"
+          Size="128.167539267016,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Course_Level\Aggregate"
           TopLeft="69.1428573212657,114.980394330404" />
         <NodeLayout
-          Size="156.8,41.6"
+          Size="156.816753926702,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Course_Level\Data Conversion"
           TopLeft="57.7904764661984,218.729414338637" />
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Course_Level\OLE DB Source"
           TopLeft="57.3460319082212,18.4" />
         <EdgeLayout
@@ -16845,7 +16963,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="133.044444614743,60">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,54.980394330404"
               Start="0,0"
               End="0,47.480394330404">
@@ -16859,9 +16977,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16869,7 +16985,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="139.485714415466,260.329414338637">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,61.077123882714"
               Start="0,0"
               End="0,53.577123882714">
@@ -16883,9 +16999,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16893,7 +17007,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="134.666666893732,156.580394330404">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,62.149020008233"
               Start="0,0"
               End="0,54.649020008233">
@@ -16907,9 +17021,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -16945,21 +17057,21 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Instr_Type">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="273.6,41.6"
+          Size="273.424083769634,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Instr_Type\OLE DB Destination - 017 KPIData_Stage"
           TopLeft="60,363.006538221351" />
         <NodeLayout
-          Size="128,41.6"
+          Size="128.167539267016,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Instr_Type\Aggregate"
           TopLeft="123.161904956532,156.580394330404" />
         <NodeLayout
-          Size="156.8,41.6"
+          Size="156.816753926702,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Instr_Type\Data Conversion"
           TopLeft="111.809524101465,260.329414338637" />
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Instr_Type\OLE DB Source"
           TopLeft="112.165079543488,60" />
         <EdgeLayout
@@ -16967,7 +17079,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="193.504762050732,301.929414338637">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,61.077123882714"
               Start="0,0"
               End="0,53.577123882714">
@@ -16981,9 +17093,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16991,7 +17101,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="188.685714528999,198.180394330404">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,62.149020008233"
               Start="0,0"
               End="0,54.649020008233">
@@ -17005,9 +17115,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17015,7 +17123,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="187.46349225001,101.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,54.980394330404"
               Start="0,0"
               End="0,47.480394330404">
@@ -17029,9 +17137,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17067,33 +17173,33 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Master Query">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Master Query\OLE DB Source"
           TopLeft="29.3482978849299,27.7294127706838" />
         <NodeLayout
-          Size="142.4,41.6"
+          Size="142.240837696336,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Master Query\Course_Level"
           TopLeft="648.163276344277,28.8403365389287" />
         <NodeLayout
-          Size="274.4,41.6"
+          Size="274.429319371728,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Master Query\OLE DB Destination - 017 KPIMaster_2_3"
           TopLeft="31.4625845480243,275.827453334109" />
         <NodeLayout
-          Size="99.2,41.6"
+          Size="99.0157068062828,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Master Query\SCH"
           TopLeft="210.666670254298,26.895800155092" />
         <NodeLayout
-          Size="116.8,41.6"
+          Size="116.607329842932,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Master Query\DEPTID"
           TopLeft="820.244910173793,31.2436979171727" />
         <NodeLayout
-          Size="120.8,41.6"
+          Size="120.628272251309,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Master Query\Adj_SCH"
           TopLeft="337.653066974687,28.2941180438731" />
         <NodeLayout
-          Size="131.2,41.6"
+          Size="131.183246073299,41.717277486911"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Master Query\Instr_Type"
           TopLeft="485.102049077566,27.6386558498067" />
         <EdgeLayout
@@ -17101,7 +17207,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="180.54829788493,48.1126064628879">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="30.118372369368,0"
               Start="0,0"
               End="22.618372369368,0">
@@ -17115,9 +17221,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17125,7 +17229,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="790.563276344277,50.8420172280507">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="29.6816338295152,0"
               Start="0,0"
               End="22.1816338295152,0">
@@ -17139,9 +17243,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17149,7 +17251,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="878.644910173793,72.8436979171727">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="-709.982325625769,202.983755416936"
               Start="0,0"
               End="-709.982325625769,195.483755416936">
@@ -17175,9 +17277,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17185,7 +17285,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="458.453066974687,48.7663869468399">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="26.6489821028784,0"
               Start="0,0"
               End="19.1489821028784,0">
@@ -17199,9 +17299,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17209,7 +17307,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="309.866670254298,48.3949590994825">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="27.7863967203895,0"
               Start="0,0"
               End="20.2863967203895,0">
@@ -17223,9 +17321,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17233,7 +17329,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="616.302049077566,49.0394961943677">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="31.8612272667112,0"
               Start="0,0"
               End="24.3612272667112,0">
@@ -17247,9 +17343,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17280,7 +17374,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\4 - Degrees\6B - Bachelor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\4 - Degrees\6B - Bachelor\OLE DB Source"
@@ -17294,7 +17388,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="297.8,85.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,110.4"
               Start="0,0"
               End="0,102.9">
@@ -17341,7 +17435,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\4 - Degrees\6B - Bachelor RC 186000">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\4 - Degrees\6B - Bachelor RC 186000\OLE DB Source"
@@ -17355,7 +17449,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="193,101.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,110.4"
               Start="0,0"
               End="0,102.9">
@@ -17402,7 +17496,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\4 - Degrees\6M - Minor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\4 - Degrees\6M - Minor\OLE DB Source"
@@ -17416,7 +17510,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="227.28571589139,88.0941182991213">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,110.4"
               Start="0,0"
               End="0,102.9">
@@ -17463,7 +17557,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\4 - Degrees\6P - PhD">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\4 - Degrees\6P - PhD\OLE DB Source"
@@ -17477,7 +17571,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="269,105.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,110.4"
               Start="0,0"
               End="0,102.9">
@@ -17524,13 +17618,13 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\4 - Degrees\TermMas - Masters">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\4 - Degrees\TermMas - Masters\OLE DB Source"
           TopLeft="116.000001975468,44.0470594412728" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\4 - Degrees\TermMas - Masters\OLE DB Destination"
           TopLeft="114.285716231988,162.729414046924" />
         <EdgeLayout
@@ -17538,7 +17632,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="191.600001975468,85.6470594412728">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="8.68571425652016,77.0823546056517"
               Start="0,0"
               End="8.68571425652016,69.5823546056517">
@@ -17564,9 +17658,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17597,7 +17689,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\5 - Graduate Program (PhD)\5AC - Enrolls">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\5 - Graduate Program (PhD)\5AC - Enrolls\OLE DB Source"
@@ -17611,7 +17703,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="152.2,59.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,110.4"
               Start="0,0"
               End="0,102.9">
@@ -17658,7 +17750,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\5 - Graduate Program (PhD)\5AD - Admits">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\5 - Graduate Program (PhD)\5AD - Admits\OLE DB Source"
@@ -17672,7 +17764,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="155.6,72.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="12.4000000000001,51.2"
               Start="0,0"
               End="12.4000000000001,43.7">
@@ -17731,7 +17823,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\5 - Graduate Program (PhD)\5AP - Applicants">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\5 - Graduate Program (PhD)\5AP - Applicants\OLE DB Source"
@@ -17745,7 +17837,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="139.807143382637,50.7705882867727">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,72.1941193201143"
               Start="0,0"
               End="0,64.6941193201143">
@@ -17797,13 +17889,13 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\5 - Graduate Program (PhD)\5HC - Headcount">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\5 - Graduate Program (PhD)\5HC - Headcount\OLE DB Source"
           TopLeft="68.8,12" />
         <NodeLayout
-          Size="273.6,41.6"
+          Size="273.424083769634,41.717277486911"
           Id="Package\5 - Graduate Program (PhD)\5HC - Headcount\OLE DB Destination - 017 KPIData_Stage"
           TopLeft="18.4,126.4" />
         <EdgeLayout
@@ -17811,7 +17903,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="144.4,53.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="10.8,72.8"
               Start="0,0"
               End="10.8,65.3">
@@ -17837,9 +17929,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17870,13 +17960,13 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\6 - Terminal Masters\MS_AC - Enrolls">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\6 - Terminal Masters\MS_AC - Enrolls\OLE DB Source"
           TopLeft="99.2,36" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\6 - Terminal Masters\MS_AC - Enrolls\OLE DB Destination"
           TopLeft="73.6,136.8" />
         <EdgeLayout
@@ -17884,7 +17974,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="174.8,77.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="-15.2,59.2"
               Start="0,0"
               End="-15.2,51.7">
@@ -17910,9 +18000,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17943,7 +18031,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\6 - Terminal Masters\MS_AD - Admits">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\6 - Terminal Masters\MS_AD - Admits\OLE DB Source"
@@ -17957,7 +18045,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="152,74.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,81.6"
               Start="0,0"
               End="0,74.1">
@@ -18004,7 +18092,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\6 - Terminal Masters\MS_AP - Applicants">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\6 - Terminal Masters\MS_AP - Applicants\OLE DB Source"
@@ -18018,7 +18106,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="117.942857775396,68.5176474363334">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,71.5764721754926"
               Start="0,0"
               End="0,64.0764721754926">
@@ -18065,7 +18153,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\6 - Terminal Masters\MS_HC - Headcount">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\6 - Terminal Masters\MS_HC - Headcount\OLE DB Source"
@@ -18079,7 +18167,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="168.8,75.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,48.8"
               Start="0,0"
               End="0,41.3">

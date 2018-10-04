@@ -7,12 +7,12 @@
   DTS:CreatorName="UMROOT\juliezie"
   DTS:DTSID="{A5C6F4D3-46F7-4F9A-B261-304D0C59EA39}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LastModifiedProductVersion="14.0.3002.92"
   DTS:LocaleID="1033"
   DTS:ObjectName="Verification_Script"
   DTS:PackageType="5"
-  DTS:VersionBuild="21"
-  DTS:VersionGUID="{7ACF464E-CBFF-449E-94DB-E151A7AC47AB}">
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{8F908D9E-C7AC-4397-8259-A5AF849763B7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -41,7 +41,7 @@
   FROM [lsa_AdminData].[dbo].[KPIData_Stage] A, [lsa_AdminData].[dbo].[KPIData] B
   WHERE A.DeptID = B.DeptID
   and A.KPICode = B.KPICode
-  and A.AcadYear = '2017'
+  and A.AcadYear = '2018'
   and B.AcadYear = (A.AcadYear-1) 
   and B.KPIValue &gt; 0
 </DTS:VariableValue>
@@ -58,7 +58,7 @@
         DTS:DataType="8">SELECT A.KPICode, ABS(SUM(A.KPIValue)-SUM(B.KPIValue))/SUM(B.KPIValue) AS Percent_Diff
   FROM [lsa_AdminData].[dbo].[KPIData_Stage] A, [lsa_AdminData].[dbo].[KPIData] B
   WHERE A.KPICode = B.KPICode
-  and A.AcadYear = '2017'
+  and A.AcadYear = '2018'
   and B.AcadYear = (A.AcadYear-1) 
   GROUP BY A.KPICode
 </DTS:VariableValue>
@@ -70,7 +70,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="_sAcadYear">
       <DTS:VariableValue
-        DTS:DataType="8">2017</DTS:VariableValue>
+        DTS:DataType="8">2018</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -152,7 +152,7 @@
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -301,7 +301,7 @@
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -519,7 +519,7 @@
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -660,7 +660,7 @@
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -817,24 +817,24 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="110.4,41.6"
+          Size="110.575916230367,41.717277486911"
           Id="Package\Erase (CAREFUL!) KPIData_Verification on 017\Delete"
           TopLeft="58.0714294667147,16.5117648603181" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="249.6,121.6"
-          Size="249.6,164.8"
+          PanelSize="249.801047120419,121.633507853404"
+          Size="249.801047120419,164.858638743456"
           Id="Package\Erase (CAREFUL!) KPIData_Verification on 017"
           TopLeft="17.9591839793125,88.6521019826713" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\KPI Check by DeptID\Calculate % Difference"
           TopLeft="25.8285723043949,94.6352964770836" />
         <NodeLayout
-          Size="165.6,41.6"
+          Size="165.361256544503,41.717277486911"
           Id="Package\KPI Check by DeptID\Calculate Above 20% Threshold"
           TopLeft="28.9142914655259,175.482356210069" />
         <EdgeLayout
@@ -842,7 +842,7 @@
           TopLeft="111.77143188496,136.235296477084">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,39.247059732985"
               Start="0,0"
               End="0,31.747059732985">
@@ -862,23 +862,23 @@
         <AnnotationLayout
           Text="This is comparing data in KPIData_Stage (newest year) to data in KPIData (already published)"
           ParentId="Package\KPI Check by DeptID"
-          FontInfo="{assembly:Null}"
-          Size="173.6,89.6"
+          FontInfo="{x:Null}"
+          Size="173.403141361257,89.9685863874346"
           Id="e26eee48-e9b3-445e-9555-03028d5478fd"
           TopLeft="14.628572100036,1.55294216314402" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="228,295.2"
-          Size="228,338.4"
+          PanelSize="228.188481675393,295.539267015707"
+          Size="228.188481675393,338.261780104713"
           Id="Package\KPI Check by DeptID"
           TopLeft="295.314292282961,34.0705874116362" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\KPI Check Overall\Calculate % Difference"
           TopLeft="25.8285723043949,94.6352964770836" />
         <NodeLayout
-          Size="165.6,41.6"
+          Size="165.361256544503,41.717277486911"
           Id="Package\KPI Check Overall\Calculate Above 20% Threshold"
           TopLeft="28.9142914655259,175.482356210069" />
         <EdgeLayout
@@ -886,7 +886,7 @@
           TopLeft="111.77143188496,136.235296477084">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,39.247059732985"
               Start="0,0"
               End="0,31.747059732985">
@@ -906,15 +906,15 @@
         <AnnotationLayout
           Text="This is comparing data in KPIData_Stage (newest year) to data in KPIData (already published)"
           ParentId="Package\KPI Check Overall"
-          FontInfo="{assembly:Null}"
-          Size="173.6,89.6"
+          FontInfo="{x:Null}"
+          Size="173.403141361257,89.9685863874346"
           Id="391ef6dc-aa12-4e24-9869-651a39c82eea"
           TopLeft="14.628572100036,1.55294216314402" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="228,295.2"
-          Size="228,338.4"
+          PanelSize="228.188481675393,295.539267015707"
+          Size="228.188481675393,338.261780104713"
           Id="Package\KPI Check Overall"
           TopLeft="550.857152238184,39.1529417255758" />
       </GraphLayout>

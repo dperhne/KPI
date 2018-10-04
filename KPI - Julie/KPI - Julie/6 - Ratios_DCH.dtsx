@@ -7,12 +7,12 @@
   DTS:CreatorName="UMROOT\juliezie"
   DTS:DTSID="{FFE80A9D-772B-425C-830E-E5BDD200CE94}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LastModifiedProductVersion="14.0.3002.92"
   DTS:LocaleID="1033"
   DTS:ObjectName="6 - Ratios_DCH"
   DTS:PackageType="5"
-  DTS:VersionBuild="18"
-  DTS:VersionGUID="{A6E1E4EA-5F4D-4821-808F-7D4972BAAF48}">
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{ECCFF7E9-EABB-4518-B562-6AD2BA039682}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB8a3kQsgkf08ZAxAeRfu2WAAAAAASAAACgAAAAEAAAAA6K/KoMhtDMhM9FtsHOZfIQAAAAvoNVn2FygfiDZf2yU5XnMRQAAADdbvq3U17W0c2+AhEFhFIAr+geIA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACrEFcdIHDsdkuBww5H6ZMYAAAAAASAAACgAAAAEAAAALu7XUbAjyKmSGsikfkPKc4QAAAA7FuuafCkGMZCr037MuAZIBQAAAD4M76OQTfSTWzKKKvXOYUgKqon1w</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -83,7 +83,7 @@
       DTS:ObjectName="sSQLDeleteDeptFTE">
       <DTS:VariableValue
         DTS:DataType="8">DELETE FROM lsa_AdminData.dbo.acBudDeptFTE
-WHERE fy = '2017'</DTS:VariableValue>
+WHERE fy = '2018'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -95,7 +95,7 @@ WHERE fy = '2017'</DTS:VariableValue>
       DTS:ObjectName="sSQLDeleteLSAFTE">
       <DTS:VariableValue
         DTS:DataType="8">DELETE FROM lsa_AdminData.dbo.acBudLSAFTE 
-WHERE fy = '2017'</DTS:VariableValue>
+WHERE fy = '2018'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -107,7 +107,7 @@ WHERE fy = '2017'</DTS:VariableValue>
       DTS:ObjectName="sSQLDeleteTeaching">
       <DTS:VariableValue
         DTS:DataType="8">DELETE FROM [lsa_AdminData].[dbo].[CRAS_Teaching] 
-WHERE acad_year = '2017'</DTS:VariableValue>
+WHERE acad_year = '2018'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -132,7 +132,7 @@ WHERE
 	and e.DeptEmploymentStatus = 'Active'
 	and a.emplid not like '%--%'
 	and a.jobcode in ('201000','201500','202000','202500')
-	and a.fy = '2017'
+	and a.fy = '2018'
 	and (a.apptAuthPct &gt; 0 or a.apptDistPct &gt; 0)
 GROUP BY
 	a.fy, a.emplid, a.apptdeptid</DTS:VariableValue>
@@ -160,7 +160,7 @@ WHERE
 	and e.DeptEmploymentStatus = 'Active'
 	and a.emplid not like '%--%'
 	and a.jobcode in ('201000','201500','202000','202500')
-	and a.fy = '2017'
+	and a.fy = '2018'
 	and (a.apptAuthPct &gt; 0 or a.apptDistPct &gt; 0)
 GROUP BY
 	a.fy, a.emplid
@@ -201,7 +201,7 @@ FROM
 WHERE 
   d.dept_grp = 'COLLEGE_OF_LSA'
 	and c.cras_crse_component != 'IND'
-	and c.acad_year = '2017'
+	and c.acad_year = '2018'
 GROUP BY
 	i.class_instr_id, c.acad_year, c.term,
 	c.subject, c.catalog_nbr, c.class_section, c.session_code,
@@ -234,7 +234,7 @@ FROM
 			fy, deptid) as fte
 		ON f.fy = fte.fy and f.deptid = fte.deptid
 WHERE
-	f.fy = '2017'
+	f.fy = '2018'
 	and fte.FTE &gt; 0
 GROUP BY
 	f.fy, f.deptid, fte.FTE 
@@ -248,7 +248,7 @@ ORDER BY
       DTS:Namespace="User"
       DTS:ObjectName="_sCurrFY">
       <DTS:VariableValue
-        DTS:DataType="8">2017</DTS:VariableValue>
+        DTS:DataType="8">2018</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -372,7 +372,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -621,7 +621,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 
 	e.Emplid, e.Name, e.LastName, e.FirstName,
 	e.Uniqname, d.SEX, d.BIRTHDATE, e.ServiceDt, e.EmpHiDegYr as hrDegreeYear,
 	d.ETHNIC_GROUP as ethnicGroup, d.ETHNIC_GROUP_DESCRSHORT as ethnicGroupDescr
@@ -994,7 +994,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1167,7 +1167,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1400,7 +1400,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1559,7 +1559,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1768,7 +1768,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2023,7 +2023,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2394,7 +2394,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2551,7 +2551,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2801,41 +2801,41 @@ and e.Emplid = d.EMPLID
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="177.6,41.6"
+          Size="177.424083769634,41.717277486911"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Delete AcBudEmp"
           TopLeft="21.1142869185428,253.211768944289" />
         <NodeLayout
-          Size="156.8,41.6"
+          Size="156.816753926702,41.717277486911"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Delete Dept FTE"
           TopLeft="37.2571443363112,18.2117660271668" />
         <NodeLayout
-          Size="152,41.6"
+          Size="151.790575916231,41.717277486911"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Delete LSA FTE"
           TopLeft="45.8285730537104,91.6235316167653" />
         <NodeLayout
-          Size="156,41.6"
+          Size="155.811518324608,41.717277486911"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Delete Teaching"
           TopLeft="39.542858660951,169.929415067917" />
         <NodeLayout
-          Size="149.6,41.6"
+          Size="149.780104712042,41.717277486911"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get AcBudEmp"
           TopLeft="34.6448942167765,346.652110650689" />
         <NodeLayout
-          Size="143.2,41.6"
+          Size="143.24607329843,41.717277486911"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get Dept FTE"
           TopLeft="34.9714248345821,418.517658229683" />
         <NodeLayout
-          Size="138.4,41.6"
+          Size="138.219895287959,41.717277486911"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get LSA FTE"
           TopLeft="38.3999963215418,501.43530624944" />
         <NodeLayout
-          Size="167.2,41.6"
+          Size="167.371727748692,41.717277486911"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get Teaching Data"
           TopLeft="25.8285675360231,573.34118940888" />
         <NodeLayout
-          Size="180.8,41.6"
+          Size="180.942408376964,41.717277486911"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Insert into KPI_Stage"
           TopLeft="25.7142864927953,641.176480197577" />
         <EdgeLayout
@@ -2843,7 +2843,7 @@ and e.Emplid = d.EMPLID
           TopLeft="118.742858695011,59.8117660271668">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,31.8117655895986"
               Start="0,0"
               End="0,24.3117655895986">
@@ -2865,7 +2865,7 @@ and e.Emplid = d.EMPLID
           TopLeft="119.685715857331,133.223531616765">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,36.7058834511517"
               Start="0,0"
               End="0,29.2058834511517">
@@ -2887,7 +2887,7 @@ and e.Emplid = d.EMPLID
           TopLeft="113.728572789747,211.529415067917">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,41.6823538763717"
               Start="0,0"
               End="0,34.1823538763717">
@@ -2909,7 +2909,7 @@ and e.Emplid = d.EMPLID
           TopLeft="108.008159525679,388.252110650689">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,30.2655475789939"
               Start="0,0"
               End="0,22.7655475789939">
@@ -2931,7 +2931,7 @@ and e.Emplid = d.EMPLID
           TopLeft="107.085710578062,460.117658229683">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,41.3176480197574"
               Start="0,0"
               End="0,33.8176480197574">
@@ -2953,7 +2953,7 @@ and e.Emplid = d.EMPLID
           TopLeft="108.514281928782,543.03530624944">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,30.30588315944"
               Start="0,0"
               End="0,22.80588315944">
@@ -2975,7 +2975,7 @@ and e.Emplid = d.EMPLID
           TopLeft="112.771427014409,614.94118940888">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,26.2352907886965"
               Start="0,0"
               End="0,18.7352907886965">
@@ -2997,7 +2997,7 @@ and e.Emplid = d.EMPLID
           TopLeft="109.67959056766,294.811768944289">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,51.8403417064002"
               Start="0,0"
               End="0,44.3403417064002">
@@ -3017,8 +3017,8 @@ and e.Emplid = d.EMPLID
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="540.8,737.6"
-          Size="540.8,780.8"
+          PanelSize="540.816753926702,737.842931937173"
+          Size="540.816753926702,780.565445026178"
           Id="Package\DCH - CH by Faculty over Faculty FTE"
           TopLeft="1.71428656091501,1.03529458095448" />
       </GraphLayout>
@@ -3296,13 +3296,13 @@ and e.Emplid = d.EMPLID
     design-time-name="Package\DCH - CH by Faculty over Faculty FTE\Insert into KPI_Stage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Insert into KPI_Stage\OLE DB Source"
           TopLeft="63.2,60.8" />
         <NodeLayout
-          Size="172,41.6"
+          Size="171.895287958116,41.717277486911"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Insert into KPI_Stage\OLE DB Destination"
           TopLeft="157.6,204.8" />
         <EdgeLayout
@@ -3310,7 +3310,7 @@ and e.Emplid = d.EMPLID
           TopLeft="138.8,102.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="104.8,102.4"
               Start="0,0"
               End="104.8,94.9">

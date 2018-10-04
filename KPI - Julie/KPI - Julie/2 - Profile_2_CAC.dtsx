@@ -7,12 +7,12 @@
   DTS:CreatorName="UMROOT\nickh1"
   DTS:DTSID="{B157E979-317B-4562-B83D-10E292278B2A}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LastModifiedProductVersion="14.0.3002.92"
   DTS:LocaleID="1033"
   DTS:ObjectName="2 - Profile_2_CAC"
   DTS:PackageType="5"
-  DTS:VersionBuild="39"
-  DTS:VersionGUID="{F24297E9-F862-4CBE-80D2-94CBE895F263}">
+  DTS:VersionBuild="42"
+  DTS:VersionGUID="{C37A968B-C0A1-4F66-904A-8ED785F399C7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,11 +23,11 @@
       DTS:ObjectName="dwprod.nickh">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod;User ID=nickh;Provider=MSDAORA.1;Persist Security Info=True;">
+          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=MSDAORA.1;Persist Security Info=True;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOaZcR4Vd+U2QGh5kMXbGNgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABGGlP6dqhxXKUYv0KZ72ekAAAAAASAAACgAAAAEAAAAHTowgh5k/+7Nbh4VYYk8mMYAAAA6W3eBeWVuY88XTGHjaCTNIYP2e9WfSbnFAAAAF/1Yqj7qFQW/qbAWdnU4cq1bH+7</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAmN52NOnwVuUZi3rLkRUETAAAAAASAAACgAAAAEAAAAL6Afm1yk3Op20Z51LWSt/kQAAAAjtICUaZQTWcKdHdGlJVIphQAAABRdke2xk7hQEbakpqp0lj61OkJUQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -92,7 +92,7 @@ FROM
 		and sc.sctn_combined_id = sct.sctn_combined_id (+)
 		and c.term = t.term 
 		and t.acad_career = 'ULSA'
-	  and t.acad_year = '2017'
+	  and t.acad_year = '2018'
       and c.crse_component not in ('PSI', 'IND') 
       and c.class_stat != 'X'
       and c.total_enrl_tot &gt; 0
@@ -133,7 +133,7 @@ ORDER BY
       <DTS:VariableValue
         DTS:DataType="8">DELETE FROM	[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]
 WHERE
-	[Acad_Year] = '2017'</DTS:VariableValue>
+	[Acad_Year] = '2018'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -150,14 +150,14 @@ FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as T
 		(SELECT Home_Class_Nbr, Term
 		 FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]
 		 WHERE
-			[Acad_Year] = '2017'	
+			[Acad_Year] = '2018'	
 			AND Combined_Section = 'C'
 			AND (Subject_DeptId = '194700' OR Class_DeptId = '171900')
 		 UNION
 		 SELECT Home_Class_Nbr, Term
 		 FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]
 		 WHERE
-			[Acad_Year] = '2017'	
+			[Acad_Year] = '2018'	
 			AND (Subject_Division = 'xxxxxxxxxxxxxxxxxxxxxxxxx' OR Class_Division = 'xxxxxxxxxxxxxxxxxxxxxxxxx')) as D
 	ON T.Home_Class_Nbr = D.Home_Class_Nbr and T.Term = D.Term	</DTS:VariableValue>
     </DTS:Variable>
@@ -170,7 +170,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as T
       DTS:Namespace="User"
       DTS:ObjectName="sSQLDeleteSummary">
       <DTS:VariableValue
-        DTS:DataType="8">DELETE FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] WHERE [Acad_Year] = '2017'</DTS:VariableValue>
+        DTS:DataType="8">DELETE FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] WHERE [Acad_Year] = '2018'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -208,7 +208,7 @@ HAVING
 	AND count(s2.[KPI_CH]) &gt; 2
 ) as v
 WHERE
-	Acad_Year = '2017'</DTS:VariableValue>
+	Acad_Year = '2018'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -227,7 +227,7 @@ FROM
 	[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as t
 	INNER JOIN [lsa_reference_tables].[dbo].[CURR_FN_DEPT_VW] as d
 		ON t.Class_DeptId = d.DEPTID COLLATE DATABASE_DEFAULT
-WHERE t.[Acad_Year] = '2017'</DTS:VariableValue>
+WHERE t.[Acad_Year] = '2018'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -241,7 +241,7 @@ WHERE t.[Acad_Year] = '2017'</DTS:VariableValue>
         DTS:DataType="8">UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]
 SET 
 	[CH_Subtotal] = ([Non_Combined_CH] + [Combined_Same_Dept_CH] + [Gain_CH])
-WHERE [Acad_Year] = '2017'</DTS:VariableValue>
+WHERE [Acad_Year] = '2018'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -259,7 +259,7 @@ FROM
 		INNER JOIN [lsa_AdminData].[dbo].[DepartmentGrouping] as g
 			ON t.[Class_DeptId] = g.[deptid]
 WHERE
-	t.[Acad_Year] = '2017'</DTS:VariableValue>
+	t.[Acad_Year] = '2018'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -280,7 +280,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
 		WHERE
 			Combined_Section = 'C'
 			and Same_Dept = 'Y'
-			and Acad_Year = '2017'
+			and Acad_Year = '2018'
 		GROUP BY
 			Acad_Year, Class_DeptId) as t
 	ON s.DeptId = t.DeptId AND s.Acad_Year = t.Acad_Year	</DTS:VariableValue>
@@ -304,7 +304,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
 		WHERE
 			Same_Dept = 'N'
 			and Combined_Section = 'C'
-			and Acad_Year = '2017'
+			and Acad_Year = '2018'
 		GROUP BY
 			Acad_Year, Class_DeptId) as t
 	ON s.DeptId = t.Class_DeptId AND s.Acad_Year = t.Acad_Year	</DTS:VariableValue>
@@ -324,7 +324,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
 	INNER JOIN	[lsa_AdminData].[dbo].[KPIData] as k 
 		ON s.[DeptId] = k.[DeptID]
 			AND s.[Acad_Year] = k.[AcadYear]
-WHERE s.[Acad_Year] = '2017'
+WHERE s.[Acad_Year] = '2018'
 and k.[KPICode] = '2T'
 </DTS:VariableValue>
     </DTS:Variable>
@@ -347,7 +347,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
 		WHERE
 			Same_Dept = 'N'
 			and Combined_Section = 'C'
-			and Acad_Year = '2017'
+			and Acad_Year = '2018'
 		GROUP BY
 			Acad_Year, Subject_DeptId_Trim) as t
 	ON s.DeptId = t.Subject_DeptId_Trim AND s.Acad_Year = t.Acad_Year	</DTS:VariableValue>
@@ -364,7 +364,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
         DTS:DataType="8">UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]
 SET 
 	[Net_Trade_Pct] = [Net_Trade_CH] / [Total_CH]
-WHERE [Acad_Year] = '2017' 
+WHERE [Acad_Year] = '2018' 
 	AND [Total_CH] != 0</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -385,7 +385,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
 			[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]
 		WHERE
 			Combination_Type is Null
-			and Acad_Year = '2017'
+			and Acad_Year = '2018'
 		GROUP BY
 			Acad_Year, Class_DeptId) as t
 	ON s.DeptId = t.Class_DeptId AND s.Acad_Year = t.Acad_Year	</DTS:VariableValue>
@@ -406,7 +406,7 @@ FROM
 		INNER JOIN [lsa_AdminData].[dbo].[DepartmentGrouping] as g
 			ON t.[Subject_DeptId_Trim] = g.[deptid]
 WHERE
-	t.[Acad_Year] = '2017'</DTS:VariableValue>
+	t.[Acad_Year] = '2018'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -421,18 +421,18 @@ WHERE
 SET 
 	[Total_CH] = ([Non_Combined_CH] + [Combined_Same_Dept_CH] + [Gain_CH]) - [Loss_CH] ,
 	[Net_Trade_CH] = [Gain_CH] - [Loss_CH] 
-WHERE [Acad_Year] = '2017'</DTS:VariableValue>
+WHERE [Acad_Year] = '2018'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{463DE84B-8E12-4F77-B3AE-AC3CE6659D9F}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;2017&quot;"
+      DTS:Expression="&quot;2018&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="_sCurrAcadYear">
       <DTS:VariableValue
-        DTS:DataType="8">2017</DTS:VariableValue>
+        DTS:DataType="8">2018</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -539,7 +539,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1187,7 +1187,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1950,69 +1950,69 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="202.4,41.6"
+          Size="202.55497382199,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Delete Combined Sections"
           TopLeft="17,30.7000008751364" />
         <NodeLayout
-          Size="227.2,41.6"
+          Size="227.183246073299,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Delete FYS Rel Outside Classes"
           TopLeft="44.3571435188761,388.852941142152" />
         <NodeLayout
-          Size="159.2,41.6"
+          Size="159.329842931938,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Delete Summary"
           TopLeft="306.099999046325,31.9235303040606" />
         <NodeLayout
-          Size="190.4,41.6"
+          Size="190.492146596859,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Get Combined Sections"
           TopLeft="29.7142858115994,119.320588870197" />
         <NodeLayout
-          Size="182.4,41.6"
+          Size="182.450261780105,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Insert into KPI_Stage"
           TopLeft="605.957140930332,492.523529428925" />
         <NodeLayout
-          Size="156.8,41.6"
+          Size="156.816753926702,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Insert Summary"
           TopLeft="330.242855799929,119.320588870197" />
         <NodeLayout
-          Size="174.4,41.6"
+          Size="174.408376963351,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Update CH Subtotal"
           TopLeft="610.24285552745,122.570588870197" />
         <NodeLayout
-          Size="182.4,41.6"
+          Size="182.450261780105,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Update Class Division"
           TopLeft="36.0000001362392,296.561764860318" />
         <NodeLayout
-          Size="220,41.6"
+          Size="220.146596858639,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Update Combined Same Dept"
           TopLeft="546.38571255353,35.0411774486819" />
         <NodeLayout
-          Size="139.2,41.6"
+          Size="139.225130890053,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Update Gain"
           TopLeft="340.814284449207,210.994118007409" />
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151.287958115184,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Update KPI CH"
           TopLeft="618.671427014409,384.629411713228" />
         <NodeLayout
-          Size="139.2,41.6"
+          Size="139.225130890053,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Update Loss"
           TopLeft="343.814284585447,301.088235431394" />
         <NodeLayout
-          Size="203.2,41.6"
+          Size="203.057591623037,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Update Net Trade Percent"
           TopLeft="598.814284176729,289.288235139682" />
         <NodeLayout
-          Size="188,41.6"
+          Size="187.979057591624,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Update Non-Combined"
           TopLeft="348.671427968084,391.194117715697" />
         <NodeLayout
-          Size="192,41.6"
+          Size="192,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Update Subject Division"
           TopLeft="28.7142858115994,205.494118007409" />
         <NodeLayout
-          Size="158.4,41.6"
+          Size="158.324607329843,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Update Total CH"
           TopLeft="614.528569852089,206.17941200494" />
         <EdgeLayout
@@ -2020,7 +2020,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="121.5571429058,72.3000008751364">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,47.0205879950605"
               Start="0,0"
               End="0,39.5205879950605">
@@ -2042,7 +2042,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="124.814285811599,160.920588870197">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,44.5735291372121"
               Start="0,0"
               End="0,37.0735291372121">
@@ -2064,7 +2064,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="694.580950707157,76.6411774486819">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,45.929411421515"
               Start="0,0"
               End="0,38.429411421515">
@@ -2086,7 +2086,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="695.585712689769,164.170588870197">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,42.0088231347426"
               Start="0,0"
               End="0,34.5088231347426">
@@ -2108,7 +2108,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="697.071427014409,247.77941200494">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,41.5088231347424"
               Start="0,0"
               End="0,34.0088231347424">
@@ -2130,7 +2130,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="697.342855595569,330.888235139682">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,53.7411765735456"
               Start="0,0"
               End="0,46.2411765735456">
@@ -2152,7 +2152,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="695.71428397237,426.229411713228">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,66.294117715697"
               Start="0,0"
               End="0,58.794117715697">
@@ -2174,7 +2174,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="125.957142973919,247.094118007409">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,49.4676468529092"
               Start="0,0"
               End="0,41.9676468529092">
@@ -2196,7 +2196,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="124.311905160891,338.161764860318">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,50.6911762818339"
               Start="0,0"
               End="0,43.1911762818339">
@@ -2218,7 +2218,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="194.490476852209,388.852941142152">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="166.009522194116,-315.329410838092"
               Start="0,0"
               End="166.009522194116,-307.829410838092">
@@ -2252,7 +2252,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="409.771427423127,73.5235303040606">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,45.7970585661362"
               Start="0,0"
               End="0,38.2970585661362">
@@ -2274,7 +2274,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="409.528570124568,160.920588870197">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,50.0735291372125"
               Start="0,0"
               End="0,42.5735291372125">
@@ -2296,7 +2296,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="411.914284517327,252.594118007409">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,48.4941174239846"
               Start="0,0"
               End="0,40.9941174239846">
@@ -2318,7 +2318,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="413.042856276765,342.688235431394">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,48.5058822843035"
               Start="0,0"
               End="0,41.0058822843035">
@@ -2340,7 +2340,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="472.671427968084,391.194117715697">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="148.380951252113,-314.552940267016"
               Start="0,0"
               End="148.380951252113,-307.052940267016">
@@ -2372,8 +2372,8 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="845.6,650.4"
-          Size="845.6,693.6"
+          PanelSize="845.403141361257,650.387434554974"
+          Size="845.403141361257,693.612565445027"
           Id="Package\CAC - Credit Attribution Correction"
           TopLeft="114.971428649279,0.188231639136177" />
       </GraphLayout>
@@ -2383,13 +2383,13 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
     design-time-name="Package\CAC - Credit Attribution Correction\Get Combined Sections">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="129.6,41.6"
+          Size="129.675392670158,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Get Combined Sections\SQLServer"
           TopLeft="393.5,164.5" />
         <NodeLayout
-          Size="119.2,41.6"
+          Size="119.120418848168,41.717277486911"
           Id="Package\CAC - Credit Attribution Correction\Get Combined Sections\DWProd"
           TopLeft="5.5,5.5" />
         <EdgeLayout
@@ -2397,7 +2397,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
           TopLeft="65,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="393.5,117"
               Start="0,0"
               End="393.5,109.5">
@@ -2423,9 +2423,7 @@ WHERE [Acad_Year] = '2017'</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

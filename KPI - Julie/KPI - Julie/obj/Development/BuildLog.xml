@@ -2,53 +2,53 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>KPI - Julie</Name>
-    <LastWriteTime>2017-08-10T18:34:15.58104Z</LastWriteTime>
+    <LastWriteTime>2018-09-12T22:47:10.9902175Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Verification_Script.dtsx</Name>
-      <LastWriteTime>2017-08-11T13:15:37.4309178Z</LastWriteTime>
+      <LastWriteTime>2018-09-13T15:57:21.8561723Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>1 - Profile.dtsx</Name>
-      <LastWriteTime>2017-09-13T13:55:18.9451276Z</LastWriteTime>
+      <LastWriteTime>2018-09-07T19:21:14.9344986Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>2 - Profile_2_CAC.dtsx</Name>
-      <LastWriteTime>2017-08-15T13:25:26.733777Z</LastWriteTime>
+      <LastWriteTime>2018-09-10T14:45:09.235345Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>3 - Profile_7_VOR_UROP.dtsx</Name>
-      <LastWriteTime>2017-08-08T16:45:48.4591852Z</LastWriteTime>
+      <LastWriteTime>2018-09-20T13:46:56.0325527Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>4 - Profile_8_and_9.dtsx</Name>
-      <LastWriteTime>2017-08-08T17:08:18.5334034Z</LastWriteTime>
+      <LastWriteTime>2018-09-11T20:09:32.5087357Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>5 - Demographics_and_DivRollups.dtsx</Name>
-      <LastWriteTime>2017-08-10T18:09:08.5287553Z</LastWriteTime>
+      <LastWriteTime>2018-09-12T12:42:45.7070588Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>6 - Ratios_DCH.dtsx</Name>
-      <LastWriteTime>2017-08-10T13:45:51.1779363Z</LastWriteTime>
+      <LastWriteTime>2018-09-12T12:53:34.8743944Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>7 - Ratios.dtsx</Name>
-      <LastWriteTime>2017-08-16T14:21:20.4796843Z</LastWriteTime>
+      <LastWriteTime>2018-09-12T22:54:17.49693Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>8 - Final_Wrap_Up.dtsx</Name>
-      <LastWriteTime>2017-08-10T20:25:04.2575467Z</LastWriteTime>
+      <LastWriteTime>2018-09-20T18:55:36.147569Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
