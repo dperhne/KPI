@@ -7,177 +7,20 @@
   DTS:CreatorName="UMROOT\juliezie"
   DTS:DTSID="{220377F3-F005-4F7F-9700-ACE42BE59EB9}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.92"
+  DTS:LastModifiedProductVersion="15.0.0900.30"
   DTS:LocaleID="1033"
   DTS:ObjectName="4 - Profile_8_and_9"
   DTS:PackageType="5"
-  DTS:VersionBuild="34"
-  DTS:VersionGUID="{5A7E7DA7-4D17-4718-8A42-89FC559FE5D5}">
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{99469368-E807-4180-ACEB-86F68651BAEA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{0F8FDFF3-C91D-4111-8049-2FD0B094DA12}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADXjkjFWIVwLJpkXTRM3nTTAAAAAASAAACgAAAAEAAAABG3EAmQEErzjsrOTdAffUYQAAAAjKdYeGjsUdYmf62Wd4r+FRQAAADjzkHVzT+1CM7+/PLIgoVxPCbMEg</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{D36C397E-6A4B-4621-865C-9EFA6DB71351}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABr6zs+RkGhmppe4B07Qd9DAAAAAASAAACgAAAAEAAAADtYr+g6TnodQ/wNam7fxesQAAAAYsLXqiDtNmlG5doV8FtibBQAAADE1y8/i3O8Jbmfimnxy5hzzVmbSQ</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 2]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{1DD11391-FFC2-4EA0-87B8-0BCDCF1C90A6}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB/wRKTWU0mCeVF8YZsbHEtAAAAAASAAACgAAAAEAAAAPW8eh5Kj7L3MJbUvrCKxm8QAAAAWgK8XF90ifuVnPToQMXGrxQAAAC1zZrQ0XvhaDXZBUcDI85Ad9pSyA</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 3]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{054C0E23-28C2-4415-A77A-94799120004A}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAmd+R7oN2t6t5RtAQDAo0bAAAAAASAAACgAAAAEAAAAOar7gkFKSH2Xu1W60AAULwQAAAAfaIyZOPhGiFKrbzsPVBfmhQAAABOcJrf2YFuxJIgUluXZi9mztKdQA</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 4]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{397E33D5-887E-4014-BCD0-F5D4A568AB0F}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 4">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACp8qoFba01vtjdHVX7ntX2AAAAAASAAACgAAAAEAAAAB6zUk9ibJH82wXUBjCcQBYQAAAAvdg4rNZn5qfO/H9N0dpCixQAAAAiMw5Do7QnBEi1pmmt+P81tkej8A</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 5]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{41D4FA3A-E02E-4292-9F24-BD1B55645E46}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 5">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB8NgyQs9ONi+nWqPJXnzHrAAAAAASAAACgAAAAEAAAAL3oFVrhv2I1hynnOPQ9tb4QAAAAtpFaFstP9qfRQBq9cbBBfRQAAADCzmjnXVPVE8v3l09zTnwtsIhmRA</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 6]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{B85A6879-033B-4B97-A741-AA3B0013C914}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 6">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAC+ixDo3ZklX8D2VrExERrAAAAAASAAACgAAAAEAAAAJhiXQHTxcy6tl9e6E6Uu2IQAAAApaUIb6/AhfwOBtpC05G5BRQAAAA7owFHKfjXVp3wVw9opS/0gvxV7g</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 7]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{7E000294-6526-449F-8D0E-1176BA08F301}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 7">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAEdSSIk99N1M0u7lJbR1XWAAAAAASAAACgAAAAEAAAAA37mT3xWAv/iRCmi9hvjwQQAAAAZ3zacsO3U50XCn5K0mDduhQAAAByUBTs3W7Yy2HsT8twalFvnzbZ9Q</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 8]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{2C116001-DA00-4E59-BE27-3912963190F1}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 8">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAvCToE/MpegFJalHYbcGNYAAAAAASAAACgAAAAEAAAANz8ei2ZJ1RY5BrLvaITNy8QAAAAwpxQ6gOS0+E0d5rquqwGqhQAAABrjqi04/fINl+e7y0tZqVO5KKFBA</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[m-mssqlprd017,14330]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{90F82934-7581-4E75-8ABC-F8F159D91BC0}"
-      DTS:ObjectName="m-mssqlprd017,14330">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{22723347-4E6F-4514-9CC0-3AC92F414E61}"
-      DTS:ObjectName="m-mssqlprd017,14330.lsa_AdminData">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package_7Funding_Levels-{22723347-4E6F-4514-9CC0-3AC92F414E61}m-mssqlprd017,14330.lsa_AdminData;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{45F14C82-D146-46B6-A683-DD375FE9F89F}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;  l.DEPTID, l.FISCAL_YEAR, substr(to_char(l.FISCAL_YEAR),1,4) as AcadYear,&#xA;  round(sum(l.DOLLAR_AMOUNT*-1.0),0) as KPIValue, '7B' as KPICode&#xA;FROM&#xA;  M_GLDW1.REV_EXP_ACT_LEDGER l,&#xA;  M_GLDW1.CURR_FN_DEPT_VW d&#xA;WHERE&#xA;  l.DEPTID = d.DEPTID &#xA;  AND d.DEPT_GRP = 'COLLEGE_OF_LSA'&#xA;  and l.fund_code in &#xA;&#x9;&#x9;&#x9;(select f.fund_code &#xA;&#x9;&#x9;&#x9; from M_GLDW1.CURR_FUND_VW f&#xA;&#x9;&#x9;&#x9; where&#xA;&#x9;&#x9;&#x9;&#x9; f.FUND_CODE  !=  '86000'&#xA;&#x9;&#x9;&#x9;&#x9; AND f.FUND_GRP IN ('AGENCY', 'AUXILIARY', 'DESIGNATED', 'ERF', 'GENERAL', 'PLANT')&#xA;&#x9;&#x9;&#x9;)&#xA;  AND l.ACCOUNTING_PERIOD &lt;= 12&#xA;  AND l.DEPTID NOT IN ('172200','172400','173000')&#xA;  AND l.fiscal_year = '&quot; + @_sFY + &quot;'&#xA;GROUP BY&#xA;  l.DEPTID, l.FISCAL_YEAR&quot;"
+      DTS:Expression="&quot;SELECT&#xA;  l.DEPTID, l.FISCAL_YEAR, substr(to_char(l.FISCAL_YEAR),1,4) as AcadYear,&#xA;  round(sum(l.DOLLAR_AMOUNT*-1.0),0) as KPIValue, '7B' as KPICode&#xA;FROM&#xA;  M_GLDW1.REV_EXP_ACT_LEDGER l,&#xA;  M_GLDW1.CURR_FN_DEPT_VW d&#xA;WHERE&#xA;  l.DEPTID = d.DEPTID &#xA;  AND d.DEPT_GRP = 'COLLEGE_OF_LSA'&#xA;  and l.fund_code in &#xA;&#x9;&#x9;&#x9;(select f.fund_code &#xA;&#x9;&#x9;&#x9; from M_GLDW1.CURR_FUND_VW f&#xA;&#x9;&#x9;&#x9; where&#xA;&#x9;&#x9;&#x9;&#x9; f.FUND_CODE  !=  '86000'&#xA;&#x9;&#x9;&#x9;&#x9; AND f.FUND_GRP IN ('AGENCY', 'AUXILIARY', 'DESIGNATED', 'ERF', 'GENERAL', 'PLANT')&#xA;&#x9;&#x9;&#x9;)&#xA;  AND l.ACCOUNTING_PERIOD &lt;= 12&#xA;  AND l.DEPTID NOT IN ('172200','172400','173000')&#xA;  AND l.fiscal_year = '&quot; + @_mCurrFY + &quot;'&#xA;GROUP BY&#xA;  l.DEPTID, l.FISCAL_YEAR&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPI7B">
@@ -208,7 +51,7 @@ GROUP BY
       DTS:CreationName=""
       DTS:DTSID="{0FC2B73A-9229-4CE8-8D71-6C86D1509A75}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;  l.deptid, l.fiscal_year, substr(to_char(l.FISCAL_YEAR),1,4) as AcadYear, &#xA; round(sum(l.dollar_amount*-1.0),0) as KPIValue, '7D' as KPICode&#xA;FROM&#xA;  m_gldw1.rev_exp_act_ledger l,&#xA;  m_gldw1.curr_account_vw a,&#xA;  m_gldw1.curr_fn_dept_vw  d&#xA;WHERE&#xA;   l.account = a.account  &#xA;  and  l.deptid = d.deptid &#xA;  and  l.accounting_period  between  1 and 12&#xA;  and  a.account_type  =  'R'&#xA;  and  d.dept_grp  =  'COLLEGE_OF_LSA'&#xA;  and  l.fund_code = '30000'&#xA;  and l.fiscal_year = '&quot; + @_sFY + &quot;'&#xA;GROUP BY&#xA;  l.deptid, l.fiscal_year&quot;"
+      DTS:Expression="&quot;SELECT&#xA;  l.deptid, l.fiscal_year, substr(to_char(l.FISCAL_YEAR),1,4) as AcadYear, &#xA; round(sum(l.dollar_amount*-1.0),0) as KPIValue, '7D' as KPICode&#xA;FROM&#xA;  m_gldw1.rev_exp_act_ledger l,&#xA;  m_gldw1.curr_account_vw a,&#xA;  m_gldw1.curr_fn_dept_vw  d&#xA;WHERE&#xA;   l.account = a.account  &#xA;  and  l.deptid = d.deptid &#xA;  and  l.accounting_period  between  1 and 12&#xA;  and  a.account_type  =  'R'&#xA;  and  d.dept_grp  =  'COLLEGE_OF_LSA'&#xA;  and  l.fund_code = '30000'&#xA;  and l.fiscal_year = '&quot; + @_mCurrFY + &quot;'&#xA;GROUP BY&#xA;  l.deptid, l.fiscal_year&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPI7D">
@@ -235,7 +78,7 @@ GROUP BY
       DTS:CreationName=""
       DTS:DTSID="{217C4B66-CDBA-44F7-9CE3-CD4B6B51CF88}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;  l.deptid, l.fiscal_year, substr(to_char(l.FISCAL_YEAR),1,4) as AcadYear, &#xA;  round(sum(l.dollar_amount*-1.0),0) as KPIValue, '7G' as KPICode&#xA;FROM&#xA;  m_gldw1.rev_exp_act_ledger l,&#xA;  m_gldw1.curr_account_vw a,&#xA;  m_gldw1.curr_fn_dept_vw  d&#xA;WHERE&#xA;   l.account = a.account  &#xA;  and  l.deptid = d.deptid &#xA;  and  l.accounting_period  between  1 and 12&#xA;  and  a.account_type  =  'R'&#xA;  and  d.dept_grp  =  'COLLEGE_OF_LSA'&#xA;  and  l.fund_code  =  '10000'&#xA;  and l.fiscal_year = '&quot; + @_sFY + &quot;'&#xA;GROUP BY&#xA;  l.deptid, l.fiscal_year&#xA;&quot;"
+      DTS:Expression="&quot;SELECT&#xA;  l.deptid, l.fiscal_year, substr(to_char(l.FISCAL_YEAR),1,4) as AcadYear, &#xA;  round(sum(l.dollar_amount*-1.0),0) as KPIValue, '7G' as KPICode&#xA;FROM&#xA;  m_gldw1.rev_exp_act_ledger l,&#xA;  m_gldw1.curr_account_vw a,&#xA;  m_gldw1.curr_fn_dept_vw  d&#xA;WHERE&#xA;   l.account = a.account  &#xA;  and  l.deptid = d.deptid &#xA;  and  l.accounting_period  between  1 and 12&#xA;  and  a.account_type  =  'R'&#xA;  and  d.dept_grp  =  'COLLEGE_OF_LSA'&#xA;  and  l.fund_code  =  '10000'&#xA;  and l.fiscal_year = '&quot; + @_mCurrFY + &quot;'&#xA;GROUP BY&#xA;  l.deptid, l.fiscal_year&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPI7G">
@@ -263,7 +106,7 @@ GROUP BY
       DTS:CreationName=""
       DTS:DTSID="{388D57D4-A036-413E-96B6-EB7B6E2B7DED}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;  l.deptid,  l.fiscal_year, substr(to_char(l.FISCAL_YEAR),1,4) as AcadYear,  &#xA; round(sum(l.dollar_amount*-1.0),0) as KPIValue, '7Other' as KPICode&#xA;FROM&#xA;  m_gldw1.rev_exp_act_ledger l,&#xA;  m_gldw1.curr_account_vw a,&#xA;  m_gldw1.curr_fn_dept_vw  d,&#xA;  m_gldw1.curr_fund_vw  f &#xA;WHERE&#xA;   l.account=a.account  &#xA;  and  l.fund_code=f.fund_code &#xA;  and  l.deptid=d.deptid &#xA;  and  l.accounting_period  between  1 and 12&#xA;  and  a.account_type  =  'R'&#xA;  and  d.dept_grp  =  'COLLEGE_OF_LSA'&#xA;  and  f.fund_grp  in  ('AGENCY', 'AUXILIARY', 'DESIGNATED', 'PLANT')&#xA;  and  l.fund_code  !=  '86000'&#xA;  and l.fiscal_year = '&quot; + @_sFY + &quot;'&#xA;GROUP BY&#xA;  l.deptid, l.fiscal_year&quot;"
+      DTS:Expression="&quot;SELECT&#xA;  l.deptid,  l.fiscal_year, substr(to_char(l.FISCAL_YEAR),1,4) as AcadYear,  &#xA; round(sum(l.dollar_amount*-1.0),0) as KPIValue, '7Other' as KPICode&#xA;FROM&#xA;  m_gldw1.rev_exp_act_ledger l,&#xA;  m_gldw1.curr_account_vw a,&#xA;  m_gldw1.curr_fn_dept_vw  d,&#xA;  m_gldw1.curr_fund_vw  f &#xA;WHERE&#xA;   l.account=a.account  &#xA;  and  l.fund_code=f.fund_code &#xA;  and  l.deptid=d.deptid &#xA;  and  l.accounting_period  between  1 and 12&#xA;  and  a.account_type  =  'R'&#xA;  and  d.dept_grp  =  'COLLEGE_OF_LSA'&#xA;  and  f.fund_grp  in  ('AGENCY', 'AUXILIARY', 'DESIGNATED', 'PLANT')&#xA;  and  l.fund_code  !=  '86000'&#xA;  and l.fiscal_year = '&quot; + @_mCurrFY + &quot;'&#xA;GROUP BY&#xA;  l.deptid, l.fiscal_year&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPI7Other">
@@ -293,7 +136,7 @@ GROUP BY
       DTS:CreationName=""
       DTS:DTSID="{B497D279-CF2A-47EC-9B7C-298DDA425EEC}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;  l.deptid, l.fiscal_year, substr(to_char(l.FISCAL_YEAR),1,4) as AcadYear, &#xA;  round(sum(l.dollar_amount*-1.0),0) as KPIValue, '7S' as KPICode&#xA;FROM&#xA;  m_gldw1.rev_exp_act_ledger l,&#xA;  m_gldw1.curr_account_vw a,&#xA;  m_gldw1.curr_fn_dept_vw  d&#xA;WHERE&#xA;   l.account = a.account  &#xA;  and  l.deptid = d.deptid &#xA;  and  l.accounting_period  between  1 and 12&#xA;  and  a.account_type  =  'R'&#xA;  and  d.dept_grp  =  'COLLEGE_OF_LSA'&#xA;  and  l.fund_code in ('20000', '25000')&#xA;  and l.fiscal_year = '&quot; + @_sFY + &quot;'&#xA;GROUP BY&#xA;  l.deptid, l.fiscal_year&quot;"
+      DTS:Expression="&quot;SELECT&#xA;  l.deptid, l.fiscal_year, substr(to_char(l.FISCAL_YEAR),1,4) as AcadYear, &#xA;  round(sum(l.dollar_amount*-1.0),0) as KPIValue, '7S' as KPICode&#xA;FROM&#xA;  m_gldw1.rev_exp_act_ledger l,&#xA;  m_gldw1.curr_account_vw a,&#xA;  m_gldw1.curr_fn_dept_vw  d&#xA;WHERE&#xA;   l.account = a.account  &#xA;  and  l.deptid = d.deptid &#xA;  and  l.accounting_period  between  1 and 12&#xA;  and  a.account_type  =  'R'&#xA;  and  d.dept_grp  =  'COLLEGE_OF_LSA'&#xA;  and  l.fund_code in ('20000', '25000')&#xA;  and l.fiscal_year = '&quot; + @_mCurrFY + &quot;'&#xA;GROUP BY&#xA;  l.deptid, l.fiscal_year&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPI7S">
@@ -320,7 +163,7 @@ GROUP BY
       DTS:CreationName=""
       DTS:DTSID="{113D4D88-93C1-466B-B52A-E1D7B2530E6D}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;Select &#xA;&#x9;'8EC' as KPICode, substr(u.fiscal_year,1,4) as AcadYear, u.deptid, &#xA;&#x9;round(sum(u.utility_cost),0) as KPIValue&#xA;from&#xA;(&#xA;SELECT &#xA;&#x9;c.bldrecnbr, substr(c.fiscal_year,1,4) as fiscal_year, &#xA;&#x9;c.fund_code, c.accounting_period,&#xA;&#x9;c.utility_code, u.utility_descr, &#xA;&#x9;sum(c.dollar_amount*dp.partofbldsqrft) as utility_cost,&#xA;&#x9;u.btu_factor, u.unit_of_measure,&#xA;&#x9;dp.assigned_square_feet, dp.partofbldsqrft, &#xA;&#x9;dp.deptid, d.dept_descr,&#xA;&#x9;c.vendor_id, v.vendor_name1, v.sub_vendor_deptid&#xA;from&#xA;&#x9;M_SMDW2.UTILITY_CONSUMPTION c,&#xA;&#x9;m_prdw1.vendor v,&#xA;&#x9;(&#xA;&#x9;&#x9;select&#xA;&#x9;&#x9;&#x9;p.bldrecnbr, p.fiscal_year, p.deptid,&#xA;&#x9;&#x9;&#x9;sum(p.assignedSqrFt) as assigned_square_feet, sum(partofbldsqrft) as partofbldsqrft &#xA;&#x9;&#x9;from&#xA;&#x9;&#x9;&#x9;M_SMDW2.DepartmentPercent p&#xA;&#x9;&#x9;where&#xA;&#x9;&#x9;&#x9;p.rmFnc not in ('0050', '0060', '0070')&#xA;&#x9;&#x9;&#x9;and p.fiscal_year = '&quot; + @_sFY + &quot;'&#xA;&#x9;&#x9;group by&#xA;&#x9;&#x9;&#x9;p.fiscal_year, p.bldrecnbr, p.deptid&#xA;&#x9;) dp,&#xA;&#x9;M_SMDW2.UTILITY_TBL u,&#xA;&#x9;M_GLDW1.Curr_fn_dept_vw d&#xA;where&#xA;&#x9;c.utility_code = u.utility_code&#xA;&#x9;and c.vendor_id = v.vendor_id &#xA;&#x9;and c.bldrecnbr = dp.bldrecnbr&#xA;&#x9;and c.fiscal_year = dp.fiscal_year&#xA;&#x9;and dp.deptid = d.deptid&#xA;&#x9;and d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;and c.fiscal_year = '&quot; + @_sFY + &quot;'&#xA;&#x9;and v.address_seq_num =&#xA;&#x9;&#x9;(&#xA;&#x9;&#x9; select max(address_seq_num)&#xA;&#x9;&#x9; from m_prdw1.vendor v1&#xA;&#x9;&#x9; where v1.vendor_id = v.vendor_id&#xA;&#x9;&#x9;)&#xA;group by&#xA;&#x9;c.bldrecnbr, c.fiscal_year, u.btu_factor, u.unit_of_measure,c.fund_code,&#xA;&#x9;c.vendor_id, v.vendor_name1, v.sub_vendor_deptid,&#xA;&#x9;dp.assigned_square_feet, dp.partofbldsqrft, &#xA;&#x9;dp.deptid, d.dept_descr, c.accounting_period,&#xA;&#x9;c.utility_code, u.utility_descr&#xA;) u&#xA;group by&#xA;&#x9;u.fiscal_year, u.deptid, u.dept_descr&#xA;order by&#xA;&#x9;u.deptid, u.fiscal_year&quot;"
+      DTS:Expression="&quot;Select &#xA;&#x9;'8EC' as KPICode, substr(u.fiscal_year,1,4) as AcadYear, u.deptid, &#xA;&#x9;round(sum(u.utility_cost),0) as KPIValue&#xA;from&#xA;(&#xA;SELECT &#xA;&#x9;c.bldrecnbr, substr(c.fiscal_year,1,4) as fiscal_year, &#xA;&#x9;c.fund_code, c.accounting_period,&#xA;&#x9;c.utility_code, u.utility_descr, &#xA;&#x9;sum(c.dollar_amount*dp.partofbldsqrft) as utility_cost,&#xA;&#x9;u.btu_factor, u.unit_of_measure,&#xA;&#x9;dp.assigned_square_feet, dp.partofbldsqrft, &#xA;&#x9;dp.deptid, d.dept_descr,&#xA;&#x9;c.vendor_id, v.vendor_name1, v.sub_vendor_deptid&#xA;from&#xA;&#x9;M_SMDW2.UTILITY_CONSUMPTION c,&#xA;&#x9;m_prdw1.vendor v,&#xA;&#x9;(&#xA;&#x9;&#x9;select&#xA;&#x9;&#x9;&#x9;p.bldrecnbr, p.fiscal_year, p.deptid,&#xA;&#x9;&#x9;&#x9;sum(p.assignedSqrFt) as assigned_square_feet, sum(partofbldsqrft) as partofbldsqrft &#xA;&#x9;&#x9;from&#xA;&#x9;&#x9;&#x9;M_SMDW2.DepartmentPercent p&#xA;&#x9;&#x9;where&#xA;&#x9;&#x9;&#x9;p.rmFnc not in ('0050', '0060', '0070')&#xA;&#x9;&#x9;&#x9;and p.fiscal_year = '&quot; + @_mCurrFY + &quot;'&#xA;&#x9;&#x9;group by&#xA;&#x9;&#x9;&#x9;p.fiscal_year, p.bldrecnbr, p.deptid&#xA;&#x9;) dp,&#xA;&#x9;M_SMDW2.UTILITY_TBL u,&#xA;&#x9;M_GLDW1.Curr_fn_dept_vw d&#xA;where&#xA;&#x9;c.utility_code = u.utility_code&#xA;&#x9;and c.vendor_id = v.vendor_id &#xA;&#x9;and c.bldrecnbr = dp.bldrecnbr&#xA;&#x9;and c.fiscal_year = dp.fiscal_year&#xA;&#x9;and dp.deptid = d.deptid&#xA;&#x9;and d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;and c.fiscal_year = '&quot; + @_mCurrFY + &quot;'&#xA;&#x9;and v.address_seq_num =&#xA;&#x9;&#x9;(&#xA;&#x9;&#x9; select max(address_seq_num)&#xA;&#x9;&#x9; from m_prdw1.vendor v1&#xA;&#x9;&#x9; where v1.vendor_id = v.vendor_id&#xA;&#x9;&#x9;)&#xA;group by&#xA;&#x9;c.bldrecnbr, c.fiscal_year, u.btu_factor, u.unit_of_measure,c.fund_code,&#xA;&#x9;c.vendor_id, v.vendor_name1, v.sub_vendor_deptid,&#xA;&#x9;dp.assigned_square_feet, dp.partofbldsqrft, &#xA;&#x9;dp.deptid, d.dept_descr, c.accounting_period,&#xA;&#x9;c.utility_code, u.utility_descr&#xA;) u&#xA;group by&#xA;&#x9;u.fiscal_year, u.deptid, u.dept_descr&#xA;order by&#xA;&#x9;u.deptid, u.fiscal_year&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPI8EC">
@@ -386,7 +229,7 @@ order by
       DTS:CreationName=""
       DTS:DTSID="{C3D62BA1-5EC2-4EC5-A3EF-EA230D7AA66F}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;Select &#xA;&#x9;'8EU' as KPICode, substr(u.fiscal_year,1,4) as AcadYear, u.deptid,  &#xA;&#x9;round(sum(u.BTU_Consumption/1000000),0) as KPIValue&#xA;from&#xA;(&#xA;SELECT &#xA;&#x9;c.bldrecnbr, substr(c.fiscal_year,1,4) as fiscal_year, &#xA;&#x9;c.fund_code, c.accounting_period,&#xA;&#x9;c.utility_code, u.utility_descr, &#xA;&#x9;u.btu_factor, u.unit_of_measure,&#xA;&#x9;case&#xA;&#x9;&#x9;when c.vendor_id = '0000059396' and c.utility_code = 'S' then 0&#xA;&#x9;&#x9;else sum(c.units_consumed*nvl(u.btu_factor,0)*dp.partofbldsqrft)&#xA;&#x9;end BTU_Consumption,&#xA;&#x9;dp.assigned_square_feet, dp.partofbldsqrft, &#xA;&#x9;dp.deptid, d.dept_descr,&#xA;&#x9;c.vendor_id, v.vendor_name1, v.sub_vendor_deptid&#xA;from&#xA;&#x9;M_SMDW2.UTILITY_CONSUMPTION c,&#xA;&#x9;m_prdw1.vendor v,&#xA;&#x9;(&#xA;&#x9;&#x9;select&#xA;&#x9;&#x9;&#x9;p.bldrecnbr, p.fiscal_year, p.deptid,&#xA;&#x9;&#x9;&#x9;sum(p.assignedSqrFt) as assigned_square_feet, sum(partofbldsqrft) as partofbldsqrft &#xA;&#x9;&#x9;from&#xA;&#x9;&#x9;&#x9;M_SMDW2.DepartmentPercent p&#xA;&#x9;&#x9;where&#xA;&#x9;&#x9;&#x9;p.rmFnc not in ('0050', '0060', '0070')&#xA;&#x9;&#x9;&#x9;and p.fiscal_year = '&quot; + @_sFY + &quot;'&#xA;&#x9;&#x9;group by&#xA;&#x9;&#x9;&#x9;p.fiscal_year, p.bldrecnbr, p.deptid&#xA;&#x9;) dp,&#xA;&#x9;M_SMDW2.UTILITY_TBL u,&#xA;&#x9;M_GLDW1.Curr_fn_dept_vw d&#xA;where&#xA;&#x9;c.utility_code = u.utility_code&#xA;&#x9;and c.vendor_id = v.vendor_id &#xA;&#x9;and c.bldrecnbr = dp.bldrecnbr&#xA;&#x9;and c.fiscal_year = dp.fiscal_year&#xA;&#x9;and dp.deptid = d.deptid&#xA;&#x9;and d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;and c.fiscal_year = '&quot; + @_sFY + &quot;'&#xA;&#x9;and v.address_seq_num =&#xA;&#x9;&#x9;(&#xA;&#x9;&#x9; select max(address_seq_num)&#xA;&#x9;&#x9; from m_prdw1.vendor v1&#xA;&#x9;&#x9; where v1.vendor_id = v.vendor_id&#xA;&#x9;&#x9;)&#xA;group by&#xA;&#x9;c.bldrecnbr, c.fiscal_year, u.btu_factor, u.unit_of_measure,c.fund_code,&#xA;&#x9;c.vendor_id, v.vendor_name1, v.sub_vendor_deptid,&#xA;&#x9;dp.assigned_square_feet, dp.partofbldsqrft, &#xA;&#x9;dp.deptid, d.dept_descr, c.accounting_period,&#xA;&#x9;c.utility_code, u.utility_descr&#xA;) u&#xA;group by&#xA;&#x9;u.fiscal_year, u.deptid, u.dept_descr&#xA;order by&#xA;&#x9;u.deptid, u.fiscal_year&#x9;&quot;"
+      DTS:Expression="&quot;Select &#xA;&#x9;'8EU' as KPICode, substr(u.fiscal_year,1,4) as AcadYear, u.deptid,  &#xA;&#x9;round(sum(u.BTU_Consumption/1000000),0) as KPIValue&#xA;from&#xA;(&#xA;SELECT &#xA;&#x9;c.bldrecnbr, substr(c.fiscal_year,1,4) as fiscal_year, &#xA;&#x9;c.fund_code, c.accounting_period,&#xA;&#x9;c.utility_code, u.utility_descr, &#xA;&#x9;u.btu_factor, u.unit_of_measure,&#xA;&#x9;case&#xA;&#x9;&#x9;when c.vendor_id = '0000059396' and c.utility_code = 'S' then 0&#xA;&#x9;&#x9;else sum(c.units_consumed*nvl(u.btu_factor,0)*dp.partofbldsqrft)&#xA;&#x9;end BTU_Consumption,&#xA;&#x9;dp.assigned_square_feet, dp.partofbldsqrft, &#xA;&#x9;dp.deptid, d.dept_descr,&#xA;&#x9;c.vendor_id, v.vendor_name1, v.sub_vendor_deptid&#xA;from&#xA;&#x9;M_SMDW2.UTILITY_CONSUMPTION c,&#xA;&#x9;m_prdw1.vendor v,&#xA;&#x9;(&#xA;&#x9;&#x9;select&#xA;&#x9;&#x9;&#x9;p.bldrecnbr, p.fiscal_year, p.deptid,&#xA;&#x9;&#x9;&#x9;sum(p.assignedSqrFt) as assigned_square_feet, sum(partofbldsqrft) as partofbldsqrft &#xA;&#x9;&#x9;from&#xA;&#x9;&#x9;&#x9;M_SMDW2.DepartmentPercent p&#xA;&#x9;&#x9;where&#xA;&#x9;&#x9;&#x9;p.rmFnc not in ('0050', '0060', '0070')&#xA;&#x9;&#x9;&#x9;and p.fiscal_year = '&quot; + @_mCurrFY + &quot;'&#xA;&#x9;&#x9;group by&#xA;&#x9;&#x9;&#x9;p.fiscal_year, p.bldrecnbr, p.deptid&#xA;&#x9;) dp,&#xA;&#x9;M_SMDW2.UTILITY_TBL u,&#xA;&#x9;M_GLDW1.Curr_fn_dept_vw d&#xA;where&#xA;&#x9;c.utility_code = u.utility_code&#xA;&#x9;and c.vendor_id = v.vendor_id &#xA;&#x9;and c.bldrecnbr = dp.bldrecnbr&#xA;&#x9;and c.fiscal_year = dp.fiscal_year&#xA;&#x9;and dp.deptid = d.deptid&#xA;&#x9;and d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;and c.fiscal_year = '&quot; + @_mCurrFY + &quot;'&#xA;&#x9;and v.address_seq_num =&#xA;&#x9;&#x9;(&#xA;&#x9;&#x9; select max(address_seq_num)&#xA;&#x9;&#x9; from m_prdw1.vendor v1&#xA;&#x9;&#x9; where v1.vendor_id = v.vendor_id&#xA;&#x9;&#x9;)&#xA;group by&#xA;&#x9;c.bldrecnbr, c.fiscal_year, u.btu_factor, u.unit_of_measure,c.fund_code,&#xA;&#x9;c.vendor_id, v.vendor_name1, v.sub_vendor_deptid,&#xA;&#x9;dp.assigned_square_feet, dp.partofbldsqrft, &#xA;&#x9;dp.deptid, d.dept_descr, c.accounting_period,&#xA;&#x9;c.utility_code, u.utility_descr&#xA;) u&#xA;group by&#xA;&#x9;u.fiscal_year, u.deptid, u.dept_descr&#xA;order by&#xA;&#x9;u.deptid, u.fiscal_year&#x9;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPI8EU">
@@ -455,7 +298,7 @@ order by
       DTS:CreationName=""
       DTS:DTSID="{0F2576AE-7219-44B7-BC8A-6EAF3181B190}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;select&#xA;&#x9;'8S' as KPICode, d.deptid, substr(to_char(p.fiscal_year,'9999'),2,4) as AcadYear, &#xA;&#x9;round(sum(p.assignedSqrFt),0) as KPIValue&#xA;from&#xA;&#x9;M_SMDW2.DepartmentPercent p,&#xA;&#x9;m_gldw1.curr_fn_dept_vw d&#xA;where&#xA;&#x9;p.deptid = d.deptid&#xA;   and p.rmFnc not in ('0050', '0060', '0070')&#xA;&#x9;and d.dept_grp = 'COLLEGE_OF_LSA'&#xA;   and p.fiscal_year  = '&quot; + @_sFY + &quot;'&#xA;group by&#xA;&#x9;p.fiscal_year, d.deptid, d.dept_descr&#xA;order by&#xA;&#x9;d.deptid, p.fiscal_year&#x9;&quot;"
+      DTS:Expression="&quot;select&#xA;&#x9;'8S' as KPICode, d.deptid, substr(to_char(p.fiscal_year,'9999'),2,4) as AcadYear, &#xA;&#x9;round(sum(p.assignedSqrFt),0) as KPIValue&#xA;from&#xA;&#x9;M_SMDW2.DepartmentPercent p,&#xA;&#x9;m_gldw1.curr_fn_dept_vw d&#xA;where&#xA;&#x9;p.deptid = d.deptid&#xA;   and p.rmFnc not in ('0050', '0060', '0070')&#xA;&#x9;and d.dept_grp = 'COLLEGE_OF_LSA'&#xA;   and p.fiscal_year  = '&quot; + @_mCurrFY + &quot;'&#xA;group by&#xA;&#x9;p.fiscal_year, d.deptid, d.dept_descr&#xA;order by&#xA;&#x9;d.deptid, p.fiscal_year&#x9;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPI8S">
@@ -480,7 +323,7 @@ order by
       DTS:CreationName=""
       DTS:DTSID="{C0803279-AFA9-445F-A4E5-56A006D553C5}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;&#x9;'8SD' as KPICode, deptid, acad_year, (sum(goal1) + sum(goal2) + sum(goal3) + sum(goal4))/8 as KPIValue&#xA;FROM&#xA;(&#x9;&#xA;&#x9;select &#xA;&#x9;&#x9;u.deptid, d.dept_descr, u.TERM_DESCRSHORT, u.term, t.acad_year,&#xA;&#x9;&#x9;sum(class_total_minutes)/60 as class_total_hours, sum(class_prime_minutes)/60 as class_prime_hours, &#xA;&#x9;&#x9;sum(class_shoulder_minutes)/60 as class_shoulder_hours, sum(class_off_peak_minutes)/60 as class_off_peak_hours, &#xA;&#x9;&#x9;sum(class_friday_minutes)/60 as class_friday_hours, sum(event_total_minutes)/60 as event_total_hours, &#xA;&#x9;&#x9;sum(event_prime_minutes)/60 as event_prime_hours, sum(event_shoulder_minutes)/60 as event_shoulder_hours, &#xA;&#x9;&#x9;sum(event_off_peak_minutes)/60 as event_off_peak_hours, sum(event_friday_minutes)/60 as event_friday_hours, &#xA;&#x9;&#x9;(sum(class_total_minutes) + sum(event_total_minutes)) / 60 as total_hours, (sum(class_prime_minutes) + sum(event_prime_minutes)) / 60 as prime_hours, &#xA;&#x9;&#x9;(sum(class_shoulder_minutes) + sum(event_shoulder_minutes)) / 60 as shoulder_hours, (sum(class_off_peak_minutes) + sum(event_off_peak_minutes)) / 60 as off_peak_hours, &#xA;&#x9;&#x9;(sum(class_friday_minutes) + sum(event_friday_minutes)) / 60 as friday_hours,&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9; case&#xA;&#x9;&#x9; &#x9;when (sum(class_total_minutes) + sum(event_total_minutes)) = 0 then 0&#x9;&#xA;&#x9;&#x9;&#x9;when (sum(class_prime_minutes) + sum(event_prime_minutes)) / (sum(class_total_minutes) + sum(event_total_minutes)) &lt; .35 then 1&#xA;&#x9;&#x9; &#x9;else 0&#xA;&#x9;&#x9; end goal1,&#xA;&#x9;&#x9; case&#xA;&#x9;&#x9; &#x9;when (sum(class_total_minutes) + sum(event_total_minutes)) = 0 then 0&#xA;&#x9;&#x9; &#x9;when (sum(class_shoulder_minutes) + sum(event_shoulder_minutes)) / (sum(class_total_minutes) + sum(event_total_minutes)) &lt; .35 then 1&#xA;&#x9;&#x9; &#x9;else 0&#xA;&#x9;&#x9; end goal2,&#xA;&#x9;&#x9; case&#xA;&#x9;&#x9; &#x9;when (sum(class_total_minutes) + sum(event_total_minutes)) = 0 then 0&#xA;&#x9;&#x9; &#x9;when (sum(class_off_peak_minutes) + sum(event_off_peak_minutes)) / (sum(class_total_minutes) + sum(event_total_minutes)) &gt;= .3 then 1&#xA;&#x9;&#x9; &#x9;else 0&#xA;&#x9;&#x9; end goal3,&#xA;&#x9;&#x9; case&#xA;&#x9;&#x9; &#x9;when (sum(class_total_minutes) + sum(event_total_minutes)) = 0 then 0&#xA;&#x9;&#x9; &#x9;when (sum(class_friday_minutes) + sum(event_friday_minutes)) / (sum(class_total_minutes) + sum(event_total_minutes)) &gt;= .15 then 1&#xA;&#x9;&#x9; &#x9;else 0&#xA;&#x9;&#x9; end goal4&#xA;&#x9;   &#xA;&#x9;FROM &#xA;&#x9;&#x9;( select deptid, TERM_DESCRSHORT, term, &#xA;&#x9;&#x9;&#x9;nvl(sum(minutes_8_9_am),0) + nvl(sum(minutes_9_10_am),0) + nvl(sum(minutes_10_11_am),0) + nvl(sum(minutes_11_12_am),0) + nvl(sum(minutes_12_1_pm),0) + nvl(sum(minutes_1_2_pm),0) + nvl(sum(minutes_2_3_pm),0) + &#xA;&#x9;&#x9;&#x9;&#x9;nvl(sum(minutes_3_4_pm),0) + nvl(sum(minutes_4_5_pm),0) + nvl(sum(minutes_5_6_pm),0) + nvl(sum(minutes_6_7_pm),0) + nvl(sum(minutes_7_8_pm),0) + nvl(sum(minutes_8_9_pm),0) + nvl(sum(minutes_9_10_pm),0) as class_total_minutes, &#xA;&#x9;&#x9;&#x9;nvl(sum(minutes_10_11_am),0) + nvl(sum(minutes_11_12_am),0) + nvl(sum(minutes_1_2_pm),0) as class_prime_minutes, nvl(sum(minutes_12_1_pm),0) + nvl(sum(minutes_2_3_pm),0) + nvl(sum(minutes_3_4_pm),0) as class_shoulder_minutes, &#xA;&#x9;&#x9;&#x9;nvl(sum(minutes_8_9_am),0) + nvl(sum(minutes_9_10_am),0) + nvl(sum(minutes_4_5_pm),0) + nvl(sum(minutes_5_6_pm),0) + nvl(sum(minutes_6_7_pm),0) + nvl(sum(minutes_7_8_pm),0) + &#xA;&#x9;&#x9;&#x9;&#x9;nvl(sum(minutes_8_9_pm),0) + nvl(sum(minutes_9_10_pm),0) as class_off_peak_minutes, &#xA;&#x9;&#x9;&#x9;case when CAL_DAY_NBR_IN_WEEK = 6 then &#xA;&#x9;&#x9;&#x9;&#x9;nvl(sum(minutes_8_9_am),0) + nvl(sum(minutes_9_10_am),0) + nvl(sum(minutes_10_11_am),0) + nvl(sum(minutes_11_12_am),0) + nvl(sum(minutes_12_1_pm),0) + nvl(sum(minutes_1_2_pm),0) + &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;nvl(sum(minutes_2_3_pm),0) + nvl(sum(minutes_3_4_pm),0) + nvl(sum(minutes_4_5_pm),0) + nvl(sum(minutes_5_6_pm),0) + nvl(sum(minutes_6_7_pm),0) + nvl(sum(minutes_7_8_pm),0) + &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;nvl(sum(minutes_8_9_pm),0) + nvl(sum(minutes_9_10_pm),0) else 0 &#xA;&#x9;&#x9;&#x9;end as class_friday_minutes, &#xA;&#x9;&#x9;&#x9;0 as event_total_minutes, 0 as event_prime_minutes, 0 as event_shoulder_minutes, 0 as event_off_peak_minutes, 0 as event_friday_minutes &#xA;&#x9;&#x9;&#x9;from &#xA;&#x9;&#x9;&#x9;&#x9;( SELECT c.TERM, c.SUBJECT, c.CATALOG_NBR, c.CLASS_SECTION, c.CLASS_STAT, c.ENRL_STAT, c.CLASS_HOME_IND_CD, c.CRSE_COMPONENT, c.CAMPUS_LOCATION, &#xA;&#x9;&#x9;&#x9;&#x9; ci.CLASS_INSTR_NAME, ci.CLASS_INSTR_ROLE, mp.FACILITY_ID, mp.MEETING_START_DT, mp.MEETING_END_DT, mp.MEETING_TIME_START, &#xA;&#x9;&#x9;&#x9;&#x9; mp.MEETING_TIME_END, mp.MON, mp.TUES, mp.WED, mp.THURS, mp.FRI, cm.MEETING_DT, &#xA;&#x9;&#x9;&#x9;&#x9; NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 8 then &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;(case when to_char(cm.MEETING_TIME_END,'HH24') = 8 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) else &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 8 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 801) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 900) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 800) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 8 then 60 end) end) end end ),0) + NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 9 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 9 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 9 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 901) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1000) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 900) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 9 then 60 end) end) end end ),0) + &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 10 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 10 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 10 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1001) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1100) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1000) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 10 then 60 end) end) end end ),0) + &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 11 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 11 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 11 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1101) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1200) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1100) &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 11 then 60 end) end) end end ),0) + NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 12 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 12 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 12 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1201) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1300) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1200) &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 12 then 60 end) end) end end ),0) + NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 13 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 13 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 13 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1301) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1400) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1300) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 13 then 60 end) end) end end ),0) + NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 14 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 14 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 14 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1401) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1500) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1400) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 14 then 60 end) end) end end ),0) + NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 15 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 15 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 15 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1501) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1600) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1500) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 15 then 60 end) end) end end ),0) + &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 16 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 16 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 16 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1601) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1700) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1600) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 16 then 60 end) end) end end ),0) Total_Minutes, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 8 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 8 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 8 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 801) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 900) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 800) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 8 then 60 end) end) end end minutes_8_9_am, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 9 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 9 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 9 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 901) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1000) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 900) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 9 then 60 end) end) end end minutes_9_10_am, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 10 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 10 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) else &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 10 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1001) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1100) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1000) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 10 then 60 end) end) end end minutes_10_11_am, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 11 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 11 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 11 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1101) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1200) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1100) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 11 then 60 end) end) end end minutes_11_12_am, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 12 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 12 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 12 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1201) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1300) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1200) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 12 then 60 end) end) end end minutes_12_1_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 13 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 13 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 13 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1301) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1400) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1300) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 13 then 60 end) end) end end minutes_1_2_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 14 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 14 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 14 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1401) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1500) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1400) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 14 then 60 end) end) end end minutes_2_3_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 15 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 15 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 15 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1501) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1600) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1500) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 15 then 60 end) end) end end minutes_3_4_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 16 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 16 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 16 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1601) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1700) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1600) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 16 then 60 end) end) end end minutes_4_5_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 17 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 17 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 17 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1701) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1800) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1700) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 17 then 60 end) end) end end minutes_5_6_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 18 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 18 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 18 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1801) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1900) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1800) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 18 then 60 end) end) end end minutes_6_7_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 19 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 19 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 19 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1901) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 2000) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1900) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 19 then 60 end) end) end end minutes_7_8_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 20 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 20 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 20 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 2001) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 2100) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 2000) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 20 then 60 end) end) end end minutes_8_9_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 21 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 21 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 21 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 2101) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 2200) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 2100) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 21 then 60 end) end) end end minutes_9_10_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;CLASS_MTG_CAL.CAL_DAY_NBR_IN_WEEK, c.DEPTID, c.DEPT_DESCRSHORT, c.DEPT_DESCRFORMAL, c.TERM_DESCRSHORT, c.DEPT_GRP, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;c.DEPT_GRP_DESCR &#xA;&#x9;&#x9;&#x9;&#x9; FROM &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;M_SRDW1.CLASS_TBL c, &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;M_SRDW1.CLASS_INSTR ci, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;M_SRDW1.CLASS_MTG_PAT mp, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;(select crse_id, crse_offer_nbr, term, session_code, class_section, class_mtg_nbr, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;&#x9;c.cal_date as meeting_dt, p.meeting_time_start, p.meeting_time_end &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; from &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;m_srdw1.class_mtg_pat p &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;&#x9;inner join m_tldw1.calendar c &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;&#x9;on (c.cal_date between p.meeting_start_dt and p.meeting_end_dt) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;&#x9;and (c.cal_day_nbr_in_week = (case when p.sun = 'Y' Then 1 end) or c.cal_day_nbr_in_week = (case when p.mon = 'Y' Then 2 end) or c.cal_day_nbr_in_week = (case when p.tues = 'Y' Then 3 end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;&#x9;or c.cal_day_nbr_in_week = (case when p.wed = 'Y' Then 4 end) or c.cal_day_nbr_in_week = (case when p.thurs = 'Y' Then 5 end) or c.cal_day_nbr_in_week = (case when p.fri = 'Y' Then 6 end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;&#x9;or c.cal_day_nbr_in_week = (case when p.sat = 'Y' Then 7 end)) ) cm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;&#x9;M_TLDW1.CALENDAR CLASS_MTG_CAL &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;WHERE c.CRSE_ID=mp.CRSE_ID(+) AND c.CRSE_OFFER_NBR=mp.CRSE_OFFER_NBR(+) AND c.TERM=mp.TERM(+) AND c.SESSION_CODE=mp.SESSION_CODE(+) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;AND c.CLASS_SECTION=mp.CLASS_SECTION(+) AND mp.CRSE_ID=ci.CRSE_ID(+) AND mp.CRSE_OFFER_NBR=ci.CRSE_OFFER_NBR(+) AND mp.TERM=ci.TERM(+) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;AND mp.SESSION_CODE=ci.SESSION_CODE(+) AND mp.CLASS_SECTION=ci.CLASS_SECTION(+) AND mp.CLASS_MTG_NBR=ci.CLASS_MTG_NBR(+) AND cm.MEETING_DT=CLASS_MTG_CAL.CAL_DATE &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;AND mp.CRSE_ID=cm.CRSE_ID(+) AND mp.CRSE_OFFER_NBR=cm.CRSE_OFFER_NBR(+) AND mp.TERM=cm.TERM(+) AND mp.SESSION_CODE=cm.SESSION_CODE(+) &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AND mp.CLASS_SECTION=cm.CLASS_SECTION(+) AND mp.CLASS_MTG_NBR=cm.CLASS_MTG_NBR(+) AND c.CRSE_COMPONENT IN ('LEC', 'DIS', 'REC', 'SEM') &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AND c.TERM in ('&quot; + @_sFallTerm + &quot;', '&quot; + @_sWinterTerm + &quot;') &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AND c.DEPT_GRP = 'COLLEGE_OF_LSA' &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AND (ci.CLASS_INSTR_ROLE = 'PI' OR ci.CLASS_INSTR_ROLE Is Null) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;AND c.CAMPUS_LOCATION = 'AA CAMPUS' &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;AND c.CLASS_STAT &lt;&gt; 'X' AND c.CLASS_HOME_IND_CD = 'HOME' AND CLASS_MTG_CAL.ACAD_HOLIDAY_IND = 'N' &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;AND CLASS_MTG_CAL.CAL_DAY_NBR_IN_WEEK between 2 and 6 ) &#xA;&#x9;&#x9;&#x9;&#x9; group by deptid, TERM_DESCRSHORT, term, CAL_DAY_NBR_IN_WEEK &#xA;&#x9;union all &#xA;&#x9;select &#xA;&#x9;&#x9;CAMPUS_MTG_HOST_DEPTID as DEPTID, RPTING_TERM_DESCRSHORT as term_descrshort, RPTING_TERM as term, &#xA;&#x9;&#x9;0 as class_total_minutes, 0 as class_prime_minutes, 0 as class_shoulder_minutes, 0 as class_off_peak_minutes, 0 as class_friday_minutes, &#xA;&#x9;&#x9;nvl(sum(event_10_11_am),0) + nvl(sum(event_11_12_pm),0) + nvl(sum(event_1_2_pm),0) + nvl(sum(event_12_1_pm),0) + nvl(sum(event_2_3_pm),0) + nvl(sum(event_3_4_pm),0) + nvl(sum(event_8_9_am),0) &#xA;&#x9;&#x9;+ nvl(sum(event_9_10_am),0) + nvl(sum(event_4_5_pm),0) as event_total_minutes, nvl(sum(event_10_11_am),0) + nvl(sum(event_11_12_pm),0) + nvl(sum(event_1_2_pm),0) as event_prime_minutes, &#xA;&#x9;&#x9;nvl(sum(event_12_1_pm),0) + nvl(sum(event_2_3_pm),0) + nvl(sum(event_3_4_pm),0) as event_shoulder_minutes, nvl(sum(event_8_9_am),0) + nvl(sum(event_9_10_am),0) + nvl(sum(event_4_5_pm),0) as event_off_peak_minutes, &#xA;&#x9;&#x9;case when DAY_OF_WEEK = 6 then nvl(sum(event_8_9_am),0) + nvl(sum(event_9_10_am),0) + nvl(sum(event_10_11_am),0) + nvl(sum(event_11_12_pm),0) + nvl(sum(event_12_1_pm),0) + nvl(sum(event_1_2_pm),0) &#xA;&#x9;&#x9;+ nvl(sum(event_2_3_pm),0) + nvl(sum(event_3_4_pm),0) + nvl(sum(event_4_5_pm),0) else 0 end event_friday_minutes &#xA;&#x9;from &#xA;&#x9;( SELECT &#xA;&#x9;&#x9;&#x9;cm.CAMPUS_EVENT_NBR, cm.CAMPUS_EVENT_TYPE, cm.CAMPUS_MTG_TYPE, cm.CAMPUS_EVENT_DESCR, cm.MEETING_DESCR, cm.FACILITY_ID, f.RMTYP, &#xA;&#x9;&#x9;&#x9;cm.MEETING_DT, cm.DAY_OF_WEEK, cm.DAY_OF_WEEK_DESCRSHORT, cm.MEETING_TIME_START, cm.MEETING_TIME_END, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 8 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 8 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 8 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 801) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 900) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 800) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 8 then 60 end) end) end end end event_8_9_am, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 9 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 9 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 9 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 901) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1000) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 900) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 9 then 60 end) end) end end end event_9_10_am, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 10 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 10 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 10 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1001) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1100) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1000) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 10 then 60 end) end) end end end event_10_11_am, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 11 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 11 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 11 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1101) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1200) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1100) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 11 then 60 end) end) end end end event_11_12_pm, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 12 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 12 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 12 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1201) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1300) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1200) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 12 then 60 end) end) end end end event_12_1_pm, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 13 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 13 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) else &#xA;&#x9;&#x9;&#x9;case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 13 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1301) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1400) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1300) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 13 then 60 end) end) end end end event_1_2_pm, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 14 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 14 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 14 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1401) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1500) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1400) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 14 then 60 end) end) end end end event_2_3_pm, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 15 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 15 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 15 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1501) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1600) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1500) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 15 then 60 end) end) end end end event_3_4_pm, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 16 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 16 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) else &#xA;&#x9;&#x9;&#x9;case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 16 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1601) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1700) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1600) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 16 then 60 end) end) end end end event_4_5_pm, &#xA;&#x9;&#x9;&#x9;f.RMTYP_DESCRSHORT, cm.RPTING_TERM, cm.CAMPUS_MTG_HOST_DEPTID, cm.CAMPUS_MTG_HOST_DEPT_DESCR, cm.RPTING_TERM_DESCRSHORT, &#xA;&#x9;&#x9;&#x9;cm.MTG_HST_DEPT_GRP, cm.MTG_HST_DEPT_GRP_DESCR FROM M_SRDW1.CAMPUS_MTG cm, M_SRDW1.FACILITY_TBL f &#xA;&#x9;&#x9;WHERE cm.FACILITY_ID = f.FACILITY_ID &#xA;&#x9;&#x9;and f.FACILITY_EFFDT = (SELECT MAX(F1.FACILITY_EFFDT) FROM M_SRDW1.FACILITY_TBL F1 WHERE F1.FACILITY_ID = f.FACILITY_ID AND F1.FACILITY_EFFDT &lt;= cm.MEETING_DT)&#xA;&#x9;&#x9; AND cm.DAY_OF_WEEK between '2' and '6' &#xA;&#x9;&#x9; AND f.RMTYP = '110' &#xA;&#x9;&#x9;AND cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' &#xA;&#x9;&#x9;AND cm.MTG_HST_DEPT_GRP = 'COLLEGE_OF_LSA' &#xA;&#x9;&#x9;AND cm.RPTING_TERM in  ('&quot; + @_sFallTerm + &quot;', '&quot; + @_sWinterTerm + &quot;')  &#xA;&#x9;&#x9; ) &#xA;&#x9;&#x9;&#x9;&#x9; group by CAMPUS_MTG_HOST_DEPTID, DAY_OF_WEEK, RPTING_TERM_DESCRSHORT, RPTING_TERM ) u,&#xA;&#x9;&#x9;&#x9;&#x9; m_gldw1.curr_fn_dept_vw d,&#xA;&#x9;&#x9;&#x9;&#x9; m_srdw1.term_tbl t&#xA;&#x9;&#x9;&#x9;where &#xA;&#x9;&#x9;&#x9;&#x9;u.deptid = d.deptid &#xA;&#x9;&#x9;&#x9;&#x9;and u.term = t.term&#xA;&#x9;&#x9;&#x9;&#x9;and t.acad_career = 'ULSA'&#xA;&#x9;GROUP BY u.deptid, u.TERM_DESCRSHORT, u.term, d.dept_descr, t.acad_year )&#xA;GROUP BY deptid, acad_year&#x9;&quot;"
+      DTS:Expression="&quot;SELECT&#xA;&#x9;'8SD' as KPICode, deptid, acad_year, (sum(goal1) + sum(goal2) + sum(goal3) + sum(goal4))/8 as KPIValue&#xA;FROM&#xA;(&#x9;&#xA;&#x9;select &#xA;&#x9;&#x9;u.deptid, d.dept_descr, u.TERM_DESCRSHORT, u.term, t.acad_year,&#xA;&#x9;&#x9;sum(class_total_minutes)/60 as class_total_hours, sum(class_prime_minutes)/60 as class_prime_hours, &#xA;&#x9;&#x9;sum(class_shoulder_minutes)/60 as class_shoulder_hours, sum(class_off_peak_minutes)/60 as class_off_peak_hours, &#xA;&#x9;&#x9;sum(class_friday_minutes)/60 as class_friday_hours, sum(event_total_minutes)/60 as event_total_hours, &#xA;&#x9;&#x9;sum(event_prime_minutes)/60 as event_prime_hours, sum(event_shoulder_minutes)/60 as event_shoulder_hours, &#xA;&#x9;&#x9;sum(event_off_peak_minutes)/60 as event_off_peak_hours, sum(event_friday_minutes)/60 as event_friday_hours, &#xA;&#x9;&#x9;(sum(class_total_minutes) + sum(event_total_minutes)) / 60 as total_hours, (sum(class_prime_minutes) + sum(event_prime_minutes)) / 60 as prime_hours, &#xA;&#x9;&#x9;(sum(class_shoulder_minutes) + sum(event_shoulder_minutes)) / 60 as shoulder_hours, (sum(class_off_peak_minutes) + sum(event_off_peak_minutes)) / 60 as off_peak_hours, &#xA;&#x9;&#x9;(sum(class_friday_minutes) + sum(event_friday_minutes)) / 60 as friday_hours,&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9; case&#xA;&#x9;&#x9; &#x9;when (sum(class_total_minutes) + sum(event_total_minutes)) = 0 then 0&#x9;&#xA;&#x9;&#x9;&#x9;when (sum(class_prime_minutes) + sum(event_prime_minutes)) / (sum(class_total_minutes) + sum(event_total_minutes)) &lt; .35 then 1&#xA;&#x9;&#x9; &#x9;else 0&#xA;&#x9;&#x9; end goal1,&#xA;&#x9;&#x9; case&#xA;&#x9;&#x9; &#x9;when (sum(class_total_minutes) + sum(event_total_minutes)) = 0 then 0&#xA;&#x9;&#x9; &#x9;when (sum(class_shoulder_minutes) + sum(event_shoulder_minutes)) / (sum(class_total_minutes) + sum(event_total_minutes)) &lt; .35 then 1&#xA;&#x9;&#x9; &#x9;else 0&#xA;&#x9;&#x9; end goal2,&#xA;&#x9;&#x9; case&#xA;&#x9;&#x9; &#x9;when (sum(class_total_minutes) + sum(event_total_minutes)) = 0 then 0&#xA;&#x9;&#x9; &#x9;when (sum(class_off_peak_minutes) + sum(event_off_peak_minutes)) / (sum(class_total_minutes) + sum(event_total_minutes)) &gt;= .3 then 1&#xA;&#x9;&#x9; &#x9;else 0&#xA;&#x9;&#x9; end goal3,&#xA;&#x9;&#x9; case&#xA;&#x9;&#x9; &#x9;when (sum(class_total_minutes) + sum(event_total_minutes)) = 0 then 0&#xA;&#x9;&#x9; &#x9;when (sum(class_friday_minutes) + sum(event_friday_minutes)) / (sum(class_total_minutes) + sum(event_total_minutes)) &gt;= .15 then 1&#xA;&#x9;&#x9; &#x9;else 0&#xA;&#x9;&#x9; end goal4&#xA;&#x9;   &#xA;&#x9;FROM &#xA;&#x9;&#x9;( select deptid, TERM_DESCRSHORT, term, &#xA;&#x9;&#x9;&#x9;nvl(sum(minutes_8_9_am),0) + nvl(sum(minutes_9_10_am),0) + nvl(sum(minutes_10_11_am),0) + nvl(sum(minutes_11_12_am),0) + nvl(sum(minutes_12_1_pm),0) + nvl(sum(minutes_1_2_pm),0) + nvl(sum(minutes_2_3_pm),0) + &#xA;&#x9;&#x9;&#x9;&#x9;nvl(sum(minutes_3_4_pm),0) + nvl(sum(minutes_4_5_pm),0) + nvl(sum(minutes_5_6_pm),0) + nvl(sum(minutes_6_7_pm),0) + nvl(sum(minutes_7_8_pm),0) + nvl(sum(minutes_8_9_pm),0) + nvl(sum(minutes_9_10_pm),0) as class_total_minutes, &#xA;&#x9;&#x9;&#x9;nvl(sum(minutes_10_11_am),0) + nvl(sum(minutes_11_12_am),0) + nvl(sum(minutes_1_2_pm),0) as class_prime_minutes, nvl(sum(minutes_12_1_pm),0) + nvl(sum(minutes_2_3_pm),0) + nvl(sum(minutes_3_4_pm),0) as class_shoulder_minutes, &#xA;&#x9;&#x9;&#x9;nvl(sum(minutes_8_9_am),0) + nvl(sum(minutes_9_10_am),0) + nvl(sum(minutes_4_5_pm),0) + nvl(sum(minutes_5_6_pm),0) + nvl(sum(minutes_6_7_pm),0) + nvl(sum(minutes_7_8_pm),0) + &#xA;&#x9;&#x9;&#x9;&#x9;nvl(sum(minutes_8_9_pm),0) + nvl(sum(minutes_9_10_pm),0) as class_off_peak_minutes, &#xA;&#x9;&#x9;&#x9;case when CAL_DAY_NBR_IN_WEEK = 6 then &#xA;&#x9;&#x9;&#x9;&#x9;nvl(sum(minutes_8_9_am),0) + nvl(sum(minutes_9_10_am),0) + nvl(sum(minutes_10_11_am),0) + nvl(sum(minutes_11_12_am),0) + nvl(sum(minutes_12_1_pm),0) + nvl(sum(minutes_1_2_pm),0) + &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;nvl(sum(minutes_2_3_pm),0) + nvl(sum(minutes_3_4_pm),0) + nvl(sum(minutes_4_5_pm),0) + nvl(sum(minutes_5_6_pm),0) + nvl(sum(minutes_6_7_pm),0) + nvl(sum(minutes_7_8_pm),0) + &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;nvl(sum(minutes_8_9_pm),0) + nvl(sum(minutes_9_10_pm),0) else 0 &#xA;&#x9;&#x9;&#x9;end as class_friday_minutes, &#xA;&#x9;&#x9;&#x9;0 as event_total_minutes, 0 as event_prime_minutes, 0 as event_shoulder_minutes, 0 as event_off_peak_minutes, 0 as event_friday_minutes &#xA;&#x9;&#x9;&#x9;from &#xA;&#x9;&#x9;&#x9;&#x9;( SELECT c.TERM, c.SUBJECT, c.CATALOG_NBR, c.CLASS_SECTION, c.CLASS_STAT, c.ENRL_STAT, c.CLASS_HOME_IND_CD, c.CRSE_COMPONENT, c.CAMPUS_LOCATION, &#xA;&#x9;&#x9;&#x9;&#x9; ci.CLASS_INSTR_NAME, ci.CLASS_INSTR_ROLE, mp.FACILITY_ID, mp.MEETING_START_DT, mp.MEETING_END_DT, mp.MEETING_TIME_START, &#xA;&#x9;&#x9;&#x9;&#x9; mp.MEETING_TIME_END, mp.MON, mp.TUES, mp.WED, mp.THURS, mp.FRI, cm.MEETING_DT, &#xA;&#x9;&#x9;&#x9;&#x9; NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 8 then &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;(case when to_char(cm.MEETING_TIME_END,'HH24') = 8 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) else &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 8 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 801) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 900) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 800) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 8 then 60 end) end) end end ),0) + NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 9 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 9 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 9 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 901) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1000) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 900) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 9 then 60 end) end) end end ),0) + &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 10 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 10 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 10 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1001) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1100) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1000) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 10 then 60 end) end) end end ),0) + &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 11 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 11 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 11 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1101) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1200) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1100) &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 11 then 60 end) end) end end ),0) + NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 12 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 12 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 12 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1201) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1300) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1200) &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 12 then 60 end) end) end end ),0) + NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 13 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 13 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 13 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1301) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1400) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1300) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 13 then 60 end) end) end end ),0) + NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 14 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 14 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 14 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1401) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1500) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1400) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 14 then 60 end) end) end end ),0) + NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 15 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 15 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 15 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1501) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1600) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1500) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 15 then 60 end) end) end end ),0) + &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;NVL(( case when to_char(cm.MEETING_TIME_START,'HH24') = 16 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 16 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 16 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1601) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1700) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1600) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 16 then 60 end) end) end end ),0) Total_Minutes, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 8 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 8 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 8 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 801) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 900) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 800) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 8 then 60 end) end) end end minutes_8_9_am, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 9 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 9 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 9 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 901) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1000) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 900) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 9 then 60 end) end) end end minutes_9_10_am, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 10 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 10 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) else &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 10 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1001) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1100) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1000) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 10 then 60 end) end) end end minutes_10_11_am, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 11 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 11 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 11 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1101) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1200) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1100) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 11 then 60 end) end) end end minutes_11_12_am, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 12 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 12 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 12 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1201) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1300) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1200) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 12 then 60 end) end) end end minutes_12_1_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 13 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 13 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 13 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1301) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1400) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1300) else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 13 then 60 end) end) end end minutes_1_2_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 14 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 14 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 14 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1401) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1500) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1400) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 14 then 60 end) end) end end minutes_2_3_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 15 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 15 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 15 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1501) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1600) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1500) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 15 then 60 end) end) end end minutes_3_4_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 16 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 16 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 16 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1601) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1700) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1600) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 16 then 60 end) end) end end minutes_4_5_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 17 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 17 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 17 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1701) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1800) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1700) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 17 then 60 end) end) end end minutes_5_6_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 18 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 18 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 18 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1801) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1900) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1800) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 18 then 60 end) end) end end minutes_6_7_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 19 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 19 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 19 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1901) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 2000) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1900) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 19 then 60 end) end) end end minutes_7_8_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 20 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 20 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 20 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 2001) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 2100) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 2000) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 20 then 60 end) end) end end minutes_8_9_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;case when to_char(cm.MEETING_TIME_START,'HH24') = 21 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 21 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 21 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 2101) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 2200) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 2100) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 21 then 60 end) end) end end minutes_9_10_pm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;CLASS_MTG_CAL.CAL_DAY_NBR_IN_WEEK, c.DEPTID, c.DEPT_DESCRSHORT, c.DEPT_DESCRFORMAL, c.TERM_DESCRSHORT, c.DEPT_GRP, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;c.DEPT_GRP_DESCR &#xA;&#x9;&#x9;&#x9;&#x9; FROM &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;M_SRDW1.CLASS_TBL c, &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;M_SRDW1.CLASS_INSTR ci, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;M_SRDW1.CLASS_MTG_PAT mp, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;(select crse_id, crse_offer_nbr, term, session_code, class_section, class_mtg_nbr, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9;&#x9;c.cal_date as meeting_dt, p.meeting_time_start, p.meeting_time_end &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; from &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;m_srdw1.class_mtg_pat p &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;&#x9;inner join m_tldw1.calendar c &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;&#x9;on (c.cal_date between p.meeting_start_dt and p.meeting_end_dt) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;&#x9;and (c.cal_day_nbr_in_week = (case when p.sun = 'Y' Then 1 end) or c.cal_day_nbr_in_week = (case when p.mon = 'Y' Then 2 end) or c.cal_day_nbr_in_week = (case when p.tues = 'Y' Then 3 end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;&#x9;or c.cal_day_nbr_in_week = (case when p.wed = 'Y' Then 4 end) or c.cal_day_nbr_in_week = (case when p.thurs = 'Y' Then 5 end) or c.cal_day_nbr_in_week = (case when p.fri = 'Y' Then 6 end) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;&#x9;or c.cal_day_nbr_in_week = (case when p.sat = 'Y' Then 7 end)) ) cm, &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;&#x9;M_TLDW1.CALENDAR CLASS_MTG_CAL &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;WHERE c.CRSE_ID=mp.CRSE_ID(+) AND c.CRSE_OFFER_NBR=mp.CRSE_OFFER_NBR(+) AND c.TERM=mp.TERM(+) AND c.SESSION_CODE=mp.SESSION_CODE(+) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;AND c.CLASS_SECTION=mp.CLASS_SECTION(+) AND mp.CRSE_ID=ci.CRSE_ID(+) AND mp.CRSE_OFFER_NBR=ci.CRSE_OFFER_NBR(+) AND mp.TERM=ci.TERM(+) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;AND mp.SESSION_CODE=ci.SESSION_CODE(+) AND mp.CLASS_SECTION=ci.CLASS_SECTION(+) AND mp.CLASS_MTG_NBR=ci.CLASS_MTG_NBR(+) AND cm.MEETING_DT=CLASS_MTG_CAL.CAL_DATE &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;AND mp.CRSE_ID=cm.CRSE_ID(+) AND mp.CRSE_OFFER_NBR=cm.CRSE_OFFER_NBR(+) AND mp.TERM=cm.TERM(+) AND mp.SESSION_CODE=cm.SESSION_CODE(+) &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AND mp.CLASS_SECTION=cm.CLASS_SECTION(+) AND mp.CLASS_MTG_NBR=cm.CLASS_MTG_NBR(+) AND c.CRSE_COMPONENT IN ('LEC', 'DIS', 'REC', 'SEM') &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AND c.TERM in ('&quot; + @_mAdmitTermFall + &quot;', '&quot; + @_mAdmitTermWinter + &quot;') &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AND c.DEPT_GRP = 'COLLEGE_OF_LSA' &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AND (ci.CLASS_INSTR_ROLE = 'PI' OR ci.CLASS_INSTR_ROLE Is Null) &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;AND c.CAMPUS_LOCATION = 'AA CAMPUS' &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;AND c.CLASS_STAT &lt;&gt; 'X' AND c.CLASS_HOME_IND_CD = 'HOME' AND CLASS_MTG_CAL.ACAD_HOLIDAY_IND = 'N' &#xA;&#x9;&#x9;&#x9;&#x9; &#x9; &#x9;AND CLASS_MTG_CAL.CAL_DAY_NBR_IN_WEEK between 2 and 6 ) &#xA;&#x9;&#x9;&#x9;&#x9; group by deptid, TERM_DESCRSHORT, term, CAL_DAY_NBR_IN_WEEK &#xA;&#x9;union all &#xA;&#x9;select &#xA;&#x9;&#x9;CAMPUS_MTG_HOST_DEPTID as DEPTID, RPTING_TERM_DESCRSHORT as term_descrshort, RPTING_TERM as term, &#xA;&#x9;&#x9;0 as class_total_minutes, 0 as class_prime_minutes, 0 as class_shoulder_minutes, 0 as class_off_peak_minutes, 0 as class_friday_minutes, &#xA;&#x9;&#x9;nvl(sum(event_10_11_am),0) + nvl(sum(event_11_12_pm),0) + nvl(sum(event_1_2_pm),0) + nvl(sum(event_12_1_pm),0) + nvl(sum(event_2_3_pm),0) + nvl(sum(event_3_4_pm),0) + nvl(sum(event_8_9_am),0) &#xA;&#x9;&#x9;+ nvl(sum(event_9_10_am),0) + nvl(sum(event_4_5_pm),0) as event_total_minutes, nvl(sum(event_10_11_am),0) + nvl(sum(event_11_12_pm),0) + nvl(sum(event_1_2_pm),0) as event_prime_minutes, &#xA;&#x9;&#x9;nvl(sum(event_12_1_pm),0) + nvl(sum(event_2_3_pm),0) + nvl(sum(event_3_4_pm),0) as event_shoulder_minutes, nvl(sum(event_8_9_am),0) + nvl(sum(event_9_10_am),0) + nvl(sum(event_4_5_pm),0) as event_off_peak_minutes, &#xA;&#x9;&#x9;case when DAY_OF_WEEK = 6 then nvl(sum(event_8_9_am),0) + nvl(sum(event_9_10_am),0) + nvl(sum(event_10_11_am),0) + nvl(sum(event_11_12_pm),0) + nvl(sum(event_12_1_pm),0) + nvl(sum(event_1_2_pm),0) &#xA;&#x9;&#x9;+ nvl(sum(event_2_3_pm),0) + nvl(sum(event_3_4_pm),0) + nvl(sum(event_4_5_pm),0) else 0 end event_friday_minutes &#xA;&#x9;from &#xA;&#x9;( SELECT &#xA;&#x9;&#x9;&#x9;cm.CAMPUS_EVENT_NBR, cm.CAMPUS_EVENT_TYPE, cm.CAMPUS_MTG_TYPE, cm.CAMPUS_EVENT_DESCR, cm.MEETING_DESCR, cm.FACILITY_ID, f.RMTYP, &#xA;&#x9;&#x9;&#x9;cm.MEETING_DT, cm.DAY_OF_WEEK, cm.DAY_OF_WEEK_DESCRSHORT, cm.MEETING_TIME_START, cm.MEETING_TIME_END, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 8 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 8 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 8 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 801) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 900) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 800) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 8 then 60 end) end) end end end event_8_9_am, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 9 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 9 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 9 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 901) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1000) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 900) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 9 then 60 end) end) end end end event_9_10_am, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 10 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 10 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 10 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1001) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1100) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1000) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 10 then 60 end) end) end end end event_10_11_am, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 11 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 11 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 11 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1101) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1200) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1100) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 11 then 60 end) end) end end end event_11_12_pm, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 12 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 12 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 12 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1201) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1300) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1200) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 12 then 60 end) end) end end end event_12_1_pm, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 13 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 13 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) else &#xA;&#x9;&#x9;&#x9;case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 13 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1301) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1400) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1300) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 13 then 60 end) end) end end end event_1_2_pm, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 14 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 14 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 14 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1401) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1500) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1400) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 14 then 60 end) end) end end end event_2_3_pm, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 15 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 15 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) &#xA;&#x9;&#x9;&#x9;else case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 15 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1501) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1600) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1500) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 15 then 60 end) end) end end end event_3_4_pm, &#xA;&#x9;&#x9;&#x9;case when cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' then case when to_char(cm.MEETING_TIME_START,'HH24') = 16 then (case when to_char(cm.MEETING_TIME_END,'HH24') = 16 then (to_char(cm.MEETING_TIME_END,'MI') - to_char(cm.MEETING_TIME_START,'MI')) &#xA;&#x9;&#x9;&#x9;else (60 - to_char(cm.MEETING_TIME_START,'MI')) end) else &#xA;&#x9;&#x9;&#x9;case when to_char(cm.MEETING_TIME_START,'HH24') &lt; 16 then (case when (to_char(cm.MEETING_TIME_END,'HH24MI') &gt;= 1601) AND (to_char(cm.MEETING_TIME_END,'HH24MI') &lt; 1700) then (to_char(cm.MEETING_TIME_END,'HH24MI') - 1600) &#xA;&#x9;&#x9;&#x9;else (case when to_char(cm.MEETING_TIME_END,'HH24') &gt; 16 then 60 end) end) end end end event_4_5_pm, &#xA;&#x9;&#x9;&#x9;f.RMTYP_DESCRSHORT, cm.RPTING_TERM, cm.CAMPUS_MTG_HOST_DEPTID, cm.CAMPUS_MTG_HOST_DEPT_DESCR, cm.RPTING_TERM_DESCRSHORT, &#xA;&#x9;&#x9;&#x9;cm.MTG_HST_DEPT_GRP, cm.MTG_HST_DEPT_GRP_DESCR FROM M_SRDW1.CAMPUS_MTG cm, M_SRDW1.FACILITY_TBL f &#xA;&#x9;&#x9;WHERE cm.FACILITY_ID = f.FACILITY_ID &#xA;&#x9;&#x9;and f.FACILITY_EFFDT = (SELECT MAX(F1.FACILITY_EFFDT) FROM M_SRDW1.FACILITY_TBL F1 WHERE F1.FACILITY_ID = f.FACILITY_ID AND F1.FACILITY_EFFDT &lt;= cm.MEETING_DT)&#xA;&#x9;&#x9; AND cm.DAY_OF_WEEK between '2' and '6' &#xA;&#x9;&#x9; AND f.RMTYP = '110' &#xA;&#x9;&#x9;AND cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' &#xA;&#x9;&#x9;AND cm.MTG_HST_DEPT_GRP = 'COLLEGE_OF_LSA' &#xA;&#x9;&#x9;AND cm.RPTING_TERM in  ('&quot; + @_mAdmitTermFall + &quot;', '&quot; + @_mAdmitTermWinter + &quot;')  &#xA;&#x9;&#x9; ) &#xA;&#x9;&#x9;&#x9;&#x9; group by CAMPUS_MTG_HOST_DEPTID, DAY_OF_WEEK, RPTING_TERM_DESCRSHORT, RPTING_TERM ) u,&#xA;&#x9;&#x9;&#x9;&#x9; m_gldw1.curr_fn_dept_vw d,&#xA;&#x9;&#x9;&#x9;&#x9; m_srdw1.term_tbl t&#xA;&#x9;&#x9;&#x9;where &#xA;&#x9;&#x9;&#x9;&#x9;u.deptid = d.deptid &#xA;&#x9;&#x9;&#x9;&#x9;and u.term = t.term&#xA;&#x9;&#x9;&#x9;&#x9;and t.acad_career = 'ULSA'&#xA;&#x9;GROUP BY u.deptid, u.TERM_DESCRSHORT, u.term, d.dept_descr, t.acad_year )&#xA;GROUP BY deptid, acad_year&#x9;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPI8SD">
@@ -697,33 +540,6 @@ FROM
 	GROUP BY u.deptid, u.TERM_DESCRSHORT, u.term, d.dept_descr, t.acad_year )
 GROUP BY deptid, acad_year	</DTS:VariableValue>
     </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{D8CE72A5-FFDD-4E4D-8C52-9CEC5DE747AF}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="_sFallTerm">
-      <DTS:VariableValue
-        DTS:DataType="8">2160</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{3AA99155-B247-42A7-A985-A1F9B6BF3733}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="_sFY">
-      <DTS:VariableValue
-        DTS:DataType="8">2018</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{8995D5D3-3C2B-4A37-9D32-24480BB042E5}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="_sWinterTerm">
-      <DTS:VariableValue
-        DTS:DataType="8">2170</DTS:VariableValue>
-    </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
@@ -775,7 +591,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -809,8 +625,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\8 - Funding Levels\7B - Year End Balance - All Funds\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -931,7 +747,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -957,8 +773,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\8 - Funding Levels\7B - Year End Balance - All Funds\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 4]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 4]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1158,7 +974,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1192,8 +1008,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\8 - Funding Levels\7D - Gifts\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1314,7 +1130,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1340,8 +1156,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\8 - Funding Levels\7D - Gifts\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 2]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 2]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1541,7 +1357,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1575,8 +1391,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\8 - Funding Levels\7G - General Funds\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1697,7 +1513,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1723,8 +1539,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\8 - Funding Levels\7G - General Funds\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1924,7 +1740,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1958,8 +1774,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\8 - Funding Levels\7Other - Other\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2080,7 +1896,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2106,8 +1922,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\8 - Funding Levels\7Other - Other\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 3]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 3]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2307,7 +2123,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2341,8 +2157,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\8 - Funding Levels\7S - Sponsored Research\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2463,7 +2279,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2489,8 +2305,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\8 - Funding Levels\7S - Sponsored Research\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 1]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2736,7 +2552,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2770,8 +2586,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\9 - Operations\8EC - Energy Cost\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2892,7 +2708,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2918,8 +2734,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\9 - Operations\8EC - Energy Cost\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 7]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 7]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3098,7 +2914,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3132,8 +2948,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\9 - Operations\8EU - Energy Usage\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3254,7 +3070,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3280,8 +3096,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\9 - Operations\8EU - Energy Usage\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 6]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 6]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3460,7 +3276,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3494,8 +3310,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\9 - Operations\8S - Space\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3616,7 +3432,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3642,8 +3458,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\9 - Operations\8S - Space\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 5]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 5]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3822,7 +3638,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3856,8 +3672,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\9 - Operations\8SD - Class Schedule Dist\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3978,7 +3794,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -4004,8 +3820,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\9 - Operations\8SD - Class Schedule Dist\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 8]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 8]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4197,23 +4013,23 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="175.916230366493,41.717277486911"
+          Size="176,41.6"
           Id="Package\8 - Funding Levels\7B - Year End Balance - All Funds"
           TopLeft="24.0857152953439,295.76471081572" />
         <NodeLayout
-          Size="124.649214659686,41.717277486911"
+          Size="124.8,41.6"
           Id="Package\8 - Funding Levels\7D - Gifts"
           TopLeft="56.8000015667508,147.717649915887" />
         <NodeLayout
-          Size="171.392670157069,41.717277486911"
+          Size="171.2,41.6"
           Id="Package\8 - Funding Levels\7G - General Funds"
           TopLeft="28.2285731899495,12.1882365982425" />
         <NodeLayout
-          Size="149.780104712042,41.717277486911"
+          Size="149.6,41.6"
           Id="Package\8 - Funding Levels\7Other - Other"
           TopLeft="42.6571441830421,214.705886149489" />
         <NodeLayout
-          Size="198.534031413613,41.717277486911"
+          Size="198.4,41.6"
           Id="Package\8 - Funding Levels\7S - Sponsored Research"
           TopLeft="21.3714295348343,79.811766610591" />
         <EdgeLayout
@@ -4307,24 +4123,24 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="256.837696335079,401.59162303665"
-          Size="256.837696335079,444.816753926702"
+          PanelSize="256.8,401.6"
+          Size="256.8,444.8"
           Id="Package\8 - Funding Levels"
           TopLeft="26.6938780056145,75.5697488147441" />
         <NodeLayout
-          Size="165.361256544503,41.717277486911"
+          Size="165.6,41.6"
           Id="Package\9 - Operations\8EC - Energy Cost"
           TopLeft="26.3836802674453,180.188238640228" />
         <NodeLayout
-          Size="174.408376963351,41.717277486911"
+          Size="174.4,41.6"
           Id="Package\9 - Operations\8EU - Energy Usage"
           TopLeft="29.6489864455022,94.5411786155302" />
         <NodeLayout
-          Size="130.178010471205,41.717277486911"
+          Size="130.4,41.6"
           Id="Package\9 - Operations\8S - Space"
           TopLeft="48.424496969329,252.726054783593" />
         <NodeLayout
-          Size="201.047120418849,41.717277486911"
+          Size="200.8,41.6"
           Id="Package\9 - Operations\8SD - Class Schedule Dist"
           TopLeft="15.7714351887608,21.1294128800759" />
         <EdgeLayout
@@ -4396,8 +4212,8 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="232.712041884817,421.696335078535"
-          Size="232.712041884817,464.921465968587"
+          PanelSize="232.8,421.6"
+          Size="232.8,464.8"
           Id="Package\9 - Operations"
           TopLeft="342.040822151451,69.0420177750111" />
         <EdgeLayout
@@ -4431,11 +4247,11 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.287958115184,41.717277486911"
+          Size="151.2,41.6"
           Id="Package\8 - Funding Levels\7B - Year End Balance - All Funds\OLE DB Source"
           TopLeft="73.6,68.8" />
         <NodeLayout
-          Size="171.895287958116,41.717277486911"
+          Size="172,41.6"
           Id="Package\8 - Funding Levels\7B - Year End Balance - All Funds\OLE DB Destination"
           TopLeft="57.6,188" />
         <EdgeLayout
@@ -4490,11 +4306,11 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.287958115184,41.717277486911"
+          Size="151.2,41.6"
           Id="Package\8 - Funding Levels\7D - Gifts\OLE DB Source"
           TopLeft="62.4,44" />
         <NodeLayout
-          Size="171.895287958116,41.717277486911"
+          Size="172,41.6"
           Id="Package\8 - Funding Levels\7D - Gifts\OLE DB Destination"
           TopLeft="57.6,161.6" />
         <EdgeLayout
@@ -4549,11 +4365,11 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.287958115184,41.717277486911"
+          Size="151.2,41.6"
           Id="Package\8 - Funding Levels\7G - General Funds\OLE DB Source"
           TopLeft="28.0000004768372,16.5176472904773" />
         <NodeLayout
-          Size="171.895287958116,41.717277486911"
+          Size="172,41.6"
           Id="Package\8 - Funding Levels\7G - General Funds\OLE DB Destination"
           TopLeft="35.4285720319164,105.835295601947" />
         <EdgeLayout
@@ -4620,11 +4436,11 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.287958115184,41.717277486911"
+          Size="151.2,41.6"
           Id="Package\8 - Funding Levels\7Other - Other\OLE DB Source"
           TopLeft="107.2,57.6" />
         <NodeLayout
-          Size="171.895287958116,41.717277486911"
+          Size="172,41.6"
           Id="Package\8 - Funding Levels\7Other - Other\OLE DB Destination"
           TopLeft="100.8,146.4" />
         <EdgeLayout
@@ -4679,11 +4495,11 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.287958115184,41.717277486911"
+          Size="151.2,41.6"
           Id="Package\8 - Funding Levels\7S - Sponsored Research\OLE DB Source"
           TopLeft="76,47.2" />
         <NodeLayout
-          Size="171.895287958116,41.717277486911"
+          Size="172,41.6"
           Id="Package\8 - Funding Levels\7S - Sponsored Research\OLE DB Destination"
           TopLeft="68,148.8" />
         <EdgeLayout
@@ -4736,7 +4552,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package\9 - Operations\8EC - Energy Cost">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\9 - Operations\8EC - Energy Cost\OLE DB Source"
@@ -4776,9 +4592,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4809,7 +4623,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package\9 - Operations\8EU - Energy Usage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\9 - Operations\8EU - Energy Usage\OLE DB Source"
@@ -4849,9 +4663,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4882,7 +4694,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package\9 - Operations\8S - Space">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\9 - Operations\8S - Space\OLE DB Source"
@@ -4922,9 +4734,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4957,11 +4767,11 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.287958115184,41.717277486911"
+          Size="151.2,41.6"
           Id="Package\9 - Operations\8SD - Class Schedule Dist\OLE DB Source"
           TopLeft="82.8571442681916,42.8235300123485" />
         <NodeLayout
-          Size="171.895287958116,41.717277486911"
+          Size="172,41.6"
           Id="Package\9 - Operations\8SD - Class Schedule Dist\OLE DB Destination"
           TopLeft="80.0000013623919,133.364707752743" />
         <EdgeLayout

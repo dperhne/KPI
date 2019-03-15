@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Mdwprod world local"
+  DTS:DTSID="{A82AF4A4-2BB7-4E8B-BC39-B574DC30A364}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=dwprod.world;User ID=ahnc;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIPAF2eGF5Eq3fLkq0iRdrAAAAAACAAAAAAADZgAAwAAAABAAAADPUdDECI5m+xm7RMUnpjk/AAAAAASAAACgAAAAEAAAAK7XVX4xcNJmraq1hRTu+CR4AAAAnezaMGjYBPVYGVuyczQOBqfRV9DIvBQTLYuyuLoDo8EszH3iyg5T1jwHf4iLP+sy5m6SwJ0h5nvGxaxbvE9tzDvi63KJQgz11+x+57V94uOtcQp7CeJ99DlznlwVwsQ5L4RGKWWOv1Jcgf8IQi1H6JJ/XDB9T3CwFAAAANlHjcYwTkoh/1ykrhEi2fPVP7ev</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

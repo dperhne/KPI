@@ -7,47 +7,20 @@
   DTS:CreatorName="UMROOT\nickh1"
   DTS:DTSID="{B157E979-317B-4562-B83D-10E292278B2A}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.92"
+  DTS:LastModifiedProductVersion="15.0.0900.30"
   DTS:LocaleID="1033"
   DTS:ObjectName="2 - Profile_2_CAC"
   DTS:PackageType="5"
-  DTS:VersionBuild="42"
-  DTS:VersionGUID="{C37A968B-C0A1-4F66-904A-8ED785F399C7}">
+  DTS:VersionBuild="49"
+  DTS:VersionGUID="{C973AC2B-30FA-4FDE-944A-50C983A7EC77}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.nickh]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{77FC4F21-2857-40AE-98E5-D1B25171D746}"
-      DTS:ObjectName="dwprod.nickh">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=MSDAORA.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADzGB8qD7hi2pbOSw+CbDD8AAAAAASAAACgAAAAEAAAAJNoRiEUSQcFF6oL2rUHGAoQAAAAXIsXsxyA8dubbcCYpyB7JBQAAABdAGtnN33nk/A975oUIqpc1vc9xw</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
-      DTS:ObjectName="m-mssqlprd017,14330.lsa_AdminData">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{BE692F8C-A502-4353-8CCB-DF632A6F0F02}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;&#x9;v.home_class_nbr, v.term, v.acad_year,&#xA;&#x9;nvl(cr.deptid, v.class_deptid) as class_deptid,&#xA;&#x9;v.subject_deptid, substr(v.subject_deptid,1,6) as subject_deptid_trim,&#xA;&#x9;case&#xA;&#x9;&#x9;when nvl(cr.deptid, v.class_deptid) = substr(v.subject_deptid,1,6) then 'Y' -- was v.class_deptid Nickh 9-26-14&#xA;&#x9;&#x9;else 'N'&#xA;&#x9;end same_dept,&#xA;&#x9;cr.dept_descr as class_department_descr,&#x9;&#x9;&#xA;&#x9;sd.dept_descr as subject_department,&#xA;&#x9;v.crse_id, v.sctn_combined_id, v.class_nbr, v.subject, v.catalog_nbr, v.class_section,&#xA;&#x9;v.class_home_ind_cd, v.total_enrl_tot, v.enrl_tot, cr.section_dist_hrs,&#xA;&#x9;v.enrl_tot * cr.section_dist_hrs as Student_CH,&#xA;&#x9;v.combination_type, v.combined_section,&#xA;&#x9;'xxxxxxxxxxxxxxxxxxxxxxxxx' as class_division,&#xA;&#x9;'xxxxxxxxxxxxxxxxxxxxxxxxx' as subject_division&#xA;FROM&#xA;&#x9;(&#xA;&#x9;SELECT&#xA;&#x9;&#x9;nvl(sct.home_class_nbr, c.class_nbr) as home_class_nbr, c.term, t.acad_year,&#xA;&#x9;&#x9;c.deptid as class_deptid, &#xA;&#x9;&#x9;s.deptid as subject_deptid,&#xA;&#x9;&#x9;c.crse_id, sc.sctn_combined_id, c.class_nbr, c.subject, c.catalog_nbr, c.class_section,&#xA;&#x9;&#x9;c.class_home_ind_cd, c.total_enrl_tot, c.enrl_tot, &#xA;&#x9;&#x9;sct.combination_type, c.combined_section&#xA;&#x9;FROM&#xA;&#x9;&#x9;M_Srdw1.CLASS_TBL c,&#xA;&#x9;&#x9;M_Srdw1.SCTN_CMBND sc,&#xA;&#x9;&#x9;M_Srdw1.SCTN_CMBND_TBL sct,&#xA;&#x9;&#x9;m_srdw1.subject_tbl_curr_vw s,&#xA;&#x9;&#x9;m_srdw1.term_tbl t&#xA;&#x9;WHERE&#xA;&#x9;&#x9;c.term = sc.term (+)&#xA;&#x9;&#x9;and c.class_nbr = sc.class_nbr (+)&#xA;&#x9;&#x9;and c.subject = s.subject&#xA;&#x9;&#x9;and sc.term = sct.term (+)&#xA;&#x9;&#x9;and sc.session_code = sct.session_code (+)&#xA;&#x9;&#x9;and sc.sctn_combined_id = sct.sctn_combined_id (+)&#xA;&#x9;&#x9;and c.term = t.term &#xA;&#x9;&#x9;and t.acad_career = 'ULSA'&#xA;&#x9;  and t.acad_year = '&quot; + @_sCurrAcadYear + &quot;'&#xA;      and c.crse_component not in ('PSI', 'IND') &#xA;      and c.class_stat != 'X'&#xA;      and c.total_enrl_tot &gt; 0&#xA;&#x9;) v,&#xA;&#x9;M_Crdw1.CRAS_CLASS_TBL cr,&#xA;&#x9;m_hrdw1.he_dept_tbl cd,&#xA;   m_hrdw1.he_dept_tbl sd&#xA;WHERE&#xA;&#x9;v.home_class_nbr = cr.class_nbr (+)&#xA;&#x9;and v.term = cr.term (+)&#xA;&#x9;and v.class_deptid = cd.deptid &#xA;   and cd.dept_effdt =&#xA;   &#x9;(select max(d1.dept_effdt)&#xA;&#x9;&#x9; from m_hrdw1.he_dept_tbl d1&#xA;       where&#xA;       &#x9;d1.deptid = cd.deptid&#xA;&#x9;&#x9;&#x9;and d1.dept_effdt &lt;= sysdate&#xA;       )&#xA;   and substr(v.subject_deptid,1,6) = sd.deptid&#xA;   and sd.dept_effdt =&#xA;   &#x9;(SELECT max(d1.dept_effdt)&#xA;       FROM m_hrdw1.he_dept_tbl d1&#xA;&#x9;&#x9; WHERE&#xA;       &#x9;d1.deptid = sd.deptid&#xA;         and d1.dept_effdt &lt;= sysdate&#xA;&#x9;&#x9; )&#xA;ORDER BY&#xA;&#x9;v.term, v.sctn_combined_id, v.class_home_ind_cd desc, v.crse_id&quot;"
+      DTS:Expression="&quot;SELECT&#xA;&#x9;v.home_class_nbr, v.term, v.acad_year,&#xA;&#x9;nvl(cr.deptid, v.class_deptid) as class_deptid,&#xA;&#x9;v.subject_deptid, substr(v.subject_deptid,1,6) as subject_deptid_trim,&#xA;&#x9;case&#xA;&#x9;&#x9;when nvl(cr.deptid, v.class_deptid) = substr(v.subject_deptid,1,6) then 'Y' -- was v.class_deptid Nickh 9-26-14&#xA;&#x9;&#x9;else 'N'&#xA;&#x9;end same_dept,&#xA;&#x9;cr.dept_descr as class_department_descr,&#x9;&#x9;&#xA;&#x9;sd.dept_descr as subject_department,&#xA;&#x9;v.crse_id, v.sctn_combined_id, v.class_nbr, v.subject, v.catalog_nbr, v.class_section,&#xA;&#x9;v.class_home_ind_cd, v.total_enrl_tot, v.enrl_tot, cr.section_dist_hrs,&#xA;&#x9;v.enrl_tot * cr.section_dist_hrs as Student_CH,&#xA;&#x9;v.combination_type, v.combined_section,&#xA;&#x9;'xxxxxxxxxxxxxxxxxxxxxxxxx' as class_division,&#xA;&#x9;'xxxxxxxxxxxxxxxxxxxxxxxxx' as subject_division&#xA;FROM&#xA;&#x9;(&#xA;&#x9;SELECT&#xA;&#x9;&#x9;nvl(sct.home_class_nbr, c.class_nbr) as home_class_nbr, c.term, t.acad_year,&#xA;&#x9;&#x9;c.deptid as class_deptid, &#xA;&#x9;&#x9;s.deptid as subject_deptid,&#xA;&#x9;&#x9;c.crse_id, sc.sctn_combined_id, c.class_nbr, c.subject, c.catalog_nbr, c.class_section,&#xA;&#x9;&#x9;c.class_home_ind_cd, c.total_enrl_tot, c.enrl_tot, &#xA;&#x9;&#x9;sct.combination_type, c.combined_section&#xA;&#x9;FROM&#xA;&#x9;&#x9;M_Srdw1.CLASS_TBL c,&#xA;&#x9;&#x9;M_Srdw1.SCTN_CMBND sc,&#xA;&#x9;&#x9;M_Srdw1.SCTN_CMBND_TBL sct,&#xA;&#x9;&#x9;m_srdw1.subject_tbl_curr_vw s,&#xA;&#x9;&#x9;m_srdw1.term_tbl t&#xA;&#x9;WHERE&#xA;&#x9;&#x9;c.term = sc.term (+)&#xA;&#x9;&#x9;and c.class_nbr = sc.class_nbr (+)&#xA;&#x9;&#x9;and c.subject = s.subject&#xA;&#x9;&#x9;and sc.term = sct.term (+)&#xA;&#x9;&#x9;and sc.session_code = sct.session_code (+)&#xA;&#x9;&#x9;and sc.sctn_combined_id = sct.sctn_combined_id (+)&#xA;&#x9;&#x9;and c.term = t.term &#xA;&#x9;&#x9;and t.acad_career = 'ULSA'&#xA;&#x9;  and t.acad_year = '&quot; + @_mAcadYear + &quot;'&#xA;      and c.crse_component not in ('PSI', 'IND') &#xA;      and c.class_stat != 'X'&#xA;      and c.total_enrl_tot &gt; 0&#xA;&#x9;) v,&#xA;&#x9;M_Crdw1.CRAS_CLASS_TBL cr,&#xA;&#x9;m_hrdw1.he_dept_tbl cd,&#xA;   m_hrdw1.he_dept_tbl sd&#xA;WHERE&#xA;&#x9;v.home_class_nbr = cr.class_nbr (+)&#xA;&#x9;and v.term = cr.term (+)&#xA;&#x9;and v.class_deptid = cd.deptid &#xA;   and cd.dept_effdt =&#xA;   &#x9;(select max(d1.dept_effdt)&#xA;&#x9;&#x9; from m_hrdw1.he_dept_tbl d1&#xA;       where&#xA;       &#x9;d1.deptid = cd.deptid&#xA;&#x9;&#x9;&#x9;and d1.dept_effdt &lt;= sysdate&#xA;       )&#xA;   and substr(v.subject_deptid,1,6) = sd.deptid&#xA;   and sd.dept_effdt =&#xA;   &#x9;(SELECT max(d1.dept_effdt)&#xA;       FROM m_hrdw1.he_dept_tbl d1&#xA;&#x9;&#x9; WHERE&#xA;       &#x9;d1.deptid = sd.deptid&#xA;         and d1.dept_effdt &lt;= sysdate&#xA;&#x9;&#x9; )&#xA;ORDER BY&#xA;&#x9;v.term, v.sctn_combined_id, v.class_home_ind_cd desc, v.crse_id&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLCombinedSections">
@@ -126,7 +99,7 @@ ORDER BY
       DTS:CreationName=""
       DTS:DTSID="{12D0AC7A-EA7A-4E20-A6D9-AECD94825918}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;DELETE FROM&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;WHERE&#xA;&#x9;[Acad_Year] = '&quot; + @_sCurrAcadYear + &quot;'&quot;"
+      DTS:Expression="&quot;DELETE FROM&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;WHERE&#xA;&#x9;[Acad_Year] = '&quot; + @_mAcadYear + &quot;'&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLDeleteCombinedSections">
@@ -139,7 +112,7 @@ WHERE
       DTS:CreationName=""
       DTS:DTSID="{954E84F2-F08F-4B30-BB6C-D186D3BC0CCF}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;DELETE T&#xA;FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as T&#xA;&#x9;INNER JOIN &#xA;&#x9;&#x9;(SELECT Home_Class_Nbr, Term&#xA;&#x9;&#x9; FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;&#x9;&#x9; WHERE&#xA;&#x9;&#x9;&#x9;[Acad_Year] = '&quot; + @_sCurrAcadYear + &quot;'&#x9;&#xA;&#x9;&#x9;&#x9;AND Combined_Section = 'C'&#xA;&#x9;&#x9;&#x9;AND (Subject_DeptId = '194700' OR Class_DeptId = '171900')&#xA;&#x9;&#x9; UNION&#xA;&#x9;&#x9; SELECT Home_Class_Nbr, Term&#xA;&#x9;&#x9; FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;&#x9;&#x9; WHERE&#xA;&#x9;&#x9;&#x9;[Acad_Year] = '&quot; + @_sCurrAcadYear + &quot;'&#x9;&#xA;&#x9;&#x9;&#x9;AND (Subject_Division = 'xxxxxxxxxxxxxxxxxxxxxxxxx' OR Class_Division = 'xxxxxxxxxxxxxxxxxxxxxxxxx')) as D&#xA;&#x9;ON T.Home_Class_Nbr = D.Home_Class_Nbr and T.Term = D.Term&#x9;&quot;"
+      DTS:Expression="&quot;DELETE T&#xA;FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as T&#xA;&#x9;INNER JOIN &#xA;&#x9;&#x9;(SELECT Home_Class_Nbr, Term&#xA;&#x9;&#x9; FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;&#x9;&#x9; WHERE&#xA;&#x9;&#x9;&#x9;[Acad_Year] = '&quot; + @_mAcadYear + &quot;'&#x9;&#xA;&#x9;&#x9;&#x9;AND Combined_Section = 'C'&#xA;&#x9;&#x9;&#x9;AND (Subject_DeptId = '194700' OR Class_DeptId = '171900')&#xA;&#x9;&#x9; UNION&#xA;&#x9;&#x9; SELECT Home_Class_Nbr, Term&#xA;&#x9;&#x9; FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;&#x9;&#x9; WHERE&#xA;&#x9;&#x9;&#x9;[Acad_Year] = '&quot; + @_mAcadYear + &quot;'&#x9;&#xA;&#x9;&#x9;&#x9;AND (Subject_Division = 'xxxxxxxxxxxxxxxxxxxxxxxxx' OR Class_Division = 'xxxxxxxxxxxxxxxxxxxxxxxxx')) as D&#xA;&#x9;ON T.Home_Class_Nbr = D.Home_Class_Nbr and T.Term = D.Term&#x9;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLDeleteFYSRelOutside">
@@ -165,7 +138,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as T
       DTS:CreationName=""
       DTS:DTSID="{0F21FA81-87F1-428B-B5F3-6C340A1FD12E}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;DELETE FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] WHERE [Acad_Year] = '&quot;+@_sCurrAcadYear+&quot;'&quot;"
+      DTS:Expression="&quot;DELETE FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] WHERE [Acad_Year] = '&quot;+@_mAcadYear+&quot;'&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLDeleteSummary">
@@ -176,7 +149,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as T
       DTS:CreationName=""
       DTS:DTSID="{9402E5DC-2233-48EE-B094-ECD4A1F9429E}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;INSERT INTO KPIData_Stage&#xA;SELECT&#xA;&#x9;'CAC', DeptId, Acad_Year, CAC&#xA;FROM&#xA;(&#xA;SELECT&#xA;&#x9; s.[Acad_Year], s.[DeptId], s.[Dept_Descr], &#xA;&#x9; sum(s2.[KPI_CH]) as KPI_CH,&#xA;&#x9; sum(s2.[Gain_CH]) as Gain_CH,&#xA;&#x9; sum(s2.[Loss_CH]) as Loss_CH,&#xA;&#x9; sum(s2.[Net_Trade_CH]) as Net_Trade_CH1,&#xA;&#x9; sum(s2.[Gain_CH]) -  sum(s2.[Loss_CH]) as Net_Trade_CH2,&#xA;&#x9; (sum(s2.[Gain_CH]) -  sum(s2.[Loss_CH])) / sum(s2.[KPI_CH]) as CAC&#xA;FROM&#xA;&#x9;[lsa_AdminData].[dbo].[CAC_Trade_Summary] as s,&#xA;&#x9;[lsa_AdminData].[dbo].[CAC_Trade_Summary] as s2&#xA;WHERE&#xA;&#x9;s2.[Acad_Year] between cast(cast(s.[Acad_Year] as int) - 2 as VARCHAR(4)) and s.[Acad_Year]&#xA;&#x9;AND s2.DeptId = s.DeptId&#xA;&#x9;AND s2.Dept_Descr = s.Dept_Descr&#xA;GROUP BY&#xA;&#x9;s.[Acad_Year], s.[DeptId], s.[Dept_Descr]&#xA;HAVING&#xA;&#x9;sum(s2.[KPI_CH]) &gt; 0&#xA;&#x9;AND count(s2.[KPI_CH]) &gt; 2&#xA;) as v&#xA;WHERE&#xA;&#x9;Acad_Year = '&quot; + @_sCurrAcadYear + &quot;'&quot;"
+      DTS:Expression="&quot;INSERT INTO KPIData_Stage&#xA;SELECT&#xA;&#x9;'CAC', DeptId, Acad_Year, CAC&#xA;FROM&#xA;(&#xA;SELECT&#xA;&#x9; s.[Acad_Year], s.[DeptId], s.[Dept_Descr], &#xA;&#x9; sum(s2.[KPI_CH]) as KPI_CH,&#xA;&#x9; sum(s2.[Gain_CH]) as Gain_CH,&#xA;&#x9; sum(s2.[Loss_CH]) as Loss_CH,&#xA;&#x9; sum(s2.[Net_Trade_CH]) as Net_Trade_CH1,&#xA;&#x9; sum(s2.[Gain_CH]) -  sum(s2.[Loss_CH]) as Net_Trade_CH2,&#xA;&#x9; (sum(s2.[Gain_CH]) -  sum(s2.[Loss_CH])) / sum(s2.[KPI_CH]) as CAC&#xA;FROM&#xA;&#x9;[lsa_AdminData].[dbo].[CAC_Trade_Summary] as s,&#xA;&#x9;[lsa_AdminData].[dbo].[CAC_Trade_Summary] as s2&#xA;WHERE&#xA;&#x9;s2.[Acad_Year] between cast(cast(s.[Acad_Year] as int) - 2 as VARCHAR(4)) and s.[Acad_Year]&#xA;&#x9;AND s2.DeptId = s.DeptId&#xA;&#x9;AND s2.Dept_Descr = s.Dept_Descr&#xA;GROUP BY&#xA;&#x9;s.[Acad_Year], s.[DeptId], s.[Dept_Descr]&#xA;HAVING&#xA;&#x9;sum(s2.[KPI_CH]) &gt; 0&#xA;&#x9;AND count(s2.[KPI_CH]) &gt; 2&#xA;) as v&#xA;WHERE&#xA;&#x9;Acad_Year = '&quot; + @_mAcadYear + &quot;'&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLInsertKPIStage">
@@ -214,7 +187,7 @@ WHERE
       DTS:CreationName=""
       DTS:DTSID="{B2B154BE-B12D-459E-A524-9779E1713094}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;INSERT INTO [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;([DeptId], [Acad_Year], [Dept_Descr], [Dept_Grp], [Division])&#xA;SELECT DISTINCT&#xA;&#x9;t.[Class_DeptId], t.[Acad_Year], d.[DEPT_DESCR], d.[DEPT_GRP], t.[Class_Division]&#xA;FROM &#xA;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as t&#xA;&#x9;INNER JOIN [lsa_reference_tables].[dbo].[CURR_FN_DEPT_VW] as d&#xA;&#x9;&#x9;ON t.Class_DeptId = d.DEPTID COLLATE DATABASE_DEFAULT&#xA;WHERE t.[Acad_Year] = '&quot; + @_sCurrAcadYear + &quot;'&quot;"
+      DTS:Expression="&quot;INSERT INTO [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;([DeptId], [Acad_Year], [Dept_Descr], [Dept_Grp], [Division])&#xA;SELECT DISTINCT&#xA;&#x9;t.[Class_DeptId], t.[Acad_Year], d.[DEPT_DESCR], d.[DEPT_GRP], t.[Class_Division]&#xA;FROM &#xA;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as t&#xA;&#x9;INNER JOIN [lsa_reference_tables].[dbo].[CURR_FN_DEPT_VW] as d&#xA;&#x9;&#x9;ON t.Class_DeptId = d.DEPTID COLLATE DATABASE_DEFAULT&#xA;WHERE t.[Acad_Year] = '&quot; + @_mAcadYear + &quot;'&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLInsertSummary">
@@ -233,7 +206,7 @@ WHERE t.[Acad_Year] = '2018'</DTS:VariableValue>
       DTS:CreationName=""
       DTS:DTSID="{4963A3D5-D4CA-4B39-A17A-53241E65C125}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET &#xA;&#x9;[CH_Subtotal] = ([Non_Combined_CH] + [Combined_Same_Dept_CH] + [Gain_CH])&#xA;WHERE [Acad_Year] = '&quot; + @_sCurrAcadYear + &quot;'&quot;"
+      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET &#xA;&#x9;[CH_Subtotal] = ([Non_Combined_CH] + [Combined_Same_Dept_CH] + [Gain_CH])&#xA;WHERE [Acad_Year] = '&quot; + @_mAcadYear + &quot;'&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLUpdateCHSubTotal">
@@ -247,7 +220,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
       DTS:CreationName=""
       DTS:DTSID="{A68ED857-2127-439E-A790-257E378D8F65}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;SET [Class_Division] = g.[division]&#xA;FROM&#xA;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as t&#xA;&#x9;&#x9;INNER JOIN [lsa_AdminData].[dbo].[DepartmentGrouping] as g&#xA;&#x9;&#x9;&#x9;ON t.[Class_DeptId] = g.[deptid]&#xA;WHERE&#xA;&#x9;t.[Acad_Year] = '&quot; + @_sCurrAcadYear + &quot;'&quot;"
+      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;SET [Class_Division] = g.[division]&#xA;FROM&#xA;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as t&#xA;&#x9;&#x9;INNER JOIN [lsa_AdminData].[dbo].[DepartmentGrouping] as g&#xA;&#x9;&#x9;&#x9;ON t.[Class_DeptId] = g.[deptid]&#xA;WHERE&#xA;&#x9;t.[Acad_Year] = '&quot; + @_mAcadYear + &quot;'&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLUpdateClassDivision">
@@ -265,7 +238,7 @@ WHERE
       DTS:CreationName=""
       DTS:DTSID="{3A968444-AAAD-4CCF-AFCB-7236C5DECC15}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET [Combined_Same_Dept_CH] = t.CH&#xA;FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s&#xA;&#x9;INNER JOIN&#x9; &#xA;&#x9;&#x9;(SELECT Acad_Year, Class_DeptId as DeptId, sum(Student_CH) as CH&#xA;&#x9;&#x9;FROM &#xA;&#x9;&#x9;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;&#x9;&#x9;WHERE&#xA;&#x9;&#x9;&#x9;Combined_Section = 'C'&#xA;&#x9;&#x9;&#x9;and Same_Dept = 'Y'&#xA;&#x9;&#x9;&#x9;and Acad_Year = '&quot; + @_sCurrAcadYear + &quot;'&#xA;&#x9;&#x9;GROUP BY&#xA;&#x9;&#x9;&#x9;Acad_Year, Class_DeptId) as t&#xA;&#x9;ON s.DeptId = t.DeptId AND s.Acad_Year = t.Acad_Year&#x9;&quot;"
+      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET [Combined_Same_Dept_CH] = t.CH&#xA;FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s&#xA;&#x9;INNER JOIN&#x9; &#xA;&#x9;&#x9;(SELECT Acad_Year, Class_DeptId as DeptId, sum(Student_CH) as CH&#xA;&#x9;&#x9;FROM &#xA;&#x9;&#x9;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;&#x9;&#x9;WHERE&#xA;&#x9;&#x9;&#x9;Combined_Section = 'C'&#xA;&#x9;&#x9;&#x9;and Same_Dept = 'Y'&#xA;&#x9;&#x9;&#x9;and Acad_Year = '&quot; + @_mAcadYear + &quot;'&#xA;&#x9;&#x9;GROUP BY&#xA;&#x9;&#x9;&#x9;Acad_Year, Class_DeptId) as t&#xA;&#x9;ON s.DeptId = t.DeptId AND s.Acad_Year = t.Acad_Year&#x9;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLUpdateCombinedSameDept">
@@ -289,7 +262,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
       DTS:CreationName=""
       DTS:DTSID="{B578B991-EE7F-44AF-B9CB-493BCFAD9C92}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET [Gain_CH] = t.Gain&#xA;FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s&#xA;&#x9;INNER JOIN&#x9; &#xA;&#x9;&#x9;(SELECT Acad_Year, Class_DeptId, sum(Student_CH) as Gain&#xA;&#x9;&#x9;FROM &#xA;&#x9;&#x9;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;&#x9;&#x9;WHERE&#xA;&#x9;&#x9;&#x9;Same_Dept = 'N'&#xA;&#x9;&#x9;&#x9;and Combined_Section = 'C'&#xA;&#x9;&#x9;&#x9;and Acad_Year = '&quot; + @_sCurrAcadYear + &quot;'&#xA;&#x9;&#x9;GROUP BY&#xA;&#x9;&#x9;&#x9;Acad_Year, Class_DeptId) as t&#xA;&#x9;ON s.DeptId = t.Class_DeptId AND s.Acad_Year = t.Acad_Year&#x9;&quot;"
+      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET [Gain_CH] = t.Gain&#xA;FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s&#xA;&#x9;INNER JOIN&#x9; &#xA;&#x9;&#x9;(SELECT Acad_Year, Class_DeptId, sum(Student_CH) as Gain&#xA;&#x9;&#x9;FROM &#xA;&#x9;&#x9;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;&#x9;&#x9;WHERE&#xA;&#x9;&#x9;&#x9;Same_Dept = 'N'&#xA;&#x9;&#x9;&#x9;and Combined_Section = 'C'&#xA;&#x9;&#x9;&#x9;and Acad_Year = '&quot; + @_mAcadYear + &quot;'&#xA;&#x9;&#x9;GROUP BY&#xA;&#x9;&#x9;&#x9;Acad_Year, Class_DeptId) as t&#xA;&#x9;ON s.DeptId = t.Class_DeptId AND s.Acad_Year = t.Acad_Year&#x9;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLUpdateGain">
@@ -313,7 +286,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
       DTS:CreationName=""
       DTS:DTSID="{AA3FCC5B-790C-49AC-89CC-F239AF8A3DC5}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET [KPI_CH] = k.[KPIValue]&#xA;FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s&#xA;&#x9;INNER JOIN&#x9;[lsa_AdminData].[dbo].[KPIData] as k &#xA;&#x9;&#x9;ON s.[DeptId] = k.[DeptID]&#xA;&#x9;&#x9;&#x9;AND s.[Acad_Year] = k.[AcadYear]&#xA;WHERE s.[Acad_Year] = '&quot; + @_sCurrAcadYear + &quot;'&#xA;and k.[KPICode] = '2T'&#xA;&quot;"
+      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET [KPI_CH] = k.[KPIValue]&#xA;FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s&#xA;&#x9;INNER JOIN&#x9;[lsa_AdminData].[dbo].[KPIData] as k &#xA;&#x9;&#x9;ON s.[DeptId] = k.[DeptID]&#xA;&#x9;&#x9;&#x9;AND s.[Acad_Year] = k.[AcadYear]&#xA;WHERE s.[Acad_Year] = '&quot; + @_mAcadYear + &quot;'&#xA;and k.[KPICode] = '2T'&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLUpdateKPICH">
@@ -332,7 +305,7 @@ and k.[KPICode] = '2T'
       DTS:CreationName=""
       DTS:DTSID="{13BC52B9-ECEE-42AB-BA43-733FB9924A54}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET [Loss_CH] = t.Loss&#xA;FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s&#xA;&#x9;INNER JOIN&#x9; &#xA;&#x9;&#x9;(SELECT Acad_Year, Subject_DeptId_Trim, sum(Student_CH) as Loss&#xA;&#x9;&#x9;FROM &#xA;&#x9;&#x9;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;&#x9;&#x9;WHERE&#xA;&#x9;&#x9;&#x9;Same_Dept = 'N'&#xA;&#x9;&#x9;&#x9;and Combined_Section = 'C'&#xA;&#x9;&#x9;&#x9;and Acad_Year = '&quot; + @_sCurrAcadYear + &quot;'&#xA;&#x9;&#x9;GROUP BY&#xA;&#x9;&#x9;&#x9;Acad_Year, Subject_DeptId_Trim) as t&#xA;&#x9;ON s.DeptId = t.Subject_DeptId_Trim AND s.Acad_Year = t.Acad_Year&#x9;&quot;"
+      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET [Loss_CH] = t.Loss&#xA;FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s&#xA;&#x9;INNER JOIN&#x9; &#xA;&#x9;&#x9;(SELECT Acad_Year, Subject_DeptId_Trim, sum(Student_CH) as Loss&#xA;&#x9;&#x9;FROM &#xA;&#x9;&#x9;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;&#x9;&#x9;WHERE&#xA;&#x9;&#x9;&#x9;Same_Dept = 'N'&#xA;&#x9;&#x9;&#x9;and Combined_Section = 'C'&#xA;&#x9;&#x9;&#x9;and Acad_Year = '&quot; + @_mAcadYear + &quot;'&#xA;&#x9;&#x9;GROUP BY&#xA;&#x9;&#x9;&#x9;Acad_Year, Subject_DeptId_Trim) as t&#xA;&#x9;ON s.DeptId = t.Subject_DeptId_Trim AND s.Acad_Year = t.Acad_Year&#x9;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLUpdateLoss">
@@ -356,7 +329,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
       DTS:CreationName=""
       DTS:DTSID="{440BF2AB-D002-4ECC-B62A-C488C0CBD52E}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET &#xA;&#x9;[Net_Trade_Pct] = [Net_Trade_CH] / [Total_CH]&#xA;WHERE [Acad_Year] = '&quot; + @_sCurrAcadYear + &quot;' &#xA;&#x9;AND [Total_CH] != 0&quot;"
+      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET &#xA;&#x9;[Net_Trade_Pct] = [Net_Trade_CH] / [Total_CH]&#xA;WHERE [Acad_Year] = '&quot; + @_mAcadYear + &quot;' &#xA;&#x9;AND [Total_CH] != 0&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLUpdateNetTradePct">
@@ -371,7 +344,7 @@ WHERE [Acad_Year] = '2018'
       DTS:CreationName=""
       DTS:DTSID="{D468C982-D06D-428E-939A-7044360E7208}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET [Non_Combined_CH] = t.CH&#xA;FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s&#xA;&#x9;INNER JOIN&#x9; &#xA;&#x9;&#x9;(SELECT Acad_Year, Class_DeptId, sum(Student_CH) as CH&#xA;&#x9;&#x9;FROM &#xA;&#x9;&#x9;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;&#x9;&#x9;WHERE&#xA;&#x9;&#x9;&#x9;Combination_Type is Null&#xA;&#x9;&#x9;&#x9;and Acad_Year = '&quot; + @_sCurrAcadYear + &quot;'&#xA;&#x9;&#x9;GROUP BY&#xA;&#x9;&#x9;&#x9;Acad_Year, Class_DeptId) as t&#xA;&#x9;ON s.DeptId = t.Class_DeptId AND s.Acad_Year = t.Acad_Year&#x9;&quot;"
+      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET [Non_Combined_CH] = t.CH&#xA;FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s&#xA;&#x9;INNER JOIN&#x9; &#xA;&#x9;&#x9;(SELECT Acad_Year, Class_DeptId, sum(Student_CH) as CH&#xA;&#x9;&#x9;FROM &#xA;&#x9;&#x9;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;&#x9;&#x9;WHERE&#xA;&#x9;&#x9;&#x9;Combination_Type is Null&#xA;&#x9;&#x9;&#x9;and Acad_Year = '&quot; + @_mAcadYear + &quot;'&#xA;&#x9;&#x9;GROUP BY&#xA;&#x9;&#x9;&#x9;Acad_Year, Class_DeptId) as t&#xA;&#x9;ON s.DeptId = t.Class_DeptId AND s.Acad_Year = t.Acad_Year&#x9;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLUpdateNonCombined">
@@ -394,7 +367,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
       DTS:CreationName=""
       DTS:DTSID="{D16ED976-1748-4A6F-8FD9-F51D2E67DD7C}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;SET [Subject_Division] = g.[division]&#xA;FROM&#xA;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as t&#xA;&#x9;&#x9;INNER JOIN [lsa_AdminData].[dbo].[DepartmentGrouping] as g&#xA;&#x9;&#x9;&#x9;ON t.[Subject_DeptId_Trim] = g.[deptid]&#xA;WHERE&#xA;&#x9;t.[Acad_Year] = '&quot; + @_sCurrAcadYear + &quot;'&quot;"
+      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]&#xA;SET [Subject_Division] = g.[division]&#xA;FROM&#xA;&#x9;[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as t&#xA;&#x9;&#x9;INNER JOIN [lsa_AdminData].[dbo].[DepartmentGrouping] as g&#xA;&#x9;&#x9;&#x9;ON t.[Subject_DeptId_Trim] = g.[deptid]&#xA;WHERE&#xA;&#x9;t.[Acad_Year] = '&quot; + @_mAcadYear + &quot;'&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLUpdateSubjectDivision">
@@ -412,7 +385,7 @@ WHERE
       DTS:CreationName=""
       DTS:DTSID="{10F3295C-5E40-4B75-8231-661374F2FB8E}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET &#xA;&#x9;[Total_CH] = ([Non_Combined_CH] + [Combined_Same_Dept_CH] + [Gain_CH]) - [Loss_CH] ,&#xA;&#x9;[Net_Trade_CH] = [Gain_CH] - [Loss_CH] &#xA;WHERE [Acad_Year] = '&quot; + @_sCurrAcadYear + &quot;'&quot;"
+      DTS:Expression="&quot;UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]&#xA;SET &#xA;&#x9;[Total_CH] = ([Non_Combined_CH] + [Combined_Same_Dept_CH] + [Gain_CH]) - [Loss_CH] ,&#xA;&#x9;[Net_Trade_CH] = [Gain_CH] - [Loss_CH] &#xA;WHERE [Acad_Year] = '&quot; + @_mAcadYear + &quot;'&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLUpdateTotalCH">
@@ -422,17 +395,6 @@ SET
 	[Total_CH] = ([Non_Combined_CH] + [Combined_Same_Dept_CH] + [Gain_CH]) - [Loss_CH] ,
 	[Net_Trade_CH] = [Gain_CH] - [Loss_CH] 
 WHERE [Acad_Year] = '2018'</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{463DE84B-8E12-4F77-B3AE-AC3CE6659D9F}"
-      DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;2018&quot;"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="_sCurrAcadYear">
-      <DTS:VariableValue
-        DTS:DataType="8">2018</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -459,7 +421,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLDeleteCombinedSections" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -477,7 +439,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLDeleteFYSRelOutside" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -495,7 +457,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLDeleteSummary" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -539,7 +501,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -565,8 +527,8 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\CAC - Credit Attribution Correction\Get Combined Sections\DWProd.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.nickh]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.nickh]"
+                      connectionManagerID="{B5AFB6C7-F0FB-42F5-A62F-C2A206230B07}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1187,7 +1149,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1221,8 +1183,8 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\CAC - Credit Attribution Correction\Get Combined Sections\SQLServer.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1611,7 +1573,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLInsertKPIStage" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -1629,7 +1591,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLInsertSummary" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -1647,7 +1609,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLUpdateCHSubTotal" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -1665,7 +1627,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLUpdateClassDivision" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -1683,7 +1645,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLUpdateCombinedSameDept" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -1701,7 +1663,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLUpdateGain" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -1719,7 +1681,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLUpdateKPICH" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -1737,7 +1699,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLUpdateLoss" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -1755,7 +1717,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLUpdateNetTradePct" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -1773,7 +1735,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLUpdateNonCombined" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -1791,7 +1753,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLUpdateSubjectDivision" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -1809,7 +1771,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{D94B4E0D-AA0D-48D5-A606-C9725605D2A9}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLUpdateTotalCH" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -1952,67 +1914,67 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="202.55497382199,41.717277486911"
+          Size="202.4,41.6"
           Id="Package\CAC - Credit Attribution Correction\Delete Combined Sections"
           TopLeft="17,30.7000008751364" />
         <NodeLayout
-          Size="227.183246073299,41.717277486911"
+          Size="227.2,41.6"
           Id="Package\CAC - Credit Attribution Correction\Delete FYS Rel Outside Classes"
           TopLeft="44.3571435188761,388.852941142152" />
         <NodeLayout
-          Size="159.329842931938,41.717277486911"
+          Size="159.2,41.6"
           Id="Package\CAC - Credit Attribution Correction\Delete Summary"
           TopLeft="306.099999046325,31.9235303040606" />
         <NodeLayout
-          Size="190.492146596859,41.717277486911"
+          Size="190.4,41.6"
           Id="Package\CAC - Credit Attribution Correction\Get Combined Sections"
           TopLeft="29.7142858115994,119.320588870197" />
         <NodeLayout
-          Size="182.450261780105,41.717277486911"
+          Size="182.4,41.6"
           Id="Package\CAC - Credit Attribution Correction\Insert into KPI_Stage"
           TopLeft="605.957140930332,492.523529428925" />
         <NodeLayout
-          Size="156.816753926702,41.717277486911"
+          Size="156.8,41.6"
           Id="Package\CAC - Credit Attribution Correction\Insert Summary"
           TopLeft="330.242855799929,119.320588870197" />
         <NodeLayout
-          Size="174.408376963351,41.717277486911"
+          Size="174.4,41.6"
           Id="Package\CAC - Credit Attribution Correction\Update CH Subtotal"
           TopLeft="610.24285552745,122.570588870197" />
         <NodeLayout
-          Size="182.450261780105,41.717277486911"
+          Size="182.4,41.6"
           Id="Package\CAC - Credit Attribution Correction\Update Class Division"
           TopLeft="36.0000001362392,296.561764860318" />
         <NodeLayout
-          Size="220.146596858639,41.717277486911"
+          Size="220,41.6"
           Id="Package\CAC - Credit Attribution Correction\Update Combined Same Dept"
           TopLeft="546.38571255353,35.0411774486819" />
         <NodeLayout
-          Size="139.225130890053,41.717277486911"
+          Size="139.2,41.6"
           Id="Package\CAC - Credit Attribution Correction\Update Gain"
           TopLeft="340.814284449207,210.994118007409" />
         <NodeLayout
-          Size="151.287958115184,41.717277486911"
+          Size="151.2,41.6"
           Id="Package\CAC - Credit Attribution Correction\Update KPI CH"
-          TopLeft="618.671427014409,384.629411713228" />
+          TopLeft="618.099998433249,384.017646998766" />
         <NodeLayout
-          Size="139.225130890053,41.717277486911"
+          Size="139.2,41.6"
           Id="Package\CAC - Credit Attribution Correction\Update Loss"
           TopLeft="343.814284585447,301.088235431394" />
         <NodeLayout
-          Size="203.057591623037,41.717277486911"
+          Size="203.2,41.6"
           Id="Package\CAC - Credit Attribution Correction\Update Net Trade Percent"
           TopLeft="598.814284176729,289.288235139682" />
         <NodeLayout
-          Size="187.979057591624,41.717277486911"
+          Size="188,41.6"
           Id="Package\CAC - Credit Attribution Correction\Update Non-Combined"
           TopLeft="348.671427968084,391.194117715697" />
         <NodeLayout
-          Size="192,41.717277486911"
+          Size="192,41.6"
           Id="Package\CAC - Credit Attribution Correction\Update Subject Division"
           TopLeft="28.7142858115994,205.494118007409" />
         <NodeLayout
-          Size="158.324607329843,41.717277486911"
+          Size="158.4,41.6"
           Id="Package\CAC - Credit Attribution Correction\Update Total CH"
           TopLeft="614.528569852089,206.17941200494" />
         <EdgeLayout
@@ -2127,18 +2089,18 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CAC - Credit Attribution Correction.PrecedenceConstraints[Constraint 13]"
-          TopLeft="697.342855595569,330.888235139682">
+          TopLeft="697.057141304989,330.888235139682">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,53.7411765735456"
+              EndConnector="0,53.1294118590839"
               Start="0,0"
-              End="0,46.2411765735456">
+              End="0,45.6294118590839">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.2411765735456" />
+                    End="0,45.6294118590839" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2149,18 +2111,18 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CAC - Credit Attribution Correction.PrecedenceConstraints[Constraint 14]"
-          TopLeft="695.71428397237,426.229411713228">
+          TopLeft="695.428569681791,425.617646998766">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,66.294117715697"
+              EndConnector="0,66.905882430159"
               Start="0,0"
-              End="0,58.794117715697">
+              End="0,59.405882430159">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,58.794117715697" />
+                    End="0,59.405882430159" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2372,8 +2334,8 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="845.403141361257,650.387434554974"
-          Size="845.403141361257,693.612565445027"
+          PanelSize="845.6,650.4"
+          Size="845.6,693.6"
           Id="Package\CAC - Credit Attribution Correction"
           TopLeft="114.971428649279,0.188231639136177" />
       </GraphLayout>
@@ -2385,11 +2347,11 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="129.675392670158,41.717277486911"
+          Size="129.6,41.6"
           Id="Package\CAC - Credit Attribution Correction\Get Combined Sections\SQLServer"
           TopLeft="393.5,164.5" />
         <NodeLayout
-          Size="119.120418848168,41.717277486911"
+          Size="119.2,41.6"
           Id="Package\CAC - Credit Attribution Correction\Get Combined Sections\DWProd"
           TopLeft="5.5,5.5" />
         <EdgeLayout

@@ -7,307 +7,20 @@
   DTS:CreatorName="UMROOT\juliezie"
   DTS:DTSID="{D4CCC8FB-8300-4AE4-B299-835AE7D6AE61}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.92"
+  DTS:LastModifiedProductVersion="15.0.0900.30"
   DTS:LocaleID="1033"
   DTS:ObjectName="5 - Demographics_and_DivRollups"
   DTS:PackageType="5"
-  DTS:VersionBuild="174"
-  DTS:VersionGUID="{68750FCF-4B2F-4E91-9752-43EA90C323FF}">
+  DTS:VersionBuild="190"
+  DTS:VersionGUID="{49CD2961-FF71-4CD0-9027-6B239EBD0D5E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.rmt_lsaadhoc_datawhse1]"
-      DTS:CreationName="ODBC"
-      DTS:DTSID="{90E99BFE-0E5F-4750-82B8-BF9B0F192429}"
-      DTS:ObjectName="dwprod.rmt_lsaadhoc_datawhse1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="uid=rmt_lsaadhoc_datawhse1;Dsn=dwprod;">
-          <DTS:Password
-            DTS:Name="pwd"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABDoyNc06lIkBc/NPsexmY6AAAAAASAAACgAAAAEAAAAA4IuZ3BixQoW/Iqg07Ask8QAAAAKCmJiIJzzZ9/GdJKQzu31hQAAACOquQlOUPk6ME5WWYJu0f0qujIBA</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.juliezie]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{2CD367B8-DAC1-4C2F-9B6E-68873C749D1F}"
-      DTS:ObjectName="dwprod.world.juliezie">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=juliezie;Provider=SSISOLEDB.3;Persist Security Info=True;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.juliezie 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{2954FAC9-F485-4842-9B1E-8376BB95CD11}"
-      DTS:ObjectName="dwprod.world.juliezie 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=juliezie;Provider=SSISOLEDB.3;Persist Security Info=True;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.juliezie 2]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{DBC0145F-6096-4A97-96DC-129D4671039C}"
-      DTS:ObjectName="dwprod.world.juliezie 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=juliezie;Provider=SSISOLEDB.3;Persist Security Info=True;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.juliezie 3]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{212DCBBB-8543-486A-B8E5-E5421FE9B4D3}"
-      DTS:ObjectName="dwprod.world.juliezie 3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=dcp;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACcug+4CDZQaC1rqi+XgU4SAAAAAASAAACgAAAAEAAAAM6bJjIUclqj3o5bUCBdsykQAAAA2LRuaeXa5YeXbyhAFsVkyxQAAAAua48LHmW0MadhOfTF89iyMbqNQQ</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.juliezie 4]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{D52EEEE2-975B-4E4F-916C-B587685DA2D0}"
-      DTS:ObjectName="dwprod.world.juliezie 4">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=dcp;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACO5oeWpJjc82Oi0ydDh4E/AAAAAASAAACgAAAAEAAAAOwPBOIjDdiCGDXRVcpoMekQAAAA2I2aQYmKgjufpPEieobEbhQAAADlFVz5NGf8WyuEUQSMvDWXDZJiDg</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{D782F14C-1C0B-46C4-ABB9-F5E0684B329A}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD7igzkhcO8LrcoKQfyh+svAAAAAASAAACgAAAAEAAAAD8cqzLmGM01qOph8906ABwQAAAAnafQXavEUkb5PMQ2GH0SThQAAACZNJP0zaHchU4w2Y/Wpy5Vmt8KJA</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{028D7503-25D9-4827-8224-BADDC6014784}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADOMCtXmApm9+0AJBe8ChtgAAAAAASAAACgAAAAEAAAAKhw2F02DvHRhjyoFaf2V/EQAAAA99wrAEeSsZzVJP2Rkz+IfhQAAACMjIN0j1q26Z0qmlMfVHu80erqxw</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 2]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{0013F305-1260-49FD-9085-1C25FFB19256}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABry9li/lvPB48bnqs5qNgsAAAAAASAAACgAAAAEAAAAAjZfpbfc2cGjCkzm7fJ7E0QAAAA0fBVxnzxEG9/ezZKuHOd8RQAAAANqFDliTAd18t2mSSvQGyZpkXyZQ</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 3]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{C0E63DD3-1BBA-451F-A7CF-003CF5AE0462}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAu5/sTjIb8KrdXD2s8cSrXAAAAAASAAACgAAAAEAAAACqu4jh8fKl97YNAAoYZEHIQAAAAjKNVpRnWCm4IUV3xvIpufhQAAAAvfZOOyRkwzOUOslwxjpWBsL5Cgw</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 4]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{DD2FCD86-509F-4F1A-BCFC-518EF772EFD1}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 4">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC6HXOPXAC1/lXUcSgR6RgxAAAAAASAAACgAAAAEAAAAN2Zr1yxGEUpPaYcmDJO5JYQAAAAQR7wnrVu3l10mAGC3h55SBQAAADTiWmp+Y3YjQXdFHihokVyY6qgvQ</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 5]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{CFD71088-9D6B-456F-B4FC-8F7EB61C56FD}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 5">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAApRWfxnoOQzQNrm5AM0YlEAAAAAASAAACgAAAAEAAAAHYdpjUSXI96FIYVF7DAytYQAAAAdMzdmvS6afSe8P+v4KK48RQAAABEJ2Rs3hqaP60VmIRmNPoS60qgUQ</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 6]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{0A41FA6F-F77C-43BA-A9CF-B26492A1661F}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 6">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA+ByUdupJtg2rpyPf41pIiAAAAAASAAACgAAAAEAAAAGFqe/e6A1XsMt4fmPQQ9k4QAAAAjzhdlm5VM+0ohX7srY/dnhQAAAC149wK6UxXA9EcxOnt/mCqLxXiSA</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 7]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{5A32C458-06A7-4942-AFB8-A48AF7BC8B55}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 7">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADyMQUlvDfX/e6hyTXt73kIAAAAAASAAACgAAAAEAAAAP1udSq03rEZfKAsK2G2GIcQAAAAaOUueo+bO4RlFR/dbLtEqxQAAABRmhoPbsJ0vwaez9VoecOqCUUhyQ</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 8]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{6354D8C9-3152-4AD0-8E9C-DA590F225C26}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 8">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACGONynAZcAUUDdeG1bv6nNAAAAAASAAACgAAAAEAAAAI9PtwvuWHEzGwbUI0lTFW0QAAAAeMEQoGi81oLf22oOEBWDHhQAAACecGDWqk7kk2NBcpAsXuE9Gw1Byg</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 9]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{A0616CAB-C9C0-45BE-9AF6-F90F7FBF0FE9}"
-      DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1 9">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAGq21u9MN/QHEM1piTDIEyAAAAAASAAACgAAAAEAAAAAlCw/C6lAtDF3xILXjvCsYQAAAAFjdKE+IjYMYrsI9KQME4DhQAAADHfp8ricVNlgYKfoccmcQos3ZuWw</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[m-mssqlprd012,14330.lsa_AdminData]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{66FA9B80-348F-44C2-8242-6106859E0078}"
-      DTS:ObjectName="m-mssqlprd012,14330.lsa_AdminData">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd012,14330;Initial Catalog=lsa_AdminData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[m-mssqlprd012,14330.lsa_AdminData 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{5BFD11B1-848F-4392-8F98-18A578F1CC68}"
-      DTS:ObjectName="m-mssqlprd012,14330.lsa_AdminData 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd012,14330;Initial Catalog=lsa_AdminData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[m-mssqlprd012,14330.lsa_AIS]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{FBA6FC75-846F-4542-A3B0-234336200AB9}"
-      DTS:ObjectName="m-mssqlprd012,14330.lsa_AIS">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd012,14330;Initial Catalog=lsa_AIS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{D2812A3A-AD88-4D1E-9DE3-706E0A9E6A59}"
-      DTS:ObjectName="m-mssqlprd017,14330.lsa_AdminData">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package_Demographics-{D2812A3A-AD88-4D1E-9DE3-706E0A9E6A59}m-mssqlprd017,14330.lsa_AdminData;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{DDCEF1DC-823A-43D5-8A79-E9A906F483B0}"
-      DTS:ObjectName="m-mssqlprd017,14330.lsa_AdminData 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AIS]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{FEAD3459-C0CF-489C-A1BA-FF149E84A1D7}"
-      DTS:ObjectName="m-mssqlprd017,14330.lsa_AIS">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AIS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{813A643D-8F7B-473C-BCAB-C3F33A3DD1A6}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT  KPIData_Stage.KPICode, DepartmentGrouping.KPI_Division_Deptid, KPIData_Stage.AcadYear, SUM(KPIData_Stage.KPIValue) AS EXPR1&#xA;FROM KPIData_Stage INNER JOIN DepartmentGrouping &#xA;ON KPIData_Stage.DeptID = DepartmentGrouping.deptid&#xA;WHERE  AcadYear = '&quot; + @_sAcadYear + &quot;' and (DepartmentGrouping.KPI_Division_Deptid IS NOT NULL)&#xA;GROUP BY KPIData_Stage.KPICode, DepartmentGrouping.KPI_Division_Deptid, KPIData_Stage.AcadYear&quot;"
+      DTS:Expression="&quot;SELECT  KPIData_Stage.KPICode, DepartmentGrouping.KPI_Division_Deptid, KPIData_Stage.AcadYear, SUM(KPIData_Stage.KPIValue) AS EXPR1&#xA;FROM KPIData_Stage INNER JOIN DepartmentGrouping &#xA;ON KPIData_Stage.DeptID = DepartmentGrouping.deptid&#xA;WHERE  AcadYear = '&quot; + @_mAcadYear + &quot;' and (DepartmentGrouping.KPI_Division_Deptid IS NOT NULL)&#xA;GROUP BY KPIData_Stage.KPICode, DepartmentGrouping.KPI_Division_Deptid, KPIData_Stage.AcadYear&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vDivisionRollup">
@@ -322,7 +35,7 @@ GROUP BY KPIData_Stage.KPICode, DepartmentGrouping.KPI_Division_Deptid, KPIData_
       DTS:CreationName=""
       DTS:DTSID="{A5CD4ABE-32F2-40DE-B0E7-5488E88AE376}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'AL' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'ALFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1D' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_sAcadYear + &quot;') DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;&quot;"
+      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'AL' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'ALFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1D' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_mAcadYear + &quot;') DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIAL">
@@ -344,7 +57,7 @@ GROUP BY EXPR1, AcadYear, DeptID
       DTS:CreationName=""
       DTS:DTSID="{6E55D7F3-380A-4FBA-8FE4-4C9562DAB08C}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;&#x9;'ALFTE' as KPICode,  j.appt_deptid as deptid,&#xA;&#x9;t.acad_year as acad_year, sum(j.fte*asian.asian)/2 as KPIValue&#xA;FROM&#xA;  M_HRDW1.Job j,&#xA;  (SELECT &#xA;    term, acad_year, cal_year,&#xA;    term_begin_dt + ((term_end_dt-term_begin_dt)/2) as term_mid&#xA;   FROM &#xA;    m_srdw1.term_tbl &#xA;   WHERE &#xA;    acad_career = 'ULSA'&#xA;    and term_code in ('FA','WN')) t,&#xA;&#x9;(SELECT DISTINCT &#xA;  &#x9;&#x9;emplid, 1 as Asian&#xA;&#x9; FROM&#xA;  &#x9;&#x9;m_hrdw1.ethnicity_dtl&#xA;&#x9; WHERE&#xA;  &#x9;&#x9;ethnicity_code = 'ASIAN'&#xA;  &#x9;&#x9;and emplid not in&#xA;    &#x9;&#x9;(SELECT emplid &#xA;    &#x9;&#x9;FROM m_hrdw1.ethnicity_dtl&#xA;    &#x9;&#x9;WHERE ethnicity_code in ('AMIND', 'BLACK', 'HISPA', 'PACIF', 'WHITE'))) asian&#xA;WHERE&#xA;&#x9;t.acad_year =  '&quot;+@_sAcadYear + &quot;' &#xA;&#x9;and t.term_mid between j.job_effdt and j.job_end_dt&#xA;&#x9;and j.emplid = asian.emplid&#xA;&#x9;and j.appt_dept_grp like 'COLLEGE_OF_LS%'&#xA;&#x9;and j.empl_status = 'A'&#xA;&#x9;and j.jobcode in ('202800', '202820', '202840', '202860', '202880',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;'202910', '202920', '202950', '202980', '203000')&#xA;GROUP BY&#xA;&#x9;t.acad_year, j.appt_deptid&#xA;ORDER BY&#xA;  t.acad_year, j.appt_deptid&quot;"
+      DTS:Expression="&quot;SELECT&#xA;&#x9;'ALFTE' as KPICode,  j.appt_deptid as deptid,&#xA;&#x9;t.acad_year as acad_year, sum(j.fte*asian.asian)/2 as KPIValue&#xA;FROM&#xA;  M_HRDW1.Job j,&#xA;  (SELECT &#xA;    term, acad_year, cal_year,&#xA;    term_begin_dt + ((term_end_dt-term_begin_dt)/2) as term_mid&#xA;   FROM &#xA;    m_srdw1.term_tbl &#xA;   WHERE &#xA;    acad_career = 'ULSA'&#xA;    and term_code in ('FA','WN')) t,&#xA;&#x9;(SELECT DISTINCT &#xA;  &#x9;&#x9;emplid, 1 as Asian&#xA;&#x9; FROM&#xA;  &#x9;&#x9;m_hrdw1.ethnicity_dtl&#xA;&#x9; WHERE&#xA;  &#x9;&#x9;ethnicity_code = 'ASIAN'&#xA;  &#x9;&#x9;and emplid not in&#xA;    &#x9;&#x9;(SELECT emplid &#xA;    &#x9;&#x9;FROM m_hrdw1.ethnicity_dtl&#xA;    &#x9;&#x9;WHERE ethnicity_code in ('AMIND', 'BLACK', 'HISPA', 'PACIF', 'WHITE'))) asian&#xA;WHERE&#xA;&#x9;t.acad_year =  '&quot;+@_mAcadYear + &quot;' &#xA;&#x9;and t.term_mid between j.job_effdt and j.job_end_dt&#xA;&#x9;and j.emplid = asian.emplid&#xA;&#x9;and j.appt_dept_grp like 'COLLEGE_OF_LS%'&#xA;&#x9;and j.empl_status = 'A'&#xA;&#x9;and j.jobcode in ('202800', '202820', '202840', '202860', '202880',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;'202910', '202920', '202950', '202980', '203000')&#xA;GROUP BY&#xA;&#x9;t.acad_year, j.appt_deptid&#xA;ORDER BY&#xA;  t.acad_year, j.appt_deptid&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIALFTE">
@@ -389,7 +102,7 @@ ORDER BY
       DTS:CreationName=""
       DTS:DTSID="{D77125CC-F96D-4F21-8EDC-63EB000AE679}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'AS' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'ASFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1F' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_sAcadYear + &quot;') DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;&quot;"
+      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'AS' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'ASFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1F' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_mAcadYear + &quot;') DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIAS">
@@ -411,7 +124,7 @@ GROUP BY EXPR1, AcadYear, DeptID
       DTS:CreationName=""
       DTS:DTSID="{319360FD-61CC-458F-870D-C7E8698F10B3}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;  SELECT&#xA;&#x9;'ASFTE' as KPICode, j.APPT_DEPTID, substr(to_char(substr(j.HRSNAP_RPTING_CD,4,4)+1),1,4) as FY, &#xA;&#x9;sum(asian.asian*e.dist_fte) as ASFTE&#xA;FROM&#xA;  M_HRDW1.HRSNAP_JOB j&#xA;  &#x9;LEFT OUTER JOIN M_HRDW1.HRSNAP_DEPT_BUDGET_ERN e&#xA;  &#x9;&#x9;ON j.HRSNAP_RPTING_CD = e.HRSNAP_RPTING_CD&#xA;  &#x9;&#x9;AND j.EMPLID = e.EMPLID&#xA;  &#x9;&#x9;AND j.EMPL_RCD = e.EMPL_RCD&#xA;  &#x9;&#x9;AND j.APPT_DEPTID = e.APPT_DEPTID&#xA;&#x9;INNER JOIN &#xA;&#x9;&#x9;(SELECT DISTINCT &#xA;  &#x9;&#x9;&#x9;hrsnap_rpting_cd, emplid, 1 as Asian&#xA;&#x9;&#x9; FROM&#xA;  &#x9;&#x9;&#x9;m_hrdw1.hrsnap_ethnicity_dtl&#xA;&#x9;&#x9; WHERE&#xA;&#x9;&#x9;&#x9;ethnicity_code = 'ASIAN'&#xA;&#x9;&#x9;&#x9;AND HRSNAP_RPTING_CD = '&quot; + @_sSnapshot  + &quot;'&#xA;&#x9;&#x9;&#x9;and emplid not in&#xA;&#x9;&#x9;&#x9;&#x9;(SELECT emplid &#xA;    &#x9;&#x9;&#x9; FROM m_hrdw1.hrsnap_ethnicity_dtl&#xA;    &#x9;&#x9;&#x9; WHERE ethnicity_code in ('AMIND', 'BLACK', 'HISPA', 'PACIF', 'WHITE'))) asian ON &#xA;&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;j.hrsnap_rpting_cd = asian.hrsnap_rpting_cd&#xA;&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;and j.emplid = asian.emplid&#x9;&#x9;&#x9;&#x9;&#xA;WHERE  &#xA;&#x9;j.Appt_DEPT_GRP = 'COLLEGE_OF_LSA'&#xA;&#x9;AND j.HRSNAP_RPTING_CD = '&quot; + @_sSnapshot  + &quot;'&#xA;&#x9;AND j.JOB_FAMILY IN ('30', '40', '50', '62',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  '100','110','120','130','140','150','160','170','180','190',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  '200','210','220','230','240','250','260','270','280','290')&#xA;GROUP BY&#xA;  j.HRSNAP_RPTING_CD, j.APPT_DEPTID&#xA;ORDER BY&#xA;  j.HRSNAP_RPTING_CD, j.APPT_DEPTID  &quot;"
+      DTS:Expression="&quot;  SELECT&#xA;&#x9;'ASFTE' as KPICode, j.APPT_DEPTID, substr(to_char(substr(j.HRSNAP_RPTING_CD,4,4)+1),1,4) as FY, &#xA;&#x9;sum(asian.asian*e.dist_fte) as ASFTE&#xA;FROM&#xA;  M_HRDW1.HRSNAP_JOB j&#xA;  &#x9;LEFT OUTER JOIN M_HRDW1.HRSNAP_DEPT_BUDGET_ERN e&#xA;  &#x9;&#x9;ON j.HRSNAP_RPTING_CD = e.HRSNAP_RPTING_CD&#xA;  &#x9;&#x9;AND j.EMPLID = e.EMPLID&#xA;  &#x9;&#x9;AND j.EMPL_RCD = e.EMPL_RCD&#xA;  &#x9;&#x9;AND j.APPT_DEPTID = e.APPT_DEPTID&#xA;&#x9;INNER JOIN &#xA;&#x9;&#x9;(SELECT DISTINCT &#xA;  &#x9;&#x9;&#x9;hrsnap_rpting_cd, emplid, 1 as Asian&#xA;&#x9;&#x9; FROM&#xA;  &#x9;&#x9;&#x9;m_hrdw1.hrsnap_ethnicity_dtl&#xA;&#x9;&#x9; WHERE&#xA;&#x9;&#x9;&#x9;ethnicity_code = 'ASIAN'&#xA;&#x9;&#x9;&#x9;AND HRSNAP_RPTING_CD = '&quot; + @_mSnapshot  + &quot;'&#xA;&#x9;&#x9;&#x9;and emplid not in&#xA;&#x9;&#x9;&#x9;&#x9;(SELECT emplid &#xA;    &#x9;&#x9;&#x9; FROM m_hrdw1.hrsnap_ethnicity_dtl&#xA;    &#x9;&#x9;&#x9; WHERE ethnicity_code in ('AMIND', 'BLACK', 'HISPA', 'PACIF', 'WHITE'))) asian ON &#xA;&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;j.hrsnap_rpting_cd = asian.hrsnap_rpting_cd&#xA;&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;and j.emplid = asian.emplid&#x9;&#x9;&#x9;&#x9;&#xA;WHERE  &#xA;&#x9;j.Appt_DEPT_GRP = 'COLLEGE_OF_LSA'&#xA;&#x9;AND j.HRSNAP_RPTING_CD = '&quot; + @_mSnapshot  + &quot;'&#xA;&#x9;AND j.JOB_FAMILY IN ('30', '40', '50', '62',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  '100','110','120','130','140','150','160','170','180','190',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  '200','210','220','230','240','250','260','270','280','290')&#xA;GROUP BY&#xA;  j.HRSNAP_RPTING_CD, j.APPT_DEPTID&#xA;ORDER BY&#xA;  j.HRSNAP_RPTING_CD, j.APPT_DEPTID  &quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIASFTE">
@@ -455,7 +168,7 @@ ORDER BY
       DTS:CreationName=""
       DTS:DTSID="{D3B1A3D6-45F9-4A66-808D-7FAA1560314D}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'FacAsian' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'FacAsianFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_sAcadYear + &quot;') DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&quot;"
+      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'FacAsian' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'FacAsianFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_mAcadYear + &quot;') DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIFacAsian">
@@ -476,7 +189,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
       DTS:CreationName=""
       DTS:DTSID="{D2160479-65E1-48B1-8FF2-FD332C4B2122}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;&#x9;'FacAsianFTE' as KPICode, a.apptdeptid as DeptID, a.fy as AcadYear,&#xA;&#x9;sum(a.apptAuthPct) as KPIValue&#xA;FROM [lsa_AIS].[dbo].[tbl_Person] e&#xA;INNER JOIN [lsa_AIS].[dbo].[tbl_ACBUDAPPT] a&#xA; ON e.Emplid = a.EMPLID&#xA;INNER JOIN [lsa_AIS].[dbo].[tbl_Dept] d&#xA; ON a.APPTDEPTID = d.DeptID&#xA;INNER JOIN [lsa_AIS].[dbo].[tbl_Personal_Demographics] p&#xA; ON e.EMPLID = p.EMPLID&#xA;WHERE&#xA;&#x9;&#x9;e.DeptEmploymentStatus = 'Active'&#xA;&#x9;&#x9;and p.ETHNIC_GROUP = '4'&#xA;&#x9;&#x9;and d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;&#x9;and a.emplid not like '%-%'&#xA;&#x9;&#x9;and a.jobcode in ('201000', '201500', '202000', '202500')&#xA;&#x9;&#x9;and a.apptAuthPct != 0&#xA;&#x9;&#x9;and a.fy = '&quot; + @_sAcadYear + &quot;'&#xA;GROUP BY&#xA;&#x9;a.fy, a.apptdeptid&quot;"
+      DTS:Expression="&quot;SELECT&#xA;&#x9;'FacAsianFTE' as KPICode, a.apptdeptid as DeptID, a.fy as AcadYear,&#xA;&#x9;sum(a.apptAuthPct) as KPIValue&#xA;FROM [lsa_AIS].[dbo].[tbl_Person] e&#xA;INNER JOIN [lsa_AIS].[dbo].[tbl_ACBUDAPPT] a&#xA; ON e.Emplid = a.EMPLID&#xA;INNER JOIN [lsa_AIS].[dbo].[tbl_Dept] d&#xA; ON a.APPTDEPTID = d.DeptID&#xA;INNER JOIN [lsa_AIS].[dbo].[tbl_Personal_Demographics] p&#xA; ON e.EMPLID = p.EMPLID&#xA;WHERE&#xA;&#x9;&#x9;e.DeptEmploymentStatus = 'Active'&#xA;&#x9;&#x9;and p.ETHNIC_GROUP = '4'&#xA;&#x9;&#x9;and d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;&#x9;and a.emplid not like '%-%'&#xA;&#x9;&#x9;and a.jobcode in ('201000', '201500', '202000', '202500')&#xA;&#x9;&#x9;and a.apptAuthPct != 0&#xA;&#x9;&#x9;and a.fy = '&quot; + @_mAcadYear + &quot;'&#xA;GROUP BY&#xA;&#x9;a.fy, a.apptdeptid&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIFacAsianFTE">
@@ -506,7 +219,7 @@ GROUP BY
       DTS:CreationName=""
       DTS:DTSID="{6E3A8DF6-E1E5-4C01-9313-14A036228C3D}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),1) AS xSum&#xA;FROM  &#x9;&#xA;(SELECT  'FacF' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue * 100  / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'FacFFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1A'  and KPIData_Stage.KPIValue&gt;0 ) &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_sAcadYear + &quot;' ) DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;ORDER BY AcadYear&quot;"
+      DTS:Expression="&quot;SELECT EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),1) AS xSum&#xA;FROM  &#x9;&#xA;(SELECT  'FacF' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue * 100  / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'FacFFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1A'  and KPIData_Stage.KPIValue&gt;0 ) &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_mAcadYear + &quot;' ) DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;ORDER BY AcadYear&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIFacF">
@@ -528,7 +241,7 @@ ORDER BY AcadYear</DTS:VariableValue>
       DTS:CreationName=""
       DTS:DTSID="{D958AA1B-0705-4217-B8B1-AAEDD0A23A95}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;&#x9;'FacFFTE' as KPICode, a.apptdeptid as DeptID, a.fy as AcadYear,&#xA;&#x9;sum(a.apptAuthPct) as KPIValue&#xA;FROM [lsa_AIS].[dbo].[tbl_Person] e&#xA;INNER JOIN [lsa_AIS].[dbo].[tbl_ACBUDAPPT] a&#xA; ON e.Emplid = a.EMPLID&#xA;INNER JOIN [lsa_AIS].[dbo].[tbl_Dept] d&#xA; ON a.APPTDEPTID = d.DeptID&#xA;INNER JOIN [lsa_AIS].[dbo].[tbl_Personal_Demographics] p&#xA; ON E.EMPLID = P.EMPLID&#xA;WHERE&#xA;&#x9;&#x9;e.DeptEmploymentStatus = 'Active'&#xA;&#x9;&#x9;and p.SEX = 'F'&#xA;&#x9;&#x9;and d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;&#x9;and a.emplid not like '%-%'&#xA;&#x9;&#x9;and a.jobcode in ('201000', '201500', '202000', '202500')&#xA;&#x9;&#x9;and a.apptAuthPct != 0&#xA;&#x9;&#x9;and a.fy = '&quot; + @_sAcadYear + &quot;'&#xA;GROUP BY&#xA;&#x9;a.fy, a.apptdeptid&quot;"
+      DTS:Expression="&quot;SELECT&#xA;&#x9;'FacFFTE' as KPICode, a.apptdeptid as DeptID, a.fy as AcadYear,&#xA;&#x9;sum(a.apptAuthPct) as KPIValue&#xA;FROM [lsa_AIS].[dbo].[tbl_Person] e&#xA;INNER JOIN [lsa_AIS].[dbo].[tbl_ACBUDAPPT] a&#xA; ON e.Emplid = a.EMPLID&#xA;INNER JOIN [lsa_AIS].[dbo].[tbl_Dept] d&#xA; ON a.APPTDEPTID = d.DeptID&#xA;INNER JOIN [lsa_AIS].[dbo].[tbl_Personal_Demographics] p&#xA; ON E.EMPLID = P.EMPLID&#xA;WHERE&#xA;&#x9;&#x9;e.DeptEmploymentStatus = 'Active'&#xA;&#x9;&#x9;and p.SEX = 'F'&#xA;&#x9;&#x9;and d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;&#x9;and a.emplid not like '%-%'&#xA;&#x9;&#x9;and a.jobcode in ('201000', '201500', '202000', '202500')&#xA;&#x9;&#x9;and a.apptAuthPct != 0&#xA;&#x9;&#x9;and a.fy = '&quot; + @_mAcadYear + &quot;'&#xA;GROUP BY&#xA;&#x9;a.fy, a.apptdeptid&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIFacFFTE">
@@ -558,7 +271,7 @@ GROUP BY
       DTS:CreationName=""
       DTS:DTSID="{7B290D42-1BF7-4F68-A79E-4E09E56A9E07}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;&#x9;&#x9;d.dept_descr, 'FacURMFTE' as KPICode, a.apptdeptid as deptid, a.fy as AcadYear,&#xA;&#x9;&#x9;--sum(a.apptauthpct*urm_flag) as KPIData&#xA;&#x9;&#x9;sum(a.apptauthpct) as KPIData&#xA;FROM&#xA;&#x9;&#x9;tbl_ACBUDAPPT a,&#xA;&#x9;&#x9;tbl_Person e,&#xA;&#x9;&#x9;tbl_Dept d,&#xA;&#x9;&#x9;tbl_Personal_Demographics p&#xA;WHERE&#xA;&#x9;&#x9;a.emplid = e.emplid&#xA;&#x9;&#x9;and a.apptdeptid = d.deptid&#xA;&#x9;&#x9;and e.Emplid = p.EMPLID&#xA;&#x9;&#x9;and d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;&#x9;and p.URM = 'Y'&#xA;&#x9;&#x9;and a.emplid not like '%-%'&#xA;&#x9;&#x9;and e.DeptEmploymentStatus = 'Active'&#xA;&#x9;&#x9;and a.apptauthpct &gt; 0&#xA;&#x9;&#x9;and a.jobcode in ('201000', '201500', '202000', '202500')&#xA;--&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;'129000', '129010', '129020')  -- exclude curators, these are in the museums.&#xA;&#x9;&#x9;and a.fy = '&quot; +@_sAcadYear + &quot;' &#xA;GROUP BY&#xA;&#x9;&#x9;d.dept_descr, a.fy, a.apptdeptid&#xA;ORDER BY &#xA;      a.fy, a.apptdeptid&#xA;&quot;"
+      DTS:Expression="&quot;SELECT&#xA;&#x9;&#x9;d.dept_descr, 'FacURMFTE' as KPICode, a.apptdeptid as deptid, a.fy as AcadYear,&#xA;&#x9;&#x9;--sum(a.apptauthpct*urm_flag) as KPIData&#xA;&#x9;&#x9;sum(a.apptauthpct) as KPIData&#xA;FROM&#xA;&#x9;&#x9;tbl_ACBUDAPPT a,&#xA;&#x9;&#x9;tbl_Person e,&#xA;&#x9;&#x9;tbl_Dept d,&#xA;&#x9;&#x9;tbl_Personal_Demographics p&#xA;WHERE&#xA;&#x9;&#x9;a.emplid = e.emplid&#xA;&#x9;&#x9;and a.apptdeptid = d.deptid&#xA;&#x9;&#x9;and e.Emplid = p.EMPLID&#xA;&#x9;&#x9;and d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;&#x9;and p.URM = 'Y'&#xA;&#x9;&#x9;and a.emplid not like '%-%'&#xA;&#x9;&#x9;and e.DeptEmploymentStatus = 'Active'&#xA;&#x9;&#x9;and a.apptauthpct &gt; 0&#xA;&#x9;&#x9;and a.jobcode in ('201000', '201500', '202000', '202500')&#xA;--&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;'129000', '129010', '129020')  -- exclude curators, these are in the museums.&#xA;&#x9;&#x9;and a.fy = '&quot; +@_mAcadYear + &quot;' &#xA;GROUP BY&#xA;&#x9;&#x9;d.dept_descr, a.fy, a.apptdeptid&#xA;ORDER BY &#xA;      a.fy, a.apptdeptid&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIFacURMFTE">
@@ -594,7 +307,7 @@ ORDER BY
       DTS:CreationName=""
       DTS:DTSID="{F4E21BA8-DCA9-42EE-A2F4-C4DF52444C09}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'FL' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'FLFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1D' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_sAcadYear + &quot;' ) DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;&quot;"
+      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'FL' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'FLFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1D' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_mAcadYear + &quot;' ) DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIFL">
@@ -616,7 +329,7 @@ GROUP BY EXPR1, AcadYear, DeptID
       DTS:CreationName=""
       DTS:DTSID="{5443782E-171F-4A10-BF29-008734270A1A}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;&#x9;'FLFTE' as KPICode,  j.appt_deptid as deptid,&#xA;&#x9;t.acad_year as acad_year, sum(j.fte*female.female)/2 as KPIValue&#xA;FROM&#xA;  M_HRDW1.Job j,&#xA;  (SELECT &#xA;    term, acad_year, cal_year,&#xA;    term_begin_dt + ((term_end_dt-term_begin_dt)/2) as term_mid&#xA;   FROM &#xA;    m_srdw1.term_tbl &#xA;   WHERE &#xA;    acad_career = 'ULSA'&#xA;    and term_code in ('FA','WN')) t,&#xA;    (SELECT DISTINCT &#xA;    &#x9;emplid, 1 as Female&#xA;&#x9; FROM&#xA;  &#x9;&#x9;&#x9;m_hrdw1.personal_demographics&#xA;&#x9; WHERE&#xA;&#x9;&#x9;&#x9;sex = 'F'&#xA;&#x9;&#x9;&#x9;) female &#xA;WHERE&#xA;&#x9;t.acad_year = '&quot;+@_sAcadYear + &quot;' &#xA;&#x9;and t.term_mid between j.job_effdt and j.job_end_dt&#xA;&#x9;and j.emplid = female.emplid&#xA;&#x9;and j.appt_dept_grp like 'COLLEGE_OF_LS%'&#xA;&#x9;and j.empl_status = 'A'&#xA;&#x9;and j.jobcode in ('202800', '202820', '202840', '202860', '202880',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;'202910', '202920', '202950', '202980', '203000')&#xA;GROUP BY&#xA;&#x9;t.acad_year, j.appt_deptid&#xA;ORDER BY&#xA;  t.acad_year, j.appt_deptid  &quot;"
+      DTS:Expression="&quot;SELECT&#xA;&#x9;'FLFTE' as KPICode,  j.appt_deptid as deptid,&#xA;&#x9;t.acad_year as acad_year, sum(j.fte*female.female)/2 as KPIValue&#xA;FROM&#xA;  M_HRDW1.Job j,&#xA;  (SELECT &#xA;    term, acad_year, cal_year,&#xA;    term_begin_dt + ((term_end_dt-term_begin_dt)/2) as term_mid&#xA;   FROM &#xA;    m_srdw1.term_tbl &#xA;   WHERE &#xA;    acad_career = 'ULSA'&#xA;    and term_code in ('FA','WN')) t,&#xA;    (SELECT DISTINCT &#xA;    &#x9;emplid, 1 as Female&#xA;&#x9; FROM&#xA;  &#x9;&#x9;&#x9;m_hrdw1.personal_demographics&#xA;&#x9; WHERE&#xA;&#x9;&#x9;&#x9;sex = 'F'&#xA;&#x9;&#x9;&#x9;) female &#xA;WHERE&#xA;&#x9;t.acad_year = '&quot;+@_mAcadYear + &quot;' &#xA;&#x9;and t.term_mid between j.job_effdt and j.job_end_dt&#xA;&#x9;and j.emplid = female.emplid&#xA;&#x9;and j.appt_dept_grp like 'COLLEGE_OF_LS%'&#xA;&#x9;and j.empl_status = 'A'&#xA;&#x9;and j.jobcode in ('202800', '202820', '202840', '202860', '202880',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;'202910', '202920', '202950', '202980', '203000')&#xA;GROUP BY&#xA;&#x9;t.acad_year, j.appt_deptid&#xA;ORDER BY&#xA;  t.acad_year, j.appt_deptid  &quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIFLFTE">
@@ -658,7 +371,7 @@ ORDER BY
       DTS:CreationName=""
       DTS:DTSID="{3EA6A30C-D80F-4F29-89E5-9991065E90AD}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'FS' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'FSFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1F' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_sAcadYear + &quot;' ) DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;&quot;"
+      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'FS' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'FSFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1F' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_mAcadYear + &quot;' ) DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIFS">
@@ -680,7 +393,7 @@ GROUP BY EXPR1, AcadYear, DeptID
       DTS:CreationName=""
       DTS:DTSID="{6C3EFBCC-B098-4A7D-93DA-C0B67BC853A5}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;  SELECT&#xA;&#x9;'FSFTE' as KPICode, j.APPT_DEPTID, substr(to_char(substr(j.HRSNAP_RPTING_CD,4,4)+1),1,4) as FY, &#xA;&#x9;sum(female.female*e.dist_fte) as FSFTE&#xA;FROM&#xA;  M_HRDW1.HRSNAP_JOB j&#xA;  &#x9;LEFT OUTER JOIN M_HRDW1.HRSNAP_DEPT_BUDGET_ERN e&#xA;  &#x9;&#x9;ON j.HRSNAP_RPTING_CD = e.HRSNAP_RPTING_CD&#xA;  &#x9;&#x9;AND j.EMPLID = e.EMPLID&#xA;  &#x9;&#x9;AND j.EMPL_RCD = e.EMPL_RCD&#xA;  &#x9;&#x9;AND j.APPT_DEPTID = e.APPT_DEPTID&#xA;&#x9;INNER JOIN &#xA;&#x9;&#x9;(SELECT DISTINCT &#xA;  &#x9;&#x9;&#x9;hrsnap_rpting_cd, emplid, 1 as Female&#xA;&#x9;&#x9; FROM&#xA;  &#x9;&#x9;&#x9;m_hrdw1.hrsnap_pers_demographics&#xA;&#x9;&#x9; WHERE&#xA;&#x9;&#x9;&#x9;sex = 'F'&#xA;&#x9;&#x9;&#x9;and HRSNAP_RPTING_CD = '&quot; + @_sSnapshot  + &quot;'&#xA;&#x9;&#x9;&#x9;) female ON &#xA;&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;j.hrsnap_rpting_cd = female.hrsnap_rpting_cd&#xA;&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;and j.emplid = female.emplid&#x9;&#x9;&#x9;&#x9;&#xA;WHERE  &#xA;&#x9;j.Appt_DEPT_GRP = 'COLLEGE_OF_LSA'&#xA;&#x9;AND j.HRSNAP_RPTING_CD = '&quot; + @_sSnapshot  + &quot;'&#xA;&#x9;AND j.JOB_FAMILY IN ('30', '40', '50', '62',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  '100','110','120','130','140','150','160','170','180','190',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  '200','210','220','230','240','250','260','270','280','290')&#xA;GROUP BY&#xA;  j.HRSNAP_RPTING_CD, j.APPT_DEPTID&#xA;ORDER BY&#xA;  j.HRSNAP_RPTING_CD, j.APPT_DEPTID  &quot;"
+      DTS:Expression="&quot;  SELECT&#xA;&#x9;'FSFTE' as KPICode, j.APPT_DEPTID, substr(to_char(substr(j.HRSNAP_RPTING_CD,4,4)+1),1,4) as FY, &#xA;&#x9;sum(female.female*e.dist_fte) as FSFTE&#xA;FROM&#xA;  M_HRDW1.HRSNAP_JOB j&#xA;  &#x9;LEFT OUTER JOIN M_HRDW1.HRSNAP_DEPT_BUDGET_ERN e&#xA;  &#x9;&#x9;ON j.HRSNAP_RPTING_CD = e.HRSNAP_RPTING_CD&#xA;  &#x9;&#x9;AND j.EMPLID = e.EMPLID&#xA;  &#x9;&#x9;AND j.EMPL_RCD = e.EMPL_RCD&#xA;  &#x9;&#x9;AND j.APPT_DEPTID = e.APPT_DEPTID&#xA;&#x9;INNER JOIN &#xA;&#x9;&#x9;(SELECT DISTINCT &#xA;  &#x9;&#x9;&#x9;hrsnap_rpting_cd, emplid, 1 as Female&#xA;&#x9;&#x9; FROM&#xA;  &#x9;&#x9;&#x9;m_hrdw1.hrsnap_pers_demographics&#xA;&#x9;&#x9; WHERE&#xA;&#x9;&#x9;&#x9;sex = 'F'&#xA;&#x9;&#x9;&#x9;and HRSNAP_RPTING_CD = '&quot; + @_mSnapshot  + &quot;'&#xA;&#x9;&#x9;&#x9;) female ON &#xA;&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;j.hrsnap_rpting_cd = female.hrsnap_rpting_cd&#xA;&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;and j.emplid = female.emplid&#x9;&#x9;&#x9;&#x9;&#xA;WHERE  &#xA;&#x9;j.Appt_DEPT_GRP = 'COLLEGE_OF_LSA'&#xA;&#x9;AND j.HRSNAP_RPTING_CD = '&quot; + @_mSnapshot  + &quot;'&#xA;&#x9;AND j.JOB_FAMILY IN ('30', '40', '50', '62',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  '100','110','120','130','140','150','160','170','180','190',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  '200','210','220','230','240','250','260','270','280','290')&#xA;GROUP BY&#xA;  j.HRSNAP_RPTING_CD, j.APPT_DEPTID&#xA;ORDER BY&#xA;  j.HRSNAP_RPTING_CD, j.APPT_DEPTID  &quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIFSFTE">
@@ -721,7 +434,7 @@ ORDER BY
       DTS:CreationName=""
       DTS:DTSID="{16E9335B-EDB2-481A-AAF5-B4743A1EE4FF}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT '5HC'||AL5.ETHNIC_GROUP, &#xA;AL4.DEPTID, AL5.acad_year, Sum(AL4.ACAD_PLAN_PERCENT_OWNED)/200 &#xA;FROM M_3WKDW1.THIRDWK_ACAD_PROG AL1, &#xA;M_3WKDW1.THIRDWK_STDNT_CAR_TERM AL2, &#xA;M_3WKDW1.THIRDWK_ACAD_PLAN AL3, &#xA;M_SRDW1.ACAD_PLAN_OWNER_Curr_Vw AL4, &#xA;M_3WKDW1.THIRDWK_PERSONAL_DATA AL5 &#xA;WHERE AL5.ETHNIC_GROUP&lt;&gt;'8' AND (AL1.ACAD_PROG_PRIORITY='1') &#xA;AND (AL2.EMPLID=AL1.EMPLID) &#xA;AND (AL1.RPTING_TERM=AL2.RPTING_TERM) &#xA;AND (AL1.RPTING_TERM=AL5.RPTING_TERM) &#xA;AND (AL2.ACAD_CAREER=AL1.ACAD_CAREER &#xA;And AL2.ACAD_CAREER='GRAC') &#xA;AND (AL2.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL3.EMPLID=AL1.EMPLID) &#xA;AND (AL5.EMPLID=AL1.EMPLID) &#xA;AND (AL3.RPTING_TERM=AL1.RPTING_TERM) &#xA;AND (AL3.ACAD_CAREER=AL1.ACAD_CAREER) &#xA;AND (AL3.STDNT_CAR_NBR=AL1.STDNT_CAR_NBR) &#xA;AND (AL3.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL4.ACAD_PLAN=AL3.ACAD_PLAN) &#xA;AND (AL1.ACAD_GROUP_AREA In ('LSA','RAC')) &#xA;AND (AL2.TERM In ('&quot; + @_sAdmitTermFall + &quot;', '&quot; + @_sAdmitTermWinter + &quot;')) &#xA;AND (AL1.ACAD_PROG_DESCR Like '%Doc') &#xA;AND (AL4.DEPTID BETWEEN '170000' AND '200000' or al4.deptid in ('201000','550400','554000') )  &#xA;GROUP BY al5.acad_year, AL4.DEPTID, AL5.ETHNIC_GROUP &#xA;order by deptid&#xA;&quot;"
+      DTS:Expression="&quot;SELECT '5HC'||AL5.ETHNIC_GROUP, &#xA;AL4.DEPTID, AL5.acad_year, Sum(AL4.ACAD_PLAN_PERCENT_OWNED)/200 &#xA;FROM M_3WKDW1.THIRDWK_ACAD_PROG AL1, &#xA;M_3WKDW1.THIRDWK_STDNT_CAR_TERM AL2, &#xA;M_3WKDW1.THIRDWK_ACAD_PLAN AL3, &#xA;M_SRDW1.ACAD_PLAN_OWNER_Curr_Vw AL4, &#xA;M_3WKDW1.THIRDWK_PERSONAL_DATA AL5 &#xA;WHERE AL5.ETHNIC_GROUP&lt;&gt;'8' AND (AL1.ACAD_PROG_PRIORITY='1') &#xA;AND (AL2.EMPLID=AL1.EMPLID) &#xA;AND (AL1.RPTING_TERM=AL2.RPTING_TERM) &#xA;AND (AL1.RPTING_TERM=AL5.RPTING_TERM) &#xA;AND (AL2.ACAD_CAREER=AL1.ACAD_CAREER &#xA;And AL2.ACAD_CAREER='GRAC') &#xA;AND (AL2.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL3.EMPLID=AL1.EMPLID) &#xA;AND (AL5.EMPLID=AL1.EMPLID) &#xA;AND (AL3.RPTING_TERM=AL1.RPTING_TERM) &#xA;AND (AL3.ACAD_CAREER=AL1.ACAD_CAREER) &#xA;AND (AL3.STDNT_CAR_NBR=AL1.STDNT_CAR_NBR) &#xA;AND (AL3.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL4.ACAD_PLAN=AL3.ACAD_PLAN) &#xA;AND (AL1.ACAD_GROUP_AREA In ('LSA','RAC')) &#xA;AND (AL2.TERM In ('&quot; + @_mAdmitTermFall + &quot;', '&quot; + @_mAdmitTermWinter + &quot;')) &#xA;AND (AL1.ACAD_PROG_DESCR Like '%Doc') &#xA;AND (AL4.DEPTID BETWEEN '170000' AND '200000' or al4.deptid in ('201000','550400','554000') )  &#xA;GROUP BY al5.acad_year, AL4.DEPTID, AL5.ETHNIC_GROUP &#xA;order by deptid&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIPhDAsianPct">
@@ -759,7 +472,7 @@ order by deptid
       DTS:CreationName=""
       DTS:DTSID="{2EEF5FD0-D63F-4490-9B31-03432A61245D}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT 'PhDAsianPct' as KPICode, DeptID, AcadYear, &#xA;sum(case when KPICode = '5HC4' THEN ISNULL (KPIValue, 0) else 0 End)/(sum(case when KPICode = '5HC1' THEN ISNULL (KPIValue, 0) else 0 End)&#xA;+sum(case when KPICode = '5HC2' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;+sum(case when KPICode = '5HC3' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;+sum(case when KPICode = '5HC4' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;+sum(case when KPICode = '5HC5' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;+sum(case when KPICode = '5HC6' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;+sum(case when KPICode = '5HC7' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;+sum(case when KPICode = '5HCT' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;)*100 as KPIValue&#xA;FROM     KPIData_Stage &#xA;where KPICode in ('5HC1','5HC2','5HC3','5HC4','5HC5','5HC6','5HC7','5HCT')&#xA;and AcadYear = '&quot; + @_sAcadYear + &quot;'&#xA;group by DeptID, AcadYear&#xA;&quot;"
+      DTS:Expression="&quot;SELECT 'PhDAsianPct' as KPICode, DeptID, AcadYear, &#xA;sum(case when KPICode = '5HC4' THEN ISNULL (KPIValue, 0) else 0 End)/(sum(case when KPICode = '5HC1' THEN ISNULL (KPIValue, 0) else 0 End)&#xA;+sum(case when KPICode = '5HC2' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;+sum(case when KPICode = '5HC3' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;+sum(case when KPICode = '5HC4' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;+sum(case when KPICode = '5HC5' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;+sum(case when KPICode = '5HC6' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;+sum(case when KPICode = '5HC7' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;+sum(case when KPICode = '5HCT' THEN ISNULL (KPIValue, 0) else 0  End)&#xA;)*100 as KPIValue&#xA;FROM     KPIData_Stage &#xA;where KPICode in ('5HC1','5HC2','5HC3','5HC4','5HC5','5HC6','5HC7','5HCT')&#xA;and AcadYear = '&quot; + @_mAcadYear + &quot;'&#xA;group by DeptID, AcadYear&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIPhDAsianPct2">
@@ -784,7 +497,7 @@ group by DeptID, AcadYear
       DTS:CreationName=""
       DTS:DTSID="{5E796C0F-1E1A-41CB-9B96-A8CC0DC424CC}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT '5HC'||AL5.sex, &#xA;AL4.DEPTID, AL5.acad_year, Sum(AL4.ACAD_PLAN_PERCENT_OWNED)/200 &#xA;FROM M_3WKDW1.THIRDWK_ACAD_PROG AL1, &#xA;M_3WKDW1.THIRDWK_STDNT_CAR_TERM AL2, &#xA;M_3WKDW1.THIRDWK_ACAD_PLAN AL3, &#xA;M_SRDW1.ACAD_PLAN_OWNER_Curr_Vw AL4, &#xA;M_3WKDW1.THIRDWK_PERSONAL_DATA AL5 &#xA;WHERE (AL1.ACAD_PROG_PRIORITY='1') &#xA;AND (AL2.EMPLID=AL1.EMPLID) &#xA;AND (AL1.RPTING_TERM=AL2.RPTING_TERM) &#xA;AND (AL1.RPTING_TERM=AL5.RPTING_TERM) &#xA;AND (AL2.ACAD_CAREER=AL1.ACAD_CAREER &#xA;And AL2.ACAD_CAREER='GRAC') &#xA;AND (AL2.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL3.EMPLID=AL1.EMPLID) &#xA;AND (AL5.EMPLID=AL1.EMPLID) &#xA;AND (AL3.RPTING_TERM=AL1.RPTING_TERM) &#xA;AND (AL3.ACAD_CAREER=AL1.ACAD_CAREER) &#xA;AND (AL3.STDNT_CAR_NBR=AL1.STDNT_CAR_NBR) &#xA;AND (AL3.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL4.ACAD_PLAN=AL3.ACAD_PLAN) &#xA;AND (AL1.ACAD_GROUP_AREA In ('LSA','RAC')) &#xA;AND (AL2.TERM In ('&quot; + @_sAdmitTermFall + &quot;', '&quot; + @_sAdmitTermWinter + &quot;')) &#xA;AND (AL1.ACAD_PROG_DESCR Like '%Doc') &#xA;AND (AL4.DEPTID BETWEEN '170000' AND '200000' or al4.deptid in ('201000','550400','554000'))  &#xA;GROUP BY al5.acad_year, AL4.DEPTID, al5.sex&#xA;order by deptid, sex&#xA;&quot;"
+      DTS:Expression="&quot;SELECT '5HC'||AL5.sex, &#xA;AL4.DEPTID, AL5.acad_year, Sum(AL4.ACAD_PLAN_PERCENT_OWNED)/200 &#xA;FROM M_3WKDW1.THIRDWK_ACAD_PROG AL1, &#xA;M_3WKDW1.THIRDWK_STDNT_CAR_TERM AL2, &#xA;M_3WKDW1.THIRDWK_ACAD_PLAN AL3, &#xA;M_SRDW1.ACAD_PLAN_OWNER_Curr_Vw AL4, &#xA;M_3WKDW1.THIRDWK_PERSONAL_DATA AL5 &#xA;WHERE (AL1.ACAD_PROG_PRIORITY='1') &#xA;AND (AL2.EMPLID=AL1.EMPLID) &#xA;AND (AL1.RPTING_TERM=AL2.RPTING_TERM) &#xA;AND (AL1.RPTING_TERM=AL5.RPTING_TERM) &#xA;AND (AL2.ACAD_CAREER=AL1.ACAD_CAREER &#xA;And AL2.ACAD_CAREER='GRAC') &#xA;AND (AL2.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL3.EMPLID=AL1.EMPLID) &#xA;AND (AL5.EMPLID=AL1.EMPLID) &#xA;AND (AL3.RPTING_TERM=AL1.RPTING_TERM) &#xA;AND (AL3.ACAD_CAREER=AL1.ACAD_CAREER) &#xA;AND (AL3.STDNT_CAR_NBR=AL1.STDNT_CAR_NBR) &#xA;AND (AL3.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL4.ACAD_PLAN=AL3.ACAD_PLAN) &#xA;AND (AL1.ACAD_GROUP_AREA In ('LSA','RAC')) &#xA;AND (AL2.TERM In ('&quot; + @_mAdmitTermFall + &quot;', '&quot; + @_mAdmitTermWinter + &quot;')) &#xA;AND (AL1.ACAD_PROG_DESCR Like '%Doc') &#xA;AND (AL4.DEPTID BETWEEN '170000' AND '200000' or al4.deptid in ('201000','550400','554000'))  &#xA;GROUP BY al5.acad_year, AL4.DEPTID, al5.sex&#xA;order by deptid, sex&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIPhDFPct">
@@ -822,7 +535,7 @@ order by deptid, sex
       DTS:CreationName=""
       DTS:DTSID="{8BCB5488-EA5D-4D71-8704-75E2F3696BF3}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT 'PhDFPct' AS KPICode, DeptID, AcadYear, SUM(CASE WHEN KPICode = '5HCF' THEN ISNULL(KPIValue, 0) ELSE 0 END) &#xA;                  / (SUM(CASE WHEN KPICode = '5HCF' THEN ISNULL(KPIValue, 0) ELSE 0 END) + SUM(CASE WHEN KPICode = '5HCM' THEN ISNULL(KPIValue, 0) ELSE 0 END)) &#xA;                  * 100 AS KPIValue&#xA;FROM     KPIData_Stage AS KPIData_Stage_1&#xA;WHERE  (KPICode IN ('5HCF', '5HCM'))&#xA;and AcadYear = '&quot; + @_sAcadYear + &quot;'&#xA;GROUP BY DeptID, AcadYear&quot;"
+      DTS:Expression="&quot;SELECT 'PhDFPct' AS KPICode, DeptID, AcadYear, SUM(CASE WHEN KPICode = '5HCF' THEN ISNULL(KPIValue, 0) ELSE 0 END) &#xA;                  / (SUM(CASE WHEN KPICode = '5HCF' THEN ISNULL(KPIValue, 0) ELSE 0 END) + SUM(CASE WHEN KPICode = '5HCM' THEN ISNULL(KPIValue, 0) ELSE 0 END)) &#xA;                  * 100 AS KPIValue&#xA;FROM     KPIData_Stage AS KPIData_Stage_1&#xA;WHERE  (KPICode IN ('5HCF', '5HCM'))&#xA;and AcadYear = '&quot; + @_mAcadYear + &quot;'&#xA;GROUP BY DeptID, AcadYear&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIPhDFPct2">
@@ -839,7 +552,7 @@ GROUP BY DeptID, AcadYear</DTS:VariableValue>
       DTS:CreationName=""
       DTS:DTSID="{5EFEF906-C21F-43B3-84A2-F9BE9BC7500C}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT '5HC' || AL5.UNDREP_MNRTY_IND, &#xA;AL4.DEPTID, AL5.acad_year, Sum(AL4.ACAD_PLAN_PERCENT_OWNED)/200 &#xA;FROM M_3WKDW1.THIRDWK_ACAD_PROG AL1, &#xA;M_3WKDW1.THIRDWK_STDNT_CAR_TERM AL2, &#xA;M_3WKDW1.THIRDWK_ACAD_PLAN AL3, &#xA;M_SRDW1.ACAD_PLAN_OWNER_Curr_Vw AL4, &#xA;M_3WKDW1.THIRDWK_PERSONAL_DATA AL5 &#xA;WHERE AL5.ETHNIC_GROUP&lt;&gt;'8' AND AL1.ACAD_PROG_PRIORITY='1'  &#xA;AND (AL2.EMPLID=AL1.EMPLID) &#xA;AND (AL1.RPTING_TERM=AL2.RPTING_TERM) &#xA;AND (AL1.RPTING_TERM=AL5.RPTING_TERM) &#xA;AND (AL2.ACAD_CAREER=AL1.ACAD_CAREER &#xA;And AL2.ACAD_CAREER='GRAC') &#xA;AND (AL2.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL3.EMPLID=AL1.EMPLID) &#xA;AND (AL5.EMPLID=AL1.EMPLID) &#xA;AND (AL3.RPTING_TERM=AL1.RPTING_TERM) &#xA;AND (AL3.ACAD_CAREER=AL1.ACAD_CAREER) &#xA;AND (AL3.STDNT_CAR_NBR=AL1.STDNT_CAR_NBR) &#xA;AND (AL3.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL4.ACAD_PLAN=AL3.ACAD_PLAN) &#xA;AND (AL1.ACAD_GROUP_AREA In ('LSA','RAC')) &#xA;AND (AL2.TERM In ('&quot; + @_sAdmitTermFall + &quot;', '&quot; + @_sAdmitTermWinter + &quot;')) &#xA;AND (AL1.ACAD_PROG_DESCR Like '%Doc') &#xA;AND (AL4.DEPTID BETWEEN '170000' AND '200000' or al4.deptid in ('201000','550400','554000'))  &#xA;GROUP BY al5.acad_year, AL4.DEPTID, al5.UNDREP_MNRTY_IND &#xA;order by deptid&#xA;&quot;"
+      DTS:Expression="&quot;SELECT '5HC' || AL5.UNDREP_MNRTY_IND, &#xA;AL4.DEPTID, AL5.acad_year, Sum(AL4.ACAD_PLAN_PERCENT_OWNED)/200 &#xA;FROM M_3WKDW1.THIRDWK_ACAD_PROG AL1, &#xA;M_3WKDW1.THIRDWK_STDNT_CAR_TERM AL2, &#xA;M_3WKDW1.THIRDWK_ACAD_PLAN AL3, &#xA;M_SRDW1.ACAD_PLAN_OWNER_Curr_Vw AL4, &#xA;M_3WKDW1.THIRDWK_PERSONAL_DATA AL5 &#xA;WHERE AL5.ETHNIC_GROUP&lt;&gt;'8' AND AL1.ACAD_PROG_PRIORITY='1'  &#xA;AND (AL2.EMPLID=AL1.EMPLID) &#xA;AND (AL1.RPTING_TERM=AL2.RPTING_TERM) &#xA;AND (AL1.RPTING_TERM=AL5.RPTING_TERM) &#xA;AND (AL2.ACAD_CAREER=AL1.ACAD_CAREER &#xA;And AL2.ACAD_CAREER='GRAC') &#xA;AND (AL2.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL3.EMPLID=AL1.EMPLID) &#xA;AND (AL5.EMPLID=AL1.EMPLID) &#xA;AND (AL3.RPTING_TERM=AL1.RPTING_TERM) &#xA;AND (AL3.ACAD_CAREER=AL1.ACAD_CAREER) &#xA;AND (AL3.STDNT_CAR_NBR=AL1.STDNT_CAR_NBR) &#xA;AND (AL3.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL4.ACAD_PLAN=AL3.ACAD_PLAN) &#xA;AND (AL1.ACAD_GROUP_AREA In ('LSA','RAC')) &#xA;AND (AL2.TERM In ('&quot; + @_mAdmitTermFall + &quot;', '&quot; + @_mAdmitTermWinter + &quot;')) &#xA;AND (AL1.ACAD_PROG_DESCR Like '%Doc') &#xA;AND (AL4.DEPTID BETWEEN '170000' AND '200000' or al4.deptid in ('201000','550400','554000'))  &#xA;GROUP BY al5.acad_year, AL4.DEPTID, al5.UNDREP_MNRTY_IND &#xA;order by deptid&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIPHDURMPCT">
@@ -877,7 +590,7 @@ order by deptid
       DTS:CreationName=""
       DTS:DTSID="{65E22D72-7311-49F3-8D44-E39C6C3A7AC0}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT 'PHDURMPCT' AS KPICode, DeptID, AcadYear, SUM(CASE WHEN KPICode = '5HCY' THEN ISNULL(KPIValue, 0) ELSE 0 END) &#xA;                  / (SUM(CASE WHEN KPICode = '5HCY' THEN ISNULL(KPIValue, 0) ELSE 0 END) + SUM(CASE WHEN KPICode = '5HCN' THEN ISNULL(KPIValue, 0) ELSE 0 END)) &#xA;                  * 100 AS KPIValue&#xA;FROM     KPIData_Stage AS KPIData_Stage_1&#xA;WHERE  (KPICode IN ('5HCN', '5HCY'))&#xA;and AcadYear = '&quot; + @_sAcadYear + &quot;'&#xA;GROUP BY DeptID, AcadYear&#xA;&quot;"
+      DTS:Expression="&quot;SELECT 'PHDURMPCT' AS KPICode, DeptID, AcadYear, SUM(CASE WHEN KPICode = '5HCY' THEN ISNULL(KPIValue, 0) ELSE 0 END) &#xA;                  / (SUM(CASE WHEN KPICode = '5HCY' THEN ISNULL(KPIValue, 0) ELSE 0 END) + SUM(CASE WHEN KPICode = '5HCN' THEN ISNULL(KPIValue, 0) ELSE 0 END)) &#xA;                  * 100 AS KPIValue&#xA;FROM     KPIData_Stage AS KPIData_Stage_1&#xA;WHERE  (KPICode IN ('5HCN', '5HCY'))&#xA;and AcadYear = '&quot; + @_mAcadYear + &quot;'&#xA;GROUP BY DeptID, AcadYear&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIPHDURMPCT2">
@@ -895,7 +608,7 @@ GROUP BY DeptID, AcadYear
       DTS:CreationName=""
       DTS:DTSID="{815DBB0A-ECAC-435E-B9D4-975BD9972BEC}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'URMF' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'FacURMFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_sAcadYear + &quot;') DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;&quot;"
+      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'URMF' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'FacURMFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_mAcadYear + &quot;') DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIURMF">
@@ -917,7 +630,7 @@ GROUP BY EXPR1, AcadYear, DeptID
       DTS:CreationName=""
       DTS:DTSID="{959627C5-460F-4DC9-9380-A1733379F035}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'URML' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'URMLFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1D' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_sAcadYear + &quot;') DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&quot;"
+      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'URML' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'URMLFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1D' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_mAcadYear + &quot;') DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIURML">
@@ -938,7 +651,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
       DTS:CreationName=""
       DTS:DTSID="{326168A4-7323-4D20-8E1A-B70CDA61694E}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;&#x9;'URMLFTE' as KPICode,  j.appt_deptid as deptid,&#xA;&#x9;t.acad_year as acad_year, sum(j.fte*urm.urm)/2 as KPIValue&#xA;FROM&#xA;  M_HRDW1.Job j,&#xA;  (SELECT &#xA;    term, acad_year, cal_year,&#xA;    term_begin_dt + ((term_end_dt-term_begin_dt)/2) as term_mid&#xA;   FROM &#xA;    m_srdw1.term_tbl &#xA;   WHERE &#xA;    acad_career = 'ULSA'&#xA;    and term_code in ('FA','WN')) t,&#xA;&#x9;(SELECT DISTINCT &#xA;  &#x9;&#x9;emplid, 1 as URM&#xA;&#x9; FROM&#xA;  &#x9;&#x9;m_hrdw1.ethnicity_dtl&#xA;&#x9; WHERE&#xA;  &#x9;&#x9;ethnicity_code in ('AMIND', 'BLACK', 'HISPA', 'PACIF')) urm&#xA;WHERE&#xA;&#x9;t.acad_year =  '&quot;+@_sAcadYear + &quot;'&#xA;&#x9;and t.term_mid between j.job_effdt and j.job_end_dt&#xA;&#x9;and j.emplid = urm.emplid&#xA;&#x9;and j.appt_dept_grp like 'COLLEGE_OF_LS%'&#xA;&#x9;and j.empl_status = 'A'&#xA;&#x9;and j.jobcode in ('202800', '202820', '202840', '202860', '202880',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;'202910', '202920', '202950', '202980', '203000')&#xA;GROUP BY&#xA;&#x9;t.acad_year, j.appt_deptid&#xA;ORDER BY&#xA;  t.acad_year, j.appt_deptid&quot;"
+      DTS:Expression="&quot;SELECT&#xA;&#x9;'URMLFTE' as KPICode,  j.appt_deptid as deptid,&#xA;&#x9;t.acad_year as acad_year, sum(j.fte*urm.urm)/2 as KPIValue&#xA;FROM&#xA;  M_HRDW1.Job j,&#xA;  (SELECT &#xA;    term, acad_year, cal_year,&#xA;    term_begin_dt + ((term_end_dt-term_begin_dt)/2) as term_mid&#xA;   FROM &#xA;    m_srdw1.term_tbl &#xA;   WHERE &#xA;    acad_career = 'ULSA'&#xA;    and term_code in ('FA','WN')) t,&#xA;&#x9;(SELECT DISTINCT &#xA;  &#x9;&#x9;emplid, 1 as URM&#xA;&#x9; FROM&#xA;  &#x9;&#x9;m_hrdw1.ethnicity_dtl&#xA;&#x9; WHERE&#xA;  &#x9;&#x9;ethnicity_code in ('AMIND', 'BLACK', 'HISPA', 'PACIF')) urm&#xA;WHERE&#xA;&#x9;t.acad_year =  '&quot;+@_mAcadYear + &quot;'&#xA;&#x9;and t.term_mid between j.job_effdt and j.job_end_dt&#xA;&#x9;and j.emplid = urm.emplid&#xA;&#x9;and j.appt_dept_grp like 'COLLEGE_OF_LS%'&#xA;&#x9;and j.empl_status = 'A'&#xA;&#x9;and j.jobcode in ('202800', '202820', '202840', '202860', '202880',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;'202910', '202920', '202950', '202980', '203000')&#xA;GROUP BY&#xA;&#x9;t.acad_year, j.appt_deptid&#xA;ORDER BY&#xA;  t.acad_year, j.appt_deptid&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIURMLFTE">
@@ -979,7 +692,7 @@ ORDER BY
       DTS:CreationName=""
       DTS:DTSID="{63DA8906-D42D-4A89-A077-8E3C2FAF9848}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'URMS' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'URMSFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1F' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_sAcadYear + &quot;') DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;&quot;"
+      DTS:Expression="&quot;SELECT     EXPR1, AcadYear, DeptID, round(SUM(PERCENT1),2) AS xSum&#xA;FROM  &#xA;(SELECT  'URMS' AS EXPR1, dbo.KPIData_Stage.AcadYear, &#xA;KPIData_Stage.DeptID, KPIData_Stage_1.KPIValue *100 / dbo.KPIData_Stage.KPIValue AS PERCENT1&#xA;   FROM dbo.KPIData_Stage INNER JOIN&#xA;dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.DeptID &#xA;AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear&#xA;WHERE (KPIData_Stage_1.KPICode = 'URMSFTE') &#xA;AND (dbo.KPIData_Stage.KPICode = '1F' and KPIData_Stage.KPIValue&gt;0 )  &#xA;AND KPIData_Stage.AcadYear = '&quot; + @_mAcadYear + &quot;') DERIVEDTBL&#xA;GROUP BY EXPR1, AcadYear, DeptID&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIURMS">
@@ -1001,7 +714,7 @@ GROUP BY EXPR1, AcadYear, DeptID
       DTS:CreationName=""
       DTS:DTSID="{BF38C03B-9CEB-4ADE-93E3-1A8FC9E07C3A}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot; SELECT&#xA;&#x9;'URMSFTE' as KPICode, j.APPT_DEPTID, substr(to_char(substr(j.HRSNAP_RPTING_CD,4,4)+1),1,4) as FY, &#xA;&#x9;sum(urm.urm*e.dist_fte) as URMSFTE&#xA;FROM&#xA;  M_HRDW1.HRSNAP_JOB j&#xA;  &#x9;LEFT OUTER JOIN M_HRDW1.HRSNAP_DEPT_BUDGET_ERN e&#xA;  &#x9;&#x9;ON j.HRSNAP_RPTING_CD = e.HRSNAP_RPTING_CD&#xA;  &#x9;&#x9;AND j.EMPLID = e.EMPLID&#xA;  &#x9;&#x9;AND j.EMPL_RCD = e.EMPL_RCD&#xA;  &#x9;&#x9;AND j.APPT_DEPTID = e.APPT_DEPTID&#xA;&#x9;INNER JOIN &#xA;&#x9;(SELECT DISTINCT &#xA;  &#x9;&#x9;emplid, hrsnap_rpting_cd, 1 as URM&#xA;&#x9; FROM&#xA;  &#x9;&#x9;m_hrdw1.hrsnap_ethnicity_dtl&#xA;&#x9; WHERE&#xA;  &#x9;&#x9;ethnicity_code in ('AMIND', 'BLACK', 'HISPA', 'PACIF')  &#xA;&#x9;&#x9;and HRSNAP_RPTING_CD = '&quot; + @_sSnapshot  + &quot;'&#xA;&#x9; &#x9;) URM ON &#xA;&#x9; &#x9;&#x9;j.hrsnap_rpting_cd = URM.hrsnap_rpting_cd&#xA;&#x9; &#x9;&#x9;and j.emplid = URM.emplid&#x9;&#x9;&#x9;&#x9;&#xA;WHERE  &#xA;&#x9;j.Appt_DEPT_GRP = 'COLLEGE_OF_LSA'&#xA;&#x9;AND j.HRSNAP_RPTING_CD = '&quot; + @_sSnapshot  + &quot;'&#xA;&#x9;AND j.JOB_FAMILY IN ('30', '40', '50', '62',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  '100','110','120','130','140','150','160','170','180','190',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  '200','210','220','230','240','250','260','270','280','290')&#xA;GROUP BY&#xA;  j.HRSNAP_RPTING_CD, j.APPT_DEPTID&#xA;ORDER BY&#xA;  j.HRSNAP_RPTING_CD, j.APPT_DEPTID&quot;"
+      DTS:Expression="&quot; SELECT&#xA;&#x9;'URMSFTE' as KPICode, j.APPT_DEPTID, substr(to_char(substr(j.HRSNAP_RPTING_CD,4,4)+1),1,4) as FY, &#xA;&#x9;sum(urm.urm*e.dist_fte) as URMSFTE&#xA;FROM&#xA;  M_HRDW1.HRSNAP_JOB j&#xA;  &#x9;LEFT OUTER JOIN M_HRDW1.HRSNAP_DEPT_BUDGET_ERN e&#xA;  &#x9;&#x9;ON j.HRSNAP_RPTING_CD = e.HRSNAP_RPTING_CD&#xA;  &#x9;&#x9;AND j.EMPLID = e.EMPLID&#xA;  &#x9;&#x9;AND j.EMPL_RCD = e.EMPL_RCD&#xA;  &#x9;&#x9;AND j.APPT_DEPTID = e.APPT_DEPTID&#xA;&#x9;INNER JOIN &#xA;&#x9;(SELECT DISTINCT &#xA;  &#x9;&#x9;emplid, hrsnap_rpting_cd, 1 as URM&#xA;&#x9; FROM&#xA;  &#x9;&#x9;m_hrdw1.hrsnap_ethnicity_dtl&#xA;&#x9; WHERE&#xA;  &#x9;&#x9;ethnicity_code in ('AMIND', 'BLACK', 'HISPA', 'PACIF')  &#xA;&#x9;&#x9;and HRSNAP_RPTING_CD = '&quot; + @_mSnapshot  + &quot;'&#xA;&#x9; &#x9;) URM ON &#xA;&#x9; &#x9;&#x9;j.hrsnap_rpting_cd = URM.hrsnap_rpting_cd&#xA;&#x9; &#x9;&#x9;and j.emplid = URM.emplid&#x9;&#x9;&#x9;&#x9;&#xA;WHERE  &#xA;&#x9;j.Appt_DEPT_GRP = 'COLLEGE_OF_LSA'&#xA;&#x9;AND j.HRSNAP_RPTING_CD = '&quot; + @_mSnapshot  + &quot;'&#xA;&#x9;AND j.JOB_FAMILY IN ('30', '40', '50', '62',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  '100','110','120','130','140','150','160','170','180','190',&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  '200','210','220','230','240','250','260','270','280','290')&#xA;GROUP BY&#xA;  j.HRSNAP_RPTING_CD, j.APPT_DEPTID&#xA;ORDER BY&#xA;  j.HRSNAP_RPTING_CD, j.APPT_DEPTID&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIURMSFTE">
@@ -1037,42 +750,6 @@ GROUP BY
   j.HRSNAP_RPTING_CD, j.APPT_DEPTID
 ORDER BY
   j.HRSNAP_RPTING_CD, j.APPT_DEPTID</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{171C3E43-AB35-4D99-BB3B-98783E7D52FB}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="_sAcadYear">
-      <DTS:VariableValue
-        DTS:DataType="8">2018</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{9C44F058-23C8-4ADF-B616-8B2300E9271C}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="_sAdmitTermFall">
-      <DTS:VariableValue
-        DTS:DataType="8">2160</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{230823C7-A34C-4004-8001-F28EFE336319}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="_sAdmitTermWinter">
-      <DTS:VariableValue
-        DTS:DataType="8">2170</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{08C59742-CA59-48E0-87C2-B23B7714E783}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="_sSnapshot">
-      <DTS:VariableValue
-        DTS:DataType="8">NOV2017</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -1125,7 +802,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1159,8 +836,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacAsian - %Asian\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1280,7 +957,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1306,8 +983,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacAsian - %Asian\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1483,7 +1160,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1517,8 +1194,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacAsianFTE - #Asian\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1640,7 +1317,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1666,8 +1343,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacAsianFTE - #Asian\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AIS]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AIS]"
+                      connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1849,7 +1526,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1883,8 +1560,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacF - %Female\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2004,7 +1681,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2030,8 +1707,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacF - %Female\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2207,7 +1884,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2241,8 +1918,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacFFTE - #Female\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2364,7 +2041,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2390,8 +2067,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacFFTE - #Female\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AIS]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AIS]"
+                      connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2573,7 +2250,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2607,8 +2284,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacURMFTE - #URM\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2730,7 +2407,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2756,8 +2433,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacURMFTE - #URM\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AIS]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AIS]"
+                      connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2963,7 +2640,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2997,8 +2674,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\1 - Tenure Track Faculty\URMF - %URM\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3118,7 +2795,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3144,8 +2821,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\1 - Tenure Track Faculty\URMF - %URM\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3375,7 +3052,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3409,8 +3086,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\2 - Lecturers\AL - %Asian\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3530,7 +3207,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3556,8 +3233,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\2 - Lecturers\AL - %Asian\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3733,7 +3410,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3767,8 +3444,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\2 - Lecturers\ALFTE - #Asian\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3889,7 +3566,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -3915,8 +3592,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\2 - Lecturers\ALFTE - #Asian\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 4]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 4]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4095,7 +3772,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4129,8 +3806,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\2 - Lecturers\FL - %Female\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4250,7 +3927,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -4276,8 +3953,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\2 - Lecturers\FL - %Female\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4453,7 +4130,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4487,8 +4164,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\2 - Lecturers\FLFTE - #Female\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4609,7 +4286,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -4635,8 +4312,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\2 - Lecturers\FLFTE - #Female\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 5]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 5]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4815,7 +4492,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4849,8 +4526,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\2 - Lecturers\URML - %URM\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4970,7 +4647,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -4996,8 +4673,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\2 - Lecturers\URML - %URM\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5173,7 +4850,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5207,8 +4884,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\2 - Lecturers\URMLFTE - #URM\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5329,7 +5006,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -5355,8 +5032,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\2 - Lecturers\URMLFTE - #URM\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 3]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 3]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5589,7 +5266,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5623,8 +5300,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\3 - All Regular Staff\AS - %Asian\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5744,7 +5421,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -5770,8 +5447,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\3 - All Regular Staff\AS - %Asian\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5947,7 +5624,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5981,8 +5658,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\3 - All Regular Staff\ASFTE - #Asian\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6103,7 +5780,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -6129,8 +5806,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\3 - All Regular Staff\ASFTE - #Asian\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 7]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 7]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6309,7 +5986,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -6343,8 +6020,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\3 - All Regular Staff\FS - %Female\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6464,7 +6141,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -6490,8 +6167,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\3 - All Regular Staff\FS - %Female\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6667,7 +6344,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -6701,8 +6378,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\3 - All Regular Staff\FSFTE - #Female\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6823,7 +6500,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -6849,8 +6526,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\3 - All Regular Staff\FSFTE - #Female\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 8]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 8]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7029,7 +6706,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -7063,8 +6740,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\3 - All Regular Staff\URMS - %URM\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7184,7 +6861,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -7210,8 +6887,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\3 - All Regular Staff\URMS - %URM\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7387,7 +7064,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -7421,8 +7098,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\3 - All Regular Staff\URMSFTE - #URM\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7543,7 +7220,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -7569,8 +7246,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\3 - All Regular Staff\URMSFTE - #URM\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 6]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1 6]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7803,7 +7480,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -7837,8 +7514,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\4 - Graduate Students\PhDAsianPct\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7959,7 +7636,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -7985,8 +7662,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\4 - Graduate Students\PhDAsianPct\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.juliezie 4]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.juliezie 4]"
+                      connectionManagerID="{A82AF4A4-2BB7-4E8B-BC39-B574DC30A364}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world local]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8165,7 +7842,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -8199,8 +7876,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\4 - Graduate Students\PhDAsianPct2 - %Asian\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8320,7 +7997,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -8346,8 +8023,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\4 - Graduate Students\PhDAsianPct2 - %Asian\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8523,7 +8200,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -8557,8 +8234,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\4 - Graduate Students\PhDFPct\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8679,7 +8356,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -8705,8 +8382,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\4 - Graduate Students\PhDFPct\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.juliezie 4]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.juliezie 4]"
+                      connectionManagerID="{A82AF4A4-2BB7-4E8B-BC39-B574DC30A364}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world local]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8885,7 +8562,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -8919,8 +8596,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\4 - Graduate Students\PhDFPct2 - %Female\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -9040,7 +8717,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -9066,8 +8743,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\4 - Graduate Students\PhDFPct2 - %Female\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -9243,7 +8920,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -9277,8 +8954,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\4 - Graduate Students\PHDURMPCT - #URM\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -9399,7 +9076,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -9425,8 +9102,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\4 - Graduate Students\PHDURMPCT - #URM\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.juliezie 4]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.juliezie 4]"
+                      connectionManagerID="{A82AF4A4-2BB7-4E8B-BC39-B574DC30A364}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world local]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -9605,7 +9282,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -9639,8 +9316,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\4 - Graduate Students\PHDURMPCT2 - %URM\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -9760,7 +9437,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -9786,8 +9463,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\4 - Graduate Students\PHDURMPCT2 - %URM\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -9972,7 +9649,6 @@ ORDER BY
       DTS:refId="Package\Division Rollups"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:Disabled="True"
       DTS:DTSID="{46BF63D2-43F4-4CE3-B928-EBDFCF6A967B}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -10018,7 +9694,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -10052,8 +9728,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\Division Rollups\Division Rollup\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -10173,7 +9849,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -10199,8 +9875,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\Division Rollups\Division Rollup\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData 1]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -10339,22 +10015,6 @@ ORDER BY
         </DTS:Executable>
       </DTS:Executables>
     </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Execute SQL Task"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
-      DTS:DTSID="{1FB325CC-4CA6-4F89-9098-EFDFE8207740}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Execute SQL Task"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -10403,27 +10063,27 @@ ORDER BY
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="167.371727748692,41.717277486911"
+          Size="167.2,41.6"
           Id="Package\1 - Tenure Track Faculty\FacAsian - %Asian"
           TopLeft="36.5714287173992,227.784317761557" />
         <NodeLayout
-          Size="182.450261780105,41.717277486911"
+          Size="182.4,41.6"
           Id="Package\1 - Tenure Track Faculty\FacAsianFTE - #Asian"
           TopLeft="31.5918367277429,145.017369855729" />
         <NodeLayout
-          Size="155.811518324608,41.717277486911"
+          Size="156,41.6"
           Id="Package\1 - Tenure Track Faculty\FacF - %Female"
           TopLeft="42.8299322253414,389.246504899953" />
         <NodeLayout
-          Size="171.392670157069,41.717277486911"
+          Size="171.2,41.6"
           Id="Package\1 - Tenure Track Faculty\FacFFTE - #Female"
           TopLeft="29.9591836387144,317.185439497212" />
         <NodeLayout
-          Size="175.916230366493,41.717277486911"
+          Size="176,41.6"
           Id="Package\1 - Tenure Track Faculty\FacURMFTE - #URM"
           TopLeft="41.7959185341705,14.0705893077652" />
         <NodeLayout
-          Size="150.282722513089,41.717277486911"
+          Size="150.4,41.6"
           Id="Package\1 - Tenure Track Faculty\URMF - %URM"
           TopLeft="48.0340139466195,79.6862764688511" />
         <EdgeLayout
@@ -10539,32 +10199,32 @@ ORDER BY
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="236.230366492147,486.031413612566"
-          Size="236.230366492147,528.753926701571"
+          PanelSize="236,486.4"
+          Size="236,528.8"
           Id="Package\1 - Tenure Track Faculty"
-          TopLeft="331.918372999475,95.7859941722337" />
+          TopLeft="355.727897214472,95.7859941722337" />
         <NodeLayout
-          Size="137.717277486911,41.717277486911"
+          Size="137.6,41.6"
           Id="Package\2 - Lecturers\AL - %Asian"
           TopLeft="33.9809577007684,234.612889476631" />
         <NodeLayout
-          Size="152.795811518325,41.717277486911"
+          Size="152.8,41.6"
           Id="Package\2 - Lecturers\ALFTE - #Asian"
           TopLeft="30.7428622031699,162.431375537639" />
         <NodeLayout
-          Size="145.759162303665,41.717277486911"
+          Size="145.6,41.6"
           Id="Package\2 - Lecturers\FL - %Female"
           TopLeft="38.334699271511,371.968633699912" />
         <NodeLayout
-          Size="160.837696335079,41.717277486911"
+          Size="160.8,41.6"
           Id="Package\2 - Lecturers\FLFTE - #Female"
           TopLeft="29.7904812345702,307.215691293675" />
         <NodeLayout
-          Size="149.780104712042,41.717277486911"
+          Size="149.6,41.6"
           Id="Package\2 - Lecturers\URML - %URM"
           TopLeft="30.6285766640488,87.2941200493942" />
         <NodeLayout
-          Size="164.858638743456,41.717277486911"
+          Size="164.8,41.6"
           Id="Package\2 - Lecturers\URMLFTE - #URM"
           TopLeft="16.4571476741714,16.6274521672602" />
         <EdgeLayout
@@ -10680,32 +10340,32 @@ ORDER BY
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="214.617801047121,468.942408376964"
-          Size="214.617801047121,512.167539267016"
+          PanelSize="214.4,468.8"
+          Size="214.4,512"
           Id="Package\2 - Lecturers"
-          TopLeft="594.210894473093,96.8621847196157" />
+          TopLeft="618.02041868809,96.8621847196157" />
         <NodeLayout
-          Size="138.219895287959,41.717277486911"
+          Size="138.4,41.6"
           Id="Package\3 - All Regular Staff\AS - %Asian"
           TopLeft="44.5115741440577,215.820731994508" />
         <NodeLayout
-          Size="153.801047120419,41.717277486911"
+          Size="153.6,41.6"
           Id="Package\3 - All Regular Staff\ASFTE - #Asian"
           TopLeft="36.9904856623439,150.431375780733" />
         <NodeLayout
-          Size="146.261780104713,41.717277486911"
+          Size="146.4,41.6"
           Id="Package\3 - All Regular Staff\FS - %Female"
           TopLeft="40.729261154475,347.408408910004" />
         <NodeLayout
-          Size="161.842931937173,41.717277486911"
+          Size="161.6,41.6"
           Id="Package\3 - All Regular Staff\FSFTE - #Female"
           TopLeft="34.133342756544,279.921573675215" />
         <NodeLayout
-          Size="150.282722513089,41.717277486911"
+          Size="150.4,41.6"
           Id="Package\3 - All Regular Staff\URMS - %URM"
           TopLeft="38.6068121387383,75.7848756888216" />
         <NodeLayout
-          Size="165.361256544503,41.717277486911"
+          Size="165.6,41.6"
           Id="Package\3 - All Regular Staff\URMSFTE - #URM"
           TopLeft="28.4190569449446,10.7450993118814" />
         <EdgeLayout
@@ -10821,32 +10481,32 @@ ORDER BY
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="240.251308900524,440.293193717278"
-          Size="240.251308900524,483.015706806283"
+          PanelSize="240,440"
+          Size="240,483.2"
           Id="Package\3 - All Regular Staff"
-          TopLeft="838.244912234409,117.001120520188" />
+          TopLeft="862.054436449406,117.001120520188" />
         <NodeLayout
-          Size="138.219895287959,41.717277486911"
+          Size="138.4,41.6"
           Id="Package\4 - Graduate Students\PhDAsianPct"
           TopLeft="41.4149662148506,149.819611066271" />
         <NodeLayout
-          Size="190.492146596859,41.717277486911"
+          Size="190.4,41.6"
           Id="Package\4 - Graduate Students\PhDAsianPct2 - %Asian"
           TopLeft="21.1428710587172,215.858827218713" />
         <NodeLayout
-          Size="119.120418848168,41.717277486911"
+          Size="119.2,41.6"
           Id="Package\4 - Graduate Students\PhDFPct"
           TopLeft="52.8707487228659,280.737259961164" />
         <NodeLayout
-          Size="179.434554973822,41.717277486911"
+          Size="179.2,41.6"
           Id="Package\4 - Graduate Students\PhDFPct2 - %Female"
           TopLeft="22.2857282210373,351.011770694561" />
         <NodeLayout
-          Size="180.942408376964,41.717277486911"
+          Size="180.8,41.6"
           Id="Package\4 - Graduate Students\PHDURMPCT - #URM"
           TopLeft="13.5238092772817,12.1142870061538" />
         <NodeLayout
-          Size="189.486910994765,41.717277486911"
+          Size="189.6,41.6"
           Id="Package\4 - Graduate Students\PHDURMPCT2 - %URM"
           TopLeft="15.4285852471179,81.3647080444547" />
         <EdgeLayout
@@ -10962,28 +10622,24 @@ ORDER BY
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="247.790575916231,453.86387434555"
-          Size="247.790575916231,496.586387434555"
+          PanelSize="248,453.6"
+          Size="248,496.8"
           Id="Package\4 - Graduate Students"
-          TopLeft="1113.65988291109,104.743977491143" />
+          TopLeft="1137.46940712609,104.743977491143" />
         <NodeLayout
-          Size="148.774869109948,41.717277486911"
+          Size="148.8,41.6"
           Id="Package\Division Rollups\Division Rollup"
           TopLeft="44.9523968631722,31.1529436217048" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="230.198952879582,113.089005235603"
-          Size="230.198952879582,155.811518324608"
+          PanelSize="230.4,112.8"
+          Size="230.4,156"
           Id="Package\Division Rollups"
-          TopLeft="50.6666675295147,109.662741643252" />
-        <NodeLayout
-          Size="163.853403141362,41.717277486911"
-          Id="Package\Execute SQL Task"
-          TopLeft="379.428593398763,33.8196088298106" />
+          TopLeft="78.285715618912,281.976469550083" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="567.918372999475,356.524089445924">
+          TopLeft="591.727897214472,356.524089445924">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
@@ -11005,7 +10661,7 @@ ORDER BY
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="808.610894473092,355.731652619902">
+          TopLeft="832.420418688089,355.731652619902">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
@@ -11027,7 +10683,7 @@ ORDER BY
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="1078.24491223441,355.872549005665">
+          TopLeft="1102.05443644941,355.872549005665">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
@@ -11049,30 +10705,18 @@ ORDER BY
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="281.066667529515,187.662741643252">
+          TopLeft="308.685715618912,360.081231861158">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="50.8517054699603,172.523252528982"
+              EndConnector="47.0421815955605,0"
               Start="0,0"
-              End="43.3517054699603,172.523252528982">
+              End="39.5421815955605,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="21.4258527349802,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="21.4258527349802,0"
-                    Point2="25.4258527349802,0"
-                    Point3="25.4258527349802,4" />
-                  <mssgle:LineSegment
-                    End="25.4258527349802,168.523252528982" />
-                  <mssgle:CubicBezierSegment
-                    Point1="25.4258527349802,168.523252528982"
-                    Point2="25.4258527349802,172.523252528982"
-                    Point3="29.4258527349802,172.523252528982" />
-                  <mssgle:LineSegment
-                    End="43.3517054699603,172.523252528982" />
+                    End="39.5421815955605,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11085,9 +10729,9 @@ ORDER BY
           Text="Make sure all KPICode like '1%' are in KPIData_Stage.  Otherwise percentages will not be calculated properly."
           ParentId="Package"
           FontInfo="{x:Null}"
-          Size="603.141361256545,42.2198952879582"
+          Size="603.2,40"
           Id="9dbb9153-ce1b-4d54-abe9-27ca1178a55e"
-          TopLeft="563.428581023703,26.5098040502651" />
+          TopLeft="587.2381052387,26.5098040502651" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -11095,13 +10739,13 @@ ORDER BY
     design-time-name="Package\1 - Tenure Track Faculty\FacAsian - %Asian">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="151.287958115184,41.717277486911"
+          Size="151.2,41.6"
           Id="Package\1 - Tenure Track Faculty\FacAsian - %Asian\OLE DB Source"
           TopLeft="43.2,27.2" />
         <NodeLayout
-          Size="171.895287958116,41.717277486911"
+          Size="172,41.6"
           Id="Package\1 - Tenure Track Faculty\FacAsian - %Asian\OLE DB Destination"
           TopLeft="31.2,128" />
         <EdgeLayout
@@ -11123,7 +10767,9 @@ ORDER BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11154,13 +10800,13 @@ ORDER BY
     design-time-name="Package\1 - Tenure Track Faculty\FacAsianFTE - #Asian">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="151.287958115184,41.717277486911"
+          Size="151.2,41.6"
           Id="Package\1 - Tenure Track Faculty\FacAsianFTE - #Asian\OLE DB Source"
           TopLeft="76.8,68.8" />
         <NodeLayout
-          Size="171.895287958116,41.717277486911"
+          Size="172,41.6"
           Id="Package\1 - Tenure Track Faculty\FacAsianFTE - #Asian\OLE DB Destination"
           TopLeft="61.6,178.4" />
         <EdgeLayout
@@ -11182,7 +10828,9 @@ ORDER BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11335,13 +10983,13 @@ ORDER BY
     design-time-name="Package\1 - Tenure Track Faculty\FacURMFTE - #URM">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="151.287958115184,41.717277486911"
+          Size="151.2,41.6"
           Id="Package\1 - Tenure Track Faculty\FacURMFTE - #URM\OLE DB Source"
           TopLeft="56.8,29.6" />
         <NodeLayout
-          Size="171.895287958116,41.717277486911"
+          Size="172,41.6"
           Id="Package\1 - Tenure Track Faculty\FacURMFTE - #URM\OLE DB Destination"
           TopLeft="46.4,132" />
         <EdgeLayout
@@ -11363,7 +11011,9 @@ ORDER BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11394,13 +11044,13 @@ ORDER BY
     design-time-name="Package\1 - Tenure Track Faculty\URMF - %URM">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="151.287958115184,41.717277486911"
+          Size="151.2,41.6"
           Id="Package\1 - Tenure Track Faculty\URMF - %URM\OLE DB Source"
           TopLeft="29.142857639157,26.3058827218713" />
         <NodeLayout
-          Size="171.895287958116,41.717277486911"
+          Size="172,41.6"
           Id="Package\1 - Tenure Track Faculty\URMF - %URM\OLE DB Destination"
           TopLeft="20.5714289217579,130.305884180432" />
         <EdgeLayout
@@ -11422,7 +11072,9 @@ ORDER BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -12565,27 +12217,27 @@ ORDER BY
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.287958115184,41.717277486911"
+          Size="149.6,41.6"
           Id="Package\Division Rollups\Division Rollup\OLE DB Source"
           TopLeft="79.428572781232,40.9882358689622" />
         <NodeLayout
-          Size="171.895287958116,41.717277486911"
+          Size="172,41.6"
           Id="Package\Division Rollups\Division Rollup\OLE DB Destination"
           TopLeft="70.8571440638328,137.035296039515" />
         <EdgeLayout
           Id="Package\Division Rollups\Division Rollup.Paths[OLE DB Source Output]"
-          TopLeft="155.942858422532,82.5882358689622">
+          TopLeft="155.542858422532,82.5882358689622">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,54.4470601705532"
+              EndConnector="0,54.4470601705528"
               Start="0,0"
-              End="0,46.9470601705532">
+              End="0,46.9470601705528">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.9470601705532" />
+                    End="0,46.9470601705528" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

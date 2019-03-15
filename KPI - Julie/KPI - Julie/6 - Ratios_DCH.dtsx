@@ -7,12 +7,12 @@
   DTS:CreatorName="UMROOT\juliezie"
   DTS:DTSID="{FFE80A9D-772B-425C-830E-E5BDD200CE94}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.92"
+  DTS:LastModifiedProductVersion="15.0.0900.30"
   DTS:LocaleID="1033"
   DTS:ObjectName="6 - Ratios_DCH"
   DTS:PackageType="5"
-  DTS:VersionBuild="19"
-  DTS:VersionGUID="{ECCFF7E9-EABB-4518-B562-6AD2BA039682}">
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{9F64A38C-866F-475E-B9BE-DAFFE53B6607}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,12 +23,7 @@
       DTS:ObjectName="dwprod.world.rmt_lsaadhoc_datawhse1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn1EA94x88k602lZf6kdc3wAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACrEFcdIHDsdkuBww5H6ZMYAAAAAASAAACgAAAAEAAAALu7XUbAjyKmSGsikfkPKc4QAAAA7FuuafCkGMZCr037MuAZIBQAAAD4M76OQTfSTWzKKKvXOYUgKqon1w</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -77,7 +72,7 @@
       DTS:CreationName=""
       DTS:DTSID="{CE49E72F-E43A-44CC-A175-633D559CB0AD}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;DELETE FROM lsa_AdminData.dbo.acBudDeptFTE&#xA;WHERE fy = '&quot; + @_sCurrFY + &quot;'&quot;"
+      DTS:Expression="&quot;DELETE FROM lsa_AdminData.dbo.acBudDeptFTE&#xA;WHERE fy = '&quot; + @_mCurrFY + &quot;'&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLDeleteDeptFTE">
@@ -89,7 +84,7 @@ WHERE fy = '2018'</DTS:VariableValue>
       DTS:CreationName=""
       DTS:DTSID="{69FA31F4-2902-4E56-85B6-E126B6B57CE1}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;DELETE FROM lsa_AdminData.dbo.acBudLSAFTE &#xA;WHERE fy = '&quot; + @_sCurrFY + &quot;'&quot;"
+      DTS:Expression="&quot;DELETE FROM lsa_AdminData.dbo.acBudLSAFTE &#xA;WHERE fy = '&quot; + @_mCurrFY + &quot;'&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLDeleteLSAFTE">
@@ -101,7 +96,7 @@ WHERE fy = '2018'</DTS:VariableValue>
       DTS:CreationName=""
       DTS:DTSID="{E6417FBD-7A2F-4D5D-A604-4F1507C58049}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;DELETE FROM [lsa_AdminData].[dbo].[CRAS_Teaching] &#xA;WHERE acad_year = '&quot; + @_sCurrFY + &quot;'&quot;"
+      DTS:Expression="&quot;DELETE FROM [lsa_AdminData].[dbo].[CRAS_Teaching] &#xA;WHERE acad_year = '&quot; + @_mCurrFY + &quot;'&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLDeleteTeaching">
@@ -113,7 +108,7 @@ WHERE acad_year = '2018'</DTS:VariableValue>
       DTS:CreationName=""
       DTS:DTSID="{69E1717B-BCA7-471B-9807-49EB563C33D7}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT &#xA;&#x9;a.fy, a.emplid, a.apptdeptid as deptid, &#xA;&#x9;sum(a.apptauthpct) as apptauthpct, sum(a.apptdistpct) as apptdistpct&#xA;FROM&#xA;&#x9; [lsa_AIS].[dbo].[tbl_ACBUDAPPT] a&#xA;&#x9;&#x9;INNER JOIN [lsa_AIS].[dbo].[tbl_Person] e&#xA;&#x9;&#x9;&#x9;ON a.emplid = e.emplid&#xA;&#x9;&#x9;INNER JOIN [lsa_AIS].[dbo].[tbl_Dept] d&#xA;&#x9;&#x9;&#x9;ON a.apptdeptid = d.deptid&#xA;WHERE&#xA;&#x9;d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;and e.DeptEmploymentStatus = 'Active'&#xA;&#x9;and a.emplid not like '%--%'&#xA;&#x9;and a.jobcode in ('201000','201500','202000','202500')&#xA;&#x9;and a.fy = '&quot; + @_sCurrFY + &quot;'&#xA;&#x9;and (a.apptAuthPct &gt; 0 or a.apptDistPct &gt; 0)&#xA;GROUP BY&#xA;&#x9;a.fy, a.emplid, a.apptdeptid&quot;"
+      DTS:Expression="&quot;SELECT &#xA;&#x9;a.fy, a.emplid, a.apptdeptid as deptid, &#xA;&#x9;sum(a.apptauthpct) as apptauthpct, sum(a.apptdistpct) as apptdistpct&#xA;FROM&#xA;&#x9; [lsa_AIS].[dbo].[tbl_ACBUDAPPT] a&#xA;&#x9;&#x9;INNER JOIN [lsa_AIS].[dbo].[tbl_Person] e&#xA;&#x9;&#x9;&#x9;ON a.emplid = e.emplid&#xA;&#x9;&#x9;INNER JOIN [lsa_AIS].[dbo].[tbl_Dept] d&#xA;&#x9;&#x9;&#x9;ON a.apptdeptid = d.deptid&#xA;WHERE&#xA;&#x9;d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;and e.DeptEmploymentStatus = 'Active'&#xA;&#x9;and a.emplid not like '%--%'&#xA;&#x9;and a.jobcode in ('201000','201500','202000','202500')&#xA;&#x9;and a.fy = '&quot; + @_mCurrFY + &quot;'&#xA;&#x9;and (a.apptAuthPct &gt; 0 or a.apptDistPct &gt; 0)&#xA;GROUP BY&#xA;&#x9;a.fy, a.emplid, a.apptdeptid&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLGetDeptFTE">
@@ -141,7 +136,7 @@ GROUP BY
       DTS:CreationName=""
       DTS:DTSID="{F4A3094F-ED4E-4703-8FFE-1AAB02DC8370}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT &#xA;&#x9;a.fy, a.emplid, &#xA;&#x9;sum(a.apptauthpct) as LSAauthpct, sum(a.apptdistpct) as LSAdistpct&#xA;FROM&#xA;&#x9; [lsa_AIS].[dbo].[tbl_ACBUDAPPT] a&#xA;&#x9;&#x9;INNER JOIN [lsa_AIS].[dbo].[tbl_Person] e&#xA;&#x9;&#x9;&#x9;ON a.emplid = e.emplid&#xA;&#x9;&#x9;INNER JOIN [lsa_AIS].[dbo].[tbl_Dept] d&#xA;&#x9;&#x9;&#x9;ON a.apptdeptid = d.deptid&#xA;WHERE&#xA;&#x9;d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;and e.DeptEmploymentStatus = 'Active'&#xA;&#x9;and a.emplid not like '%--%'&#xA;&#x9;and a.jobcode in ('201000','201500','202000','202500')&#xA;&#x9;and a.fy = '&quot; + @_sCurrFY + &quot;'&#xA;&#x9;and (a.apptAuthPct &gt; 0 or a.apptDistPct &gt; 0)&#xA;GROUP BY&#xA;&#x9;a.fy, a.emplid&#xA;&quot;"
+      DTS:Expression="&quot;SELECT &#xA;&#x9;a.fy, a.emplid, &#xA;&#x9;sum(a.apptauthpct) as LSAauthpct, sum(a.apptdistpct) as LSAdistpct&#xA;FROM&#xA;&#x9; [lsa_AIS].[dbo].[tbl_ACBUDAPPT] a&#xA;&#x9;&#x9;INNER JOIN [lsa_AIS].[dbo].[tbl_Person] e&#xA;&#x9;&#x9;&#x9;ON a.emplid = e.emplid&#xA;&#x9;&#x9;INNER JOIN [lsa_AIS].[dbo].[tbl_Dept] d&#xA;&#x9;&#x9;&#x9;ON a.apptdeptid = d.deptid&#xA;WHERE&#xA;&#x9;d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;and e.DeptEmploymentStatus = 'Active'&#xA;&#x9;and a.emplid not like '%--%'&#xA;&#x9;and a.jobcode in ('201000','201500','202000','202500')&#xA;&#x9;and a.fy = '&quot; + @_mCurrFY + &quot;'&#xA;&#x9;and (a.apptAuthPct &gt; 0 or a.apptDistPct &gt; 0)&#xA;GROUP BY&#xA;&#x9;a.fy, a.emplid&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLGetLSAFTE">
@@ -170,7 +165,7 @@ GROUP BY
       DTS:CreationName=""
       DTS:DTSID="{11ACBAC4-A4AF-4739-95BF-63860008A4A8}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT &#xA;&#x9;i.class_instr_id as emplid, c.acad_year, c.term,&#xA;&#x9;c.subject, c.catalog_nbr, c.class_section, c.session_code,&#xA;&#x9;c.cras_crse_component, c.course_title_long,&#xA;&#x9;sum(i.instr_appor_dist_hrs) as inst_ch,&#xA;&#x9;sum(i.instr_appor_dist_hrs * c.section_enrl_cnt) as inst_stu_ch&#xA;FROM&#xA;&#x9;m_crdw1.cras_class_tbl c&#xA;&#x9;&#x9;INNER JOIN m_crdw1.cras_class_mtg_pat p&#xA;&#x9;&#x9;&#x9;ON c.crse_id = p.crse_id&#xA;&#x9;&#x9;&#x9;&#x9;and c.crse_offer_nbr = p.crse_offer_nbr&#xA;&#x9;&#x9;&#x9;&#x9;and c.term = p.term&#xA;&#x9;&#x9;&#x9;&#x9;and c.session_code = p.session_code&#xA;&#x9;&#x9;&#x9;&#x9;and c.class_section = p.class_section&#xA;&#x9;&#x9;INNER JOIN m_crdw1.cras_class_instr i&#xA;&#x9;&#x9;&#x9;ON c.crse_id = i.crse_id&#xA;&#x9;&#x9;&#x9;&#x9;and c.crse_offer_nbr = i.crse_offer_nbr&#xA;&#x9;&#x9;&#x9;&#x9;and c.term = i.term&#xA;&#x9;&#x9;&#x9;&#x9;and c.session_code = i.session_code&#xA;&#x9;&#x9;&#x9;&#x9;and c.class_section = i.class_section&#xA;&#x9;&#x9;&#x9;&#x9;and p.class_mtg_nbr = i.class_mtg_nbr&#xA;&#x9;&#x9;INNER JOIN m_gldw1.curr_fn_dept_vw d&#xA;&#x9;&#x9;&#x9;ON c.deptid = d.deptid&#xA;WHERE &#xA;  d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;and c.cras_crse_component != 'IND'&#xA;&#x9;and c.acad_year = '&quot; + @_sCurrFY + &quot;'&#xA;GROUP BY&#xA;&#x9;i.class_instr_id, c.acad_year, c.term,&#xA;&#x9;c.subject, c.catalog_nbr, c.class_section, c.session_code,&#xA;&#x9;c.cras_crse_component, c.course_title_long&quot;"
+      DTS:Expression="&quot;SELECT &#xA;&#x9;i.class_instr_id as emplid, c.acad_year, c.term,&#xA;&#x9;c.subject, c.catalog_nbr, c.class_section, c.session_code,&#xA;&#x9;c.cras_crse_component, c.course_title_long,&#xA;&#x9;sum(i.instr_appor_dist_hrs) as inst_ch,&#xA;&#x9;sum(i.instr_appor_dist_hrs * c.section_enrl_cnt) as inst_stu_ch&#xA;FROM&#xA;&#x9;m_crdw1.cras_class_tbl c&#xA;&#x9;&#x9;INNER JOIN m_crdw1.cras_class_mtg_pat p&#xA;&#x9;&#x9;&#x9;ON c.crse_id = p.crse_id&#xA;&#x9;&#x9;&#x9;&#x9;and c.crse_offer_nbr = p.crse_offer_nbr&#xA;&#x9;&#x9;&#x9;&#x9;and c.term = p.term&#xA;&#x9;&#x9;&#x9;&#x9;and c.session_code = p.session_code&#xA;&#x9;&#x9;&#x9;&#x9;and c.class_section = p.class_section&#xA;&#x9;&#x9;INNER JOIN m_crdw1.cras_class_instr i&#xA;&#x9;&#x9;&#x9;ON c.crse_id = i.crse_id&#xA;&#x9;&#x9;&#x9;&#x9;and c.crse_offer_nbr = i.crse_offer_nbr&#xA;&#x9;&#x9;&#x9;&#x9;and c.term = i.term&#xA;&#x9;&#x9;&#x9;&#x9;and c.session_code = i.session_code&#xA;&#x9;&#x9;&#x9;&#x9;and c.class_section = i.class_section&#xA;&#x9;&#x9;&#x9;&#x9;and p.class_mtg_nbr = i.class_mtg_nbr&#xA;&#x9;&#x9;INNER JOIN m_gldw1.curr_fn_dept_vw d&#xA;&#x9;&#x9;&#x9;ON c.deptid = d.deptid&#xA;WHERE &#xA;  d.dept_grp = 'COLLEGE_OF_LSA'&#xA;&#x9;and c.cras_crse_component != 'IND'&#xA;&#x9;and c.acad_year = '&quot; + @_mCurrFY + &quot;'&#xA;GROUP BY&#xA;&#x9;i.class_instr_id, c.acad_year, c.term,&#xA;&#x9;c.subject, c.catalog_nbr, c.class_section, c.session_code,&#xA;&#x9;c.cras_crse_component, c.course_title_long&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLGetTeaching">
@@ -211,7 +206,7 @@ GROUP BY
       DTS:CreationName=""
       DTS:DTSID="{B16B2BF6-3D46-487B-86A2-96DA6E30525B}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT&#xA;&#x9;'DCH' as KPICode, f.deptid, f.fy as acadyear, &#xA;&#x9;sum(t.inst_stu_ch * f.DeptAuthFactor)/fte.FTE as KPIValue&#xA;FROM&#xA;&#x9;[dbo].[acBudFTE] as f&#xA;&#x9;INNER JOIN [dbo].[CRAS_Teaching_Summary] as t&#xA;&#x9;&#x9;ON f.emplid = t.emplid and f.fy = t.acad_year&#xA;&#x9;INNER JOIN [lsa_reference_tables].[dbo].[CURR_FN_DEPT_VW] as d&#xA;&#x9;&#x9;ON f.deptid = d.deptid collate database_default&#xA;&#x9;INNER JOIN &#xA;&#x9;&#x9;(SELECT&#xA;&#x9;&#x9;&#x9;fy, deptid, sum(deptAuthPct) as FTE&#xA;&#x9;&#x9; FROM    &#xA;&#x9;&#x9;&#x9;[lsa_AdminData].[dbo].[acBudDeptFTE]&#xA;&#x9;&#x9; GROUP BY&#xA;&#x9;&#x9;&#x9;fy, deptid) as fte&#xA;&#x9;&#x9;ON f.fy = fte.fy and f.deptid = fte.deptid&#xA;WHERE&#xA;&#x9;f.fy = '&quot;+ @_sCurrFY+ &quot;'&#xA;&#x9;and fte.FTE &gt; 0&#xA;GROUP BY&#xA;&#x9;f.fy, f.deptid, fte.FTE &#xA;ORDER BY&#xA;&#x9;f.fy, f.deptid&quot;"
+      DTS:Expression="&quot;SELECT&#xA;&#x9;'DCH' as KPICode, f.deptid, f.fy as acadyear, &#xA;&#x9;sum(t.inst_stu_ch * f.DeptAuthFactor)/fte.FTE as KPIValue&#xA;FROM&#xA;&#x9;[dbo].[acBudFTE] as f&#xA;&#x9;INNER JOIN [dbo].[CRAS_Teaching_Summary] as t&#xA;&#x9;&#x9;ON f.emplid = t.emplid and f.fy = t.acad_year&#xA;&#x9;INNER JOIN [lsa_reference_tables].[dbo].[CURR_FN_DEPT_VW] as d&#xA;&#x9;&#x9;ON f.deptid = d.deptid collate database_default&#xA;&#x9;INNER JOIN &#xA;&#x9;&#x9;(SELECT&#xA;&#x9;&#x9;&#x9;fy, deptid, sum(deptAuthPct) as FTE&#xA;&#x9;&#x9; FROM    &#xA;&#x9;&#x9;&#x9;[lsa_AdminData].[dbo].[acBudDeptFTE]&#xA;&#x9;&#x9; GROUP BY&#xA;&#x9;&#x9;&#x9;fy, deptid) as fte&#xA;&#x9;&#x9;ON f.fy = fte.fy and f.deptid = fte.deptid&#xA;WHERE&#xA;&#x9;f.fy = '&quot;+ @_mCurrFY+ &quot;'&#xA;&#x9;and fte.FTE &gt; 0&#xA;GROUP BY&#xA;&#x9;f.fy, f.deptid, fte.FTE &#xA;ORDER BY&#xA;&#x9;f.fy, f.deptid&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="sSQLKPI_DCH">
@@ -241,15 +236,6 @@ GROUP BY
 ORDER BY
 	f.fy, f.deptid</DTS:VariableValue>
     </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{CDE65322-5ABD-4751-8E54-2B589F7B4743}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="_sCurrFY">
-      <DTS:VariableValue
-        DTS:DataType="8">2018</DTS:VariableValue>
-    </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
@@ -275,7 +261,7 @@ ORDER BY
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C4480EDA-74E7-4F7D-8F28-1849C92F746E}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStatementSource="DELETE FROM [lsa_AdminData].[dbo].[acBudEmp]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -292,7 +278,7 @@ ORDER BY
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C4480EDA-74E7-4F7D-8F28-1849C92F746E}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLDeleteDeptFTE" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -310,7 +296,7 @@ ORDER BY
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C4480EDA-74E7-4F7D-8F28-1849C92F746E}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLDeleteLSAFTE" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -328,7 +314,7 @@ ORDER BY
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C4480EDA-74E7-4F7D-8F28-1849C92F746E}"
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
               SQLTask:SqlStmtSourceType="Variable"
               SQLTask:SqlStatementSource="User::sSQLDeleteTeaching" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -372,7 +358,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -406,8 +392,8 @@ ORDER BY
                   <connections>
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get AcBudEmp\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -621,7 +607,7 @@ ORDER BY
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 
 	e.Emplid, e.Name, e.LastName, e.FirstName,
 	e.Uniqname, d.SEX, d.BIRTHDATE, e.ServiceDt, e.EmpHiDegYr as hrDegreeYear,
 	d.ETHNIC_GROUP as ethnicGroup, d.ETHNIC_GROUP_DESCRSHORT as ethnicGroupDescr
@@ -655,8 +641,8 @@ and e.Emplid = d.EMPLID
                   <connections>
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get AcBudEmp\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd012,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd012,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -994,7 +980,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1028,8 +1014,8 @@ and e.Emplid = d.EMPLID
                   <connections>
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get Dept FTE\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1167,7 +1153,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1400,7 +1386,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1434,8 +1420,8 @@ and e.Emplid = d.EMPLID
                   <connections>
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get LSA FTE\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1559,7 +1545,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1585,8 +1571,8 @@ and e.Emplid = d.EMPLID
                   <connections>
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get LSA FTE\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AIS]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AIS]"
+                      connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1768,7 +1754,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1802,8 +1788,8 @@ and e.Emplid = d.EMPLID
                   <connections>
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get Teaching Data\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2023,7 +2009,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2049,8 +2035,8 @@ and e.Emplid = d.EMPLID
                   <connections>
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get Teaching Data\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1]"
-                      connectionManagerRefId="Package.ConnectionManagers[dwprod.world.rmt_lsaadhoc_datawhse1]"
+                      connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2394,7 +2380,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2428,8 +2414,8 @@ and e.Emplid = d.EMPLID
                   <connections>
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Insert into KPI_Stage\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2551,7 +2537,7 @@ and e.Emplid = d.EMPLID
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -2577,8 +2563,8 @@ and e.Emplid = d.EMPLID
                   <connections>
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Insert into KPI_Stage\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2803,39 +2789,39 @@ and e.Emplid = d.EMPLID
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="177.424083769634,41.717277486911"
+          Size="177.6,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Delete AcBudEmp"
           TopLeft="21.1142869185428,253.211768944289" />
         <NodeLayout
-          Size="156.816753926702,41.717277486911"
+          Size="156.8,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Delete Dept FTE"
           TopLeft="37.2571443363112,18.2117660271668" />
         <NodeLayout
-          Size="151.790575916231,41.717277486911"
+          Size="152,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Delete LSA FTE"
           TopLeft="45.8285730537104,91.6235316167653" />
         <NodeLayout
-          Size="155.811518324608,41.717277486911"
+          Size="156,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Delete Teaching"
           TopLeft="39.542858660951,169.929415067917" />
         <NodeLayout
-          Size="149.780104712042,41.717277486911"
+          Size="149.6,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get AcBudEmp"
           TopLeft="34.6448942167765,346.652110650689" />
         <NodeLayout
-          Size="143.24607329843,41.717277486911"
+          Size="143.2,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get Dept FTE"
           TopLeft="34.9714248345821,418.517658229683" />
         <NodeLayout
-          Size="138.219895287959,41.717277486911"
+          Size="138.4,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get LSA FTE"
-          TopLeft="38.3999963215418,501.43530624944" />
+          TopLeft="37.2571391592219,501.43530624944" />
         <NodeLayout
-          Size="167.371727748692,41.717277486911"
+          Size="167.2,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get Teaching Data"
           TopLeft="25.8285675360231,573.34118940888" />
         <NodeLayout
-          Size="180.942408376964,41.717277486911"
+          Size="180.8,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Insert into KPI_Stage"
           TopLeft="25.7142864927953,641.176480197577" />
         <EdgeLayout
@@ -2928,18 +2914,18 @@ and e.Emplid = d.EMPLID
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DCH - CH by Faculty over Faculty FTE.PrecedenceConstraints[Constraint 4]"
-          TopLeft="107.085710578062,460.117658229683">
+          TopLeft="106.514281996902,460.117658229683">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,41.3176480197574"
+              EndConnector="0,41.3176480197569"
               Start="0,0"
-              End="0,33.8176480197574">
+              End="0,33.8176480197569">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.8176480197574" />
+                    End="0,33.8176480197569" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2950,18 +2936,18 @@ and e.Emplid = d.EMPLID
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DCH - CH by Faculty over Faculty FTE.PrecedenceConstraints[Constraint 5]"
-          TopLeft="108.514281928782,543.03530624944">
+          TopLeft="107.942853347623,543.03530624944">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,30.30588315944"
+              EndConnector="0,30.3058831594402"
               Start="0,0"
-              End="0,22.80588315944">
+              End="0,22.8058831594402">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.80588315944" />
+                    End="0,22.8058831594402" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3017,8 +3003,8 @@ and e.Emplid = d.EMPLID
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="540.816753926702,737.842931937173"
-          Size="540.816753926702,780.565445026178"
+          PanelSize="540.8,737.6"
+          Size="540.8,780.8"
           Id="Package\DCH - CH by Faculty over Faculty FTE"
           TopLeft="1.71428656091501,1.03529458095448" />
       </GraphLayout>
@@ -3028,7 +3014,7 @@ and e.Emplid = d.EMPLID
     design-time-name="Package\DCH - CH by Faculty over Faculty FTE\Get AcBudEmp">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get AcBudEmp\OLE DB Source"
@@ -3036,29 +3022,27 @@ and e.Emplid = d.EMPLID
         <NodeLayout
           Size="172,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get AcBudEmp\OLE DB Destination"
-          TopLeft="38.2857149377161,140.094119611826" />
+          TopLeft="38.2857149377161,140.705884326288" />
         <EdgeLayout
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get AcBudEmp.Paths[OLE DB Source Output]"
           TopLeft="121.371429262356,64.8470591495606">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,75.2470604622653"
+              StartConnector="{x:Null}"
+              EndConnector="0,75.8588251767275"
               Start="0,0"
-              End="0,67.7470604622653">
+              End="0,68.3588251767275">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,67.7470604622653" />
+                    End="0,68.3588251767275" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3089,7 +3073,7 @@ and e.Emplid = d.EMPLID
     design-time-name="Package\DCH - CH by Faculty over Faculty FTE\Get Dept FTE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="172,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get Dept FTE\OLE DB Destination"
@@ -3103,7 +3087,7 @@ and e.Emplid = d.EMPLID
           TopLeft="226.8,98.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,93.6"
               Start="0,0"
               End="0,86.1">
@@ -3117,9 +3101,7 @@ and e.Emplid = d.EMPLID
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3150,7 +3132,7 @@ and e.Emplid = d.EMPLID
     design-time-name="Package\DCH - CH by Faculty over Faculty FTE\Get LSA FTE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get LSA FTE\OLE DB Source"
@@ -3164,7 +3146,7 @@ and e.Emplid = d.EMPLID
           TopLeft="177.2,67.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="9.60000000000002,80"
               Start="0,0"
               End="9.60000000000002,72.5">
@@ -3190,9 +3172,7 @@ and e.Emplid = d.EMPLID
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3223,7 +3203,7 @@ and e.Emplid = d.EMPLID
     design-time-name="Package\DCH - CH by Faculty over Faculty FTE\Get Teaching Data">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Get Teaching Data\OLE DB Source"
@@ -3237,7 +3217,7 @@ and e.Emplid = d.EMPLID
           TopLeft="138,77.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="38.4,78.4"
               Start="0,0"
               End="38.4,70.9">
@@ -3263,9 +3243,7 @@ and e.Emplid = d.EMPLID
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3298,11 +3276,11 @@ and e.Emplid = d.EMPLID
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.287958115184,41.717277486911"
+          Size="151.2,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Insert into KPI_Stage\OLE DB Source"
           TopLeft="63.2,60.8" />
         <NodeLayout
-          Size="171.895287958116,41.717277486911"
+          Size="172,41.6"
           Id="Package\DCH - CH by Faculty over Faculty FTE\Insert into KPI_Stage\OLE DB Destination"
           TopLeft="157.6,204.8" />
         <EdgeLayout
