@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="1 - Profile"
   DTS:PackageType="5"
-  DTS:VersionBuild="693"
-  DTS:VersionGUID="{43263CDE-6571-4844-A179-3559A490D908}">
+  DTS:VersionBuild="694"
+  DTS:VersionGUID="{63323785-8D79-4391-91CB-A349EF034410}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -15911,7 +15911,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <AnnotationLayout
-          Text="*RC runs separately&#xD;&#xA;by different jobcodes &#xD;&#xA;to track 1A"
+          Text="*RC runs separately&#xA;by different jobcodes &#xA;to track 1A"
           ParentId="Package\1 - Faculty Staff"
           Size="129.6,76.8"
           Id="f7c1d145-be45-40ab-b850-b65986ddf677"

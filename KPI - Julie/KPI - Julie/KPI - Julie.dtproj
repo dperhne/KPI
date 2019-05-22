@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DEAN-L-JULIEZIE</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArbqHGUPvbkiO0DirV/E+PgAAAAACAAAAAAADZgAAwAAAABAAAAAPD17Wx75xrFmePDTYDDd9AAAAAASAAACgAAAAEAAAAEpQ/kBKh5PrBJXIV7wjlHmIAAAAul/hxLui4TnMmTUX7406Po60WGqfbIc0aOCUs1UgtKmbGSYV9KpTPs+Htq83nlGRbWLgg5SS25pb2RXnwAniRJSDHo1DGMbJcRWEaRR46tTTZQZ3zsqSb/VhC/JaSIooQ1fEGI4wNZciQG7pjtP3bfjDYEVLAiHAC5UDCgy1P/Ujz3mEBUh5dRQAAACYjTsYZt7gMa1D9H9rcFc+sQwUjQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArbqHGUPvbkiO0DirV/E+PgAAAAACAAAAAAADZgAAwAAAABAAAABZHgx3uPcUDBY7Abg3I21FAAAAAASAAACgAAAAEAAAAKIboPPe+ORktMEhCwHb21WIAAAA08RwepotcogvjKXuoBl0veilgpwzForfZGaRs0zkTNsYWwnKuLGCxOmxUaV4ItOeqHIzwkxDwg02K460TYeWb5bD/gNo9xYLHS923NNUIfwK0+q0xUMtbbus0vTgpfWhwsb5f+/W0weoZwa3KQ7U/0DKe11ISPtnntgrU6T80LXGD+NzbjaFbxQAAADPrxUxPCEFfyDcPZu5WAwvvSm26w==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -41,725 +41,22 @@
           <SSIS:Package SSIS:Name="8 - Final_Wrap_Up.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
-          <SSIS:ConnectionManager SSIS:Name="Mdwprod.world.local.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="Mdwprod.world.rmt_lsaadhoc_datawhse1.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="Mm-mssqlprd017,14330.lsa_AdminData.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="Mm-mssqlprd017,14330.lsa_AIS.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="Mm-mssqlprd017,14330.lsa_Course.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="Mm-mssqlprd017,14330.LSA_Research.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="Mm-mssqlprd017,14330.dept_urop.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="Mm-mssqlprd017,14330.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="Mdwprod.world.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="MExcel Connection Manager_UROP.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="MExcel Connection Manager_NewDept.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="MExcel Connection Manager_UnknownResearchers.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="dwprod.world.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="dwprod.world.local.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="m-mssqlprd017,14330.LSA_Research.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="dwprod.world.rmt_lsaadhoc_datawhse1.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="Excel Connection Manager_NewDept.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="Excel Connection Manager_UnknownResearchers.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="Excel Connection Manager_UROP.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="m-mssqlprd017,14330.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="m-mssqlprd017,14330.dept_urop.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="m-mssqlprd017,14330.lsa_AdminData.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="m-mssqlprd017,14330.lsa_AIS.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="m-mssqlprd017,14330.lsa_Course.conmgr" />
         </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world local.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=dwprod.world;User ID=ahnc;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world local.InitialCatalog">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world local.Password">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world local.RetainSameConnection">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world local.ServerName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">dwprod.world</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world local.UserName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">ahnc</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world rmt_lsaadhoc_datawhse1.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world rmt_lsaadhoc_datawhse1.InitialCatalog">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world rmt_lsaadhoc_datawhse1.Password">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world rmt_lsaadhoc_datawhse1.RetainSameConnection">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world rmt_lsaadhoc_datawhse1.ServerName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">dwprod.world</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world rmt_lsaadhoc_datawhse1.UserName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">rmt_lsaadhoc_datawhse1</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_AdminData.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_AdminData.InitialCatalog">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">lsa_AdminData</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_AdminData.Password">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_AdminData.RetainSameConnection">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_AdminData.ServerName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">m-mssqlprd017,14330</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_AdminData.UserName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_AIS.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AIS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_AIS.InitialCatalog">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">lsa_AIS</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_AIS.Password">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_AIS.RetainSameConnection">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_AIS.ServerName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">m-mssqlprd017,14330</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_AIS.UserName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_Course.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_Course;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_Course.InitialCatalog">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">lsa_Course</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_Course.Password">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_Course.RetainSameConnection">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_Course.ServerName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">m-mssqlprd017,14330</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 lsa_Course.UserName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 LSA_Research.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=m-mssqlprd017,14330;Initial Catalog=LSA_Research;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 LSA_Research.InitialCatalog">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">LSA_Research</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 LSA_Research.Password">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 LSA_Research.RetainSameConnection">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 LSA_Research.ServerName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">m-mssqlprd017,14330</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 LSA_Research.UserName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 dept_urop.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=m-mssqlprd017,14330;Initial Catalog=dept_urop;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 dept_urop.InitialCatalog">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">dept_urop</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 dept_urop.Password">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 dept_urop.RetainSameConnection">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 dept_urop.ServerName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">m-mssqlprd017,14330</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330 dept_urop.UserName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=m-mssqlprd017,14330;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330.InitialCatalog">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330.Password">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330.RetainSameConnection">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330.ServerName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">m-mssqlprd017,14330</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mm-mssqlprd017 14330.UserName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world.ConnectionString">
+            <SSIS:Parameter SSIS:Name="CM.dwprod world.ConnectionString">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -774,7 +71,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world.InitialCatalog">
+            <SSIS:Parameter SSIS:Name="CM.dwprod world.InitialCatalog">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -788,7 +85,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world.Password">
+            <SSIS:Parameter SSIS:Name="CM.dwprod world.Password">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -802,7 +99,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world.RetainSameConnection">
+            <SSIS:Parameter SSIS:Name="CM.dwprod world.RetainSameConnection">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -817,7 +114,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world.ServerName">
+            <SSIS:Parameter SSIS:Name="CM.dwprod world.ServerName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -832,7 +129,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Mdwprod world.UserName">
+            <SSIS:Parameter SSIS:Name="CM.dwprod world.UserName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -847,7 +144,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UROP.ConnectionString">
+            <SSIS:Parameter SSIS:Name="CM.dwprod world local.ConnectionString">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -858,41 +155,11 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\ahnc1\Documents\Visual Studio 2017\UROP\UROP_KPI_BAK.xls;Extended Properties="EXCEL 8.0;HDR=YES";</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=dwprod.world;User ID=ahnc;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UROP.ExcelFilePath">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">C:\Users\ahnc1\Documents\Visual Studio 2017\UROP\UROP_KPI_BAK.xls</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UROP.FirstRowHasColumnName">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">true</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UROP.InitialCatalog">
+            <SSIS:Parameter SSIS:Name="CM.dwprod world local.InitialCatalog">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -906,7 +173,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UROP.Password">
+            <SSIS:Parameter SSIS:Name="CM.dwprod world local.Password">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -920,7 +187,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UROP.RetainSameConnection">
+            <SSIS:Parameter SSIS:Name="CM.dwprod world local.RetainSameConnection">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -935,7 +202,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UROP.ServerName">
+            <SSIS:Parameter SSIS:Name="CM.dwprod world local.ServerName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -946,11 +213,100 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">C:\Users\ahnc1\Documents\Visual Studio 2017\UROP\UROP_KPI_BAK.xls</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">dwprod.world</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UROP.UserName">
+            <SSIS:Parameter SSIS:Name="CM.dwprod world local.UserName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">ahnc</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 LSA_Research.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=m-mssqlprd017,14330;Initial Catalog=LSA_Research;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 LSA_Research.InitialCatalog">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">LSA_Research</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 LSA_Research.Password">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 LSA_Research.RetainSameConnection">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 LSA_Research.ServerName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">m-mssqlprd017,14330</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 LSA_Research.UserName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -964,7 +320,95 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_NewDept.ConnectionString">
+            <SSIS:Parameter SSIS:Name="CM.dwprod world rmt_lsaadhoc_datawhse1.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.dwprod world rmt_lsaadhoc_datawhse1.InitialCatalog">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.dwprod world rmt_lsaadhoc_datawhse1.Password">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.dwprod world rmt_lsaadhoc_datawhse1.RetainSameConnection">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.dwprod world rmt_lsaadhoc_datawhse1.ServerName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">dwprod.world</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.dwprod world rmt_lsaadhoc_datawhse1.UserName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">rmt_lsaadhoc_datawhse1</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_NewDept.ConnectionString">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -979,7 +423,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_NewDept.ExcelFilePath">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_NewDept.ExcelFilePath">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -994,7 +438,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_NewDept.FirstRowHasColumnName">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_NewDept.FirstRowHasColumnName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1009,7 +453,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_NewDept.InitialCatalog">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_NewDept.InitialCatalog">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1023,7 +467,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_NewDept.Password">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_NewDept.Password">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1037,7 +481,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_NewDept.RetainSameConnection">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_NewDept.RetainSameConnection">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1052,7 +496,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_NewDept.ServerName">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_NewDept.ServerName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1067,7 +511,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_NewDept.UserName">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_NewDept.UserName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1081,7 +525,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UnknownResearchers.ConnectionString">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UnknownResearchers.ConnectionString">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1096,7 +540,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UnknownResearchers.ExcelFilePath">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UnknownResearchers.ExcelFilePath">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1111,7 +555,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UnknownResearchers.FirstRowHasColumnName">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UnknownResearchers.FirstRowHasColumnName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1126,7 +570,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UnknownResearchers.InitialCatalog">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UnknownResearchers.InitialCatalog">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1140,7 +584,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UnknownResearchers.Password">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UnknownResearchers.Password">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1154,7 +598,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UnknownResearchers.RetainSameConnection">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UnknownResearchers.RetainSameConnection">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1169,7 +613,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UnknownResearchers.ServerName">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UnknownResearchers.ServerName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1184,7 +628,563 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.MExcel Connection Manager_UnknownResearchers.UserName">
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UnknownResearchers.UserName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UROP.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\ahnc1\Documents\Visual Studio 2017\UROP\UROP_KPI_BAK.xls;Extended Properties="EXCEL 8.0;HDR=YES";</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UROP.ExcelFilePath">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">C:\Users\ahnc1\Documents\Visual Studio 2017\UROP\UROP_KPI_BAK.xls</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UROP.FirstRowHasColumnName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">true</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UROP.InitialCatalog">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UROP.Password">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UROP.RetainSameConnection">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UROP.ServerName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">C:\Users\ahnc1\Documents\Visual Studio 2017\UROP\UROP_KPI_BAK.xls</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager_UROP.UserName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=m-mssqlprd017,14330;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330.InitialCatalog">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330.Password">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330.RetainSameConnection">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330.ServerName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">m-mssqlprd017,14330</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330.UserName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 dept_urop.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=m-mssqlprd017,14330;Initial Catalog=dept_urop;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 dept_urop.InitialCatalog">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">dept_urop</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 dept_urop.Password">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 dept_urop.RetainSameConnection">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 dept_urop.ServerName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">m-mssqlprd017,14330</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 dept_urop.UserName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_AdminData.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_AdminData.InitialCatalog">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">lsa_AdminData</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_AdminData.Password">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_AdminData.RetainSameConnection">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_AdminData.ServerName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">m-mssqlprd017,14330</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_AdminData.UserName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_AIS.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AIS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_AIS.InitialCatalog">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">lsa_AIS</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_AIS.Password">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_AIS.RetainSameConnection">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_AIS.ServerName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">m-mssqlprd017,14330</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_AIS.UserName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_Course.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_Course;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_Course.InitialCatalog">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">lsa_Course</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_Course.Password">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_Course.RetainSameConnection">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_Course.ServerName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">m-mssqlprd017,14330</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.m-mssqlprd017 14330 lsa_Course.UserName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -1312,10 +1312,10 @@
                 <SSIS:Property SSIS:Name="Name">1 - Profile</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">692</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">694</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{410875A6-0AE7-4356-AD91-26E181948F73}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{63323785-8D79-4391-91CB-A349EF034410}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1346,10 +1346,10 @@
                 <SSIS:Property SSIS:Name="Name">3 - Profile_7_VOR_UROP</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">177</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">178</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{FE64AE9B-A578-4738-9D3C-85A347C9580D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{12395D7F-02F2-4AC5-B78D-F225A6D4367B}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

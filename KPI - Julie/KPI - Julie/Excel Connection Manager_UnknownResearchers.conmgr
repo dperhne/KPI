@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Excel Connection Manager_UnknownResearchers"
+  DTS:DTSID="{BD04744E-F878-4C1E-9B64-BFDFC18D6DF5}"
+  DTS:CreationName="EXCEL">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\ahnc1\Documents\Visual Studio 2017\New Dept and Unknown Researchers\UnknownResearchers.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

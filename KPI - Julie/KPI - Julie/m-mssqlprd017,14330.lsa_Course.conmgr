@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="Mm-mssqlprd017 14330 lsa_Course"
+  DTS:ObjectName="m-mssqlprd017 14330 lsa_Course"
   DTS:DTSID="{E3229A7D-8326-4D2B-950B-5E240FFDAFF4}"
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>

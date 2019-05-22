@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="Mdwprod world rmt_lsaadhoc_datawhse1"
+  DTS:ObjectName="dwprod world rmt_lsaadhoc_datawhse1"
   DTS:DTSID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}"
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
@@ -8,7 +8,7 @@
       DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIPAF2eGF5Eq3fLkq0iRdrAAAAAACAAAAAAADZgAAwAAAABAAAABBrh1CNQd2cKGXwvbjo01oAAAAAASAAACgAAAAEAAAAGgWlhDGSpveASP3/I8DW614AAAAbBg6gf4xSNk2ZPnELWkT/XDjVm0gbGIEOhPGzyVYNvk5UuDC+YPAZ2Vgnt5Ii/JVzk+pq32ligcL1boSgh330Ak7QUlNhd3UOXcu4lrxrfHaZLHxxYIXF1olpXPU5YK7OMPHBQIhtZWGjhaJ9/SkisQ8g38WG4i5FAAAAHt5WZ67tBKO4sX7voh+saQKXEQY</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArbqHGUPvbkiO0DirV/E+PgAAAAACAAAAAAADZgAAwAAAABAAAABbHRG/Knp0AF+aguRiQ22+AAAAAASAAACgAAAAEAAAAHRsd37DvCvHzehlVd88Qxh4AAAA2qbMhZ3ti12LFQV3WpUXw7juRnoKtnTiYLatE3iBNvQgxZjK3vNTx0H6ntuxGyYwtcmpRXkM57uSd2flgQCNx+2UpojHkl9bKyOOiqW0cqjbce5il4CMP3ZsFjUup7sRBAcAHZwmkf3fGHZLkr/qrkFjnjkCku/OFAAAALpar9FHJPoDHX/FqzZ5GOfRpAzh</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
