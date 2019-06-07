@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="3 - Profile_7_VOR_UROP"
   DTS:PackageType="5"
-  DTS:VersionBuild="181"
-  DTS:VersionGUID="{94D2A2C7-EF42-47DB-BEC9-9756DD573A41}">
+  DTS:VersionBuild="182"
+  DTS:VersionGUID="{3E3CF8B4-60C8-4414-B343-7D93274AB798}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -34,7 +34,7 @@ from
 		on rv.DEPTID collate database_default = d.DEPTID collate database_default
 where 
 	rg.deptid is null
-	and rv.FY = '2018'
+	and rv.FY = '2019'
 	
 order by 
 	d.DEPTID</DTS:VariableValue>
@@ -118,7 +118,7 @@ where
 	AND l.accounting_period BETWEEN  1 AND 998
 	AND l.fund_code IN ('20000', '25000', '30000') 
 	AND l.class  LIKE  '2%'
-	and l.fiscal_year = '2018'
+	and l.fiscal_year = '2019'
 group by
 	l.project_grant, pg.drda_nbr, l.program_code, a.account_grp, pg.sponsor,
 	l.fiscal_year, l.fund_code, l.class, l.deptid, l.account
@@ -209,7 +209,7 @@ where
 	AND l.accounting_period BETWEEN  1 AND 998
 	AND l.fund_code IN ('20000', '25000', '30000') 
 	AND l.class  LIKE  '2%'
-	and l.fiscal_year = '2018'
+	and l.fiscal_year = '2019'
 
 
 group by
@@ -231,7 +231,7 @@ group by
       DTS:Namespace="User"
       DTS:ObjectName="sSQLNewDept">
       <DTS:VariableValue
-        DTS:DataType="8">SELECT distinct d.DEPTID, d.DEPT_DESCR, d.DEPT_GRP FROM [LSA_Research].[dbo].[PG_Research_Volume] as rv left outer join [LSA_Research].[dbo].[DEPARTMENT_RESEARCH_GRP] as rg on rv.DEPTID = rg.deptid inner join [lsa_reference_tables].[dbo].[CURR_FN_DEPT_VW] as d on rv.DEPTID collate database_default = d.DEPTID collate database_default WHERE  rg.deptid is null and d.DEPT_GRP &lt;&gt; 'ITS_AIS' and  rv.FY = '2018'
+        DTS:DataType="8">SELECT distinct d.DEPTID, d.DEPT_DESCR, d.DEPT_GRP FROM [LSA_Research].[dbo].[PG_Research_Volume] as rv left outer join [LSA_Research].[dbo].[DEPARTMENT_RESEARCH_GRP] as rg on rv.DEPTID = rg.deptid inner join [lsa_reference_tables].[dbo].[CURR_FN_DEPT_VW] as d on rv.DEPTID collate database_default = d.DEPTID collate database_default WHERE  rg.deptid is null and d.DEPT_GRP &lt;&gt; 'ITS_AIS' and  rv.FY = '2019'
  ORDER BY d.DEPTID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -279,7 +279,7 @@ from
 		r.DEPTID = dg.deptid
 		and dg.Research_Rpting_Grp = 'LSA'
 		and r.DRDA_NBR != ' '
-		and r.FY = '2018'
+		and r.FY = '2019'
 	group by r.PROJECT_GRANT, r.FY
 	union all
 	select
@@ -295,7 +295,7 @@ from
 		r.DEPTID = dg.deptid
 		and dg.Research_Rpting_Grp = 'INST'
 		and r.DRDA_NBR != ' '
-		and r.FY = '2018'
+		and r.FY = '2019'
 	group by r.PROJECT_GRANT, r.FY
 	union all
 	select
@@ -311,7 +311,7 @@ from
 		r.DEPTID = dg.deptid
 		and dg.Research_Rpting_Grp = 'SC'
 		and r.DRDA_NBR != ' '
-		and r.FY = '2018'
+		and r.FY = '2019'
 	group by r.PROJECT_GRANT, r.FY
 	union all
 	select
@@ -327,7 +327,7 @@ from
 		r.DEPTID = dg.deptid
 		and dg.Research_Rpting_Grp = 'Other'
 		and r.DRDA_NBR != ' '
-		and r.FY = '2018'
+		and r.FY = '2019'
 	group by r.PROJECT_GRANT, r.FY
 	union all
 	select
@@ -343,7 +343,7 @@ from
 		r.DEPTID = dg.deptid
 		and dg.Research_Rpting_Grp = 'unkwn'
 		and r.DRDA_NBR != ' '
-		and r.FY = '2018'
+		and r.FY = '2019'
 	group by r.PROJECT_GRANT, r.FY
 	) u1
 group by
@@ -359,7 +359,7 @@ group by
       DTS:Namespace="User"
       DTS:ObjectName="sSQLSelectFYPGDIR">
       <DTS:VariableValue
-        DTS:DataType="8">select pg.PROJECT_GRANT, '2018' as fy, 
+        DTS:DataType="8">select pg.PROJECT_GRANT, '2019' as fy, 
 	case
 		when pg.PROJ_GRT_DIR_CNTCT_EMPLID = ' ' then pg.SINGLE_ADMIN_CNTCT_EMPLID
 		else pg.PROJ_GRT_DIR_CNTCT_EMPLID
@@ -371,7 +371,7 @@ where
 		 from [lsa_reference_tables].[dbo].[PROJECT_GRANT_TBL] as pg1
 		 where
 			pg1.PROJECT_GRANT = pg.PROJECT_GRANT
-			and pg1.PROJECT_GRANT_EFFDT &lt;= '11/01/2017'
+			and pg1.PROJECT_GRANT_EFFDT &lt;= '11/01/2018'
 		 )</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -383,7 +383,7 @@ where
       DTS:Namespace="User"
       DTS:ObjectName="sSQLSelectFYPGDir2">
       <DTS:VariableValue
-        DTS:DataType="8">select pg.project_grant, '2018' as fy, 
+        DTS:DataType="8">select pg.project_grant, '2019' as fy, 
 	case
 		when pg.PROJ_GRT_DIR_CNTCT_EMPLID = ' ' then pg.SINGLE_ADMIN_CNTCT_EMPLID
 		else pg.PROJ_GRT_DIR_CNTCT_EMPLID
@@ -395,10 +395,10 @@ where
 		 from [lsa_reference_tables].[dbo].[PROJECT_GRANT_TBL] as pg1
 		 where
 			pg1.PROJECT_GRANT = pg.PROJECT_GRANT
-			and pg1.PROJECT_GRANT_EFFDT &gt; '11/01/2017' 
-			and pg1.PROJECT_GRANT_EFFDT &lt;= '06/30/2017'
+			and pg1.PROJECT_GRANT_EFFDT &gt; '11/01/2018' 
+			and pg1.PROJECT_GRANT_EFFDT &lt;= '06/30/2018'
 		 )
-	and not exists (select 1 from [LSA_Research].[dbo].[pg_fy_dir] as f where f.FY = '2018' and f.PROJECT_GRANT collate database_default = pg.PROJECT_GRANT collate database_default) 
+	and not exists (select 1 from [LSA_Research].[dbo].[pg_fy_dir] as f where f.FY = '2019' and f.PROJECT_GRANT collate database_default = pg.PROJECT_GRANT collate database_default) 
 </DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -414,7 +414,7 @@ where
 p.FY
 , sum(vor.RESVOL_TOTAL_LSA) as RESVOL_TOTAL_LSA
 , p.PG_FY_DIR_EMPLID as PG_FY_DIR_EMPLID
-, 'NOV2017' as snapshot
+, 'NOV2018' as snapshot
 , 0 as jobrowCount 
 FROM LSA_Research.dbo.PG_VOR_By_Research_Group as vor 
 inner join LSA_Research.dbo.pg_fy_dir as p 
@@ -422,11 +422,11 @@ on vor.PROJECT_GRANT = p.PROJECT_GRANT
 and vor.FY = p.FY 
 
 WHERE not exists (select 1 from LSA_Research.dbo.VOR_Person_Research_Effort as v where v.FY = vor.FY and v.EMPLID = p.PG_FY_DIR_EMPLID) 
-and vor.RESVOL_TOTAL_LSA != 0 and vor.FY = '2018'
- GROUP BY p.PG_FY_DIR_EMPLID, p.FY) SELECT Missing_IDs.PG_FY_DIR_EMPLID, '2018'
+and vor.RESVOL_TOTAL_LSA != 0 and vor.FY = '2019'
+ GROUP BY p.PG_FY_DIR_EMPLID, p.FY) SELECT Missing_IDs.PG_FY_DIR_EMPLID, '2019'
  as FY, v.DEPTID, v.EMPNAME, v.IDCR_PCT, v.DIRECTCOST_PCT, v.NOTES, v.DEPT_APPTAUTHPCT, v.DEPT_APPTDISTPCT, v.LSA_AUTHPCT, v.LSA_DISTPCT, v.JOBCODE, v.TENURE_TRACK_INDC, v.JOB_FAMILY, v.DEPT_RESEARCH_FTE, v.LSA_RESEARCH_FTE FROM [LSA_Research].[dbo].[VOR_Person_Research_Effort] v Right Outer Join Missing_IDs
 on v.EMPLID = Missing_IDs.PG_FY_DIR_EMPLID
-and v.FY = '2017'
+and v.FY = '2018'
 
 order by v.DEPTID desc</DTS:VariableValue>
     </DTS:Variable>
@@ -463,7 +463,7 @@ FROM
 					('201000', '201500', '202000', '201001', '201501', '202001', '202500', '202501', 
 					'128870','128900','128920','128940','128960','129000','129010','129020','129500','129520','129530' 
 					)
-				and a.FY = '2018'
+				and a.FY = '2019'
 			GROUP BY
 					p.Emplid, a.FY
 			) as s
@@ -501,7 +501,7 @@ WHERE
 		('201000', '201500', '202000', '201001', '201501', '202001', '202500', '202501',
 		'128870','128900','128920','128940','128960','129000','129010','129020','129500','129520','129530' 
 		)
-	and a.FY = '2018'  ORDER BY p.name, d.Dept_Descr</DTS:VariableValue>
+	and a.FY = '2019'  ORDER BY p.name, d.Dept_Descr</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -563,7 +563,7 @@ FROM
 			INNER JOIN [LSA_Research].[dbo].[VOR_Person_Research_Effort] vpre
 				ON pd.FY = vpre.FY and pd.PG_FY_DIR_EMPLID = vpre.EMPLID
 		WHERE
-			pd.FY = '2018'	
+			pd.FY = '2019'	
 			and vpre.DEPTID in 
 				(SELECT DEPTID FROM [lsa_AdminData].[dbo].[Curr_FN_DEPT_TBL] WHERE DEPT_GRP = 'COLLEGE_OF_LSA')
 		GROUP BY
@@ -578,7 +578,7 @@ FROM
 						ON a.emplid = e.emplid
 				 WHERE 
 					e.open_position = 'N' 
-					and a.fy = '2018'
+					and a.fy = '2019'
 				 GROUP BY 
 					apptdeptid, fy ) f
 				ON u.DEPTID = f.apptdeptid collate SQL_Latin1_General_CP1_CS_AS and u.FY = f.fy collate SQL_Latin1_General_CP1_CS_AS --and u.apptdeptid = f.deptid
@@ -649,7 +649,7 @@ FROM
 			INNER JOIN [LSA_Research].[dbo].[VOR_Person_Research_Effort] vpre
 				ON pd.FY = vpre.FY and pd.PG_FY_DIR_EMPLID = vpre.EMPLID
 		WHERE
-			pd.FY = '2018'	
+			pd.FY = '2019'	
 			and vpre.DEPTID in 
 				(SELECT DEPTID FROM [lsa_AdminData].[dbo].[Curr_FN_DEPT_TBL] WHERE DEPT_GRP = 'COLLEGE_OF_LSA')
 		GROUP BY
@@ -664,7 +664,7 @@ FROM
 						ON a.emplid = e.emplid
 				 WHERE 
 					e.open_position = 'N' 
-					and a.fy = '2018'
+					and a.fy = '2019'
 				 GROUP BY 
 					apptdeptid, fy ) f
 				ON u.DEPTID = f.apptdeptid collate SQL_Latin1_General_CP1_CS_AS and u.FY = f.fy collate SQL_Latin1_General_CP1_CS_AS --and u.apptdeptid = f.deptid
@@ -735,7 +735,7 @@ FROM
 			INNER JOIN [LSA_Research].[dbo].[VOR_Person_Research_Effort] vpre
 				ON pd.FY = vpre.FY and pd.PG_FY_DIR_EMPLID = vpre.EMPLID
 		WHERE
-			pd.FY = '2018'
+			pd.FY = '2019'
 			and vpre.DEPTID in 
 				(SELECT DEPTID FROM [lsa_AdminData].[dbo].[Curr_FN_DEPT_TBL] WHERE DEPT_GRP = 'COLLEGE_OF_LSA')
 		GROUP BY
@@ -750,7 +750,7 @@ FROM
 						ON a.emplid = e.emplid
 				 WHERE 
 					e.open_position = 'N' 
-					and a.fy = '2018'
+					and a.fy = '2019'
 
 				 GROUP BY 
 					apptdeptid, fy ) f
@@ -822,7 +822,7 @@ FROM
 			INNER JOIN [LSA_Research].[dbo].[VOR_Person_Research_Effort] vpre
 				ON pd.FY = vpre.FY and pd.PG_FY_DIR_EMPLID = vpre.EMPLID
 		WHERE
-			pd.FY = '2018'	
+			pd.FY = '2019'	
 			and vpre.DEPTID in 
 				(SELECT DEPTID FROM [lsa_AdminData].[dbo].[Curr_FN_DEPT_TBL] WHERE DEPT_GRP = 'COLLEGE_OF_LSA')
 		GROUP BY
@@ -837,7 +837,7 @@ FROM
 						ON a.emplid = e.emplid
 				 WHERE 
 					e.open_position = 'N' 
-					and a.fy = '2018'
+					and a.fy = '2019'
 				 GROUP BY 
 					apptdeptid, fy ) f
 				ON u.DEPTID = f.apptdeptid collate SQL_Latin1_General_CP1_CS_AS and u.FY = f.fy collate SQL_Latin1_General_CP1_CS_AS --and u.apptdeptid = f.deptid
@@ -912,7 +912,7 @@ FROM
 			INNER JOIN [LSA_Research].[dbo].[VOR_Person_Research_Effort] vpre
 				ON pd.FY = vpre.FY and pd.PG_FY_DIR_EMPLID = vpre.EMPLID
 		WHERE
-			pd.FY = '2018'	
+			pd.FY = '2019'	
 			--and vpre.DEPTID = '185500'
 			and vpre.DEPTID in 
 				(SELECT DEPTID FROM [lsa_AdminData].[dbo].[Curr_FN_DEPT_TBL] WHERE DEPT_GRP = 'COLLEGE_OF_LSA')
@@ -928,7 +928,7 @@ FROM
 						ON a.emplid = e.emplid
 				 WHERE 
 					e.open_position = 'N' 
-					and a.fy = '2018'
+					and a.fy = '2019'
 				 GROUP BY 
 					apptdeptid, fy ) f
 				ON u.DEPTID = f.apptdeptid collate SQL_Latin1_General_CP1_CS_AS and u.FY = f.fy collate SQL_Latin1_General_CP1_CS_AS --and u.apptdeptid = f.deptid
@@ -1002,7 +1002,7 @@ FROM
 			INNER JOIN [LSA_Research].[dbo].[VOR_Person_Research_Effort] vpre
 				ON pd.FY = vpre.FY and pd.PG_FY_DIR_EMPLID = vpre.EMPLID
 		WHERE
-			pd.FY = '2018'	
+			pd.FY = '2019'	
 			and vpre.DEPTID in 
 				(SELECT DEPTID FROM [lsa_AdminData].[dbo].[Curr_FN_DEPT_TBL] WHERE DEPT_GRP = 'COLLEGE_OF_LSA')
 		GROUP BY
@@ -1017,7 +1017,7 @@ FROM
 						ON a.emplid = e.emplid
 				 WHERE 
 					e.open_position = 'N' 
-					and a.fy ='2018'
+					and a.fy ='2019'
 				 GROUP BY 
 					apptdeptid, fy ) f
 				ON u.DEPTID = f.apptdeptid collate SQL_Latin1_General_CP1_CS_AS and u.FY = f.fy collate SQL_Latin1_General_CP1_CS_AS --and u.apptdeptid = f.deptid
@@ -1042,7 +1042,7 @@ FROM dbo.Project INNER JOIN
 dbo.ProjectTerm ON dbo.Project.ProjID = dbo.ProjectTerm.ProjID INNER JOIN
 dbo.StudentTerm ON dbo.Project.ProjID = dbo.StudentTerm.ProjID AND dbo.ProjectTerm.Term = dbo.StudentTerm.Term 
 INNER JOIN  dbo.Faculty ON dbo.Project.SponsorID = dbo.Faculty.Emplid
-WHERE    dbo.StudentTerm.Term IN ('2160' , '2170')
+WHERE    dbo.StudentTerm.Term IN ('2210' , '2220')
 group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
@@ -9892,11 +9892,11 @@ FROM M_HRDW1.PERSONAL_DATA</property>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
         <NodeLayout
-          Size="176.8,41.6"
+          Size="177,42"
           Id="Package\1) Data from DWProd\PGFinancialSummary"
           TopLeft="22.685731899496,15.4353044991674" />
         <NodeLayout
-          Size="169.6,41.6"
+          Size="170,42"
           Id="Package\1) Data from DWProd\PGResearchVolume"
           TopLeft="26.9714462581949,90.3764820207775" />
         <EdgeLayout
@@ -9924,18 +9924,18 @@ FROM M_HRDW1.PERSONAL_DATA</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="243.2,209.6"
-          Size="243.2,252.8"
+          PanelSize="243,210"
+          Size="243,253"
           Id="Package\1) Data from DWProd"
           TopLeft="395.24597339718,39.7268055616094" />
         <NodeLayout
-          Size="124.8,41.6"
+          Size="125,42"
           Id="Package\2a) Export to Excel\New Dept"
           TopLeft="25.7142967107352,37.3490273010364" />
         <AnnotationLayout
-          Text="***MANUAL PROCESS***&#xA;Need to check and add New Departments&#xA;1.Task (New Dept) will create excel spreadsheet.  &#xA;*Need to change the export location if using different computer in connection manager &#xA;C:\Users\ahnc1\Documents\Visual Studio 2017\New Dept and Unknwon Researchers\NewDept.xls&#xA;   NewDept.xls &#xA;2.Need to create and manipulate Upload excel spreadsheets &#xA;   Excel_Source sheet in NewDept - Upload(SAMPLE).xls will help you guide through creating new Upload Version&#xA;3.Upload insert statement to the Database DEPARTMENT_RESEARCH_GRP&#xA;&#xA;Folder--&#xA;S:\dept\MIS\BI Group\KPI - SSIS Packages\New Dept and Unknown Researchers&#xA;Old Documentation-- &#xD;&#xA;https://docs.google.com/document/d/1MZYSGPkwZLWg7HJIgTbw71JhPKfN4ZjdhE55AEmBwu0/edit?ts=5936bc8a&#xD;&#xA;New Documentation--&#xD;&#xA;https://docs.google.com/document/d/1Lyis4TBfq6B9I1y-4yW80KPnkoQMOobJ1N2B5-y5Z0w/edit&#xD;&#xA;"
+          Text="***MANUAL PROCESS***&#xA;Need to check and add New Departments&#xA;1.Task (New Dept) will create excel spreadsheet.  &#xA;*Need to change the export location if using different computer in connection manager &#xA;C:\Users\ahnc1\Documents\Visual Studio 2017\New Dept and Unknown Researchers\NewDept.xls&#xA;   NewDept.xls &#xA;2.Need to create and manipulate Upload excel spreadsheets &#xA;   Excel_Source sheet in NewDept - Upload(SAMPLE).xls will help you guide through creating new Upload Version&#xA;3.Upload insert statement to the Database DEPARTMENT_RESEARCH_GRP&#xA;&#xA;Folder--&#xA;S:\dept\MIS\BI Group\KPI - SSIS Packages\New Dept and Unknown Researchers&#xA;Old Documentation-- &#xA;https://docs.google.com/document/d/1MZYSGPkwZLWg7HJIgTbw71JhPKfN4ZjdhE55AEmBwu0/edit?ts=5936bc8a&#xA;New Documentation--&#xA;https://docs.google.com/document/d/1Lyis4TBfq6B9I1y-4yW80KPnkoQMOobJ1N2B5-y5Z0w/edit&#xA;"
           ParentId="Package\2a) Export to Excel"
-          Size="578.4,248"
+          Size="579,248"
           Id="2728d459-8c49-4cce-a347-dc5b900de79b"
           TopLeft="22.1714363240874,117.537261565581">
           <AnnotationLayout.FontInfo>
@@ -9952,18 +9952,18 @@ FROM M_HRDW1.PERSONAL_DATA</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="606.4,420.8"
-          Size="606.4,464"
+          PanelSize="606,421"
+          Size="606,464"
           Id="Package\2a) Export to Excel"
           TopLeft="658.871399085376,41.0294034723592" />
         <NodeLayout
-          Size="182.4,41.6"
+          Size="182,42"
           Id="Package\2b) Export to Excel\Unknown Researchers"
           TopLeft="29.1428604692168,28.436366818678" />
         <AnnotationLayout
-          Text="***MANUAL PROCESS***&#xA;Need to check and add Unknown Researchers&#xA;1.Task (Unknown Researchers) will create excel spread sheet. &#xA;*Need to change the export location if using different computer in connection manager &#xA;C:\Users\ahnc1\Documents\Visual Studio 2017\New Dept and Unknown Researchers\UnknownResearcehrs.xls&#xA;This spreadsheet includes every unknown researchers from previous FYs to current FY.&#xA;2. Manipulate in excel spreadsheet&#xA;Unknown Researchers with value is from previous FY.&#xA;Unknown Researchers without value is new from current FY: These variables should be figure out manually &#xA;(DEPTID, EMPNAME, IDCR_PCT, DIRECTCOST_PCT, NOTES, DEPT_APPTAUTHPCT&#xA;, DEPT_APPTDISTPCT, LSA_AUTH)&#xA;3. Check with Nick and Research area (Linda Chadwick, Steven Beach) &#xA;4. Upload insert statement to the Database&#xA;Using insert statement to reload this whole values to the VOR_Person_Research_Effort&#xA;UnknownResearchers - Upload(SAMPLE).xls can be helpful&#xA;&#xA;Folder--&#xA;S:\dept\MIS\BI Group\KPI - SSIS Packages\New Dept and Unknown Researchers &#xA;Old Documentation-- &#xD;&#xA;https://docs.google.com/document/d/1MZYSGPkwZLWg7HJIgTbw71JhPKfN4ZjdhE55AEmBwu0/edit?ts=5936bc8a&#xD;&#xA;New Documentation--&#xD;&#xA;https://docs.google.com/document/d/1Lyis4TBfq6B9I1y-4yW80KPnkoQMOobJ1N2B5-y5Z0w/edit&#xD;&#xA;"
+          Text="***MANUAL PROCESS***&#xA;Need to check and add Unknown Researchers&#xA;1.Task (Unknown Researchers) will create excel spread sheet. &#xA;*Need to change the export location if using different computer in connection manager &#xA;C:\Users\ahnc1\Documents\Visual Studio 2017\New Dept and Unknown Researchers\UnknownResearcehrs.xls&#xA;This spreadsheet includes every unknown researchers from previous FYs to current FY.&#xA;2. Manipulate in excel spreadsheet&#xA;Unknown Researchers with value is from previous FY.&#xA;Unknown Researchers without value is new from current FY: These variables should be figure out manually &#xA;(DEPTID, EMPNAME, IDCR_PCT, DIRECTCOST_PCT, NOTES, DEPT_APPTAUTHPCT&#xA;, DEPT_APPTDISTPCT, LSA_AUTH)&#xA;3. Check with Nick and Research area (Linda Chadwick, Steven Beach) &#xA;4. Upload insert statement to the Database&#xA;Using insert statement to reload this whole values to the VOR_Person_Research_Effort&#xA;UnknownResearchers - Upload(SAMPLE).xls can be helpful&#xA;&#xA;Folder--&#xA;S:\dept\MIS\BI Group\KPI - SSIS Packages\New Dept and Unknown Researchers &#xA;Old Documentation-- &#xA;https://docs.google.com/document/d/1MZYSGPkwZLWg7HJIgTbw71JhPKfN4ZjdhE55AEmBwu0/edit?ts=5936bc8a&#xA;New Documentation--&#xA;https://docs.google.com/document/d/1Lyis4TBfq6B9I1y-4yW80KPnkoQMOobJ1N2B5-y5Z0w/edit&#xA;"
           ParentId="Package\2b) Export to Excel"
-          Size="578.4,327.2"
+          Size="578,328"
           Id="ed4743f5-210b-438d-9ba4-76e6a50208ad"
           TopLeft="24.528881555893,102.821704431634">
           <AnnotationLayout.FontInfo>
@@ -9980,16 +9980,16 @@ FROM M_HRDW1.PERSONAL_DATA</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="608,510.4"
-          Size="608,553.6"
+          PanelSize="608,511"
+          Size="608,554"
           Id="Package\2b) Export to Excel"
           TopLeft="659.502965133394,449.152533127295" />
         <NodeLayout
-          Size="128,41.6"
+          Size="128,42"
           Id="Package\3) Data from DWProd\PF_FY_Dir"
           TopLeft="63.4285787757563,54.3058894312505" />
         <NodeLayout
-          Size="155.2,41.6"
+          Size="155,42"
           Id="Package\3) Data from DWProd\PG_FY_Dir Later"
           TopLeft="48.5714332587056,134.854910168763" />
         <EdgeLayout
@@ -10017,20 +10017,20 @@ FROM M_HRDW1.PERSONAL_DATA</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="271.2,260.8"
-          Size="271.2,304"
+          PanelSize="271,261"
+          Size="271,304"
           Id="Package\3) Data from DWProd"
           TopLeft="1333.48096406995,44.3058556655706" />
         <NodeLayout
-          Size="145.6,41.6"
+          Size="146,42"
           Id="Package\Fix Names\Delete Names"
           TopLeft="33.6762008725385,18.2745114626769" />
         <NodeLayout
-          Size="132,41.6"
+          Size="132,42"
           Id="Package\Fix Names\Get Names"
           TopLeft="36.342867584618,93.7254929130053" />
         <NodeLayout
-          Size="175.2,41.6"
+          Size="175,42"
           Id="Package\Fix Names\Update VPRE Names"
           TopLeft="18.0571529874996,169.176474363334" />
         <EdgeLayout
@@ -10080,16 +10080,16 @@ FROM M_HRDW1.PERSONAL_DATA</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="208.8,265.6"
-          Size="208.8,308.8"
+          PanelSize="209,266"
+          Size="209,309"
           Id="Package\Fix Names"
           TopLeft="1893.02859227479,51.5607838961774" />
         <NodeLayout
-          Size="231.2,41.6"
+          Size="231,42"
           Id="Package\Process on SQL Server\PGResVol2PG_VOR_By_Res_Grp"
           TopLeft="20.1904825288422,24.1725503122931" />
         <NodeLayout
-          Size="140,41.6"
+          Size="140,42"
           Id="Package\Process on SQL Server\Update Nulls"
           TopLeft="32.0000065394811,117.56863005351" />
         <EdgeLayout
@@ -10129,7 +10129,7 @@ FROM M_HRDW1.PERSONAL_DATA</property>
         <AnnotationLayout
           Text="At this point, it's time to assemble the list of VOR People"
           ParentId="Package\Process on SQL Server"
-          Size="145.6,63.2"
+          Size="146,64"
           Id="d50615f4-ee39-4634-838f-cb2a8801e084"
           TopLeft="40.8000064713616,193.882356744874">
           <AnnotationLayout.FontInfo>
@@ -10146,32 +10146,32 @@ FROM M_HRDW1.PERSONAL_DATA</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="256,322.4"
-          Size="256,365.6"
+          PanelSize="256,323"
+          Size="256,366"
           Id="Package\Process on SQL Server"
           TopLeft="1618.83811141488,47.9450971969686" />
         <NodeLayout
-          Size="176.8,41.6"
+          Size="177,42"
           Id="Package\Research Profile Items - KPI Calucations\9ER - Effective IDCR"
           TopLeft="45.1047770370435,339.607848685506" />
         <NodeLayout
-          Size="225.6,41.6"
+          Size="226,42"
           Id="Package\Research Profile Items - KPI Calucations\9LD - Adjusted LSA Direct VOR"
           TopLeft="16.1523765408265,182.901964359217" />
         <NodeLayout
-          Size="229.6,41.6"
+          Size="230,42"
           Id="Package\Research Profile Items - KPI Calucations\9LI - Adjusted LSA Indirect VOR"
           TopLeft="20.1523825580573,259.686278899786" />
         <NodeLayout
-          Size="153.6,41.6"
+          Size="154,42"
           Id="Package\Research Profile Items - KPI Calucations\9LR - LSA IDCR"
           TopLeft="51.0095390877762,436.235300852766" />
         <NodeLayout
-          Size="224.8,41.6"
+          Size="225,42"
           Id="Package\Research Profile Items - KPI Calucations\9UD - Adjusted UM Direct VOR"
           TopLeft="18.8190504735837,15.5450993118814" />
         <NodeLayout
-          Size="230.4,41.6"
+          Size="230,42"
           Id="Package\Research Profile Items - KPI Calucations\9UI - Adjusted UM Indirect VOR"
           TopLeft="17.1190247016695,100.94117861553" />
         <EdgeLayout
@@ -10287,18 +10287,18 @@ FROM M_HRDW1.PERSONAL_DATA</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="284,536.8"
+          PanelSize="284,537"
           Size="284,580"
           Id="Package\Research Profile Items - KPI Calucations"
           TopLeft="2113.98097751222,50.7137255002064" />
         <NodeLayout
-          Size="107.2,41.6"
+          Size="107,42"
           Id="Package\Sponsored UROP Students\UROP"
           TopLeft="47.3714530701541,25.8352957478031" />
         <AnnotationLayout
           Text="This will produce a spreadsheet.  DeptIDs need to be manually added.  Then you can iport spreadsheet numbers into KPIData_Stage"
           ParentId="Package\Sponsored UROP Students"
-          Size="671.2,36.8"
+          Size="671,37"
           Id="11823773-40ac-4a65-a42f-e4c1fdad3d0e"
           TopLeft="33.3714534107523,122.188238275587">
           <AnnotationLayout.FontInfo>
@@ -10315,7 +10315,7 @@ FROM M_HRDW1.PERSONAL_DATA</property>
         <AnnotationLayout
           Text="Adding DeptIDs - this is VERY manual.&#xA;• Sort Dept alphabetically&#xA;• Filter on School = LSA&#xA;• Manually input DEPTID based on description.  Descriptions are not exact and can have different spellings (&amp;, and, etc).  &#xA;• The following are not LSA departments –&#xA;o Center for Human Growth and Development&#xA;o Chemical Biology/Department of Computational Medicine and Bioinformatics &#xA;o Center for the Study of Black Youth in Context &#xA;o Institute for Social Research &#xA;o LSA Newnan Center;Visiting Faculty, Wayne State University D &#xA;o Population Studies Center &#xA;o Survey Methodology Program &#xA;o Ignore the blanks &#xA; Split any joint appointments 50/50.  If any department is outside of LSA, give full credit to LSA.  &#xA; Count number of students by department and divide by 2 (2 terms) – DON’T FORGET THIS PIECE!!!!!!!&#xA;"
           ParentId="Package\Sponsored UROP Students"
-          Size="619.2,235.2"
+          Size="619,235"
           Id="4a4f20b8-325f-4922-81a9-4be406fdf7db"
           TopLeft="42.6095482271548,275.129416891118">
           <AnnotationLayout.FontInfo>
@@ -10332,16 +10332,16 @@ FROM M_HRDW1.PERSONAL_DATA</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="764.8,533.6"
-          Size="764.8,576.8"
+          PanelSize="765,534"
+          Size="765,577"
           Id="Package\Sponsored UROP Students"
           TopLeft="2410.47621636975,55.1607850873348" />
         <NodeLayout
-          Size="256,41.6"
+          Size="256,42"
           Id="Package\VOR Person Research Effort\Update VOR_Person_Research_Effort"
           TopLeft="29.2571439275937,168.988238640227" />
         <NodeLayout
-          Size="216,41.6"
+          Size="216,42"
           Id="Package\VOR Person Research Effort\VOR_Person Research_Effort"
           TopLeft="54.0190491111911,48.6745114626769" />
         <EdgeLayout
@@ -10369,8 +10369,8 @@ FROM M_HRDW1.PERSONAL_DATA</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="332.8,306.4"
-          Size="332.8,349.6"
+          PanelSize="333,307"
+          Size="333,350"
           Id="Package\VOR Person Research Effort"
           TopLeft="35.3741502622826,39.0655467663676" />
       </GraphLayout>

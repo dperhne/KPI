@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="2 - Profile_2_CAC"
   DTS:PackageType="5"
-  DTS:VersionBuild="49"
-  DTS:VersionGUID="{C973AC2B-30FA-4FDE-944A-50C983A7EC77}">
+  DTS:VersionBuild="51"
+  DTS:VersionGUID="{39514427-1CAC-40C1-AEB9-8DA8762A0EA7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -65,7 +65,7 @@ FROM
 		and sc.sctn_combined_id = sct.sctn_combined_id (+)
 		and c.term = t.term 
 		and t.acad_career = 'ULSA'
-	  and t.acad_year = '2018'
+	  and t.acad_year = '2019'
       and c.crse_component not in ('PSI', 'IND') 
       and c.class_stat != 'X'
       and c.total_enrl_tot &gt; 0
@@ -106,7 +106,7 @@ ORDER BY
       <DTS:VariableValue
         DTS:DataType="8">DELETE FROM	[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]
 WHERE
-	[Acad_Year] = '2018'</DTS:VariableValue>
+	[Acad_Year] = '2019'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -123,14 +123,14 @@ FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as T
 		(SELECT Home_Class_Nbr, Term
 		 FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]
 		 WHERE
-			[Acad_Year] = '2018'	
+			[Acad_Year] = '2019'	
 			AND Combined_Section = 'C'
 			AND (Subject_DeptId = '194700' OR Class_DeptId = '171900')
 		 UNION
 		 SELECT Home_Class_Nbr, Term
 		 FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]
 		 WHERE
-			[Acad_Year] = '2018'	
+			[Acad_Year] = '2019'	
 			AND (Subject_Division = 'xxxxxxxxxxxxxxxxxxxxxxxxx' OR Class_Division = 'xxxxxxxxxxxxxxxxxxxxxxxxx')) as D
 	ON T.Home_Class_Nbr = D.Home_Class_Nbr and T.Term = D.Term	</DTS:VariableValue>
     </DTS:Variable>
@@ -143,7 +143,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as T
       DTS:Namespace="User"
       DTS:ObjectName="sSQLDeleteSummary">
       <DTS:VariableValue
-        DTS:DataType="8">DELETE FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] WHERE [Acad_Year] = '2018'</DTS:VariableValue>
+        DTS:DataType="8">DELETE FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] WHERE [Acad_Year] = '2019'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -181,7 +181,7 @@ HAVING
 	AND count(s2.[KPI_CH]) &gt; 2
 ) as v
 WHERE
-	Acad_Year = '2018'</DTS:VariableValue>
+	Acad_Year = '2019'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -200,7 +200,7 @@ FROM
 	[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage] as t
 	INNER JOIN [lsa_reference_tables].[dbo].[CURR_FN_DEPT_VW] as d
 		ON t.Class_DeptId = d.DEPTID COLLATE DATABASE_DEFAULT
-WHERE t.[Acad_Year] = '2018'</DTS:VariableValue>
+WHERE t.[Acad_Year] = '2019'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -214,7 +214,7 @@ WHERE t.[Acad_Year] = '2018'</DTS:VariableValue>
         DTS:DataType="8">UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]
 SET 
 	[CH_Subtotal] = ([Non_Combined_CH] + [Combined_Same_Dept_CH] + [Gain_CH])
-WHERE [Acad_Year] = '2018'</DTS:VariableValue>
+WHERE [Acad_Year] = '2019'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -232,7 +232,7 @@ FROM
 		INNER JOIN [lsa_AdminData].[dbo].[DepartmentGrouping] as g
 			ON t.[Class_DeptId] = g.[deptid]
 WHERE
-	t.[Acad_Year] = '2018'</DTS:VariableValue>
+	t.[Acad_Year] = '2019'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -253,7 +253,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
 		WHERE
 			Combined_Section = 'C'
 			and Same_Dept = 'Y'
-			and Acad_Year = '2018'
+			and Acad_Year = '2019'
 		GROUP BY
 			Acad_Year, Class_DeptId) as t
 	ON s.DeptId = t.DeptId AND s.Acad_Year = t.Acad_Year	</DTS:VariableValue>
@@ -277,7 +277,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
 		WHERE
 			Same_Dept = 'N'
 			and Combined_Section = 'C'
-			and Acad_Year = '2018'
+			and Acad_Year = '2019'
 		GROUP BY
 			Acad_Year, Class_DeptId) as t
 	ON s.DeptId = t.Class_DeptId AND s.Acad_Year = t.Acad_Year	</DTS:VariableValue>
@@ -297,7 +297,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
 	INNER JOIN	[lsa_AdminData].[dbo].[KPIData] as k 
 		ON s.[DeptId] = k.[DeptID]
 			AND s.[Acad_Year] = k.[AcadYear]
-WHERE s.[Acad_Year] = '2018'
+WHERE s.[Acad_Year] = '2019'
 and k.[KPICode] = '2T'
 </DTS:VariableValue>
     </DTS:Variable>
@@ -320,7 +320,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
 		WHERE
 			Same_Dept = 'N'
 			and Combined_Section = 'C'
-			and Acad_Year = '2018'
+			and Acad_Year = '2019'
 		GROUP BY
 			Acad_Year, Subject_DeptId_Trim) as t
 	ON s.DeptId = t.Subject_DeptId_Trim AND s.Acad_Year = t.Acad_Year	</DTS:VariableValue>
@@ -337,7 +337,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
         DTS:DataType="8">UPDATE [lsa_AdminData].[dbo].[CAC_Trade_Summary]
 SET 
 	[Net_Trade_Pct] = [Net_Trade_CH] / [Total_CH]
-WHERE [Acad_Year] = '2018' 
+WHERE [Acad_Year] = '2019' 
 	AND [Total_CH] != 0</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -358,7 +358,7 @@ FROM [lsa_AdminData].[dbo].[CAC_Trade_Summary] as s
 			[lsa_AdminData].[dbo].[CAC_Teaching_Detail_Stage]
 		WHERE
 			Combination_Type is Null
-			and Acad_Year = '2018'
+			and Acad_Year = '2019'
 		GROUP BY
 			Acad_Year, Class_DeptId) as t
 	ON s.DeptId = t.Class_DeptId AND s.Acad_Year = t.Acad_Year	</DTS:VariableValue>
@@ -379,7 +379,7 @@ FROM
 		INNER JOIN [lsa_AdminData].[dbo].[DepartmentGrouping] as g
 			ON t.[Subject_DeptId_Trim] = g.[deptid]
 WHERE
-	t.[Acad_Year] = '2018'</DTS:VariableValue>
+	t.[Acad_Year] = '2019'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -394,7 +394,7 @@ WHERE
 SET 
 	[Total_CH] = ([Non_Combined_CH] + [Combined_Same_Dept_CH] + [Gain_CH]) - [Loss_CH] ,
 	[Net_Trade_CH] = [Gain_CH] - [Loss_CH] 
-WHERE [Acad_Year] = '2018'</DTS:VariableValue>
+WHERE [Acad_Year] = '2019'</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -528,7 +528,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
                     <connection
                       refId="Package\CAC - Credit Attribution Correction\Get Combined Sections\DWProd.Connections[OleDbConnection]"
                       connectionManagerID="{B5AFB6C7-F0FB-42F5-A62F-C2A206230B07}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1184,7 +1184,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
                     <connection
                       refId="Package\CAC - Credit Attribution Correction\Get Combined Sections\SQLServer.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1900,6 +1900,1377 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           DTS:To="Package\CAC - Credit Attribution Correction\Update Combined Same Dept" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{524da66c-44ec-42e9-b295-effdfe053585}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Delete COMPARE_DIVISIONS"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{adb0354c-c98f-45d1-8d1c-32b33e01b64c}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete COMPARE_DIVISIONS"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
+              SQLTask:SqlStatementSource="Delete from lsa_AdminData.dbo.COMPARE_DIVISIONS" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Delete Hirchy_Acad_Plan_Owner"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{71b3da8d-933c-4333-8e4d-7326eb26f10f}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete Hirchy_Acad_Plan_Owner"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{27999ED1-E089-4032-A07E-8B190CB9C17E}"
+              SQLTask:SqlStatementSource="Delete from lsa_AdminData.dbo.Hirchy_Acad_Plan_Owner" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{0f588144-8871-44bf-8356-9ae25a65b77c}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Dept Grouping not in Hirchy"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[COMPARE_DIVISIONS]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEPTID_KPI]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="10"
+                          cachedName="DEPTID_KPI"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPTID_KPI]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_KPI]" />
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIVISION_DEPTID_KPI]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="6"
+                          cachedName="DIVISION_DEPTID_KPI"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIVISION_DEPTID_KPI]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_KPI]" />
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEPTID_HIRCHY]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="10"
+                          cachedName="DEPTID_HIRCHY"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPTID_HIRCHY]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_HIRCHY]" />
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIVISION_DEPTID_HIRCHY]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="10"
+                          cachedName="DIVISION_DEPTID_HIRCHY"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIVISION_DEPTID_HIRCHY]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_HIRCHY]" />
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COMPARE]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="7"
+                          cachedName="COMPARE"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPARE]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[COMPARE]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DEPTID_KPI" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIVISION_DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DIVISION_DEPTID_KPI" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DEPTID_HIRCHY" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIVISION_DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DIVISION_DEPTID_HIRCHY" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPARE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="COMPARE" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT *
+FROM 
+(
+SELECT 
+DISTINCT 
+k.DEPTID_KPI
+, k.DIVISION_DEPTID_KPI
+, h.DEPTID as DEPTID_HIRCHY
+, d.DIVISION_DEPTID_HIRCHY
+, CASE WHEN (k.DEPTID_KPI COLLATE DATABASE_DEFAULT = h.DEPTID COLLATE DATABASE_DEFAULT OR
+k.DIVISION_DEPTID_KPI COLLATE DATABASE_DEFAULT =  d.DIVISION_DEPTID_HIRCHY COLLATE DATABASE_DEFAULT) THEN 'SUCCESS' ELSE 'FAIL' END COMPARE
+
+FROM lsa_reference_tables.dbo.CURR_FIN_DEPT_RPT_HIRCHY_VW_TBL h
+    INNER JOIN (SELECT DISTINCT DEPTID AS DIVISION_DEPTID_HIRCHY
+                ,RPT_HIRCHY_LVL_4_DEPT_GRP_CD AS DIVISION
+                FROM lsa_reference_tables.dbo.CURR_FIN_DEPT_RPT_HIRCHY_VW_TBL
+                WHERE DEPT_GRP = 'COLLEGE_OF_LSA'
+                AND DEPT_RPT_HIRCHY_EFFDT=(SELECT MAX(FDRH.DEPT_RPT_HIRCHY_EFFDT) FROM lsa_reference_tables.dbo.CURR_FIN_DEPT_RPT_HIRCHY_VW_TBL FDRH)
+                AND DEPTID in ('172400','172200','173000')
+                ) d
+		ON h.RPT_HIRCHY_LVL_4_DEPT_GRP_CD = d.DIVISION
+	 INNER JOIN (SELECT deptid AS DEPTID_KPI , KPI_Division_Deptid AS DIVISION_DEPTID_KPI
+				FROM lsa_AdminData.dbo.DepartmentGrouping
+				WHERE KPI_Division_Deptid in ('172400','172200','173000')) k
+		ON h.DEPTID COLLATE DATABASE_DEFAULT = k.DEPTID_KPI COLLATE DATABASE_DEFAULT
+
+
+WHERE h.DEPT_GRP = 'COLLEGE_OF_LSA'
+AND h.DEPT_RPT_HIRCHY_EFFDT=(SELECT MAX(FDRH.DEPT_RPT_HIRCHY_EFFDT) FROM lsa_reference_tables.dbo.CURR_FIN_DEPT_RPT_HIRCHY_VW_TBL FDRH)
+AND h.DEPTID NOT IN ('172400','172200','173000')
+) m
+WHERE m.COMPARE = 'FAIL'</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="{55845062-1A80-47D9-B8BC-F6F64981F7D5}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPTID_KPI]"
+                          length="10"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_KPI]"
+                          name="DEPTID_KPI"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DIVISION_DEPTID_KPI]"
+                          length="6"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_KPI]"
+                          name="DIVISION_DEPTID_KPI"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPTID_HIRCHY]"
+                          length="10"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_HIRCHY]"
+                          name="DEPTID_HIRCHY"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DIVISION_DEPTID_HIRCHY]"
+                          length="10"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_HIRCHY]"
+                          name="DIVISION_DEPTID_HIRCHY"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[COMPARE]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[COMPARE]"
+                          length="7"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].Columns[COMPARE]"
+                          name="COMPARE"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="DEPTID_KPI" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DIVISION_DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DIVISION_DEPTID_KPI" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="DEPTID_HIRCHY" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DIVISION_DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="DIVISION_DEPTID_HIRCHY" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[COMPARE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="7"
+                          name="COMPARE" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPTID_KPI]"
+                          name="DEPTID_KPI" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DIVISION_DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DIVISION_DEPTID_KPI]"
+                          name="DIVISION_DEPTID_KPI" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPTID_HIRCHY]"
+                          name="DEPTID_HIRCHY" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DIVISION_DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DIVISION_DEPTID_HIRCHY]"
+                          name="DIVISION_DEPTID_HIRCHY" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[COMPARE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="7"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[COMPARE]"
+                          name="COMPARE" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy.Paths[OLE DB Source Output]"
+                  endId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{51a961e8-5d06-4d33-bbe6-10a36d43e931}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Hirchy not in Dept Grouping"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[COMPARE_DIVISIONS]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEPTID_KPI]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="10"
+                          cachedName="DEPTID_KPI"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPTID_KPI]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_KPI]" />
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIVISION_DEPTID_KPI]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="6"
+                          cachedName="DIVISION_DEPTID_KPI"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIVISION_DEPTID_KPI]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_KPI]" />
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEPTID_HIRCHY]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="6"
+                          cachedName="DEPTID_HIRCHY"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPTID_HIRCHY]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_HIRCHY]" />
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIVISION_DEPTID_HIRCHY]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="6"
+                          cachedName="DIVISION_DEPTID_HIRCHY"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIVISION_DEPTID_HIRCHY]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_HIRCHY]" />
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COMPARE]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="7"
+                          cachedName="COMPARE"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPARE]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[COMPARE]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DEPTID_KPI" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIVISION_DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DIVISION_DEPTID_KPI" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DEPTID_HIRCHY" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIVISION_DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DIVISION_DEPTID_HIRCHY" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPARE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="COMPARE" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 
+m.DEPTID_KPI
+, m.DIVISION_DEPTID_KPI
+, m.DEPTID_HIRCHY
+, m.DIVISION_DEPTID_HIRCHY
+, m.COMPARE
+FROM (
+SELECT 
+HAPO.DEPTID_HIRCHY
+, HAPO.DEPT_DESCR
+, HAPO.DIVISION_DEPTID_HIRCHY
+, HAPO.DIVISION_DESCR 
+, HAPO.IN_ACAD_PLAN
+, DG.deptid AS DEPTID_KPI
+, DG.KPI_Division_Deptid AS DIVISION_DEPTID_KPI
+, CASE WHEN (HAPO.DEPTID_HIRCHY = DG.deptid OR DIVISION_DEPTID_HIRCHY = KPI_Division_Deptid) THEN 'SUCCESS' ELSE 'FAIL' END AS COMPARE
+
+FROM lsa_AdminData.dbo.Hirchy_Acad_Plan_Owner HAPO
+	LEFT JOIN lsa_AdminData.dbo.DepartmentGrouping DG
+		ON HAPO.DEPTID_HIRCHY = DG.deptid
+		AND DG.KPI_Division_Deptid IS NOT NULL
+WHERE HAPO.IN_ACAD_PLAN = 'Y') m
+WHERE m.COMPARE = 'FAIL'</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPTID_KPI]"
+                          length="10"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_KPI]"
+                          name="DEPTID_KPI"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DIVISION_DEPTID_KPI]"
+                          length="6"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_KPI]"
+                          name="DIVISION_DEPTID_KPI"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPTID_HIRCHY]"
+                          length="6"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_HIRCHY]"
+                          name="DEPTID_HIRCHY"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DIVISION_DEPTID_HIRCHY]"
+                          length="6"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_HIRCHY]"
+                          name="DIVISION_DEPTID_HIRCHY"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[COMPARE]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[COMPARE]"
+                          length="7"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].Columns[COMPARE]"
+                          name="COMPARE"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="DEPTID_KPI" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DIVISION_DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DIVISION_DEPTID_KPI" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DEPTID_HIRCHY" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DIVISION_DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DIVISION_DEPTID_HIRCHY" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[COMPARE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="7"
+                          name="COMPARE" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPTID_KPI]"
+                          name="DEPTID_KPI" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DIVISION_DEPTID_KPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DIVISION_DEPTID_KPI]"
+                          name="DIVISION_DEPTID_KPI" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPTID_HIRCHY]"
+                          name="DEPTID_HIRCHY" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DIVISION_DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DIVISION_DEPTID_HIRCHY]"
+                          name="DIVISION_DEPTID_HIRCHY" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[COMPARE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="7"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[COMPARE]"
+                          name="COMPARE" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping.Paths[OLE DB Source Output]"
+                  endId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{5130df74-8170-4d5b-ae9a-40b880548bb7}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Insert into Hirchy_Acad_Plan_Owner"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Hirchy_Acad_Plan_Owner]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEPTID_HIRCHY]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="10"
+                          cachedName="DEPTID_HIRCHY"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPTID_HIRCHY]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_HIRCHY]" />
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEPT_DESCR]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="30"
+                          cachedName="DEPT_DESCR"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPT_DESCR]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPT_DESCR]" />
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIVISION_DESCR]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="20"
+                          cachedName="DIVISION_DESCR"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIVISION_DESCR]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DESCR]" />
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IN_ACAD_PLAN]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="1"
+                          cachedName="IN_ACAD_PLAN"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IN_ACAD_PLAN]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[IN_ACAD_PLAN]" />
+                        <inputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIVISION_DEPTID_HIRCHY]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="10"
+                          cachedName="DIVISION_DEPTID_HIRCHY"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIVISION_DEPTID_HIRCHY]"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_HIRCHY]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DEPTID_HIRCHY" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPT_DESCR]"
+                          codePage="1252"
+                          dataType="str"
+                          length="30"
+                          name="DEPT_DESCR" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIVISION_DESCR]"
+                          codePage="1252"
+                          dataType="str"
+                          length="30"
+                          name="DIVISION_DESCR" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IN_ACAD_PLAN]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1"
+                          name="IN_ACAD_PLAN" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIVISION_DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="DIVISION_DEPTID_HIRCHY" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT DISTINCT 
+h.DEPTID AS DEPTID_HIRCHY
+,h.DEPT_DESCR 
+, d.DIVISION_DEPTID AS DIVISION_DEPTID_HIRCHY 
+, h.RPT_HIRCHY_LVL_4_DEPT_GRP_CD  AS DIVISION_DESCR
+, CASE WHEN apo.ACAD_PLAN_PERCENT_OWNED &gt; 0 THEN 'Y' ELSE 'N' END AS IN_ACAD_PLAN
+
+FROM M_GLDW1.FIN_DEPT_RPT_HIRCHY h
+    INNER JOIN (SELECT DISTINCT DEPTID AS DIVISION_DEPTID
+                , RPT_HIRCHY_LVL_4_DEPT_GRP_CD AS DIVISION_DESCR
+                FROM M_GLDW1.FIN_DEPT_RPT_HIRCHY
+                WHERE DEPT_GRP = 'COLLEGE_OF_LSA'
+                AND DEPT_RPT_HIRCHY_EFFDT=(SELECT MAX(FDRH.DEPT_RPT_HIRCHY_EFFDT) FROM M_GLDW1.FIN_DEPT_RPT_HIRCHY FDRH)
+                AND DEPTID in ('172400','172200','173000')
+                ORDER BY RPT_HIRCHY_LVL_4_DEPT_GRP_CD) d
+        ON h.RPT_HIRCHY_LVL_4_DEPT_GRP_CD = d.DIVISION_DESCR
+    LEFT JOIN M_SRDW1.ACAD_PLAN_OWNER apo
+        ON h.DEPTID = apo.DEPTID
+  
+WHERE h.DEPT_GRP = 'COLLEGE_OF_LSA'
+AND h.DEPT_RPT_HIRCHY_EFFDT=(SELECT MAX(FDRH.DEPT_RPT_HIRCHY_EFFDT) FROM M_GLDW1.FIN_DEPT_RPT_HIRCHY FDRH)
+AND h.DEPTID NOT IN ('172400','172200','173000')
+ORDER BY h.RPT_HIRCHY_LVL_4_DEPT_GRP_CD</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="{B5AFB6C7-F0FB-42F5-A62F-C2A206230B07}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPTID_HIRCHY]"
+                          length="10"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPTID_HIRCHY]"
+                          name="DEPTID_HIRCHY"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPT_DESCR]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPT_DESCR]"
+                          length="30"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPT_DESCR]"
+                          name="DEPT_DESCR"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DIVISION_DEPTID_HIRCHY]"
+                          length="10"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DEPTID_HIRCHY]"
+                          name="DIVISION_DEPTID_HIRCHY"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DESCR]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DIVISION_DESCR]"
+                          length="20"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[DIVISION_DESCR]"
+                          name="DIVISION_DESCR"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[IN_ACAD_PLAN]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IN_ACAD_PLAN]"
+                          length="1"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].Columns[IN_ACAD_PLAN]"
+                          name="IN_ACAD_PLAN"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="DEPTID_HIRCHY" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPT_DESCR]"
+                          codePage="1252"
+                          dataType="str"
+                          length="30"
+                          name="DEPT_DESCR" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DIVISION_DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="DIVISION_DEPTID_HIRCHY" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DIVISION_DESCR]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          name="DIVISION_DESCR" />
+                        <externalMetadataColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IN_ACAD_PLAN]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1"
+                          name="IN_ACAD_PLAN" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPTID_HIRCHY]"
+                          name="DEPTID_HIRCHY" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPT_DESCR]"
+                          codePage="1252"
+                          dataType="str"
+                          length="30"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPT_DESCR]"
+                          name="DEPT_DESCR" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DIVISION_DEPTID_HIRCHY]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DIVISION_DEPTID_HIRCHY]"
+                          name="DIVISION_DEPTID_HIRCHY" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DIVISION_DESCR]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DIVISION_DESCR]"
+                          name="DIVISION_DESCR" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IN_ACAD_PLAN]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IN_ACAD_PLAN]"
+                          name="IN_ACAD_PLAN" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner.Paths[OLE DB Source Output]"
+                  endId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{d14871e0-f5bb-4ec7-a908-b33b609ed002}"
+          DTS:From="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{1576030b-76a5-478f-90c1-1512c5b7156e}"
+          DTS:From="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Delete Hirchy_Acad_Plan_Owner"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{6ce8fc36-2dd9-4521-aed9-f53c501643f3}"
+          DTS:From="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Delete COMPARE_DIVISIONS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups.PrecedenceConstraints[Constraint 3]"
+          DTS:CreationName=""
+          DTS:DTSID="{887685cb-9023-4ce9-bc6e-5ef6f9c1ca1d}"
+          DTS:From="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 3"
+          DTS:To="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Delete Hirchy_Acad_Plan_Owner" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -1912,69 +3283,69 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
         <NodeLayout
-          Size="202.4,41.6"
+          Size="202,42"
           Id="Package\CAC - Credit Attribution Correction\Delete Combined Sections"
           TopLeft="17,30.7000008751364" />
         <NodeLayout
-          Size="227.2,41.6"
+          Size="227,42"
           Id="Package\CAC - Credit Attribution Correction\Delete FYS Rel Outside Classes"
           TopLeft="44.3571435188761,388.852941142152" />
         <NodeLayout
-          Size="159.2,41.6"
+          Size="159,42"
           Id="Package\CAC - Credit Attribution Correction\Delete Summary"
           TopLeft="306.099999046325,31.9235303040606" />
         <NodeLayout
-          Size="190.4,41.6"
+          Size="190,42"
           Id="Package\CAC - Credit Attribution Correction\Get Combined Sections"
           TopLeft="29.7142858115994,119.320588870197" />
         <NodeLayout
-          Size="182.4,41.6"
+          Size="182,42"
           Id="Package\CAC - Credit Attribution Correction\Insert into KPI_Stage"
           TopLeft="605.957140930332,492.523529428925" />
         <NodeLayout
-          Size="156.8,41.6"
+          Size="157,42"
           Id="Package\CAC - Credit Attribution Correction\Insert Summary"
           TopLeft="330.242855799929,119.320588870197" />
         <NodeLayout
-          Size="174.4,41.6"
+          Size="174,42"
           Id="Package\CAC - Credit Attribution Correction\Update CH Subtotal"
           TopLeft="610.24285552745,122.570588870197" />
         <NodeLayout
-          Size="182.4,41.6"
+          Size="182,42"
           Id="Package\CAC - Credit Attribution Correction\Update Class Division"
           TopLeft="36.0000001362392,296.561764860318" />
         <NodeLayout
-          Size="220,41.6"
+          Size="220,42"
           Id="Package\CAC - Credit Attribution Correction\Update Combined Same Dept"
           TopLeft="546.38571255353,35.0411774486819" />
         <NodeLayout
-          Size="139.2,41.6"
+          Size="139,42"
           Id="Package\CAC - Credit Attribution Correction\Update Gain"
           TopLeft="340.814284449207,210.994118007409" />
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151,42"
           Id="Package\CAC - Credit Attribution Correction\Update KPI CH"
           TopLeft="618.099998433249,384.017646998766" />
         <NodeLayout
-          Size="139.2,41.6"
+          Size="139,42"
           Id="Package\CAC - Credit Attribution Correction\Update Loss"
           TopLeft="343.814284585447,301.088235431394" />
         <NodeLayout
-          Size="203.2,41.6"
+          Size="203,42"
           Id="Package\CAC - Credit Attribution Correction\Update Net Trade Percent"
           TopLeft="598.814284176729,289.288235139682" />
         <NodeLayout
-          Size="188,41.6"
+          Size="188,42"
           Id="Package\CAC - Credit Attribution Correction\Update Non-Combined"
           TopLeft="348.671427968084,391.194117715697" />
         <NodeLayout
-          Size="192,41.6"
+          Size="192,42"
           Id="Package\CAC - Credit Attribution Correction\Update Subject Division"
           TopLeft="28.7142858115994,205.494118007409" />
         <NodeLayout
-          Size="158.4,41.6"
+          Size="158,42"
           Id="Package\CAC - Credit Attribution Correction\Update Total CH"
           TopLeft="614.528569852089,206.17941200494" />
         <EdgeLayout
@@ -1982,7 +3353,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="121.5571429058,72.3000008751364">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,47.0205879950605"
               Start="0,0"
               End="0,39.5205879950605">
@@ -2004,7 +3375,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="124.814285811599,160.920588870197">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,44.5735291372121"
               Start="0,0"
               End="0,37.0735291372121">
@@ -2026,7 +3397,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="694.580950707157,76.6411774486819">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,45.929411421515"
               Start="0,0"
               End="0,38.429411421515">
@@ -2048,7 +3419,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="695.585712689769,164.170588870197">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,42.0088231347426"
               Start="0,0"
               End="0,34.5088231347426">
@@ -2070,7 +3441,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="697.071427014409,247.77941200494">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,41.5088231347424"
               Start="0,0"
               End="0,34.0088231347424">
@@ -2092,7 +3463,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="697.057141304989,330.888235139682">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,53.1294118590839"
               Start="0,0"
               End="0,45.6294118590839">
@@ -2114,7 +3485,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="695.428569681791,425.617646998766">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,66.905882430159"
               Start="0,0"
               End="0,59.405882430159">
@@ -2136,7 +3507,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="125.957142973919,247.094118007409">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,49.4676468529092"
               Start="0,0"
               End="0,41.9676468529092">
@@ -2158,7 +3529,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="124.311905160891,338.161764860318">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,50.6911762818339"
               Start="0,0"
               End="0,43.1911762818339">
@@ -2180,7 +3551,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="194.490476852209,388.852941142152">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="166.009522194116,-315.329410838092"
               Start="0,0"
               End="166.009522194116,-307.829410838092">
@@ -2214,7 +3585,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="409.771427423127,73.5235303040606">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,45.7970585661362"
               Start="0,0"
               End="0,38.2970585661362">
@@ -2236,7 +3607,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="409.528570124568,160.920588870197">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,50.0735291372125"
               Start="0,0"
               End="0,42.5735291372125">
@@ -2258,7 +3629,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="411.914284517327,252.594118007409">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,48.4941174239846"
               Start="0,0"
               End="0,40.9941174239846">
@@ -2280,7 +3651,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="413.042856276765,342.688235431394">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,48.5058822843035"
               Start="0,0"
               End="0,41.0058822843035">
@@ -2302,7 +3673,7 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
           TopLeft="472.671427968084,391.194117715697">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="148.380951252113,-314.552940267016"
               Start="0,0"
               End="148.380951252113,-307.052940267016">
@@ -2334,10 +3705,170 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="845.6,650.4"
-          Size="845.6,693.6"
+          PanelSize="846,651"
+          Size="846,694"
           Id="Package\CAC - Credit Attribution Correction"
-          TopLeft="114.971428649279,0.188231639136177" />
+          TopLeft="619.161905569609,38.3843104565984" />
+        <NodeLayout
+          Size="217,42"
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Delete COMPARE_DIVISIONS"
+          TopLeft="54.6285756422551,75.2470604622654" />
+        <NodeLayout
+          Size="233,42"
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Delete Hirchy_Acad_Plan_Owner"
+          TopLeft="42.4000070163182,266.682357376917" />
+        <NodeLayout
+          Size="210,42"
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy"
+          TopLeft="55.7714355974784,147.52269687464" />
+        <NodeLayout
+          Size="210,42"
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping"
+          TopLeft="49.404084394972,407.724377193912" />
+        <NodeLayout
+          Size="251,42"
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner"
+          TopLeft="30.8571429057996,335.394964313838" />
+        <EdgeLayout
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups.PrecedenceConstraints[Constraint]"
+          TopLeft="155.530613650386,376.994964313838">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30.7294128800744"
+              Start="0,0"
+              End="0,23.2294128800744">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.2294128800744" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups.PrecedenceConstraints[Constraint 1]"
+          TopLeft="157.628574961059,308.282357376917">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27.1126069369203"
+              Start="0,0"
+              End="0,19.6126069369203">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.6126069369203" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups.PrecedenceConstraints[Constraint 2]"
+          TopLeft="162.000005619867,116.847060462265">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30.675636412375"
+              Start="0,0"
+              End="0,23.175636412375">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.175636412375" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups.PrecedenceConstraints[Constraint 3]"
+          TopLeft="159.885721306898,189.12269687464">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,77.559660502277"
+              Start="0,0"
+              End="0,70.059660502277">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.059660502277" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="2. Depts in the Hirchy table with acad plan owners  &#xA;Then list up the departments and divisions &#xA;that are not in the table (Department Grouping)"
+          ParentId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups"
+          Size="281,64"
+          Id="082032d1-6f21-46eb-962c-ff0bbd50d373"
+          TopLeft="20.0000003405979,193.600002479553">
+          <AnnotationLayout.FontInfo>
+            <mssge:FontInfo
+              Color="#FF000000">
+              <mssge:FontInfo.TextDecorations>
+                <av:TextDecorationCollection />
+              </mssge:FontInfo.TextDecorations>
+            </mssge:FontInfo>
+          </AnnotationLayout.FontInfo>
+        </AnnotationLayout>
+        <AnnotationLayout
+          Text="3.Check the depts/divisions with 'Fail'&#xA;SELECT * FROM lsa_AdminData.dbo.COMPARE_DIVISIONS"
+          ParentId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups"
+          Size="316,51"
+          Id="f870ba4a-fe5e-4059-8691-0fd850629501"
+          TopLeft="30.0897989628959,465.324376881364">
+          <AnnotationLayout.FontInfo>
+            <mssge:FontInfo
+              Color="#FF000000">
+              <mssge:FontInfo.TextDecorations>
+                <av:TextDecorationCollection />
+              </mssge:FontInfo.TextDecorations>
+            </mssge:FontInfo>
+          </AnnotationLayout.FontInfo>
+        </AnnotationLayout>
+        <AnnotationLayout
+          Text="1. Depts in the table (Department Grouping) &#xA;which is used in KPI division roll ups &#xA;and compare with Hirchy table "
+          ParentId="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups"
+          Size="249,64"
+          Id="1476aac3-b633-4594-9900-bde18af727b7"
+          TopLeft="27.9183704109307,6.26554691222304">
+          <AnnotationLayout.FontInfo>
+            <mssge:FontInfo
+              Color="#FF000000">
+              <mssge:FontInfo.TextDecorations>
+                <av:TextDecorationCollection />
+              </mssge:FontInfo.TextDecorations>
+            </mssge:FontInfo>
+          </AnnotationLayout.FontInfo>
+        </AnnotationLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="401,562"
+          Size="401,605"
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups"
+          TopLeft="136.809524283117,41.3019615879521" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -2412,5 +3943,125 @@ WHERE [Acad_Year] = '2018'</DTS:VariableValue>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Destination"
+          TopLeft="220.8,278.4" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy\OLE DB Source"
+          TopLeft="224.8,165.6" />
+        <EdgeLayout
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Dept Grouping not in Hirchy.Paths[OLE DB Source Output]"
+          TopLeft="302.8,207.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,71.2"
+              Start="0,0"
+              End="0,63.7">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.7" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Destination"
+          TopLeft="256,243.2" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping\OLE DB Source"
+          TopLeft="268.8,146.4" />
+        <EdgeLayout
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Hirchy not in Dept Grouping.Paths[OLE DB Source Output]"
+          TopLeft="342.4,188">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,55.1999999999999"
+              Start="0,0"
+              End="0,47.6999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.6999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Destination"
+          TopLeft="165.6,185.6" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner\OLE DB Source"
+          TopLeft="170.4,96.8" />
+        <EdgeLayout
+          Id="Package\CHECKING PURPOSE -  Compare Dept Grouping Table(KPI) AND Hirchy(DWPROD) for Division Rollups\Insert into Hirchy_Acad_Plan_Owner.Paths[OLE DB Source Output]"
+          TopLeft="248,138.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,47.2"
+              Start="0,0"
+              End="0,39.7">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.7" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

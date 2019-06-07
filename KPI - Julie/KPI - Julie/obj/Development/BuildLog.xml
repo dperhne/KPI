@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>KPI - Julie</Name>
-    <LastWriteTime>2019-03-14T20:10:09.8988649Z</LastWriteTime>
+    <LastWriteTime>2019-03-25T19:18:23.1119299Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>1 - Profile.dtsx</Name>
-      <LastWriteTime>2019-03-14T20:08:27.333958Z</LastWriteTime>
+      <LastWriteTime>2019-03-25T19:18:22.7991871Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -23,7 +23,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>3 - Profile_7_VOR_UROP.dtsx</Name>
-      <LastWriteTime>2019-03-12T19:03:56.8461025Z</LastWriteTime>
+      <LastWriteTime>2019-05-22T15:16:34.4658462Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -33,7 +33,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>5 - Demographics_and_DivRollups.dtsx</Name>
-      <LastWriteTime>2019-03-12T18:41:37.4643413Z</LastWriteTime>
+      <LastWriteTime>2019-06-07T15:43:36.8264923Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -48,7 +48,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>8 - Final_Wrap_Up.dtsx</Name>
-      <LastWriteTime>2019-03-14T20:10:09.836033Z</LastWriteTime>
+      <LastWriteTime>2019-05-22T15:24:35.9279029Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

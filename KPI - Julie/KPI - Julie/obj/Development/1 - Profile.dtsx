@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="1 - Profile"
   DTS:PackageType="5"
-  DTS:VersionBuild="692"
-  DTS:VersionGUID="{410875A6-0AE7-4356-AD91-26E181948F73}">
+  DTS:VersionBuild="694"
+  DTS:VersionGUID="{63323785-8D79-4391-91CB-A349EF034410}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -136,7 +136,7 @@ WHERE
   AND j.APPT_DEPTID = e.APPT_DEPTID(+)
   and j.appt_deptid = d.deptid
   AND e.FUND_CODE = '10000'
-  and j.HRSNAP_RPTING_CD = 'NOV2018'
+  and j.HRSNAP_RPTING_CD = 'NOV2017'
   AND d.DEPT_GRP = 'COLLEGE_OF_LSA'
   AND j.JOB_FAMILY IN ('30', '40', '50', '62',
 							  '100','110','120','130','140','150','160','170','180','190',
@@ -167,7 +167,7 @@ WHERE
   AND j.EMPL_RCD = e.EMPL_RCD(+)
   AND j.APPT_DEPTID = e.APPT_DEPTID(+)
   and j.appt_deptid = d.deptid
-  AND j.HRSNAP_RPTING_CD = 'NOV2018'
+  AND j.HRSNAP_RPTING_CD = 'NOV2017'
   AND d.DEPT_GRP = 'COLLEGE_OF_LSA'
   AND j.JOB_FAMILY IN ('30', '40', '50', '62',
 							  '100','110','120','130','140','150','160','170','180','190',
@@ -198,7 +198,7 @@ AND j.EMPLID = e.EMPLID(+)
 AND j.EMPL_RCD = e.EMPL_RCD(+)
 AND j.APPT_DEPTID = e.APPT_DEPTID(+)
 and j.appt_deptid = d.deptid
-AND j.HRSNAP_RPTING_CD = 'NOV2018'
+AND j.HRSNAP_RPTING_CD = 'NOV2017'
 AND d.DEPT_GRP = 'COLLEGE_OF_LSA'
 AND j.JOB_FAMILY IN ('20')
 GROUP BY
@@ -996,7 +996,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1A - RC\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1145,7 +1145,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1A - RC\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AIS]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1362,7 +1362,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1511,7 +1511,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1A - TT Faculty FTE\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AIS]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1728,7 +1728,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1B - College Funded FTE\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1877,7 +1877,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1B - College Funded FTE\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AIS]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2094,7 +2094,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1C - Target FTE\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2243,7 +2243,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1C - Target FTE\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AIS]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2539,7 +2539,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1D - Lecturer FTE\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2687,7 +2687,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1D - Lecturer FTE\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2906,7 +2906,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1E - General Fund Reg Staff FTE\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3054,7 +3054,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1E - General Fund Reg Staff FTE\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3316,7 +3316,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1F - Regular Staff FTE\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3464,7 +3464,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1F - Regular Staff FTE\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3726,7 +3726,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1G - Primary Research Track Faculty\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3874,7 +3874,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1G - Primary Research Track Faculty\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4136,7 +4136,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1H - Tenure Track Faculty FTE\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4284,7 +4284,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\1H - Tenure Track Faculty FTE\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4498,7 +4498,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\MathRtr - Math Rotator\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4646,7 +4646,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\1 - Faculty Staff\MathRtr - Math Rotator\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5025,7 +5025,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\2 - FY and FT\2FY - First Year Seminar and 2FT First Year Taught by TT\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5232,7 +5232,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\2 - FY and FT\2FY - First Year Seminar and 2FT First Year Taught by TT\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{E3229A7D-8326-4D2B-950B-5E240FFDAFF4}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_Course]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_Course]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5629,7 +5629,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\2 - FY and FT\2FY - RCCORE 100\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5836,7 +5836,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\2 - FY and FT\2FY - RCCORE 100\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{E3229A7D-8326-4D2B-950B-5E240FFDAFF4}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_Course]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_Course]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6089,7 +6089,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="Aggregate 2FT"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -6106,7 +6106,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="Aggregate 2FY"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -6161,7 +6161,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="2SCS - 189000 MCDB"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -6178,7 +6178,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="2SCS - Small Section Count"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -6195,7 +6195,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="2SCS 189100 EEB"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -6212,7 +6212,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="2SCT - 189000 MCDB"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -6229,7 +6229,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="2SCT - Section Count"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -6246,7 +6246,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="2SCT 189100 EEB"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -6462,7 +6462,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\2 - SCT, SCS, DSmall\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6661,7 +6661,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\2 - SCT, SCS, DSmall\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6911,7 +6911,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete 188900 Biology"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -6998,7 +6998,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="2SUM - Spring Summer SCH"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7015,7 +7015,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="2T - Total SCH"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7032,7 +7032,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="3LLTT - Lower Level Tenure Track"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7049,7 +7049,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="3ULTT - Upper Level Tenure Track"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7463,7 +7463,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
                     <connection
                       refId="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Course_Level\OLE DB Destination - 017 KPIData_Stage.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7615,7 +7615,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Course_Level\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8529,7 +8529,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Instr_Type\OLE DB Destination - 017 KPIData_Stage.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8680,7 +8680,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Instr_Type\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -9180,7 +9180,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
           DTS:LocaleID="-1"
           DTS:ObjectName="Create 189100 EEB"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -9615,7 +9615,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Master Query\OLE DB Destination - 017 KPIMaster_2_3.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -9974,7 +9974,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Master Query\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -10501,7 +10501,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
           DTS:LocaleID="-1"
           DTS:ObjectName="Update 171500"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -10518,7 +10518,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
           DTS:LocaleID="-1"
           DTS:ObjectName="Update 189000 MCDB"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -10535,7 +10535,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
           DTS:LocaleID="-1"
           DTS:ObjectName="Update INTLSTD"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -10695,7 +10695,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\4 - Degrees\6B - Bachelor\OLE DB Destination - 017 KPIData_Stage.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -10843,7 +10843,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\4 - Degrees\6B - Bachelor\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -11057,7 +11057,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\4 - Degrees\6B - Bachelor RC 186000\OLE DB Destination - 017 KPIData_Stage.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -11205,7 +11205,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\4 - Degrees\6B - Bachelor RC 186000\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -11419,7 +11419,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\4 - Degrees\6M - Minor\OLE DB Destination - 017 KPIData_Stage.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -11567,7 +11567,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\4 - Degrees\6M - Minor\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -11781,7 +11781,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\4 - Degrees\6P - PhD\OLE DB Destination - 017 KPIData_Stage.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -11929,7 +11929,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\4 - Degrees\6P - PhD\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -12143,7 +12143,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\4 - Degrees\TermMas - Masters\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -12291,7 +12291,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\4 - Degrees\TermMas - Masters\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -12555,7 +12555,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\5 - Graduate Program (PhD)\5AC - Enrolls\OLE DB Destination - 017 KPIData_Stage.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -12703,7 +12703,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\5 - Graduate Program (PhD)\5AC - Enrolls\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -12917,7 +12917,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\5 - Graduate Program (PhD)\5AD - Admits\OLE DB Destination - 017 KPIData_Stage.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -13065,7 +13065,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\5 - Graduate Program (PhD)\5AD - Admits\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -13279,7 +13279,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
                     <connection
                       refId="Package\5 - Graduate Program (PhD)\5AP - Applicants\OLE DB Destination - 017 KPIData_Stage.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -13441,7 +13441,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                     <connection
                       refId="Package\5 - Graduate Program (PhD)\5AP - Applicants\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -13655,7 +13655,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                     <connection
                       refId="Package\5 - Graduate Program (PhD)\5HC - Headcount\OLE DB Destination - 017 KPIData_Stage.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -13803,7 +13803,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                     <connection
                       refId="Package\5 - Graduate Program (PhD)\5HC - Headcount\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{A82AF4A4-2BB7-4E8B-BC39-B574DC30A364}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world local]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world local]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -14055,7 +14055,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                     <connection
                       refId="Package\6 - Terminal Masters\MS_AC - Enrolls\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -14203,7 +14203,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                     <connection
                       refId="Package\6 - Terminal Masters\MS_AC - Enrolls\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -14417,7 +14417,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                     <connection
                       refId="Package\6 - Terminal Masters\MS_AD - Admits\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -14565,7 +14565,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                     <connection
                       refId="Package\6 - Terminal Masters\MS_AD - Admits\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -14779,7 +14779,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                     <connection
                       refId="Package\6 - Terminal Masters\MS_AP - Applicants\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -14927,7 +14927,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                     <connection
                       refId="Package\6 - Terminal Masters\MS_AP - Applicants\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -15141,7 +15141,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                     <connection
                       refId="Package\6 - Terminal Masters\MS_HC - Headcount\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -15289,7 +15289,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
                     <connection
                       refId="Package\6 - Terminal Masters\MS_HC - Headcount\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{A82AF4A4-2BB7-4E8B-BC39-B574DC30A364}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world local]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world local]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -15476,7 +15476,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15505,7 +15505,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15534,7 +15534,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15563,7 +15563,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15635,7 +15635,11 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <NodeLayout
+          Size="114.4,41.6"
+          Id="Package\1 - Faculty Staff\1A - RC"
+          TopLeft="222.72379999031,24.0941185908333" />
         <NodeLayout
           Size="171.2,41.6"
           Id="Package\1 - Faculty Staff\1A - TT Faculty FTE"
@@ -15673,11 +15677,45 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           Id="Package\1 - Faculty Staff\MathRtr - Math Rotator"
           TopLeft="45.2870605600347,643.105886618312" />
         <EdgeLayout
+          Id="Package\1 - Faculty Staff.PrecedenceConstraints[Constraint]"
+          TopLeft="119.409532877539,23.3803943304042">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="160.514267112771,0.713724260429117"
+              Start="0,0"
+              End="160.514267112771,-6.78627573957088">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-18.5"
+                    Point2="0,-22.5"
+                    Point3="4,-22.5" />
+                  <mssgle:LineSegment
+                    End="156.514267112771,-22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="156.514267112771,-22.5"
+                    Point2="160.514267112771,-22.5"
+                    Point3="160.514267112771,-18.5" />
+                  <mssgle:LineSegment
+                    End="160.514267112771,-6.78627573957088" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\1 - Faculty Staff.PrecedenceConstraints[Constraint 1]"
           TopLeft="125.647624077927,149.184317263215">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,24.2980418639745"
               Start="0,0"
               End="0,16.7980418639745">
@@ -15699,7 +15737,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="125.066676328296,215.08235912719">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,31.2000013856334"
               Start="0,0"
               End="0,23.7000013856334">
@@ -15721,7 +15759,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="124.913497170896,287.999637999734">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="24.332963210179,40.753308393236"
               Start="0,0"
               End="24.332963210179,33.253308393236">
@@ -15755,7 +15793,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="139.438104636978,458.776477499239">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,41.3647068776066"
               Start="0,0"
               End="0,33.8647068776066">
@@ -15777,7 +15815,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="145.27743592009,370.972841680928">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,46.2036358183109"
               Start="0,0"
               End="0,38.7036358183109">
@@ -15799,7 +15837,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="141.12789127266,541.741184376846">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,35.7512569368558"
               Start="0,0"
               End="0,28.2512569368558">
@@ -15821,7 +15859,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="142.009512174048,619.092441313702">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,24.0134453046104"
               Start="0,0"
               End="0,16.5134453046104">
@@ -15838,50 +15876,12 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="114.4,41.6"
-          Id="Package\1 - Faculty Staff\1A - RC"
-          TopLeft="222.72379999031,24.0941185908333" />
-        <EdgeLayout
-          Id="Package\1 - Faculty Staff.PrecedenceConstraints[Constraint]"
-          TopLeft="119.409532877539,23.3803943304042">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="160.514267112771,0.713724260429117"
-              Start="0,0"
-              End="160.514267112771,-6.78627573957088">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-18.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-18.5"
-                    Point2="0,-22.5"
-                    Point3="4,-22.5" />
-                  <mssgle:LineSegment
-                    End="156.514267112771,-22.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="156.514267112771,-22.5"
-                    Point2="160.514267112771,-22.5"
-                    Point3="160.514267112771,-18.5" />
-                  <mssgle:LineSegment
-                    End="160.514267112771,-6.78627573957088" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\1 - Faculty Staff.PrecedenceConstraints[Constraint 8]"
           TopLeft="279.92379999031,65.6941185908333">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="-153.92379999031,41.8901986723818"
               Start="0,0"
               End="-153.92379999031,34.3901986723818">
@@ -15910,13 +15910,28 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="*RC runs separately&#xA;by different jobcodes &#xA;to track 1A"
+          ParentId="Package\1 - Faculty Staff"
+          Size="129.6,76.8"
+          Id="f7c1d145-be45-40ab-b850-b65986ddf677"
+          TopLeft="265.942860363941,119.764707315174">
+          <AnnotationLayout.FontInfo>
+            <mssge:FontInfo
+              Color="#FF000000">
+              <mssge:FontInfo.TextDecorations>
+                <av:TextDecorationCollection />
+              </mssge:FontInfo.TextDecorations>
+            </mssge:FontInfo>
+          </AnnotationLayout.FontInfo>
+        </AnnotationLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="373.6,751.2"
-          Size="373.6,794.4"
+          PanelSize="420,751.2"
+          Size="420,794.4"
           Id="Package\1 - Faculty Staff"
-          TopLeft="357.004746848707,63.7588209469004" />
+          TopLeft="287.861888528354,15.3823503758247" />
         <NodeLayout
           Size="220,41.6"
           Id="Package\2 - FY and FT\2FY - First Year Seminar and 2FT First Year Taught by TT"
@@ -15938,7 +15953,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="123.400011495182,57.5686285949496">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,35.8901971652024"
               Start="0,0"
               End="0,28.3901971652024">
@@ -15960,7 +15975,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="125.714297817678,135.058825760152">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,31.2705896724056"
               Start="0,0"
               End="0,23.7705896724056">
@@ -15982,7 +15997,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="123.514297732529,207.929415432558">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,36.988236452386"
               Start="0,0"
               End="0,29.488236452386">
@@ -16005,7 +16020,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           PanelSize="284.8,321.6"
           Size="284.8,364.8"
           Id="Package\2 - FY and FT"
-          TopLeft="1194.74286612005,64.5019593271826" />
+          TopLeft="1194.74286612005,78.9019593271827" />
         <NodeLayout
           Size="180.8,41.6"
           Id="Package\2 - SCT, SCS, DSmall\2SCS - 189000 MCDB"
@@ -16043,7 +16058,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="114.857160531745,69.0588253955115">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,47.1058835970077"
               Start="0,0"
               End="0,39.6058835970077">
@@ -16065,7 +16080,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="113.371446002747,320.470593683448">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,29.6941185908331"
               Start="0,0"
               End="0,22.1941185908331">
@@ -16087,7 +16102,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="119.142874975594,157.764708992519">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,39.4588246662311"
               Start="0,0"
               End="0,31.9588246662311">
@@ -16109,7 +16124,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="116.800017370497,238.82353365875">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,40.0470600246975"
               Start="0,0"
               End="0,32.5470600246975">
@@ -16131,7 +16146,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="111.114303182096,391.764712274281">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,25.9294125154357"
               Start="0,0"
               End="0,18.4294125154357">
@@ -16153,7 +16168,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="110.771446087896,459.294124789717">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,43.3411775216096"
               Start="0,0"
               End="0,35.8411775216096">
@@ -16175,7 +16190,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="115.771446258195,544.235302311326">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,39.247058420281"
               Start="0,0"
               End="0,31.747058420281">
@@ -16198,7 +16213,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           PanelSize="276,662.4"
           Size="276,705.6"
           Id="Package\2 - SCT, SCS, DSmall"
-          TopLeft="1524.74286857236,65.1764778638782" />
+          TopLeft="1524.74286857236,79.5764778638782" />
         <NodeLayout
           Size="212.8,41.6"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\2SUM - Spring Summer SCH"
@@ -16248,7 +16263,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="124.438110710975,288.752945809546">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,49.364703887557"
               Start="0,0"
               End="0,41.864703887557">
@@ -16270,7 +16285,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="123.885720489463,379.717649697103">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,39.9686285949493"
               Start="0,0"
               End="0,32.4686285949493">
@@ -16292,7 +16307,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="124.552387439962,461.286278292052">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,45.0666678821337"
               Start="0,0"
               End="0,37.5666678821337">
@@ -16314,7 +16329,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="123.304767727365,547.952946174186">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,38.6117653708155"
               Start="0,0"
               End="0,31.1117653708155">
@@ -16336,7 +16351,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="122.076196615064,715.796085502532">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,29.380393601125"
               Start="0,0"
               End="0,21.880393601125">
@@ -16358,7 +16373,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="123.885719467669,786.776479103657">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,53.2784325236673"
               Start="0,0"
               End="0,45.7784325236673">
@@ -16380,7 +16395,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="127.990480723673,881.654911627324">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,43.380392021016"
               Start="0,0"
               End="0,35.880392021016">
@@ -16402,7 +16417,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="121.657148525666,628.164711545001">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,46.0313739575309"
               Start="0,0"
               End="0,38.5313739575309">
@@ -16442,7 +16457,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           PanelSize="432.8,1022.4"
           Size="432.8,1065.6"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group"
-          TopLeft="758.552384442697,1.12157049069151" />
+          TopLeft="758.552384442697,15.5215704906915" />
         <NodeLayout
           Size="143.2,41.6"
           Id="Package\4 - Degrees\6B - Bachelor"
@@ -16468,7 +16483,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="100.609533581442,56.8941207786745">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,41.0039206963509"
               Start="0,0"
               End="0,33.5039206963509">
@@ -16490,7 +16505,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="95.7333482061116,236.345103687564">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,24.6745107333966"
               Start="0,0"
               End="0,17.1745107333966">
@@ -16512,7 +16527,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="99.5142955186418,139.498041475025">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,55.2470622125383"
               Start="0,0"
               End="0,47.7470622125383">
@@ -16534,7 +16549,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="93.350102132813,302.736891907871">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="19.7293455455383,163.827821387402"
               Start="0,0"
               End="19.7293455455383,156.327821387402">
@@ -16566,7 +16581,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <AnnotationLayout
           Text="Must check with Paula Hathaway each year for an updated list of Terminal Masters program codes"
           ParentId="Package\4 - Degrees"
-          FontInfo="{x:Null}"
+          FontInfo="{assembly:Null}"
           Size="201.6,72"
           Id="5c140af5-3b9f-410d-b246-d5e0278c296b"
           TopLeft="22.514307269272,343.082359418902" />
@@ -16576,7 +16591,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           PanelSize="229.6,568.8"
           Size="229.6,612"
           Id="Package\4 - Degrees"
-          TopLeft="1842.74287398787,67.4588308408032" />
+          TopLeft="1842.74287398787,81.8588308408032" />
         <NodeLayout
           Size="140,41.6"
           Id="Package\5 - Graduate Program (PhD)\5AC - Enrolls"
@@ -16598,7 +16613,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="85.9,47.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -16620,7 +16635,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="85.9,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -16642,7 +16657,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="86.1,250.3">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60.0000000000001"
               Start="0,0"
               End="0,52.5000000000001">
@@ -16665,7 +16680,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           PanelSize="213.6,408"
           Size="213.6,451.2"
           Id="Package\5 - Graduate Program (PhD)"
-          TopLeft="2107.54559277391,71.0554685631148" />
+          TopLeft="2107.54559277391,85.4554685631148" />
         <NodeLayout
           Size="154.4,41.6"
           Id="Package\6 - Terminal Masters\MS_AC - Enrolls"
@@ -16687,7 +16702,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="119.600025970596,131.878992935695">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,39.0386567614066"
               Start="0,0"
               End="0,31.5386567614066">
@@ -16709,7 +16724,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="118.742883490543,212.517649697102">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,51.4588246662312"
               Start="0,0"
               End="0,43.9588246662312">
@@ -16731,7 +16746,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="120.485741010491,305.576474363334">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,62.4000014585608"
               Start="0,0"
               End="0,54.9000014585608">
@@ -16751,7 +16766,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <AnnotationLayout
           Text="ONLY RUN FOR 2017 and later."
           ParentId="Package\6 - Terminal Masters"
-          FontInfo="{x:Null}"
+          FontInfo="{assembly:Null}"
           Size="195.2,40"
           Id="3372d837-a6f8-4c6c-b7ff-af4656fcc2bd"
           TopLeft="27.7143111861487,14.4470603893372" />
@@ -16761,7 +16776,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           PanelSize="273.6,462.4"
           Size="273.6,505.6"
           Id="Package\6 - Terminal Masters"
-          TopLeft="2360.93335236141,73.4117657354544" />
+          TopLeft="2360.93335236141,87.8117657354543" />
         <NodeLayout
           Size="110.4,41.6"
           Id="Package\Erase (CAREFUL!) KPI2FY_2FT on 017\Delete"
@@ -16772,7 +16787,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           PanelSize="236,102.4"
           Size="236,145.6"
           Id="Package\Erase (CAREFUL!) KPI2FY_2FT on 017"
-          TopLeft="105.314277501009,393.929412150794" />
+          TopLeft="26.457133300937,400.988235577248" />
         <NodeLayout
           Size="110.4,41.6"
           Id="Package\Erase (CAREFUL!) KPI2SCT_2SCS_DSmall on 017\Delete"
@@ -16783,7 +16798,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           PanelSize="229.6,102.4"
           Size="229.6,145.6"
           Id="Package\Erase (CAREFUL!) KPI2SCT_2SCS_DSmall on 017"
-          TopLeft="106.552372760189,588.321571487373" />
+          TopLeft="27.695228560117,591.709806627055" />
         <NodeLayout
           Size="110.4,41.6"
           Id="Package\Erase (CAREFUL!) KPIData_Stage on 017\Delete"
@@ -16794,7 +16809,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           PanelSize="231.2,102.4"
           Size="231.2,145.6"
           Id="Package\Erase (CAREFUL!) KPIData_Stage on 017"
-          TopLeft="104.285706082168,49.4845902493536" />
+          TopLeft="25.428561882096,32.0728250973233" />
         <NodeLayout
           Size="110.4,41.6"
           Id="Package\Erase (CAREFUL!) KPIMaster_2_3 on 017\Delete"
@@ -16805,13 +16820,13 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           PanelSize="233.6,102.4"
           Size="233.6,145.6"
           Id="Package\Erase (CAREFUL!) KPIMaster_2_3 on 017"
-          TopLeft="102.361896498349,220.086272457814" />
+          TopLeft="24.6476094605968,216.13333102395" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="2072.34287398787,373.458830840803">
+          TopLeft="2072.34287398787,387.858830840803">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="35.2027187860404,-76.8033622776884"
               Start="0,0"
               End="27.7027187860404,-76.8033622776884">
@@ -16842,10 +16857,10 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="1191.3523844427,533.921570490691">
+          TopLeft="1191.3523844427,548.321570490691">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="145.790481677353,-104.619611163509"
               Start="0,0"
               End="145.790481677353,-97.1196111635088">
@@ -16870,10 +16885,10 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="1479.54286612005,246.901959327183">
+          TopLeft="1479.54286612005,261.301959327183">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="45.2000024523111,171.074518536696"
               Start="0,0"
               End="37.7000024523111,171.074518536696">
@@ -16904,10 +16919,10 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="1800.74286857236,417.976477863878">
+          TopLeft="1800.74286857236,432.376477863878">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="42.0000054155016,-44.517647023075"
               Start="0,0"
               End="34.5000054155016,-44.517647023075">
@@ -16938,30 +16953,30 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="730.604746848707,460.9588209469">
+          TopLeft="707.861888528354,412.582350375825">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="27.9476375939896,72.9627495437911"
+              StartConnector="{assembly:Null}"
+              EndConnector="50.6904959143429,135.739220114867"
               Start="0,0"
-              End="20.4476375939896,72.9627495437911">
+              End="43.1904959143429,135.739220114867">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="9.97381879699481,0" />
+                    End="21.3452479571715,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="9.97381879699481,0"
-                    Point2="13.9738187969948,0"
-                    Point3="13.9738187969948,4" />
+                    Point1="21.3452479571715,0"
+                    Point2="25.3452479571715,0"
+                    Point3="25.3452479571715,4" />
                   <mssgle:LineSegment
-                    End="13.9738187969948,68.9627495437911" />
+                    End="25.3452479571715,131.739220114867" />
                   <mssgle:CubicBezierSegment
-                    Point1="13.9738187969948,68.9627495437911"
-                    Point2="13.9738187969948,72.9627495437911"
-                    Point3="17.9738187969948,72.9627495437911" />
+                    Point1="25.3452479571715,131.739220114867"
+                    Point2="25.3452479571715,135.739220114867"
+                    Point3="29.3452479571715,135.739220114867" />
                   <mssgle:LineSegment
-                    End="20.4476375939896,72.9627495437911" />
+                    End="43.1904959143429,135.739220114867" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16972,10 +16987,10 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="2321.14559277391,296.655468563115">
+          TopLeft="2321.14559277391,311.055468563115">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="39.7877595875007,29.5562971723396"
               Start="0,0"
               End="32.2877595875007,29.5562971723396">
@@ -17007,6 +17022,65 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\1 - Faculty Staff\1A - RC">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\1 - Faculty Staff\1A - RC\OLE DB Source"
+          TopLeft="23.7714289898775,20.6117650061743" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\1 - Faculty Staff\1A - RC\OLE DB Destination"
+          TopLeft="14.2857145289986,115.623531033341" />
+        <EdgeLayout
+          Id="Package\1 - Faculty Staff\1A - RC.Paths[OLE DB Source Output]"
+          TopLeft="99.828571759438,62.2117650061743">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,53.4117660271667"
+              Start="0,0"
+              End="0,45.9117660271667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.9117660271667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\1 - Faculty Staff\1A - RC\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\1 - Faculty Staff\1A - RC\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\1 - Faculty Staff\1A - TT Faculty FTE">
     <LayoutInfo>
@@ -19172,65 +19246,6 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\6 - Terminal Masters\MS_HC - Headcount\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\1 - Faculty Staff\1A - RC">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="172,41.6"
-          Id="Package\1 - Faculty Staff\1A - RC\OLE DB Destination"
-          TopLeft="14.2857145289986,115.623531033341" />
-        <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\1 - Faculty Staff\1A - RC\OLE DB Source"
-          TopLeft="23.7714289898775,20.6117650061743" />
-        <EdgeLayout
-          Id="Package\1 - Faculty Staff\1A - RC.Paths[OLE DB Source Output]"
-          TopLeft="99.828571759438,62.2117650061743">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,53.4117660271667"
-              Start="0,0"
-              End="0,45.9117660271667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.9117660271667" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\1 - Faculty Staff\1A - RC\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\1 - Faculty Staff\1A - RC\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

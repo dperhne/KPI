@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="5 - Demographics_and_DivRollups"
   DTS:PackageType="5"
-  DTS:VersionBuild="190"
-  DTS:VersionGUID="{49CD2961-FF71-4CD0-9027-6B239EBD0D5E}">
+  DTS:VersionBuild="220"
+  DTS:VersionGUID="{F5DEC4F0-625C-4BC7-97EB-AD4BADF98C76}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -28,7 +28,7 @@
         DTS:DataType="8">SELECT  KPIData_Stage.KPICode, DepartmentGrouping.KPI_Division_Deptid, KPIData_Stage.AcadYear, SUM(KPIData_Stage.KPIValue) AS EXPR1
 FROM KPIData_Stage INNER JOIN DepartmentGrouping 
 ON KPIData_Stage.DeptID = DepartmentGrouping.deptid
-WHERE  AcadYear = '2018' and (DepartmentGrouping.KPI_Division_Deptid IS NOT NULL)
+WHERE  AcadYear = '2019' and (DepartmentGrouping.KPI_Division_Deptid IS NOT NULL)
 GROUP BY KPIData_Stage.KPICode, DepartmentGrouping.KPI_Division_Deptid, KPIData_Stage.AcadYear</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -49,7 +49,7 @@ dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.
 AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear
 WHERE (KPIData_Stage_1.KPICode = 'ALFTE') 
 AND (dbo.KPIData_Stage.KPICode = '1D' and KPIData_Stage.KPIValue&gt;0 )  
-AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2019') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID
 </DTS:VariableValue>
     </DTS:Variable>
@@ -86,7 +86,7 @@ FROM
     		FROM m_hrdw1.ethnicity_dtl
     		WHERE ethnicity_code in ('AMIND', 'BLACK', 'HISPA', 'PACIF', 'WHITE'))) asian
 WHERE
-	t.acad_year =  '2018' 
+	t.acad_year =  '2019' 
 	and t.term_mid between j.job_effdt and j.job_end_dt
 	and j.emplid = asian.emplid
 	and j.appt_dept_grp like 'COLLEGE_OF_LS%'
@@ -116,7 +116,7 @@ dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.
 AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear
 WHERE (KPIData_Stage_1.KPICode = 'ASFTE') 
 AND (dbo.KPIData_Stage.KPICode = '1F' and KPIData_Stage.KPIValue&gt;0 )  
-AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2019') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID
 </DTS:VariableValue>
     </DTS:Variable>
@@ -182,7 +182,7 @@ dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.
 AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear
 WHERE (KPIData_Stage_1.KPICode = 'FacAsianFTE') 
 AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0 )  
-AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2019') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -211,7 +211,7 @@ WHERE
 		and a.emplid not like '%-%'
 		and a.jobcode in ('201000', '201500', '202000', '202500')
 		and a.apptAuthPct != 0
-		and a.fy = '2018'
+		and a.fy = '2019'
 GROUP BY
 	a.fy, a.apptdeptid</DTS:VariableValue>
     </DTS:Variable>
@@ -233,7 +233,7 @@ dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.
 AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear
 WHERE (KPIData_Stage_1.KPICode = 'FacFFTE') 
 AND (dbo.KPIData_Stage.KPICode = '1A'  and KPIData_Stage.KPIValue&gt;0 ) 
-AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2019' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID
 ORDER BY AcadYear</DTS:VariableValue>
     </DTS:Variable>
@@ -263,7 +263,7 @@ WHERE
 		and a.emplid not like '%-%'
 		and a.jobcode in ('201000', '201500', '202000', '202500')
 		and a.apptAuthPct != 0
-		and a.fy = '2018'
+		and a.fy = '2019'
 GROUP BY
 	a.fy, a.apptdeptid</DTS:VariableValue>
     </DTS:Variable>
@@ -296,7 +296,7 @@ WHERE
 		and a.apptauthpct &gt; 0
 		and a.jobcode in ('201000', '201500', '202000', '202500')
 --								'129000', '129010', '129020')  -- exclude curators, these are in the museums.
-		and a.fy = '2018' 
+		and a.fy = '2019' 
 GROUP BY
 		d.dept_descr, a.fy, a.apptdeptid
 ORDER BY 
@@ -321,7 +321,7 @@ dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.
 AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear
 WHERE (KPIData_Stage_1.KPICode = 'FLFTE') 
 AND (dbo.KPIData_Stage.KPICode = '1D' and KPIData_Stage.KPIValue&gt;0 )  
-AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2019' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID
 </DTS:VariableValue>
     </DTS:Variable>
@@ -355,7 +355,7 @@ FROM
 			sex = 'F'
 			) female 
 WHERE
-	t.acad_year = '2018' 
+	t.acad_year = '2019' 
 	and t.term_mid between j.job_effdt and j.job_end_dt
 	and j.emplid = female.emplid
 	and j.appt_dept_grp like 'COLLEGE_OF_LS%'
@@ -385,7 +385,7 @@ dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.
 AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear
 WHERE (KPIData_Stage_1.KPICode = 'FSFTE') 
 AND (dbo.KPIData_Stage.KPICode = '1F' and KPIData_Stage.KPIValue&gt;0 )  
-AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2019' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID
 </DTS:VariableValue>
     </DTS:Variable>
@@ -489,7 +489,7 @@ sum(case when KPICode = '5HC4' THEN ISNULL (KPIValue, 0) else 0 End)/(sum(case w
 )*100 as KPIValue
 FROM     KPIData_Stage 
 where KPICode in ('5HC1','5HC2','5HC3','5HC4','5HC5','5HC6','5HC7','5HCT')
-and AcadYear = '2018'
+and AcadYear = '2019'
 group by DeptID, AcadYear
 </DTS:VariableValue>
     </DTS:Variable>
@@ -545,7 +545,7 @@ order by deptid, sex
                   * 100 AS KPIValue
 FROM     KPIData_Stage AS KPIData_Stage_1
 WHERE  (KPICode IN ('5HCF', '5HCM'))
-and AcadYear = '2018'
+and AcadYear = '2019'
 GROUP BY DeptID, AcadYear</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -600,7 +600,7 @@ order by deptid
                   * 100 AS KPIValue
 FROM     KPIData_Stage AS KPIData_Stage_1
 WHERE  (KPICode IN ('5HCN', '5HCY'))
-and AcadYear = '2018'
+and AcadYear = '2019'
 GROUP BY DeptID, AcadYear
 </DTS:VariableValue>
     </DTS:Variable>
@@ -622,7 +622,7 @@ dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.
 AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear
 WHERE (KPIData_Stage_1.KPICode = 'FacURMFTE') 
 AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0 )  
-AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2019') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID
 </DTS:VariableValue>
     </DTS:Variable>
@@ -644,7 +644,7 @@ dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.
 AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear
 WHERE (KPIData_Stage_1.KPICode = 'URMLFTE') 
 AND (dbo.KPIData_Stage.KPICode = '1D' and KPIData_Stage.KPIValue&gt;0 )  
-AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2019') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -676,7 +676,7 @@ FROM
 	 WHERE
   		ethnicity_code in ('AMIND', 'BLACK', 'HISPA', 'PACIF')) urm
 WHERE
-	t.acad_year =  '2018'
+	t.acad_year =  '2019'
 	and t.term_mid between j.job_effdt and j.job_end_dt
 	and j.emplid = urm.emplid
 	and j.appt_dept_grp like 'COLLEGE_OF_LS%'
@@ -706,7 +706,7 @@ dbo.KPIData_Stage KPIData_Stage_1 ON dbo.KPIData_Stage.DeptID = KPIData_Stage_1.
 AND dbo.KPIData_Stage.AcadYear = KPIData_Stage_1.AcadYear
 WHERE (KPIData_Stage_1.KPICode = 'URMSFTE') 
 AND (dbo.KPIData_Stage.KPICode = '1F' and KPIData_Stage.KPIValue&gt;0 )  
-AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2019') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID
 </DTS:VariableValue>
     </DTS:Variable>
@@ -837,7 +837,7 @@ ORDER BY
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacAsian - %Asian\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -984,7 +984,7 @@ ORDER BY
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacAsian - %Asian\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1195,7 +1195,7 @@ ORDER BY
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacAsianFTE - #Asian\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1344,7 +1344,7 @@ ORDER BY
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacAsianFTE - #Asian\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AIS]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1561,7 +1561,7 @@ ORDER BY
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacF - %Female\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1708,7 +1708,7 @@ ORDER BY
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacF - %Female\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1919,7 +1919,7 @@ ORDER BY
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacFFTE - #Female\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2068,7 +2068,7 @@ ORDER BY
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacFFTE - #Female\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AIS]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2285,7 +2285,7 @@ ORDER BY
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacURMFTE - #URM\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2434,7 +2434,7 @@ ORDER BY
                     <connection
                       refId="Package\1 - Tenure Track Faculty\FacURMFTE - #URM\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AIS]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2675,7 +2675,7 @@ ORDER BY
                     <connection
                       refId="Package\1 - Tenure Track Faculty\URMF - %URM\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2822,7 +2822,7 @@ ORDER BY
                     <connection
                       refId="Package\1 - Tenure Track Faculty\URMF - %URM\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3087,7 +3087,7 @@ ORDER BY
                     <connection
                       refId="Package\2 - Lecturers\AL - %Asian\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3234,7 +3234,7 @@ ORDER BY
                     <connection
                       refId="Package\2 - Lecturers\AL - %Asian\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3445,7 +3445,7 @@ ORDER BY
                     <connection
                       refId="Package\2 - Lecturers\ALFTE - #Asian\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3593,7 +3593,7 @@ ORDER BY
                     <connection
                       refId="Package\2 - Lecturers\ALFTE - #Asian\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3807,7 +3807,7 @@ ORDER BY
                     <connection
                       refId="Package\2 - Lecturers\FL - %Female\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3954,7 +3954,7 @@ ORDER BY
                     <connection
                       refId="Package\2 - Lecturers\FL - %Female\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4165,7 +4165,7 @@ ORDER BY
                     <connection
                       refId="Package\2 - Lecturers\FLFTE - #Female\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4313,7 +4313,7 @@ ORDER BY
                     <connection
                       refId="Package\2 - Lecturers\FLFTE - #Female\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4527,7 +4527,7 @@ ORDER BY
                     <connection
                       refId="Package\2 - Lecturers\URML - %URM\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4674,7 +4674,7 @@ ORDER BY
                     <connection
                       refId="Package\2 - Lecturers\URML - %URM\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4885,7 +4885,7 @@ ORDER BY
                     <connection
                       refId="Package\2 - Lecturers\URMLFTE - #URM\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5033,7 +5033,7 @@ ORDER BY
                     <connection
                       refId="Package\2 - Lecturers\URMLFTE - #URM\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5301,7 +5301,7 @@ ORDER BY
                     <connection
                       refId="Package\3 - All Regular Staff\AS - %Asian\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5448,7 +5448,7 @@ ORDER BY
                     <connection
                       refId="Package\3 - All Regular Staff\AS - %Asian\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5659,7 +5659,7 @@ ORDER BY
                     <connection
                       refId="Package\3 - All Regular Staff\ASFTE - #Asian\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5807,7 +5807,7 @@ ORDER BY
                     <connection
                       refId="Package\3 - All Regular Staff\ASFTE - #Asian\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6021,7 +6021,7 @@ ORDER BY
                     <connection
                       refId="Package\3 - All Regular Staff\FS - %Female\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6168,7 +6168,7 @@ ORDER BY
                     <connection
                       refId="Package\3 - All Regular Staff\FS - %Female\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6379,7 +6379,7 @@ ORDER BY
                     <connection
                       refId="Package\3 - All Regular Staff\FSFTE - #Female\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6527,7 +6527,7 @@ ORDER BY
                     <connection
                       refId="Package\3 - All Regular Staff\FSFTE - #Female\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6741,7 +6741,7 @@ ORDER BY
                     <connection
                       refId="Package\3 - All Regular Staff\URMS - %URM\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6888,7 +6888,7 @@ ORDER BY
                     <connection
                       refId="Package\3 - All Regular Staff\URMS - %URM\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7099,7 +7099,7 @@ ORDER BY
                     <connection
                       refId="Package\3 - All Regular Staff\URMSFTE - #URM\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7247,7 +7247,7 @@ ORDER BY
                     <connection
                       refId="Package\3 - All Regular Staff\URMSFTE - #URM\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7515,7 +7515,7 @@ ORDER BY
                     <connection
                       refId="Package\4 - Graduate Students\PhDAsianPct\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7663,7 +7663,7 @@ ORDER BY
                     <connection
                       refId="Package\4 - Graduate Students\PhDAsianPct\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{A82AF4A4-2BB7-4E8B-BC39-B574DC30A364}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world local]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world local]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7877,7 +7877,7 @@ ORDER BY
                     <connection
                       refId="Package\4 - Graduate Students\PhDAsianPct2 - %Asian\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8024,7 +8024,7 @@ ORDER BY
                     <connection
                       refId="Package\4 - Graduate Students\PhDAsianPct2 - %Asian\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8235,7 +8235,7 @@ ORDER BY
                     <connection
                       refId="Package\4 - Graduate Students\PhDFPct\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8383,7 +8383,7 @@ ORDER BY
                     <connection
                       refId="Package\4 - Graduate Students\PhDFPct\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{A82AF4A4-2BB7-4E8B-BC39-B574DC30A364}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world local]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world local]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8597,7 +8597,7 @@ ORDER BY
                     <connection
                       refId="Package\4 - Graduate Students\PhDFPct2 - %Female\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8744,7 +8744,7 @@ ORDER BY
                     <connection
                       refId="Package\4 - Graduate Students\PhDFPct2 - %Female\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8955,7 +8955,7 @@ ORDER BY
                     <connection
                       refId="Package\4 - Graduate Students\PHDURMPCT - #URM\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -9103,7 +9103,7 @@ ORDER BY
                     <connection
                       refId="Package\4 - Graduate Students\PHDURMPCT - #URM\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{A82AF4A4-2BB7-4E8B-BC39-B574DC30A364}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world local]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world local]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -9317,7 +9317,7 @@ ORDER BY
                     <connection
                       refId="Package\4 - Graduate Students\PHDURMPCT2 - %URM\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -9464,7 +9464,7 @@ ORDER BY
                     <connection
                       refId="Package\4 - Graduate Students\PHDURMPCT2 - %URM\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -9729,7 +9729,7 @@ ORDER BY
                     <connection
                       refId="Package\Division Rollups\Division Rollup\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -9876,7 +9876,7 @@ ORDER BY
                     <connection
                       refId="Package\Division Rollups\Division Rollup\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[m-mssqlprd017 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -10061,29 +10061,29 @@ ORDER BY
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="167.2,41.6"
+          Size="167,42"
           Id="Package\1 - Tenure Track Faculty\FacAsian - %Asian"
           TopLeft="36.5714287173992,227.784317761557" />
         <NodeLayout
-          Size="182.4,41.6"
+          Size="182,42"
           Id="Package\1 - Tenure Track Faculty\FacAsianFTE - #Asian"
           TopLeft="31.5918367277429,145.017369855729" />
         <NodeLayout
-          Size="156,41.6"
+          Size="156,42"
           Id="Package\1 - Tenure Track Faculty\FacF - %Female"
           TopLeft="42.8299322253414,389.246504899953" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171,42"
           Id="Package\1 - Tenure Track Faculty\FacFFTE - #Female"
           TopLeft="29.9591836387144,317.185439497212" />
         <NodeLayout
-          Size="176,41.6"
+          Size="176,42"
           Id="Package\1 - Tenure Track Faculty\FacURMFTE - #URM"
           TopLeft="41.7959185341705,14.0705893077652" />
         <NodeLayout
-          Size="150.4,41.6"
+          Size="150,42"
           Id="Package\1 - Tenure Track Faculty\URMF - %URM"
           TopLeft="48.0340139466195,79.6862764688511" />
         <EdgeLayout
@@ -10091,7 +10091,7 @@ ORDER BY
           TopLeft="121.481632722571,186.617369855729">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,41.1669479058278"
               Start="0,0"
               End="0,33.6669479058278">
@@ -10113,7 +10113,7 @@ ORDER BY
           TopLeft="118.194557932028,358.785439497212">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,30.4610654027404"
               Start="0,0"
               End="0,22.9610654027404">
@@ -10135,7 +10135,7 @@ ORDER BY
           TopLeft="117.865306178057,269.384317761557">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,47.8011217356554"
               Start="0,0"
               End="0,40.3011217356554">
@@ -10157,7 +10157,7 @@ ORDER BY
           TopLeft="126.514966240395,55.6705893077652">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,24.0156871610859"
               Start="0,0"
               End="0,16.5156871610859">
@@ -10179,7 +10179,7 @@ ORDER BY
           TopLeft="123.012925337181,121.286276468851">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,23.7310933868779"
               Start="0,0"
               End="0,16.2310933868779">
@@ -10199,32 +10199,32 @@ ORDER BY
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="236,486.4"
-          Size="236,528.8"
+          PanelSize="236,486"
+          Size="236,529"
           Id="Package\1 - Tenure Track Faculty"
-          TopLeft="355.727897214472,95.7859941722337" />
+          TopLeft="713.061236633154,75.3938370234961" />
         <NodeLayout
-          Size="137.6,41.6"
+          Size="138,42"
           Id="Package\2 - Lecturers\AL - %Asian"
           TopLeft="33.9809577007684,234.612889476631" />
         <NodeLayout
-          Size="152.8,41.6"
+          Size="153,42"
           Id="Package\2 - Lecturers\ALFTE - #Asian"
           TopLeft="30.7428622031699,162.431375537639" />
         <NodeLayout
-          Size="145.6,41.6"
+          Size="146,42"
           Id="Package\2 - Lecturers\FL - %Female"
           TopLeft="38.334699271511,371.968633699912" />
         <NodeLayout
-          Size="160.8,41.6"
+          Size="161,42"
           Id="Package\2 - Lecturers\FLFTE - #Female"
           TopLeft="29.7904812345702,307.215691293675" />
         <NodeLayout
-          Size="149.6,41.6"
+          Size="150,42"
           Id="Package\2 - Lecturers\URML - %URM"
           TopLeft="30.6285766640488,87.2941200493942" />
         <NodeLayout
-          Size="164.8,41.6"
+          Size="165,42"
           Id="Package\2 - Lecturers\URMLFTE - #URM"
           TopLeft="16.4571476741714,16.6274521672602" />
         <EdgeLayout
@@ -10232,7 +10232,7 @@ ORDER BY
           TopLeft="102.14286216911,58.2274521672602">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,29.066667882134"
               Start="0,0"
               End="0,21.566667882134">
@@ -10254,7 +10254,7 @@ ORDER BY
           TopLeft="104.961909951969,204.031375537639">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,30.581513938992"
               Start="0,0"
               End="0,23.081513938992">
@@ -10276,7 +10276,7 @@ ORDER BY
           TopLeft="106.285719433609,128.894120049394">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,33.5372554882448"
               Start="0,0"
               End="0,26.0372554882448">
@@ -10298,7 +10298,7 @@ ORDER BY
           TopLeft="106.485719467669,276.212889476631">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,31.0028018170437"
               Start="0,0"
               End="0,23.5028018170437">
@@ -10320,7 +10320,7 @@ ORDER BY
           TopLeft="110.662590253041,348.815691293675">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,23.1529424062375"
               Start="0,0"
               End="0,15.6529424062375">
@@ -10340,32 +10340,32 @@ ORDER BY
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="214.4,468.8"
-          Size="214.4,512"
+          PanelSize="214,469"
+          Size="214,512"
           Id="Package\2 - Lecturers"
-          TopLeft="618.02041868809,96.8621847196157" />
+          TopLeft="1003.92518716477,78.5092432857519" />
         <NodeLayout
-          Size="138.4,41.6"
+          Size="138,42"
           Id="Package\3 - All Regular Staff\AS - %Asian"
           TopLeft="44.5115741440577,215.820731994508" />
         <NodeLayout
-          Size="153.6,41.6"
+          Size="154,42"
           Id="Package\3 - All Regular Staff\ASFTE - #Asian"
           TopLeft="36.9904856623439,150.431375780733" />
         <NodeLayout
-          Size="146.4,41.6"
+          Size="146,42"
           Id="Package\3 - All Regular Staff\FS - %Female"
           TopLeft="40.729261154475,347.408408910004" />
         <NodeLayout
-          Size="161.6,41.6"
+          Size="162,42"
           Id="Package\3 - All Regular Staff\FSFTE - #Female"
           TopLeft="34.133342756544,279.921573675215" />
         <NodeLayout
-          Size="150.4,41.6"
+          Size="150,42"
           Id="Package\3 - All Regular Staff\URMS - %URM"
           TopLeft="38.6068121387383,75.7848756888216" />
         <NodeLayout
-          Size="165.6,41.6"
+          Size="166,42"
           Id="Package\3 - All Regular Staff\URMSFTE - #URM"
           TopLeft="28.4190569449446,10.7450993118814" />
         <EdgeLayout
@@ -10373,7 +10373,7 @@ ORDER BY
           TopLeft="112.512934541841,52.3450993118814">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,23.4397763769402"
               Start="0,0"
               End="0,15.9397763769402">
@@ -10395,7 +10395,7 @@ ORDER BY
           TopLeft="113.798648900541,117.384875688822">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,33.0465000919114"
               Start="0,0"
               End="0,25.5465000919114">
@@ -10417,7 +10417,7 @@ ORDER BY
           TopLeft="113.751029903201,192.031375780733">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,23.789356213775"
               Start="0,0"
               End="0,16.289356213775">
@@ -10439,7 +10439,7 @@ ORDER BY
           TopLeft="114.322458450301,257.420731994508">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,22.500841680707"
               Start="0,0"
               End="0,15.000841680707">
@@ -10461,7 +10461,7 @@ ORDER BY
           TopLeft="114.431301955509,321.521573675215">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,25.8868352347892"
               Start="0,0"
               End="0,18.3868352347892">
@@ -10482,31 +10482,31 @@ ORDER BY
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="240,440"
-          Size="240,483.2"
+          Size="240,483"
           Id="Package\3 - All Regular Staff"
-          TopLeft="862.054436449406,117.001120520188" />
+          TopLeft="1251.76872880048,98.6481790863239" />
         <NodeLayout
-          Size="138.4,41.6"
+          Size="138,42"
           Id="Package\4 - Graduate Students\PhDAsianPct"
           TopLeft="41.4149662148506,149.819611066271" />
         <NodeLayout
-          Size="190.4,41.6"
+          Size="190,42"
           Id="Package\4 - Graduate Students\PhDAsianPct2 - %Asian"
           TopLeft="21.1428710587172,215.858827218713" />
         <NodeLayout
-          Size="119.2,41.6"
+          Size="119,42"
           Id="Package\4 - Graduate Students\PhDFPct"
           TopLeft="52.8707487228659,280.737259961164" />
         <NodeLayout
-          Size="179.2,41.6"
+          Size="179,42"
           Id="Package\4 - Graduate Students\PhDFPct2 - %Female"
           TopLeft="22.2857282210373,351.011770694561" />
         <NodeLayout
-          Size="180.8,41.6"
+          Size="181,42"
           Id="Package\4 - Graduate Students\PHDURMPCT - #URM"
           TopLeft="13.5238092772817,12.1142870061538" />
         <NodeLayout
-          Size="189.6,41.6"
+          Size="190,42"
           Id="Package\4 - Graduate Students\PHDURMPCT2 - %URM"
           TopLeft="15.4285852471179,81.3647080444547" />
         <EdgeLayout
@@ -10514,7 +10514,7 @@ ORDER BY
           TopLeft="107.0761972622,53.7142870061538">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,27.6504210383008"
               Start="0,0"
               End="0,20.1504210383008">
@@ -10536,7 +10536,7 @@ ORDER BY
           TopLeft="110.421775730984,122.964708044455">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,26.8549030218161"
               Start="0,0"
               End="0,19.3549030218161">
@@ -10558,7 +10558,7 @@ ORDER BY
           TopLeft="113.478918636784,191.419611066271">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,24.4392161524417"
               Start="0,0"
               End="0,16.9392161524417">
@@ -10580,7 +10580,7 @@ ORDER BY
           TopLeft="114.406809890792,257.458827218713">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,23.2784327424512"
               Start="0,0"
               End="0,15.7784327424512">
@@ -10602,7 +10602,7 @@ ORDER BY
           TopLeft="112.178238471952,322.337259961164">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,28.6745107333974"
               Start="0,0"
               End="0,21.1745107333974">
@@ -10622,35 +10622,35 @@ ORDER BY
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="248,453.6"
-          Size="248,496.8"
+          PanelSize="248,454"
+          Size="248,497"
           Id="Package\4 - Graduate Students"
-          TopLeft="1137.46940712609,104.743977491143" />
+          TopLeft="1525.27893753998,86.391036057279" />
         <NodeLayout
-          Size="148.8,41.6"
+          Size="149,42"
           Id="Package\Division Rollups\Division Rollup"
           TopLeft="44.9523968631722,31.1529436217048" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="230.4,112.8"
-          Size="230.4,156"
+          PanelSize="210,107"
+          Size="210,150"
           Id="Package\Division Rollups"
-          TopLeft="78.285715618912,281.976469550083" />
+          TopLeft="451.428579116354,272.392155690175" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="591.727897214472,356.524089445924">
+          TopLeft="949.061236633154,337.151540154624">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="26.2925214736179,0"
+              StartConnector="{assembly:Null}"
+              EndConnector="54.8639505316145,0"
               Start="0,0"
-              End="18.7925214736179,0">
+              End="47.3639505316145,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="18.7925214736179,0" />
+                    End="47.3639505316145,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10661,18 +10661,18 @@ ORDER BY
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="832.420418688089,355.731652619902">
+          TopLeft="1218.32518716477,337.378711186038">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="29.634017761317,0"
+              StartConnector="{assembly:Null}"
+              EndConnector="33.4435416357142,0"
               Start="0,0"
-              End="22.134017761317,0">
+              End="25.9435416357142,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="22.134017761317,0" />
+                    End="25.9435416357142,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10683,18 +10683,18 @@ ORDER BY
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="1102.05443644941,355.872549005665">
+          TopLeft="1491.76872880048,337.519607571801">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="35.4149706766829,0"
+              StartConnector="{assembly:Null}"
+              EndConnector="33.5102087394937,0"
               Start="0,0"
-              End="27.9149706766829,0">
+              End="26.0102087394937,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="27.9149706766829,0" />
+                    End="26.0102087394937,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10705,18 +10705,18 @@ ORDER BY
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="308.685715618912,360.081231861158">
+          TopLeft="661.828579116354,343.492996356836">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="47.0421815955605,0"
+              StartConnector="{assembly:Null}"
+              EndConnector="51.2326575168,0"
               Start="0,0"
-              End="39.5421815955605,0">
+              End="43.7326575168,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="39.5421815955605,0" />
+                    End="43.7326575168,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10728,10 +10728,10 @@ ORDER BY
         <AnnotationLayout
           Text="Make sure all KPICode like '1%' are in KPIData_Stage.  Otherwise percentages will not be calculated properly."
           ParentId="Package"
-          FontInfo="{x:Null}"
-          Size="603.2,40"
+          FontInfo="{assembly:Null}"
+          Size="603,40"
           Id="9dbb9153-ce1b-4d54-abe9-27ca1178a55e"
-          TopLeft="587.2381052387,26.5098040502651" />
+          TopLeft="1119.80954287976,650.509812801629" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -12215,7 +12215,7 @@ ORDER BY
     design-time-name="Package\Division Rollups\Division Rollup">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\Division Rollups\Division Rollup\OLE DB Source"
@@ -12243,7 +12243,9 @@ ORDER BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
