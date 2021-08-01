@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="m-mssqlprd017 14330 LSA_Research"
+  DTS:ObjectName="db-lsasql17 14330 LSA_Research"
   DTS:DTSID="{7560D941-4B59-4028-BD83-C860561CFAC3}"
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=LSA_Research;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      DTS:ConnectionString="Data Source=db-lsasql17,14330;Initial Catalog=LSA_Research;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>

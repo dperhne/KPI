@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="4 - Profile_8_and_9"
   DTS:PackageType="5"
-  DTS:VersionBuild="41"
-  DTS:VersionGUID="{99469368-E807-4180-ACEB-86F68651BAEA}">
+  DTS:VersionBuild="43"
+  DTS:VersionGUID="{F24C4EEE-3CA4-4634-AA97-986D6AE62841}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -43,7 +43,7 @@ WHERE
 			)
   AND l.ACCOUNTING_PERIOD &lt;= 12
   AND l.DEPTID NOT IN ('172200','172400','173000')
-  AND l.fiscal_year = '2018'
+  AND l.fiscal_year = '2021'
 GROUP BY
   l.DEPTID, l.FISCAL_YEAR</DTS:VariableValue>
     </DTS:Variable>
@@ -70,7 +70,7 @@ WHERE
   and  a.account_type  =  'R'
   and  d.dept_grp  =  'COLLEGE_OF_LSA'
   and  l.fund_code = '30000'
-  and l.fiscal_year = '2018'
+  and l.fiscal_year = '2021'
 GROUP BY
   l.deptid, l.fiscal_year</DTS:VariableValue>
     </DTS:Variable>
@@ -97,7 +97,7 @@ WHERE
   and  a.account_type  =  'R'
   and  d.dept_grp  =  'COLLEGE_OF_LSA'
   and  l.fund_code  =  '10000'
-  and l.fiscal_year = '2018'
+  and l.fiscal_year = '2021'
 GROUP BY
   l.deptid, l.fiscal_year
 </DTS:VariableValue>
@@ -128,7 +128,7 @@ WHERE
   and  d.dept_grp  =  'COLLEGE_OF_LSA'
   and  f.fund_grp  in  ('AGENCY', 'AUXILIARY', 'DESIGNATED', 'PLANT')
   and  l.fund_code  !=  '86000'
-  and l.fiscal_year = '2018'
+  and l.fiscal_year = '2021'
 GROUP BY
   l.deptid, l.fiscal_year</DTS:VariableValue>
     </DTS:Variable>
@@ -155,7 +155,7 @@ WHERE
   and  a.account_type  =  'R'
   and  d.dept_grp  =  'COLLEGE_OF_LSA'
   and  l.fund_code in ('20000', '25000')
-  and l.fiscal_year = '2018'
+  and l.fiscal_year = '2021'
 GROUP BY
   l.deptid, l.fiscal_year</DTS:VariableValue>
     </DTS:Variable>
@@ -193,7 +193,7 @@ from
 			M_SMDW2.DepartmentPercent p
 		where
 			p.rmFnc not in ('0050', '0060', '0070')
-			and p.fiscal_year = '2018'
+			and p.fiscal_year = '2021'
 		group by
 			p.fiscal_year, p.bldrecnbr, p.deptid
 	) dp,
@@ -206,7 +206,7 @@ where
 	and c.fiscal_year = dp.fiscal_year
 	and dp.deptid = d.deptid
 	and d.dept_grp = 'COLLEGE_OF_LSA'
-	and c.fiscal_year = '2018'
+	and c.fiscal_year = '2021'
 	and v.address_seq_num =
 		(
 		 select max(address_seq_num)
@@ -262,7 +262,7 @@ from
 			M_SMDW2.DepartmentPercent p
 		where
 			p.rmFnc not in ('0050', '0060', '0070')
-			and p.fiscal_year = '2018'
+			and p.fiscal_year = '2021'
 		group by
 			p.fiscal_year, p.bldrecnbr, p.deptid
 	) dp,
@@ -275,7 +275,7 @@ where
 	and c.fiscal_year = dp.fiscal_year
 	and dp.deptid = d.deptid
 	and d.dept_grp = 'COLLEGE_OF_LSA'
-	and c.fiscal_year = '2018'
+	and c.fiscal_year = '2021'
 	and v.address_seq_num =
 		(
 		 select max(address_seq_num)
@@ -313,7 +313,7 @@ where
 	p.deptid = d.deptid
    and p.rmFnc not in ('0050', '0060', '0070')
 	and d.dept_grp = 'COLLEGE_OF_LSA'
-   and p.fiscal_year  = '2018'
+   and p.fiscal_year  = '2021'
 group by
 	p.fiscal_year, d.deptid, d.dept_descr
 order by
@@ -464,7 +464,7 @@ FROM
 				 	 	AND mp.SESSION_CODE=ci.SESSION_CODE(+) AND mp.CLASS_SECTION=ci.CLASS_SECTION(+) AND mp.CLASS_MTG_NBR=ci.CLASS_MTG_NBR(+) AND cm.MEETING_DT=CLASS_MTG_CAL.CAL_DATE 
 				 	 	AND mp.CRSE_ID=cm.CRSE_ID(+) AND mp.CRSE_OFFER_NBR=cm.CRSE_OFFER_NBR(+) AND mp.TERM=cm.TERM(+) AND mp.SESSION_CODE=cm.SESSION_CODE(+) 
 						AND mp.CLASS_SECTION=cm.CLASS_SECTION(+) AND mp.CLASS_MTG_NBR=cm.CLASS_MTG_NBR(+) AND c.CRSE_COMPONENT IN ('LEC', 'DIS', 'REC', 'SEM') 
-						AND c.TERM in ('2160', '2170') 
+						AND c.TERM in ('2310', '2320') 
 						AND c.DEPT_GRP = 'COLLEGE_OF_LSA' 
 						AND (ci.CLASS_INSTR_ROLE = 'PI' OR ci.CLASS_INSTR_ROLE Is Null) 
 				 	 	AND c.CAMPUS_LOCATION = 'AA CAMPUS' 
@@ -528,7 +528,7 @@ FROM
 		 AND f.RMTYP = '110' 
 		AND cm.CAMPUS_MTG_TYPE &lt;&gt; 'CRSE' 
 		AND cm.MTG_HST_DEPT_GRP = 'COLLEGE_OF_LSA' 
-		AND cm.RPTING_TERM in  ('2160', '2170')  
+		AND cm.RPTING_TERM in  ('2310', '2320')  
 		 ) 
 				 group by CAMPUS_MTG_HOST_DEPTID, DAY_OF_WEEK, RPTING_TERM_DESCRSHORT, RPTING_TERM ) u,
 				 m_gldw1.curr_fn_dept_vw d,
@@ -626,7 +626,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\8 - Funding Levels\7B - Year End Balance - All Funds\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -774,7 +774,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\8 - Funding Levels\7B - Year End Balance - All Funds\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1009,7 +1009,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\8 - Funding Levels\7D - Gifts\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1157,7 +1157,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\8 - Funding Levels\7D - Gifts\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1392,7 +1392,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\8 - Funding Levels\7G - General Funds\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1540,7 +1540,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\8 - Funding Levels\7G - General Funds\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1775,7 +1775,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\8 - Funding Levels\7Other - Other\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1923,7 +1923,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\8 - Funding Levels\7Other - Other\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2158,7 +2158,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\8 - Funding Levels\7S - Sponsored Research\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2306,7 +2306,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\8 - Funding Levels\7S - Sponsored Research\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2587,7 +2587,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\9 - Operations\8EC - Energy Cost\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2735,7 +2735,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\9 - Operations\8EC - Energy Cost\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2949,7 +2949,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\9 - Operations\8EU - Energy Usage\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3097,7 +3097,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\9 - Operations\8EU - Energy Usage\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3311,7 +3311,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\9 - Operations\8S - Space\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3459,7 +3459,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\9 - Operations\8S - Space\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3673,7 +3673,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\9 - Operations\8SD - Class Schedule Dist\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3821,7 +3821,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
                     <connection
                       refId="Package\9 - Operations\8SD - Class Schedule Dist\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4694,7 +4694,7 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
     design-time-name="Package\9 - Operations\8S - Space">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\9 - Operations\8S - Space\OLE DB Source"
@@ -4734,7 +4734,9 @@ GROUP BY deptid, acad_year	</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

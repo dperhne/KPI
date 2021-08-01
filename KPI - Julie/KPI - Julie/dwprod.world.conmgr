@@ -5,10 +5,10 @@
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=MSDAORA.1;Persist Security Info=True;">
+      DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArbqHGUPvbkiO0DirV/E+PgAAAAACAAAAAAADZgAAwAAAABAAAACvDFHLcXv0UmPOyBBnqu02AAAAAASAAACgAAAAEAAAAOiqYN0GYQKFNjbfT3O1cQ54AAAARmTBc5KK4UfXpsL9yqiE/zkb6X+xQ4/HLOaKPFN3fIPS68Y8n3jopeibgDAytF+aF7kxJ4qGNQ33g+8+OhHJbApSi3llepagHrD12aYW73qfPVvCN1zufdvysG0FzIdv9QIDuTF/LHx8ney2+iYzvPM9vSMvYx7EFAAAAJ7Rezo6Em/EzyJHBMBufeNwzMn3</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQ/5l3nUPS0KmK4zQFw+c5wAAAAACAAAAAAADZgAAwAAAABAAAABVW70+XIXQNTjqXI9blvFXAAAAAASAAACgAAAAEAAAAI2UlQ1sPEQVINwcyE8rBEaAAAAAvHU0mi83W9d1xMaXvDmvAVNh0tm4mmCF5C+NHuwGNCJRQ+tq1U3DiaCGfmfIEEZ4msPNtn03SDfJ4YTHu4KAtZEe9CoxeV5RUUguG1Tul5ABGxfyHHzRDagYk3l1NvxL66yAEmgm7tjNAZctRis939C5uJ0B+npgrBbX+RJwU/UUAAAA3Y5XAwhdzV/FqIjhsGXcUlOiUNE=</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

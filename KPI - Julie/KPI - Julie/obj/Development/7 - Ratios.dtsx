@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="7 - Ratios"
   DTS:PackageType="5"
-  DTS:VersionBuild="176"
-  DTS:VersionGUID="{6C89617F-B852-43AE-88E3-82B8037C760C}">
+  DTS:VersionBuild="200"
+  DTS:VersionGUID="{0C83AABE-8B54-4AFA-A7FC-38A7229D0A59}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -34,7 +34,7 @@ dbo.KPIData KPIData_1 ON dbo.KPIData.DeptID = KPIData_1.DeptID
 AND dbo.KPIData.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '6P') 
 AND (dbo.KPIData.KPICode = '1A' and KPIData.KPIValue&gt;0) 
-AND KPIData.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData.AcadYear = '2021' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -57,7 +57,7 @@ WHERE
 	d.Dept_Grp = 'COLLEGE_OF_LSA'
 	and e.DeptEmploymentStatus = 'Active'
 	and a.JOBCODE in ('201000', '201500', '202000', '202500')
-	and a.FY = '2018'
+	and a.FY = '2021'
 GROUP BY
 	d.DeptID, a.FY, e.Emplid</DTS:VariableValue>
     </DTS:Variable>
@@ -79,7 +79,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '9UD') 
 AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0) 
-AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2021' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -100,7 +100,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '3GSI') 
 AND (dbo.KPIData_Stage.KPICode = '2T') 
-AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2021') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -121,7 +121,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '3LEC') 
 AND (dbo.KPIData_Stage.KPICode = '2T') 
-AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2021' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -142,7 +142,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '3Other') 
 AND (dbo.KPIData_Stage.KPICode = '2T') 
-AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2021' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -163,7 +163,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '3TT') 
 AND (dbo.KPIData_Stage.KPICode = '2T') 
-AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2021') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID
 ORDER BY AcadYear</DTS:VariableValue>
     </DTS:Variable>
@@ -185,7 +185,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '5AD') 
 AND (dbo.KPIData_Stage.KPICode = '5AP') 
-AND KPIData_Stage.AcadYear ='2018') DERIVEDTBL
+AND KPIData_Stage.AcadYear ='2021') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -206,7 +206,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '5AC') 
 AND (dbo.KPIData_Stage.KPICode = '5AD') 
-AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2021' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -227,7 +227,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '6B') 
 AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0 )  
-AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2021' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -247,7 +247,7 @@ AND AL1.COMMITTEE_MEMBER_ID &lt;&gt; ' '
 AND AL1.COMMITTEE_ROLE IN ('CHAI','COCH') 
 AND AL1.COMMITTEE_MEMBER_END_DT&gt;='01-JUL-16'
 AND AL3.COMPLETION_TERM&gt;='1900' AND AL3.DEGREE='PHD'
-and AL4.ACAD_YEAR = '2018'
+and AL4.ACAD_YEAR = '2021'
 order by AL1.COMMITTEE_MEMBER_ID
 </DTS:VariableValue>
     </DTS:Variable>
@@ -267,7 +267,7 @@ ON A.DeptID = B.DeptID
 AND A.AcadYear = B.AcadYear
 WHERE (B.KPICode = '1A' and B.KPIValue&gt;0)
 AND A.KPICode = 'CPhDComm_SumByD'
-AND A.AcadYear = '2018' 
+AND A.AcadYear = '2021' 
 </DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -285,7 +285,7 @@ SUM(A.Committee_Total) as KPIValue
    FROM dbo.KPIData_Stage2_CPhDCommittee A
 WHERE A.KPICode = '1A_by_Emplid'  
 AND A.Committee_Total&gt;0 
-AND A.AcadYear = '2018' 
+AND A.AcadYear = '2021' 
 GROUP BY A.KPICode, A.DeptID, A.AcadYear</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -306,7 +306,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '3TT') 
 AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0) 
-AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2021' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -327,7 +327,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '7G') 
 AND (dbo.KPIData_Stage.KPICode = '2T' and KPIData_Stage.KPIValue&gt;0 ) 
-AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2021' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -348,7 +348,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '5HC') 
 AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0 ) 
-AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2021' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -369,7 +369,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '2SCS') 
 AND (dbo.KPIData_Stage.KPICode = '2SCT'  and KPIData_Stage.KPIValue&gt;0 ) 
-AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2021' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -398,7 +398,7 @@ FROM
   AND (dbo.KPIData_Stage.KPICode IN ('1A', '1D', '1G')
   --AND KPIData_Stage.KPIValue      &gt;0 
   )
-  AND KPIData_Stage.AcadYear  = '2018'
+  AND KPIData_Stage.AcadYear  = '2021'
   GROUP BY KPIData_1.KPIValue, dbo.KPIData_Stage.AcadYear, KPIData_Stage.DeptID
   HAVING SUM(dbo.KPIData_Stage.KPIValue) &gt; 0
   ) DERIVEDTBL
@@ -424,7 +424,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = '1F') 
 AND (dbo.KPIData_Stage.KPICode = '1A'  and KPIData_Stage.KPIValue&gt;0 ) 
-AND KPIData_Stage.AcadYear = '2018' ) DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2021' ) DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -442,7 +442,7 @@ FROM         (SELECT     'ECF' AS EXPR1, dbo.KPIData_Stage.AcadYear, KPIData_Sta
                                      dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID 
 									 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
                        WHERE      (KPIData_1.KPICode = '8EC') AND (dbo.KPIData_Stage.KPICode = '8S'   
-					   and KPIData_Stage.KPIValue&gt;0) AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
+					   and KPIData_Stage.KPIValue&gt;0) AND KPIData_Stage.AcadYear = '2021') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -459,7 +459,7 @@ FROM         (SELECT     'EUF' AS EXPR1, dbo.KPIData_Stage.AcadYear, KPIData_Sta
               FROM          dbo.KPIData_Stage INNER JOIN
  dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
   WHERE      (KPIData_1.KPICode = '8EU') AND (dbo.KPIData_Stage.KPICode = '8S'  and KPIData_Stage.KPIValue&gt;0) AND 
-  KPIData_Stage.AcadYear ='2018') DERIVEDTBL
+  KPIData_Stage.AcadYear ='2021') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -480,7 +480,7 @@ dbo.KPIData_Stage KPIData_1 ON dbo.KPIData_Stage.DeptID = KPIData_1.DeptID
 AND dbo.KPIData_Stage.AcadYear = KPIData_1.AcadYear
 WHERE (KPIData_1.KPICode = 'UROP') 
 AND (dbo.KPIData_Stage.KPICode = '1A' and KPIData_Stage.KPIValue&gt;0 )  
-AND KPIData_Stage.AcadYear = '2018') DERIVEDTBL
+AND KPIData_Stage.AcadYear = '2021') DERIVEDTBL
 GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
@@ -489,6 +489,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
       DTS:refId="Package\A - % Credit Hours by Instructor Group"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
+      DTS:Disabled="True"
       DTS:DTSID="{6EEEF083-37BF-4DB1-87CA-927CFF79C5DE}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -569,7 +570,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\A - % Credit Hours by Instructor Group\AGSI - GSI\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -716,7 +717,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\A - % Credit Hours by Instructor Group\AGSI - GSI\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -927,7 +928,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\A - % Credit Hours by Instructor Group\ALEC - Lecturer\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1074,7 +1075,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\A - % Credit Hours by Instructor Group\ALEC - Lecturer\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1285,7 +1286,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\A - % Credit Hours by Instructor Group\AOther - Other\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1432,7 +1433,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\A - % Credit Hours by Instructor Group\AOther - Other\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1643,7 +1644,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\A - % Credit Hours by Instructor Group\ATT - Tenure Track Faculty\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1790,7 +1791,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\A - % Credit Hours by Instructor Group\ATT - Tenure Track Faculty\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1959,6 +1960,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
       DTS:refId="Package\B - CPhDCommittee"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
+      DTS:Disabled="True"
       DTS:DTSID="{60962722-89A1-43B4-B1CA-46B1C15193AA}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -2039,7 +2041,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - CPhDCommittee\1A_by_Emplid\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2218,7 +2220,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - CPhDCommittee\1A_by_Emplid\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AIS]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2459,7 +2461,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - CPhDCommittee\Chair_Cochair\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2582,7 +2584,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - CPhDCommittee\Chair_Cochair\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2785,7 +2787,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - CPhDCommittee\Committee_Sum_by_Dept\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2934,7 +2936,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - CPhDCommittee\Committee_Sum_by_Dept\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3151,7 +3153,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - CPhDCommittee\CPhDCommitte Calculation\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3298,7 +3300,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - CPhDCommittee\CPhDCommitte Calculation\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3533,6 +3535,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
       DTS:refId="Package\B - Productivity"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
+      DTS:Disabled="True"
       DTS:DTSID="{F5A91A04-892D-43D7-B96F-18681C842387}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -3613,7 +3616,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - Productivity\9KP - Adjusted UM Direct VOR\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3760,7 +3763,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - Productivity\9KP - Adjusted UM Direct VOR\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3971,7 +3974,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - Productivity\CBachProd - Bachelor Degrees\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4118,7 +4121,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - Productivity\CBachProd - Bachelor Degrees\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4329,7 +4332,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - Productivity\CSCHProd - SCH Taught by TT Faculty\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4476,7 +4479,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - Productivity\CSCHProd - SCH Taught by TT Faculty\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4687,7 +4690,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - Productivity\UROPProd - UROP Students\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4834,7 +4837,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\B - Productivity\UROPProd - UROP Students\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5003,6 +5006,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
       DTS:refId="Package\C - Graduate Program (PhD)"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
+      DTS:Disabled="True"
       DTS:DTSID="{9B180A02-BC2E-456A-A4A7-D383948FAB8E}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -5083,7 +5087,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\C - Graduate Program (PhD)\BAdmitRate - Graduate Admits as % of Applications (Selectivity)\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5230,7 +5234,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\C - Graduate Program (PhD)\BAdmitRate - Graduate Admits as % of Applications (Selectivity)\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5441,7 +5445,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\C - Graduate Program (PhD)\BYield - Graudate Enrolls as % of Admits (Yield)\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5588,7 +5592,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\C - Graduate Program (PhD)\BYield - Graudate Enrolls as % of Admits (Yield)\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5821,7 +5825,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\DGenProd - General Fund Appropriation $\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5968,7 +5972,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\DGenProd - General Fund Appropriation $\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6179,7 +6183,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\DGradProd - Graduate Students\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6326,7 +6330,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\DGradProd - Graduate Students\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6537,7 +6541,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\DSmall - Small Section %\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6684,7 +6688,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\DSmall - Small Section %\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6895,7 +6899,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\DStaffAcad - Staff FTE over Acad FTE\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7042,7 +7046,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\DStaffAcad - Staff FTE over Acad FTE\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7253,7 +7257,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\DStaffTT - Staff FTE over TT\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7400,7 +7404,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\DStaffTT - Staff FTE over TT\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7611,7 +7615,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\ECF - Energy $\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7758,7 +7762,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\ECF - Energy $\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -7969,7 +7973,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\EUF - Energy (1000 BTUs)\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8116,7 +8120,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
                     <connection
                       refId="Package\D - Operations\EUF - Energy (1000 BTUs)\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -8440,7 +8444,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
         <NodeLayout
           Size="174.4,41.6"
           Id="Package\B - CPhDCommittee\Committee_Count"
-          TopLeft="38.2857260412106,314.494122091378" />
+          TopLeft="37.5714403147607,313.729416198301" />
         <NodeLayout
           Size="202.4,41.6"
           Id="Package\B - CPhDCommittee\Committee_Sum_by_Dept"
@@ -8481,18 +8485,18 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\B - CPhDCommittee.PrecedenceConstraints[Constraint 1]"
-          TopLeft="123.57144043397,281.082361315031">
+          TopLeft="123.214297570745,281.082361315031">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,33.4117607763475"
+              EndConnector="0,32.6470548832696"
               Start="0,0"
-              End="0,25.9117607763475">
+              End="0,25.1470548832696">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.9117607763475" />
+                    End="0,25.1470548832696" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8503,18 +8507,18 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\B - CPhDCommittee.PrecedenceConstraints[Constraint 2]"
-          TopLeft="127.74286887889,356.094122091378">
+          TopLeft="127.385726015666,355.329416198301">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,37.0823546056524"
+              EndConnector="0,37.8470604987304"
               Start="0,0"
-              End="0,29.5823546056524">
+              End="0,30.3470604987304">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.5823546056524" />
+                    End="0,30.3470604987304" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8615,7 +8619,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="288,639.2"
-          Size="288,681.6"
+          Size="288,682.4"
           Id="Package\B - CPhDCommittee"
           TopLeft="674.285725768732,135.247060024698" />
         <NodeLayout
@@ -8753,7 +8757,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           Id="Package\D - Operations\DGradProd - Graduate Students"
           TopLeft="27.6571584597739,97.270590766326" />
         <NodeLayout
-          Size="200,41.6"
+          Size="198.4,41.6"
           Id="Package\D - Operations\DSmall - Small Section %"
           TopLeft="39.4666814259124,370.211769381857" />
         <NodeLayout
@@ -8767,7 +8771,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\D - Operations\ECF - Energy $"
-          TopLeft="61.7523969767048,524.988242140774" />
+          TopLeft="63.6571589139048,524.988242140774" />
         <NodeLayout
           Size="204,41.6"
           Id="Package\D - Operations\EUF - Energy (1000 BTUs)"
@@ -8818,18 +8822,18 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\D - Operations.PrecedenceConstraints[Constraint 3]"
-          TopLeft="136.752395784612,411.811769381857">
+          TopLeft="136.352395784612,411.811769381857">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,43.0274521672601"
+              EndConnector="0,43.02745216726"
               Start="0,0"
-              End="0,35.5274521672601">
+              End="0,35.52745216726">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.5274521672601" />
+                    End="0,35.52745216726" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8840,18 +8844,18 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\D - Operations.PrecedenceConstraints[Constraint 4]"
-          TopLeft="135.495253560008,496.439221549117">
+          TopLeft="136.447634528608,496.439221549117">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,28.5490205916568"
+              EndConnector="0,28.549020591657"
               Start="0,0"
-              End="0,21.0490205916568">
+              End="0,21.049020591657">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.0490205916568" />
+                    End="0,21.049020591657" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8895,26 +8899,26 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="49.7904819838861,128.848179390191"
+              EndConnector="49.790481983886,129.248179390192"
               Start="0,0"
-              End="42.2904819838861,128.848179390191">
+              End="42.290481983886,129.248179390192">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="20.8952409919431,0" />
+                    End="20.895240991943,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="20.8952409919431,0"
-                    Point2="24.8952409919431,0"
-                    Point3="24.8952409919431,4" />
+                    Point1="20.895240991943,0"
+                    Point2="24.895240991943,0"
+                    Point3="24.895240991943,4" />
                   <mssgle:LineSegment
-                    End="24.8952409919431,124.848179390191" />
+                    End="24.895240991943,125.248179390192" />
                   <mssgle:CubicBezierSegment
-                    Point1="24.8952409919431,124.848179390191"
-                    Point2="24.8952409919431,128.848179390191"
-                    Point3="28.8952409919431,128.848179390191" />
+                    Point1="24.895240991943,125.248179390192"
+                    Point2="24.895240991943,129.248179390192"
+                    Point3="28.895240991943,129.248179390192" />
                   <mssgle:LineSegment
-                    End="42.2904819838861,128.848179390191" />
+                    End="42.290481983886,129.248179390192" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8959,30 +8963,30 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="962.285725768732,476.047060024698">
+          TopLeft="962.285725768732,476.447060024698">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="42.2176926984038,-205.21680689122"
+              EndConnector="42.2176926984079,-205.616806891221"
               Start="0,0"
-              End="34.7176926984038,-205.21680689122">
+              End="34.7176926984079,-205.616806891221">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="17.1088463492019,0" />
+                    End="17.1088463492039,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="17.1088463492019,0"
-                    Point2="21.1088463492019,0"
-                    Point3="21.1088463492019,-4" />
+                    Point1="17.1088463492039,0"
+                    Point2="21.1088463492039,0"
+                    Point3="21.1088463492039,-4" />
                   <mssgle:LineSegment
-                    End="21.1088463492019,-201.21680689122" />
+                    End="21.1088463492039,-201.616806891221" />
                   <mssgle:CubicBezierSegment
-                    Point1="21.1088463492019,-201.21680689122"
-                    Point2="21.1088463492019,-205.21680689122"
-                    Point3="25.1088463492019,-205.21680689122" />
+                    Point1="21.1088463492039,-201.616806891221"
+                    Point2="21.1088463492039,-205.616806891221"
+                    Point3="25.1088463492039,-205.616806891221" />
                   <mssgle:LineSegment
-                    End="34.7176926984038,-205.21680689122" />
+                    End="34.7176926984079,-205.616806891221" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8998,7 +9002,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\A - % Credit Hours by Instructor Group\AGSI - GSI">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\A - % Credit Hours by Instructor Group\AGSI - GSI\OLE DB Source"
@@ -9026,7 +9030,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9057,7 +9063,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\A - % Credit Hours by Instructor Group\ALEC - Lecturer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\A - % Credit Hours by Instructor Group\ALEC - Lecturer\OLE DB Source"
@@ -9085,7 +9091,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9116,7 +9124,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\A - % Credit Hours by Instructor Group\AOther - Other">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\A - % Credit Hours by Instructor Group\AOther - Other\OLE DB Source"
@@ -9156,7 +9164,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9187,7 +9197,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\A - % Credit Hours by Instructor Group\ATT - Tenure Track Faculty">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\A - % Credit Hours by Instructor Group\ATT - Tenure Track Faculty\OLE DB Source"
@@ -9215,7 +9225,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9246,7 +9258,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\B - CPhDCommittee\1A_by_Emplid">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\B - CPhDCommittee\1A_by_Emplid\OLE DB Source"
@@ -9274,7 +9286,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9305,7 +9319,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\B - CPhDCommittee\Chair_Cochair">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\B - CPhDCommittee\Chair_Cochair\OLE DB Source"
@@ -9333,7 +9347,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9364,7 +9380,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\B - CPhDCommittee\Committee_Sum_by_Dept">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\B - CPhDCommittee\Committee_Sum_by_Dept\OLE DB Source"
@@ -9392,7 +9408,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9423,7 +9441,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\B - CPhDCommittee\CPhDCommitte Calculation">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\B - CPhDCommittee\CPhDCommitte Calculation\OLE DB Source"
@@ -9451,7 +9469,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9482,7 +9502,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\B - Productivity\9KP - Adjusted UM Direct VOR">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\B - Productivity\9KP - Adjusted UM Direct VOR\OLE DB Source"
@@ -9510,7 +9530,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9541,7 +9563,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\B - Productivity\CBachProd - Bachelor Degrees">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\B - Productivity\CBachProd - Bachelor Degrees\OLE DB Source"
@@ -9581,7 +9603,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9612,7 +9636,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\B - Productivity\CSCHProd - SCH Taught by TT Faculty">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\B - Productivity\CSCHProd - SCH Taught by TT Faculty\OLE DB Source"
@@ -9652,7 +9676,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9683,7 +9709,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\B - Productivity\UROPProd - UROP Students">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\B - Productivity\UROPProd - UROP Students\OLE DB Source"
@@ -9723,7 +9749,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9754,7 +9782,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\C - Graduate Program (PhD)\BAdmitRate - Graduate Admits as % of Applications (Selectivity)">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\C - Graduate Program (PhD)\BAdmitRate - Graduate Admits as % of Applications (Selectivity)\OLE DB Source"
@@ -9782,7 +9810,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9813,7 +9843,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\C - Graduate Program (PhD)\BYield - Graudate Enrolls as % of Admits (Yield)">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\C - Graduate Program (PhD)\BYield - Graudate Enrolls as % of Admits (Yield)\OLE DB Source"
@@ -9853,7 +9883,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9884,7 +9916,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\D - Operations\DGenProd - General Fund Appropriation $">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\D - Operations\DGenProd - General Fund Appropriation $\OLE DB Source"
@@ -9912,7 +9944,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9943,7 +9977,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\D - Operations\DGradProd - Graduate Students">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\D - Operations\DGradProd - Graduate Students\OLE DB Source"
@@ -9971,7 +10005,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10002,7 +10038,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\D - Operations\DSmall - Small Section %">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\D - Operations\DSmall - Small Section %\OLE DB Source"
@@ -10042,7 +10078,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10073,7 +10111,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\D - Operations\DStaffAcad - Staff FTE over Acad FTE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\D - Operations\DStaffAcad - Staff FTE over Acad FTE\OLE DB Source"
@@ -10101,7 +10139,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10132,7 +10172,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\D - Operations\DStaffTT - Staff FTE over TT">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\D - Operations\DStaffTT - Staff FTE over TT\OLE DB Source"
@@ -10160,7 +10200,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10191,7 +10233,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\D - Operations\ECF - Energy $">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\D - Operations\ECF - Energy $\OLE DB Source"
@@ -10231,7 +10273,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10262,7 +10306,7 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
     design-time-name="Package\D - Operations\EUF - Energy (1000 BTUs)">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\D - Operations\EUF - Energy (1000 BTUs)\OLE DB Source"
@@ -10290,7 +10334,9 @@ GROUP BY EXPR1, AcadYear, DeptID</DTS:VariableValue>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

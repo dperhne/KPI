@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="6 - Ratios_DCH"
   DTS:PackageType="5"
-  DTS:VersionBuild="21"
-  DTS:VersionGUID="{9F64A38C-866F-475E-B9BE-DAFFE53B6607}">
+  DTS:VersionBuild="25"
+  DTS:VersionGUID="{1A23B137-44FD-46DD-8FB4-A2873B5B2F21}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,46 +24,6 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=dwprod.world;User ID=rmt_lsaadhoc_datawhse1;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[m-mssqlprd012,14330.lsa_AdminData]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{338E1201-1CEA-41AE-8942-2122EE762400}"
-      DTS:ObjectName="m-mssqlprd012,14330.lsa_AdminData">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd012,14330;Initial Catalog=lsa_AdminData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[m-mssqlprd017,14330]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{12BEFD76-1951-4B59-B1EC-6FD26C9B0554}"
-      DTS:ObjectName="m-mssqlprd017,14330">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AdminData]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{C4480EDA-74E7-4F7D-8F28-1849C92F746E}"
-      DTS:ObjectName="m-mssqlprd017,14330.lsa_AdminData">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AdminData;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Ratios_DCH-{C4480EDA-74E7-4F7D-8F28-1849C92F746E}m-mssqlprd017,14330.lsa_AdminData;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AIS]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{4A91C20A-6223-4CB5-8E64-C3BCA40A5DD4}"
-      DTS:ObjectName="m-mssqlprd017,14330.lsa_AIS">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=m-mssqlprd017,14330;Initial Catalog=lsa_AIS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -78,7 +38,7 @@
       DTS:ObjectName="sSQLDeleteDeptFTE">
       <DTS:VariableValue
         DTS:DataType="8">DELETE FROM lsa_AdminData.dbo.acBudDeptFTE
-WHERE fy = '2018'</DTS:VariableValue>
+WHERE fy = '2021'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -90,7 +50,7 @@ WHERE fy = '2018'</DTS:VariableValue>
       DTS:ObjectName="sSQLDeleteLSAFTE">
       <DTS:VariableValue
         DTS:DataType="8">DELETE FROM lsa_AdminData.dbo.acBudLSAFTE 
-WHERE fy = '2018'</DTS:VariableValue>
+WHERE fy = '2021'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -102,7 +62,7 @@ WHERE fy = '2018'</DTS:VariableValue>
       DTS:ObjectName="sSQLDeleteTeaching">
       <DTS:VariableValue
         DTS:DataType="8">DELETE FROM [lsa_AdminData].[dbo].[CRAS_Teaching] 
-WHERE acad_year = '2018'</DTS:VariableValue>
+WHERE acad_year = '2021'</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -127,7 +87,7 @@ WHERE
 	and e.DeptEmploymentStatus = 'Active'
 	and a.emplid not like '%--%'
 	and a.jobcode in ('201000','201500','202000','202500')
-	and a.fy = '2018'
+	and a.fy = '2021'
 	and (a.apptAuthPct &gt; 0 or a.apptDistPct &gt; 0)
 GROUP BY
 	a.fy, a.emplid, a.apptdeptid</DTS:VariableValue>
@@ -155,7 +115,7 @@ WHERE
 	and e.DeptEmploymentStatus = 'Active'
 	and a.emplid not like '%--%'
 	and a.jobcode in ('201000','201500','202000','202500')
-	and a.fy = '2018'
+	and a.fy = '2021'
 	and (a.apptAuthPct &gt; 0 or a.apptDistPct &gt; 0)
 GROUP BY
 	a.fy, a.emplid
@@ -196,7 +156,7 @@ FROM
 WHERE 
   d.dept_grp = 'COLLEGE_OF_LSA'
 	and c.cras_crse_component != 'IND'
-	and c.acad_year = '2018'
+	and c.acad_year = '2021'
 GROUP BY
 	i.class_instr_id, c.acad_year, c.term,
 	c.subject, c.catalog_nbr, c.class_section, c.session_code,
@@ -229,7 +189,7 @@ FROM
 			fy, deptid) as fte
 		ON f.fy = fte.fy and f.deptid = fte.deptid
 WHERE
-	f.fy = '2018'
+	f.fy = '2021'
 	and fte.FTE &gt; 0
 GROUP BY
 	f.fy, f.deptid, fte.FTE 
@@ -393,7 +353,7 @@ ORDER BY
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get AcBudEmp\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -642,7 +602,7 @@ and e.Emplid = d.EMPLID
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get AcBudEmp\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1015,7 +975,7 @@ and e.Emplid = d.EMPLID
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get Dept FTE\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1179,8 +1139,8 @@ and e.Emplid = d.EMPLID
                   <connections>
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get Dept FTE\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AIS]"
-                      connectionManagerRefId="Package.ConnectionManagers[m-mssqlprd017,14330.lsa_AIS]"
+                      connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1421,7 +1381,7 @@ and e.Emplid = d.EMPLID
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get LSA FTE\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1572,7 +1532,7 @@ and e.Emplid = d.EMPLID
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get LSA FTE\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{01D8C1F3-15FA-4789-922C-A75780B8B8D7}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AIS]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AIS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1789,7 +1749,7 @@ and e.Emplid = d.EMPLID
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get Teaching Data\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2036,7 +1996,7 @@ and e.Emplid = d.EMPLID
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Get Teaching Data\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{00FA8072-14AF-4ECB-9BEF-CD55C4FF0C2D}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mdwprod world rmt_lsaadhoc_datawhse1]"
+                      connectionManagerRefId="Project.ConnectionManagers[dwprod world rmt_lsaadhoc_datawhse1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2415,7 +2375,7 @@ and e.Emplid = d.EMPLID
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Insert into KPI_Stage\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2564,7 +2524,7 @@ and e.Emplid = d.EMPLID
                     <connection
                       refId="Package\DCH - CH by Faculty over Faculty FTE\Insert into KPI_Stage\OLE DB Source.Connections[OleDbConnection]"
                       connectionManagerID="{27999ED1-E089-4032-A07E-8B190CB9C17E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[Mm-mssqlprd017 14330 lsa_AdminData]"
+                      connectionManagerRefId="Project.ConnectionManagers[db-lsasql17 14330 lsa_AdminData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
