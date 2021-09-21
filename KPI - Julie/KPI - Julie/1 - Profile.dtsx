@@ -7,12 +7,12 @@
   DTS:CreatorName="UMROOT\juliezie"
   DTS:DTSID="{6F3521EF-C816-4302-A34B-407D78C3B18C}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.0900.30"
+  DTS:LastModifiedProductVersion="15.0.2000.128"
   DTS:LocaleID="1033"
   DTS:ObjectName="1 - Profile"
   DTS:PackageType="5"
-  DTS:VersionBuild="742"
-  DTS:VersionGUID="{8BA17824-1B1C-4A34-B12C-E713014406DF}">
+  DTS:VersionBuild="743"
+  DTS:VersionGUID="{1745566F-991E-4871-B625-69A2FD097413}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -637,7 +637,7 @@ AND AL1.CRAS_CRSE_COMPONENT &lt;&gt;'IND' AND (al1.deptid BETWEEN '170000' AND '
       DTS:CreationName=""
       DTS:DTSID="{E975CB14-0806-4962-859E-279433B71CCA}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;  SELECT 'MS_AC',&#xA;  DeptID,&#xA;  ACAD_YEAR,&#xA;  SUM(N) data&#xA;FROM&#xA;  ( SELECT DISTINCT AL3.TERM,&#xA;    AL1.EMPLID,&#xA;    AL1.PROG_STATUS,&#xA;    AL2.DEPTID,&#xA;    AL2.ACAD_PLAN_PERCENT_OWNED/100 N,&#xA;    AL3.ACAD_YEAR,&#xA;    AL1.ACAD_PROG_DESCR,&#xA;    AL4.REG_STATUS&#xA;  FROM M_RADW1.ADM_APPL_PROG AL1,&#xA;    M_SRDW1.ACAD_PLAN_OWNER_CURR_VW AL2,&#xA;    M_SRDW1.TERM_TBL AL3,&#xA;    M_SRDW1.STDNT_CAR_TERM AL4,&#xA;    m_RADW1.Adm_Appl_Data AD&#xA;  WHERE al1.Emplid     =AD.EMPLID&#xA;  AND AL1.Acad_Career  =AD.Acad_Career&#xA;  AND AL1.Stdnt_Car_Nbr=AD.Stdnt_Car_Nbr&#xA;  AND AL1.Adm_Appl_Nbr =AD.Adm_Appl_Nbr&#xA;  AND ad.Admit_Type    ='4'&#xA;  AND AL1.ADMIT_TERM   =AL3.TERM&#xA;  AND AL3.ACAD_CAREER  =AL1.ACAD_CAREER&#xA;  AND AL1.ACAD_PLAN    =AL2.ACAD_PLAN&#xA;  AND AL1.EMPLID       =AL4.EMPLID&#xA;  AND AL1.ACAD_CAREER  =AL4.ACAD_CAREER&#xA;  AND AL1.ADMIT_TERM   =AL4.TERM&#xA;  AND AL1.ACAD_CAREER  ='GRAC'&#xA;  AND (AL2.DEPTID BETWEEN '170000' AND '201000'&#xA;  OR AL2.DEPTID     IN ('550500','550300','550400','554000'))&#xA;  AND AL1.PROG_STATUS='AC'&#xA;  AND AL3.TERM IN ('&quot; + @_mAdmitTermFall + &quot;'  ,'&quot; + @_mAdmitTermWinter + &quot;' )&#xA;  AND AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', &#xA;                        '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764')&#xA;  AND AL4.REG_STATUS='RGSD'&#xA;  )&#xA;group by DeptID, ACAD_YEAR &#xA;order by DeptID&quot;"
+      DTS:Expression="&quot;  SELECT 'MS_AC',&#xA;  DeptID,&#xA;  ACAD_YEAR,&#xA;  SUM(N) data&#xA;FROM&#xA;  ( SELECT DISTINCT AL3.TERM,&#xA;    AL1.EMPLID,&#xA;    AL1.PROG_STATUS,&#xA;    AL2.DEPTID,&#xA;    AL2.ACAD_PLAN_PERCENT_OWNED/100 N,&#xA;    AL3.ACAD_YEAR,&#xA;    AL1.ACAD_PROG_DESCR,&#xA;    AL4.REG_STATUS&#xA;  FROM M_RADW1.ADM_APPL_PROG AL1,&#xA;    M_SRDW1.ACAD_PLAN_OWNER_CURR_VW AL2,&#xA;    M_SRDW1.TERM_TBL AL3,&#xA;    M_SRDW1.STDNT_CAR_TERM AL4,&#xA;    m_RADW1.Adm_Appl_Data AD&#xA;  WHERE al1.Emplid     =AD.EMPLID&#xA;  AND AL1.Acad_Career  =AD.Acad_Career&#xA;  AND AL1.Stdnt_Car_Nbr=AD.Stdnt_Car_Nbr&#xA;  AND AL1.Adm_Appl_Nbr =AD.Adm_Appl_Nbr&#xA;  AND ad.Admit_Type    ='4'&#xA;  AND AL1.ADMIT_TERM   =AL3.TERM&#xA;  AND AL3.ACAD_CAREER  =AL1.ACAD_CAREER&#xA;  AND AL1.ACAD_PLAN    =AL2.ACAD_PLAN&#xA;  AND AL1.EMPLID       =AL4.EMPLID&#xA;  AND AL1.ACAD_CAREER  =AL4.ACAD_CAREER&#xA;  AND AL1.ADMIT_TERM   =AL4.TERM&#xA;  AND AL1.ACAD_CAREER  ='GRAC'&#xA;  AND (AL2.DEPTID BETWEEN '170000' AND '201000'&#xA;  OR AL2.DEPTID     IN ('550500','550300','550400','554000'))&#xA;  AND AL1.PROG_STATUS='AC'&#xA;  AND AL3.TERM IN ('&quot; + @_mAdmitTermFall + &quot;'  ,'&quot; + @_mAdmitTermWinter + &quot;' )&#xA;  AND AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', &#xA;                        '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764','02279','02238')&#xA;  AND AL4.REG_STATUS='RGSD'&#xA;  )&#xA;group by DeptID, ACAD_YEAR &#xA;order by DeptID&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIMS_AC">
@@ -677,7 +677,7 @@ FROM
   AND AL1.PROG_STATUS='AC'
   AND AL3.TERM IN ('2310'  ,'2320' )
   AND AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', 
-                        '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764')
+                        '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764','02279','02238')
   AND AL4.REG_STATUS='RGSD'
   )
 group by DeptID, ACAD_YEAR 
@@ -687,7 +687,7 @@ order by DeptID</DTS:VariableValue>
       DTS:CreationName=""
       DTS:DTSID="{526C76F1-2D0F-4FE6-8800-65D86EF9D9DE}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT 'MS_AD',&#xA;  deptid,&#xA;  acad_year,&#xA;  SUM(data) data&#xA;FROM&#xA;  (SELECT deptid,&#xA;    acad_year,&#xA;    COUNT(DISTINCT(Emplid)) * acad_plan_percent_owned/100 AS data&#xA;  FROM&#xA;    (SELECT DISTINCT AL1.ACAD_PROG,&#xA;      al3.acad_year,&#xA;      AL1.ACAD_PROG_DESCR,&#xA;      AL2.DEPTID,&#xA;      AL1.EMPLID,&#xA;      AL2.ACAD_PLAN_PERCENT_OWNED&#xA;    FROM M_RADW1.ADM_APPL_PROG AL1,&#xA;      m_radw1.adm_appl_data ad,&#xA;      M_SRDW1.ACAD_PLAN_OWNER_CURR_VW AL2,&#xA;      M_SRDW1.TERM_TBL AL3&#xA;    WHERE al1.Emplid     =AD.EMPLID&#xA;    AND AL1.Acad_Career  =AD.Acad_Career&#xA;    AND AL1.Stdnt_Car_Nbr=AD.Stdnt_Car_Nbr&#xA;    AND AL1.Adm_Appl_Nbr =AD.Adm_Appl_Nbr&#xA;    AND ad.Admit_Type    ='4'&#xA;    AND AL1.ACAD_PLAN    =AL2.ACAD_PLAN&#xA;    AND AL1.ADMIT_TERM   =AL3.TERM&#xA;    AND AL3.ACAD_CAREER  =AL1.ACAD_CAREER&#xA;    AND AL3.ACAD_CAREER  ='GRAC'&#xA;    AND AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', &#xA;                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764')&#xA;    AND AL3.TERM IN ('&quot; + @_mAdmitTermFall + &quot;'  ,'&quot; + @_mAdmitTermWinter + &quot;' )&#xA;    AND (AL2.DEPTID BETWEEN '170000' AND '200000'&#xA;    OR al2.deptid       IN ('201000','550400','554000'))&#xA;    AND ((AL1.PROG_ACTION='WAPP'&#xA;    AND AL1.PROG_STATUS  ='CN'&#xA;    AND AL1.PROG_REASON IN (' ', 'AWRD', 'COST', 'DATA', 'DEFR', 'EACA', 'EFIN', 'ENVI', 'ERSN', 'ETYP', 'FINA', 'LATE','NRSN', 'OTHR','PLNC','QUAL','TRMA','UNTA','VDEL','VISA' ) )&#xA;    OR (al1.prog_action  ='WADM'&#xA;    AND al1.prog_status  ='CN'&#xA;    AND al1.prog_reason IN (' ', 'COND', 'DATA', 'DEFR', 'ERR', 'ERRP', 'ERRS', 'ETYP', 'FLD', 'NRSP', 'OHTA', 'OTHA', 'OTHR'))&#xA;    OR (al1.prog_action  ='ADRV'&#xA;    AND al1.prog_status  ='CN'&#xA;    AND al1.prog_reason IN (' ', 'AWRD', 'COND', 'COST','DATA', 'DEFR', 'DUAL','EACA','EFIN','ENVI','ERR', 'ERSN', 'FALS','FILA', 'FILM', 'FINA', 'FRS', 'NOSH', 'NRSN', 'PLNC', 'OTHR', 'PRGC', 'PRGM', 'RGWD', 'SPLN', 'STU', 'TERM', 'TRMM', 'UNIT', 'UNITM', 'VDEL', 'VISA'))&#xA;    OR al1.prog_Status   ='AD')&#xA;    )&#xA;  GROUP BY acad_year,&#xA;    deptid,&#xA;    acad_plan_percent_owned&#xA;  )&#xA;GROUP BY acad_year,&#xA;  deptid&quot;"
+      DTS:Expression="&quot;SELECT 'MS_AD',&#xA;  deptid,&#xA;  acad_year,&#xA;  SUM(data) data&#xA;FROM&#xA;  (SELECT deptid,&#xA;    acad_year,&#xA;    COUNT(DISTINCT(Emplid)) * acad_plan_percent_owned/100 AS data&#xA;  FROM&#xA;    (SELECT DISTINCT AL1.ACAD_PROG,&#xA;      al3.acad_year,&#xA;      AL1.ACAD_PROG_DESCR,&#xA;      AL2.DEPTID,&#xA;      AL1.EMPLID,&#xA;      AL2.ACAD_PLAN_PERCENT_OWNED&#xA;    FROM M_RADW1.ADM_APPL_PROG AL1,&#xA;      m_radw1.adm_appl_data ad,&#xA;      M_SRDW1.ACAD_PLAN_OWNER_CURR_VW AL2,&#xA;      M_SRDW1.TERM_TBL AL3&#xA;    WHERE al1.Emplid     =AD.EMPLID&#xA;    AND AL1.Acad_Career  =AD.Acad_Career&#xA;    AND AL1.Stdnt_Car_Nbr=AD.Stdnt_Car_Nbr&#xA;    AND AL1.Adm_Appl_Nbr =AD.Adm_Appl_Nbr&#xA;    AND ad.Admit_Type    ='4'&#xA;    AND AL1.ACAD_PLAN    =AL2.ACAD_PLAN&#xA;    AND AL1.ADMIT_TERM   =AL3.TERM&#xA;    AND AL3.ACAD_CAREER  =AL1.ACAD_CAREER&#xA;    AND AL3.ACAD_CAREER  ='GRAC'&#xA;    AND AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', &#xA;                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764','02279','02238')&#xA;    AND AL3.TERM IN ('&quot; + @_mAdmitTermFall + &quot;'  ,'&quot; + @_mAdmitTermWinter + &quot;' )&#xA;    AND (AL2.DEPTID BETWEEN '170000' AND '200000'&#xA;    OR al2.deptid       IN ('201000','550400','554000'))&#xA;    AND ((AL1.PROG_ACTION='WAPP'&#xA;    AND AL1.PROG_STATUS  ='CN'&#xA;    AND AL1.PROG_REASON IN (' ', 'AWRD', 'COST', 'DATA', 'DEFR', 'EACA', 'EFIN', 'ENVI', 'ERSN', 'ETYP', 'FINA', 'LATE','NRSN', 'OTHR','PLNC','QUAL','TRMA','UNTA','VDEL','VISA' ) )&#xA;    OR (al1.prog_action  ='WADM'&#xA;    AND al1.prog_status  ='CN'&#xA;    AND al1.prog_reason IN (' ', 'COND', 'DATA', 'DEFR', 'ERR', 'ERRP', 'ERRS', 'ETYP', 'FLD', 'NRSP', 'OHTA', 'OTHA', 'OTHR'))&#xA;    OR (al1.prog_action  ='ADRV'&#xA;    AND al1.prog_status  ='CN'&#xA;    AND al1.prog_reason IN (' ', 'AWRD', 'COND', 'COST','DATA', 'DEFR', 'DUAL','EACA','EFIN','ENVI','ERR', 'ERSN', 'FALS','FILA', 'FILM', 'FINA', 'FRS', 'NOSH', 'NRSN', 'PLNC', 'OTHR', 'PRGC', 'PRGM', 'RGWD', 'SPLN', 'STU', 'TERM', 'TRMM', 'UNIT', 'UNITM', 'VDEL', 'VISA'))&#xA;    OR al1.prog_Status   ='AD')&#xA;    )&#xA;  GROUP BY acad_year,&#xA;    deptid,&#xA;    acad_plan_percent_owned&#xA;  )&#xA;GROUP BY acad_year,&#xA;  deptid&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIMS_AD">
@@ -721,7 +721,7 @@ FROM
     AND AL3.ACAD_CAREER  =AL1.ACAD_CAREER
     AND AL3.ACAD_CAREER  ='GRAC'
     AND AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', 
-                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764')
+                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764','02279','02238')
     AND AL3.TERM IN ('2310'  ,'2320' )
     AND (AL2.DEPTID BETWEEN '170000' AND '200000'
     OR al2.deptid       IN ('201000','550400','554000'))
@@ -747,7 +747,7 @@ GROUP BY acad_year,
       DTS:CreationName=""
       DTS:DTSID="{EE734285-0355-4FE8-9AB0-FFEAB77937FD}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT 'MS_AP',&#xA;  DeptID,&#xA;  ACAD_YEAR,&#xA;  SUM(N) data&#xA;FROM&#xA;  (SELECT DISTINCT AL3.TERM,&#xA;    AL1.EMPLID,&#xA;    AL1.PROG_STATUS,&#xA;    AL2.DEPTID,&#xA;    AL2.ACAD_PLAN_PERCENT_OWNED/100 N,&#xA;    AL3.ACAD_YEAR,&#xA;    AL1.ACAD_PROG_DESCR&#xA;  FROM M_RADW1.ADM_APPL_PROG AL1,&#xA;    M_SRDW1.ACAD_PLAN_OWNER_CURR_VW AL2,&#xA;    M_SRDW1.TERM_TBL AL3,&#xA;    m_RADW1.Adm_Appl_Data AD&#xA;  WHERE al1.Emplid     =AD.EMPLID&#xA;  AND AL1.Acad_Career  =AD.Acad_Career&#xA;  AND AL1.Stdnt_Car_Nbr=AD.Stdnt_Car_Nbr&#xA;  AND AL1.Adm_Appl_Nbr =AD.Adm_Appl_Nbr&#xA;  AND ad.Admit_Type    ='4'&#xA;  AND (AL1.ADMIT_TERM  =AL3.TERM&#xA;  AND AL3.ACAD_CAREER  =AL1.ACAD_CAREER&#xA;  AND AL1.ACAD_PLAN    =AL2.ACAD_PLAN)&#xA;  AND (AL1.ACAD_CAREER ='GRAC'&#xA;  AND (AL2.DEPTID BETWEEN '170000' AND '201000'&#xA;  OR AL2.DEPTID     IN ('554000','550500','550400','550300') )&#xA;  AND AL1.PROG_STATUS='AP'&#xA;  AND AL3.TERM IN ('&quot; + @_mAdmitTermFall + &quot;', '&quot; + @_mAdmitTermWinter + &quot;' )&#xA;  AND AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', &#xA;                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764'))&#xA;)&#xA;GROUP BY DeptID, Acad_Year&#xA;ORDER BY DeptID&#xA;&quot;"
+      DTS:Expression="&quot;SELECT 'MS_AP',&#xA;  DeptID,&#xA;  ACAD_YEAR,&#xA;  SUM(N) data&#xA;FROM&#xA;  (SELECT DISTINCT AL3.TERM,&#xA;    AL1.EMPLID,&#xA;    AL1.PROG_STATUS,&#xA;    AL2.DEPTID,&#xA;    AL2.ACAD_PLAN_PERCENT_OWNED/100 N,&#xA;    AL3.ACAD_YEAR,&#xA;    AL1.ACAD_PROG_DESCR&#xA;  FROM M_RADW1.ADM_APPL_PROG AL1,&#xA;    M_SRDW1.ACAD_PLAN_OWNER_CURR_VW AL2,&#xA;    M_SRDW1.TERM_TBL AL3,&#xA;    m_RADW1.Adm_Appl_Data AD&#xA;  WHERE al1.Emplid     =AD.EMPLID&#xA;  AND AL1.Acad_Career  =AD.Acad_Career&#xA;  AND AL1.Stdnt_Car_Nbr=AD.Stdnt_Car_Nbr&#xA;  AND AL1.Adm_Appl_Nbr =AD.Adm_Appl_Nbr&#xA;  AND ad.Admit_Type    ='4'&#xA;  AND (AL1.ADMIT_TERM  =AL3.TERM&#xA;  AND AL3.ACAD_CAREER  =AL1.ACAD_CAREER&#xA;  AND AL1.ACAD_PLAN    =AL2.ACAD_PLAN)&#xA;  AND (AL1.ACAD_CAREER ='GRAC'&#xA;  AND (AL2.DEPTID BETWEEN '170000' AND '201000'&#xA;  OR AL2.DEPTID     IN ('554000','550500','550400','550300') )&#xA;  AND AL1.PROG_STATUS='AP'&#xA;  AND AL3.TERM IN ('&quot; + @_mAdmitTermFall + &quot;', '&quot; + @_mAdmitTermWinter + &quot;' )&#xA;  AND AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', &#xA;                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764','02279','02238'))&#xA;)&#xA;GROUP BY DeptID, Acad_Year&#xA;ORDER BY DeptID&#xA;&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIMS_AP">
@@ -782,7 +782,7 @@ FROM
   AND AL1.PROG_STATUS='AP'
   AND AL3.TERM IN ('2310', '2320' )
   AND AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', 
-                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764'))
+                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764','02279','02238'))
 )
 GROUP BY DeptID, Acad_Year
 ORDER BY DeptID
@@ -792,7 +792,7 @@ ORDER BY DeptID
       DTS:CreationName=""
       DTS:DTSID="{3A6027BA-C711-47FB-80F3-EF29C0B50DCD}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT 'MS_HC', AL4.DEPTID, AL5.acad_year, Sum(AL4.ACAD_PLAN_PERCENT_OWNED)/200 &#xA;FROM M_3WKDW1.THIRDWK_ACAD_PROG AL1, &#xA;M_3WKDW1.THIRDWK_STDNT_CAR_TERM AL2, &#xA;M_3WKDW1.THIRDWK_ACAD_PLAN AL3, &#xA;M_SRDW1.ACAD_PLAN_OWNER_Curr_Vw AL4, &#xA;M_3WKDW1.THIRDWK_PERSONAL_DATA AL5 &#xA;WHERE (AL1.ACAD_PROG_PRIORITY='1') &#xA;AND (AL2.EMPLID=AL1.EMPLID) &#xA;AND (AL1.RPTING_TERM=AL2.RPTING_TERM) &#xA;AND (AL1.RPTING_TERM=AL5.RPTING_TERM) &#xA;AND (AL2.ACAD_CAREER=AL1.ACAD_CAREER &#xA;And AL2.ACAD_CAREER='GRAC') &#xA;AND (AL2.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL3.EMPLID=AL1.EMPLID) &#xA;AND (AL5.EMPLID=AL1.EMPLID) &#xA;AND (AL3.RPTING_TERM=AL1.RPTING_TERM) &#xA;AND (AL3.ACAD_CAREER=AL1.ACAD_CAREER) &#xA;AND (AL3.STDNT_CAR_NBR=AL1.STDNT_CAR_NBR) &#xA;AND (AL3.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL4.ACAD_PLAN=AL3.ACAD_PLAN) &#xA;AND (AL1.ACAD_GROUP_AREA In ('LSA','RAC')) &#xA;AND (AL2.TERM In ('&quot; + @_mAdmitTermFall + &quot;'  ,'&quot; + @_mAdmitTermWinter + &quot;' )) &#xA;AND (AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', &#xA;                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764')) &#xA;AND (AL4.DEPTID BETWEEN '170000' AND '200000' or al4.deptid in ('201000','550400','554000'))  &#xA;GROUP BY al5.acad_year, AL4.DEPTID&#xA;ORDER BY AL5.ACAD_YEAR, AL4.DEPTID&quot;"
+      DTS:Expression="&quot;SELECT 'MS_HC', AL4.DEPTID, AL5.acad_year, Sum(AL4.ACAD_PLAN_PERCENT_OWNED)/200 &#xA;FROM M_3WKDW1.THIRDWK_ACAD_PROG AL1, &#xA;M_3WKDW1.THIRDWK_STDNT_CAR_TERM AL2, &#xA;M_3WKDW1.THIRDWK_ACAD_PLAN AL3, &#xA;M_SRDW1.ACAD_PLAN_OWNER_Curr_Vw AL4, &#xA;M_3WKDW1.THIRDWK_PERSONAL_DATA AL5 &#xA;WHERE (AL1.ACAD_PROG_PRIORITY='1') &#xA;AND (AL2.EMPLID=AL1.EMPLID) &#xA;AND (AL1.RPTING_TERM=AL2.RPTING_TERM) &#xA;AND (AL1.RPTING_TERM=AL5.RPTING_TERM) &#xA;AND (AL2.ACAD_CAREER=AL1.ACAD_CAREER &#xA;And AL2.ACAD_CAREER='GRAC') &#xA;AND (AL2.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL3.EMPLID=AL1.EMPLID) &#xA;AND (AL5.EMPLID=AL1.EMPLID) &#xA;AND (AL3.RPTING_TERM=AL1.RPTING_TERM) &#xA;AND (AL3.ACAD_CAREER=AL1.ACAD_CAREER) &#xA;AND (AL3.STDNT_CAR_NBR=AL1.STDNT_CAR_NBR) &#xA;AND (AL3.ACAD_YEAR=AL1.ACAD_YEAR) &#xA;AND (AL4.ACAD_PLAN=AL3.ACAD_PLAN) &#xA;AND (AL1.ACAD_GROUP_AREA In ('LSA','RAC')) &#xA;AND (AL2.TERM In ('&quot; + @_mAdmitTermFall + &quot;'  ,'&quot; + @_mAdmitTermWinter + &quot;' )) &#xA;AND (AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', &#xA;                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764','02279','02238')) &#xA;AND (AL4.DEPTID BETWEEN '170000' AND '200000' or al4.deptid in ('201000','550400','554000'))  &#xA;GROUP BY al5.acad_year, AL4.DEPTID&#xA;ORDER BY AL5.ACAD_YEAR, AL4.DEPTID&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPIMS_HC">
@@ -820,7 +820,7 @@ AND (AL4.ACAD_PLAN=AL3.ACAD_PLAN)
 AND (AL1.ACAD_GROUP_AREA In ('LSA','RAC')) 
 AND (AL2.TERM In ('2310'  ,'2320' )) 
 AND (AL1.ACAD_PROG in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', 
-                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764')) 
+                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764','02279','02238')) 
 AND (AL4.DEPTID BETWEEN '170000' AND '200000' or al4.deptid in ('201000','550400','554000'))  
 GROUP BY al5.acad_year, AL4.DEPTID
 ORDER BY AL5.ACAD_YEAR, AL4.DEPTID</DTS:VariableValue>
@@ -867,7 +867,7 @@ order by deptid
       DTS:CreationName=""
       DTS:DTSID="{76389B1B-0AD5-4731-8321-CB391C6E0F3C}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;SELECT &#xA;&#x9;'TermMas' as KPICode, nvl(ap.deptid, 'xxxxxx') as deptid, t.ACAD_YEAR,  &#xA;&#x9;COUNT(d.EMPLID) as KPIValue&#xA;FROM &#xA;&#x9;M_SRDW1.ACAD_DEGR d,     &#xA;&#x9;M_SRDW1.ACAD_DEGR_PLAN dp,   &#xA;&#x9;M_SRDW1.TERM_TBL t,&#xA;&#x9;m_srdw1.acad_plan_owner_curr_vw ap &#xA;WHERE &#xA;&#x9;dp.EMPLID = d.EMPLID   &#xA;&#x9;AND dp.STDNT_DEGR = d.STDNT_DEGR &#xA;&#x9;AND d.ACAD_CAREER = t.ACAD_CAREER&#xA;&#x9;AND d.COMPLETION_TERM = t.TERM&#xA;&#x9;and dp.ACAD_PLAN = ap.acad_plan (+)   &#xA;&#x9;and dp.acad_prog in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', &#xA;                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764')&#xA;&#x9;AND t.ACAD_YEAR = '&quot; + @_mAcadYear + &quot;'      &#xA;GROUP BY &#xA;&#x9;ap.deptid, t.ACAD_YEAR&quot;"
+      DTS:Expression="&quot;SELECT &#xA;&#x9;'TermMas' as KPICode, nvl(ap.deptid, 'xxxxxx') as deptid, t.ACAD_YEAR,  &#xA;&#x9;COUNT(d.EMPLID) as KPIValue&#xA;FROM &#xA;&#x9;M_SRDW1.ACAD_DEGR d,     &#xA;&#x9;M_SRDW1.ACAD_DEGR_PLAN dp,   &#xA;&#x9;M_SRDW1.TERM_TBL t,&#xA;&#x9;m_srdw1.acad_plan_owner_curr_vw ap &#xA;WHERE &#xA;&#x9;dp.EMPLID = d.EMPLID   &#xA;&#x9;AND dp.STDNT_DEGR = d.STDNT_DEGR &#xA;&#x9;AND d.ACAD_CAREER = t.ACAD_CAREER&#xA;&#x9;AND d.COMPLETION_TERM = t.TERM&#xA;&#x9;and dp.ACAD_PLAN = ap.acad_plan (+)   &#xA;&#x9;and dp.acad_prog in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', &#xA;                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764','02279','02238')&#xA;&#x9;AND t.ACAD_YEAR = '&quot; + @_mAcadYear + &quot;'      &#xA;GROUP BY &#xA;&#x9;ap.deptid, t.ACAD_YEAR&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vKPITermMas">
@@ -887,7 +887,7 @@ WHERE
 	AND d.COMPLETION_TERM = t.TERM
 	and dp.ACAD_PLAN = ap.acad_plan (+)   
 	and dp.acad_prog in ('00063', '00064', '01901', '02123', '00056', '00154', '01724', '00057', '01739', 
-                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764')
+                       '00279', '01569', '00306', '01727', '02058', '02130', '02131', '01989', '01763', '01764','02279','02238')
 	AND t.ACAD_YEAR = '2021'      
 GROUP BY 
 	ap.deptid, t.ACAD_YEAR</DTS:VariableValue>
@@ -7002,7 +7002,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="2SUM - Spring Summer SCH"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7019,7 +7019,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="2T - Total SCH"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7036,7 +7036,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="3LLTT - Lower Level Tenure Track"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7053,7 +7053,7 @@ group by Project.ProjID, StudentTerm.Term, Faculty.Dept, Faculty.School;
           DTS:LocaleID="-1"
           DTS:ObjectName="3ULTT - Upper Level Tenure Track"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -9184,7 +9184,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
           DTS:LocaleID="-1"
           DTS:ObjectName="Create 189100 EEB"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -10504,7 +10504,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
           DTS:LocaleID="-1"
           DTS:ObjectName="Update 171500"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -10521,7 +10521,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
           DTS:LocaleID="-1"
           DTS:ObjectName="Update 189000 MCDB"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -10538,7 +10538,7 @@ WHERE  SUBJECT in ('CCS','CICS','CJS','HONORS','LACS','MENAS','REEES','SEAS')"</
           DTS:LocaleID="-1"
           DTS:ObjectName="Update INTLSTD"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15483,7 +15483,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15513,7 +15513,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15543,7 +15543,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15573,7 +15573,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15645,45 +15645,45 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
         <NodeLayout
-          Size="114.4,41.6"
+          Size="114,42"
           Id="Package\1 - Faculty Staff\1A - RC"
           TopLeft="222.72379999031,24.0941185908333" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171,42"
           Id="Package\1 - Faculty Staff\1A - TT Faculty FTE"
           TopLeft="33.8095328775395,23.3803943304042" />
         <NodeLayout
-          Size="196,41.6"
+          Size="196,42"
           Id="Package\1 - Faculty Staff\1B - College Funded FTE"
           TopLeft="27.42857141884,106.972552548753" />
         <NodeLayout
-          Size="154.4,41.6"
+          Size="154,42"
           Id="Package\1 - Faculty Staff\1C - Target FTE"
           TopLeft="48.0952481558542,173.48235912719" />
         <NodeLayout
-          Size="163.2,41.6"
+          Size="163,42"
           Id="Package\1 - Faculty Staff\1D - Lecturer FTE"
           TopLeft="43.2381045007383,246.282360512823" />
         <NodeLayout
-          Size="232.8,41.6"
+          Size="233,42"
           Id="Package\1 - Faculty Staff\1E - General Fund Reg Staff FTE"
           TopLeft="24.9523905166966,417.176477499239" />
         <NodeLayout
-          Size="184,41.6"
+          Size="184,42"
           Id="Package\1 - Faculty Staff\1F - Regular Staff FTE"
           TopLeft="45.5238187572588,500.141184376846" />
         <NodeLayout
-          Size="252.8,42.4"
+          Size="253,42"
           Id="Package\1 - Faculty Staff\1G - Primary Research Track Faculty"
           TopLeft="22.8380834177236,328.75294639297" />
         <NodeLayout
-          Size="222.4,41.6"
+          Size="222,42"
           Id="Package\1 - Faculty Staff\1H - Tenure Track Faculty FTE"
           TopLeft="33.5319637880607,577.492441313702" />
         <NodeLayout
-          Size="188,41.6"
+          Size="188,42"
           Id="Package\1 - Faculty Staff\MathRtr - Math Rotator"
           TopLeft="45.2870605600347,643.105886618312" />
         <EdgeLayout
@@ -15691,7 +15691,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="119.409532877539,23.3803943304042">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="160.514267112771,0.713724260429117"
               Start="0,0"
               End="160.514267112771,-6.78627573957088">
@@ -15725,7 +15725,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="125.361909787347,148.572552548753">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,24.9098065784371"
               Start="0,0"
               End="0,17.4098065784371">
@@ -15747,7 +15747,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="125.066676328296,215.08235912719">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,31.2000013856334"
               Start="0,0"
               End="0,23.7000013856334">
@@ -15769,7 +15769,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="124.913497170896,287.999637999734">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="24.332963210179,40.753308393236"
               Start="0,0"
               End="24.332963210179,33.253308393236">
@@ -15803,7 +15803,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="139.438104636978,458.776477499239">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,41.3647068776066"
               Start="0,0"
               End="0,33.8647068776066">
@@ -15825,7 +15825,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="145.27743592009,370.972841680928">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,46.2036358183109"
               Start="0,0"
               End="0,38.7036358183109">
@@ -15847,7 +15847,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="141.12789127266,541.741184376846">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,35.7512569368558"
               Start="0,0"
               End="0,28.2512569368558">
@@ -15869,7 +15869,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="142.009512174048,619.092441313702">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,24.0134453046104"
               Start="0,0"
               End="0,16.5134453046104">
@@ -15891,7 +15891,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="279.92379999031,65.6941185908333">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="-154.49522857147,41.2784339579196"
               Start="0,0"
               End="-154.49522857147,33.7784339579196">
@@ -15923,7 +15923,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <AnnotationLayout
           Text="*RC runs separately&#xA;by different jobcodes &#xA;to track 1A"
           ParentId="Package\1 - Faculty Staff"
-          Size="129.6,76.8"
+          Size="130,77"
           Id="f7c1d145-be45-40ab-b850-b65986ddf677"
           TopLeft="265.942860363941,119.764707315174">
           <AnnotationLayout.FontInfo>
@@ -15938,24 +15938,24 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="420,751.2"
-          Size="420,794.4"
+          PanelSize="420,751"
+          Size="420,794"
           Id="Package\1 - Faculty Staff"
           TopLeft="287.861888528354,114.2843125472" />
         <NodeLayout
-          Size="220,41.6"
+          Size="220,42"
           Id="Package\2 - FY and FT\2FY - First Year Seminar and 2FT First Year Taught by TT"
           TopLeft="9.77143978683341,15.9686285949496" />
         <NodeLayout
-          Size="168.8,41.6"
+          Size="169,42"
           Id="Package\2 - FY and FT\2FY - RCCORE 100"
           TopLeft="42.6285832035301,93.458825760152" />
         <NodeLayout
-          Size="149.6,41.6"
+          Size="150,42"
           Id="Package\2 - FY and FT\Aggregate 2FT"
           TopLeft="47.8285830332309,244.917651884944" />
         <NodeLayout
-          Size="148.8,41.6"
+          Size="149,42"
           Id="Package\2 - FY and FT\Aggregate 2FY"
           TopLeft="50.0000124318265,166.329415432558" />
         <EdgeLayout
@@ -15963,7 +15963,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="123.400011495182,57.5686285949496">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,35.8901971652024"
               Start="0,0"
               End="0,28.3901971652024">
@@ -15985,7 +15985,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="125.714297817678,135.058825760152">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,31.2705896724056"
               Start="0,0"
               End="0,23.7705896724056">
@@ -16007,7 +16007,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="123.514297732529,207.929415432558">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,36.988236452386"
               Start="0,0"
               End="0,29.488236452386">
@@ -16027,40 +16027,40 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="284.8,321.6"
-          Size="284.8,364.8"
+          PanelSize="285,322"
+          Size="285,365"
           Id="Package\2 - FY and FT"
           TopLeft="1194.74286612005,177.803921498558" />
         <NodeLayout
-          Size="180.8,41.6"
+          Size="181,42"
           Id="Package\2 - SCT, SCS, DSmall\2SCS - 189000 MCDB"
           TopLeft="22.8571606168946,350.164712274281" />
         <NodeLayout
-          Size="208.8,41.6"
+          Size="209,42"
           Id="Package\2 - SCT, SCS, DSmall\2SCS - Small Section Count"
           TopLeft="15.7143033523955,197.22353365875" />
         <NodeLayout
-          Size="164,41.6"
+          Size="164,42"
           Id="Package\2 - SCT, SCS, DSmall\2SCS 189100 EEB"
           TopLeft="30.5714464284938,502.635302311326" />
         <NodeLayout
-          Size="181.6,41.6"
+          Size="182,42"
           Id="Package\2 - SCT, SCS, DSmall\2SCT - 189000 MCDB"
           TopLeft="22.6857313885985,278.870593683448" />
         <NodeLayout
-          Size="180,41.6"
+          Size="180,42"
           Id="Package\2 - SCT, SCS, DSmall\2SCT - Section Count"
           TopLeft="28.1714465987927,116.164708992519" />
         <NodeLayout
-          Size="164,41.6"
+          Size="164,42"
           Id="Package\2 - SCT, SCS, DSmall\2SCT 189100 EEB"
           TopLeft="26.9714457472978,417.694124789717" />
         <NodeLayout
-          Size="152,41.6"
+          Size="152,42"
           Id="Package\2 - SCT, SCS, DSmall\Data Flow Task"
           TopLeft="35.5428744646975,27.4588253955115" />
         <NodeLayout
-          Size="185.6,41.6"
+          Size="186,42"
           Id="Package\2 - SCT, SCS, DSmall\Delete 188900 Biology"
           TopLeft="26.1714460878959,583.482360731607" />
         <EdgeLayout
@@ -16068,7 +16068,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="114.857160531745,69.0588253955115">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,47.1058835970077"
               Start="0,0"
               End="0,39.6058835970077">
@@ -16090,7 +16090,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="113.371446002747,320.470593683448">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,29.6941185908331"
               Start="0,0"
               End="0,22.1941185908331">
@@ -16112,7 +16112,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="119.142874975594,157.764708992519">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,39.4588246662311"
               Start="0,0"
               End="0,31.9588246662311">
@@ -16134,7 +16134,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="116.800017370497,238.82353365875">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,40.0470600246975"
               Start="0,0"
               End="0,32.5470600246975">
@@ -16156,7 +16156,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="111.114303182096,391.764712274281">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,25.9294125154357"
               Start="0,0"
               End="0,18.4294125154357">
@@ -16178,7 +16178,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="110.771446087896,459.294124789717">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,43.3411775216096"
               Start="0,0"
               End="0,35.8411775216096">
@@ -16200,7 +16200,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="115.771446258195,544.235302311326">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,39.247058420281"
               Start="0,0"
               End="0,31.747058420281">
@@ -16220,52 +16220,52 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="276,662.4"
-          Size="276,705.6"
+          PanelSize="276,663"
+          Size="276,706"
           Id="Package\2 - SCT, SCS, DSmall"
           TopLeft="1524.74286857236,178.478440035254" />
         <NodeLayout
-          Size="212.8,41.6"
+          Size="213,42"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\2SUM - Spring Summer SCH"
           TopLeft="15.0095296645652,745.176479103657" />
         <NodeLayout
-          Size="148.8,41.6"
+          Size="149,42"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\2T - Total SCH"
           TopLeft="48.3428635655619,674.196085502532" />
         <NodeLayout
-          Size="241.6,41.6"
+          Size="242,42"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\3LLTT - Lower Level Tenure Track"
           TopLeft="5.56190927077296,840.054911627324" />
         <NodeLayout
-          Size="242.4,41.6"
+          Size="242,42"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\3ULTT - Upper Level Tenure Track"
           TopLeft="8.41905217657266,925.03530364834" />
         <NodeLayout
-          Size="194.4,41.6"
+          Size="194,42"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Course_Level"
           TopLeft="28.8381019689598,506.352946174186" />
         <NodeLayout
-          Size="182.4,41.6"
+          Size="182,42"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Aggregate Instr_Type"
           TopLeft="29.3714334857707,586.564711545001" />
         <NodeLayout
-          Size="170.4,41.6"
+          Size="170,42"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Create 189100 EEB"
           TopLeft="37.8666729109632,419.686278292053" />
         <NodeLayout
-          Size="141.6,41.6"
+          Size="142,42"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Master Query"
           TopLeft="47.8857199785662,17.0980407457451" />
         <NodeLayout
-          Size="159.2,41.6"
+          Size="159,42"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Update 171500"
           TopLeft="232.529543764406,211.225130890052" />
         <NodeLayout
-          Size="183.2,41.6"
+          Size="183,42"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Update 189000 MCDB"
           TopLeft="33.1047680679637,338.117649697103" />
         <NodeLayout
-          Size="157.6,41.6"
+          Size="158,42"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group\Update INTLSTD"
           TopLeft="45.371453353986,247.152945809546" />
         <EdgeLayout
@@ -16273,7 +16273,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="124.438110710975,288.752945809546">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,49.364703887557"
               Start="0,0"
               End="0,41.864703887557">
@@ -16295,7 +16295,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="123.885720489463,379.717649697103">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,39.9686285949493"
               Start="0,0"
               End="0,32.4686285949493">
@@ -16317,7 +16317,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="124.552387439962,461.286278292052">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,45.0666678821337"
               Start="0,0"
               End="0,37.5666678821337">
@@ -16339,7 +16339,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="123.304767727365,547.952946174186">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,38.6117653708155"
               Start="0,0"
               End="0,31.1117653708155">
@@ -16361,7 +16361,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="122.076196615064,715.796085502532">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,29.380393601125"
               Start="0,0"
               End="0,21.880393601125">
@@ -16383,7 +16383,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="123.885719467669,786.776479103657">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,53.2784325236673"
               Start="0,0"
               End="0,45.7784325236673">
@@ -16405,7 +16405,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="127.990480723673,881.654911627324">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,43.380392021016"
               Start="0,0"
               End="0,35.880392021016">
@@ -16427,7 +16427,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="121.657148525666,628.164711545001">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,46.0313739575309"
               Start="0,0"
               End="0,38.5313739575309">
@@ -16447,7 +16447,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <AnnotationLayout
           Text="First, Run All Together (Execute Container)&#xA;&#xA;*If Master fails, it may be because there are issues with DEPTID = 171500.  &#xA;APPT_DEPTID and APPT_DEPT_DESCR will need to be marked as NULLS allowed.  &#xA;Then run this update script:    UPDATE KPIMaster_2_3&#xA;  SET APPT_DEPTID = '171500',&#xA;  APPT_DEPT_DESCR = 'LSA UG: CGIS',&#xA;  Instr_Type = '3Other'&#xA;  WHERE DEPTID = '171500'"
           ParentId="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group"
-          Size="430.4,142.4"
+          Size="430,143"
           Id="296bac6a-a59f-4155-8532-a3d227e7ec35"
           TopLeft="4.24149657720739,81.5703096487118">
           <AnnotationLayout.FontInfo>
@@ -16464,28 +16464,28 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="458.4,1022.4"
-          Size="458.4,1065.6"
+          PanelSize="458,1023"
+          Size="458,1066"
           Id="Package\2 - Student Credit Hours (SCH) &amp; 3 - Credit Hours by Instructor Group"
           TopLeft="716.647621824301,111.992160041549" />
         <NodeLayout
-          Size="143.2,41.6"
+          Size="143,42"
           Id="Package\4 - Degrees\6B - Bachelor"
           TopLeft="28.7238243317121,15.2941207786745" />
         <NodeLayout
-          Size="197.6,41.6"
+          Size="198,42"
           Id="Package\4 - Degrees\6B - Bachelor RC 186000"
           TopLeft="2.09524283117196,97.8980414750255" />
         <NodeLayout
-          Size="131.2,41.6"
+          Size="131,42"
           Id="Package\4 - Degrees\6M - Minor"
           TopLeft="32.5333482061117,194.745103687564" />
         <NodeLayout
-          Size="121.6,41.6"
+          Size="122,42"
           Id="Package\4 - Degrees\6P - PhD"
           TopLeft="32.5333482061114,261.01961442096" />
         <NodeLayout
-          Size="170.4,41.6"
+          Size="170,42"
           Id="Package\4 - Degrees\TermMas - Masters"
           TopLeft="27.8857304008643,466.564713295273" />
         <EdgeLayout
@@ -16493,7 +16493,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="100.609533581442,56.8941207786745">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,41.0039206963509"
               Start="0,0"
               End="0,33.5039206963509">
@@ -16515,7 +16515,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="95.7333482061116,236.345103687564">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,24.6745107333966"
               Start="0,0"
               End="0,17.1745107333966">
@@ -16537,7 +16537,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="99.5142955186418,139.498041475025">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,55.2470622125383"
               Start="0,0"
               End="0,47.7470622125383">
@@ -16559,7 +16559,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="93.350102132813,302.736891907871">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="19.7293455455383,163.827821387402"
               Start="0,0"
               End="19.7293455455383,156.327821387402">
@@ -16591,31 +16591,31 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <AnnotationLayout
           Text="Must check with Paula Hathaway each year for an updated list of Terminal Masters program codes"
           ParentId="Package\4 - Degrees"
-          FontInfo="{x:Null}"
-          Size="201.6,72"
+          FontInfo="{assembly:Null}"
+          Size="202,72"
           Id="5c140af5-3b9f-410d-b246-d5e0278c296b"
           TopLeft="22.514307269272,343.082359418902" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="229.6,568.8"
-          Size="229.6,612"
+          PanelSize="230,569"
+          Size="230,612"
           Id="Package\4 - Degrees"
           TopLeft="1842.74287398787,180.760793012179" />
         <NodeLayout
-          Size="140,41.6"
+          Size="140,42"
           Id="Package\5 - Graduate Program (PhD)\5AC - Enrolls"
           TopLeft="15.9,208.7" />
         <NodeLayout
-          Size="140.8,41.6"
+          Size="141,42"
           Id="Package\5 - Graduate Program (PhD)\5AD - Admits"
           TopLeft="14.7,107.1" />
         <NodeLayout
-          Size="156.8,41.6"
+          Size="157,42"
           Id="Package\5 - Graduate Program (PhD)\5AP - Applicants"
           TopLeft="7.5,5.49999999999995" />
         <NodeLayout
-          Size="161.6,42.4"
+          Size="162,42"
           Id="Package\5 - Graduate Program (PhD)\5HC - Headcount"
           TopLeft="5.5,310.3" />
         <EdgeLayout
@@ -16623,7 +16623,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="85.5,47.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -16645,7 +16645,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="85.5,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -16667,7 +16667,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="86.1,250.3">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60.0000000000001"
               Start="0,0"
               End="0,52.5000000000001">
@@ -16687,24 +16687,24 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="213.6,408"
-          Size="213.6,451.2"
+          PanelSize="214,408"
+          Size="214,451"
           Id="Package\5 - Graduate Program (PhD)"
           TopLeft="2107.54559277391,184.35743073449" />
         <NodeLayout
-          Size="154.4,41.6"
+          Size="154,42"
           Id="Package\6 - Terminal Masters\MS_AC - Enrolls"
           TopLeft="42.0000269072402,263.976474363334" />
         <NodeLayout
-          Size="156,41.6"
+          Size="156,42"
           Id="Package\6 - Terminal Masters\MS_AD - Admits"
           TopLeft="40.2857400738467,170.917649697102" />
         <NodeLayout
-          Size="170.4,41.6"
+          Size="170,42"
           Id="Package\6 - Terminal Masters\MS_AP - Applicants"
           TopLeft="35.7143118673448,90.2789929356954" />
         <NodeLayout
-          Size="174.4,41.6"
+          Size="174,42"
           Id="Package\6 - Terminal Masters\MS_HC - Headcount"
           TopLeft="34.5714551137426,367.976475821894" />
         <EdgeLayout
@@ -16712,7 +16712,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="119.600025970596,131.878992935695">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,39.0386567614066"
               Start="0,0"
               End="0,31.5386567614066">
@@ -16734,7 +16734,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="118.742883490543,212.517649697102">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,51.4588246662312"
               Start="0,0"
               End="0,43.9588246662312">
@@ -16756,7 +16756,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="120.485741010491,305.576474363334">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,62.4000014585608"
               Start="0,0"
               End="0,54.9000014585608">
@@ -16776,59 +16776,59 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
         <AnnotationLayout
           Text="ONLY RUN FOR 2017 and later."
           ParentId="Package\6 - Terminal Masters"
-          FontInfo="{x:Null}"
-          Size="195.2,40"
+          FontInfo="{assembly:Null}"
+          Size="195,40"
           Id="3372d837-a6f8-4c6c-b7ff-af4656fcc2bd"
           TopLeft="27.7143111861487,14.4470603893372" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="273.6,462.4"
-          Size="273.6,505.6"
+          PanelSize="274,463"
+          Size="274,506"
           Id="Package\6 - Terminal Masters"
           TopLeft="2359.98097139281,185.694120049393" />
         <NodeLayout
-          Size="110.4,41.6"
+          Size="110,42"
           Id="Package\Erase (CAREFUL!) KPI2FY_2FT on 017\Delete"
           TopLeft="5.50000000000001,5.49999999999995" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="236,102.4"
-          Size="236,145.6"
+          PanelSize="236,103"
+          Size="236,146"
           Id="Package\Erase (CAREFUL!) KPI2FY_2FT on 017"
           TopLeft="26.457133300937,499.890197748623" />
         <NodeLayout
-          Size="110.4,41.6"
+          Size="110,42"
           Id="Package\Erase (CAREFUL!) KPI2SCT_2SCS_DSmall on 017\Delete"
           TopLeft="6.64285716231996,5.5" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="229.6,102.4"
-          Size="229.6,145.6"
+          PanelSize="230,103"
+          Size="230,146"
           Id="Package\Erase (CAREFUL!) KPI2SCT_2SCS_DSmall on 017"
           TopLeft="27.695228560117,690.611768798431" />
         <NodeLayout
-          Size="110.4,41.6"
+          Size="110,42"
           Id="Package\Erase (CAREFUL!) KPIData_Stage on 017\Delete"
           TopLeft="5.50000000000001,5.49999999999995" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="231.2,102.4"
-          Size="231.2,145.6"
+          PanelSize="231,103"
+          Size="231,146"
           Id="Package\Erase (CAREFUL!) KPIData_Stage on 017"
           TopLeft="25.428561882096,130.974787268699" />
         <NodeLayout
-          Size="110.4,41.6"
+          Size="110,42"
           Id="Package\Erase (CAREFUL!) KPIMaster_2_3 on 017\Delete"
           TopLeft="5.50000000000001,5.49999999999995" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="233.6,102.4"
-          Size="233.6,145.6"
+          PanelSize="234,103"
+          Size="234,146"
           Id="Package\Erase (CAREFUL!) KPIMaster_2_3 on 017"
           TopLeft="24.6476094605968,315.035293195325" />
         <EdgeLayout
@@ -16836,7 +16836,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="2072.34287398787,486.760793012178">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="35.2027187860404,-76.8033622776884"
               Start="0,0"
               End="27.7027187860404,-76.8033622776884">
@@ -16870,7 +16870,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="1175.0476218243,644.792160041549">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="162.095244295749,-102.188238542991"
               Start="0,0"
               End="162.095244295749,-94.688238542991">
@@ -16898,7 +16898,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="1479.54286612005,360.203921498558">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="45.2000024523111,171.074518536696"
               Start="0,0"
               End="37.7000024523111,171.074518536696">
@@ -16932,7 +16932,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="1800.74286857236,531.278440035253">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="42.0000054155016,-44.517647023075"
               Start="0,0"
               End="34.5000054155016,-44.517647023075">
@@ -16966,7 +16966,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="497.861888528354,114.2843125472">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="447.985733295947,-2.2921525056509"
               Start="0,0"
               End="447.985733295947,-9.7921525056509">
@@ -17000,7 +17000,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
           TopLeft="2321.14559277391,409.95743073449">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="38.8353786189005,28.5366893149027"
               Start="0,0"
               End="31.3353786189005,28.5366893149027">
@@ -18650,13 +18650,13 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\4 - Degrees\TermMas - Masters">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151,42"
           Id="Package\4 - Degrees\TermMas - Masters\OLE DB Source"
           TopLeft="116.000001975468,44.0470594412728" />
         <NodeLayout
-          Size="172,41.6"
+          Size="172,42"
           Id="Package\4 - Degrees\TermMas - Masters\OLE DB Destination"
           TopLeft="114.285716231988,162.729414046924" />
         <EdgeLayout
@@ -18690,9 +18690,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -19128,13 +19126,13 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
     design-time-name="Package\6 - Terminal Masters\MS_AP - Applicants">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151,42"
           Id="Package\6 - Terminal Masters\MS_AP - Applicants\OLE DB Source"
           TopLeft="39.428572100036,26.9176474363334" />
         <NodeLayout
-          Size="172,41.6"
+          Size="172,42"
           Id="Package\6 - Terminal Masters\MS_AP - Applicants\OLE DB Destination"
           TopLeft="34.8571434507564,140.094119611826" />
         <EdgeLayout
@@ -19156,9 +19154,7 @@ AND AL1.ACAD_PROG_DESCR LIKE '%Doc')) Group by DeptID order by DeptID</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
